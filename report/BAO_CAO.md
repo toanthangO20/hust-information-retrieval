@@ -483,3 +483,220 @@ hust-information-retrieval/
 ├── index/ver1/                        chỉ mục tìm kiếm                     (không đưa vào git)
 └── report/BAO_CAO.md                  báo cáo này
 ```
+
+---
+
+# PHẦN C — BÓC TÁCH NỘI DUNG, ĐỒ THỊ LIÊN KẾT VÀ MONGODB (BƯỚC 3)
+
+## 17. Yêu cầu và tóm tắt kết quả
+
+Yêu cầu bóc tách (đề bài): **trang** — tiêu đề, ngày đăng, tác giả, nội dung, nguồn giới thiệu – văn bản liên kết; **tài liệu** — nội dung văn bản,
+nguồn giới thiệu – văn bản liên kết; **ảnh** — nguồn giới thiệu; **đồ thị liên kết** nguồn → đích : văn bản mô tả; lưu MongoDB với lược đồ tự xây dựng và có mô tả.
+
+| Hạng mục | Kết quả |
+|---|---|
+| HTML/tài liệu thô đã chụp lại | 22.172 / 22.178 URL (20.071 HTML, 2.101 tài liệu; 6 URL của `sep` trả 421), 1,5 GB gzip |
+| Thuật toán tìm khối nội dung | 4 họ thuật toán, 13 cấu hình so sánh trên tập vàng 99 trang (50 dev / 49 test) |
+| Chọn: bộ phân loại khối (hồi quy logistic) + lọc khuôn mẫu theo host | F1 mức từ trên test: **0,870 (macro) / 0,971 (micro)**; baseline jsoup 0,813 / 0,930 |
+| Metadata trang (test) | tiêu đề 0,75; ngày đăng 0,96; tác giả 0,96 (độ chính xác tính cả trường hợp "không có") |
+| Phủ trên toàn bộ 22.172 trang | tiêu đề 94,1%; ngày đăng 53,6%; tác giả 14,3%; "Nguồn:" 223 trang |
+| Đồ thị liên kết | 80.060 nút; 1.601.816 cạnh (1.509.799 liên kết `<a>`, 46.130 nằm trong nội dung chính) |
+| Nút ảnh / tài liệu chưa tải | 23.284 ảnh (10.864 có văn bản mô tả), 2.944 tài liệu ngoài bộ dữ liệu |
+| MongoDB | Đã nạp và kiểm tra trên MongoDB 7.0.14: 80.060 `pages`, 1.601.816 `links`, `$jsonSchema` + chỉ mục hoạt động (mục 24) |
+| Kiểm thử | 17 test mới (`ExtractTest`, `ExtractMoreTest`); toàn bộ test của dự án đạt |
+
+## 18. Thiết kế
+
+```
+urls_valid.txt ─► Snapshot ─► data/raw (gzip + manifest)       ← tải một lần; mọi bước sau chạy offline, lặp lại tùy ý
+                      │
+        PageModel (DOM → token thẻ/từ + khối)
+                      │
+      BlockFinder (BTE | đặc trưng nông | CSS | học có giám sát | lọc khuôn mẫu host)
+                      │
+   MetadataExtractor ── LinkExtractor (cạnh a/img/iframe, inContent) ── DocExtractor (Tika)
+                      │
+  pages.jsonl + links.jsonl ─► GraphBuilder (quy đích, neo, PageRank) ─► *.final.jsonl ─► MongoDB / ExtractIndexer
+```
+
+**Vì sao phải tải lại (P1).** Kho crawler chỉ giữ văn bản đã trích và số liên kết ra, không có HTML hay danh sách liên kết; vì vậy
+không thể dựng đồ thị hay văn bản neo từ dữ liệu cũ. `Snapshot` tải lại đúng 22.178 URL của `urls_valid.txt`: theo chuyển hướng (≤ 6 bước),
+thử lại 5 lần có lùi theo `Retry-After`, giãn cách theo host (500 ms; `hust.edu.vn` 700 ms) và toàn cục (60 ms), tối đa 4 luồng/host.
+Lần chạy đầu dùng 1 luồng/host nên host lớn chỉ ~25 trang/phút; sau khi cho 4 luồng (vẫn giữ khoảng cách giữa các request tới cùng host)
+đạt ~10 trang/s. Chạy lại được: bản ghi 200 hoặc 4xx cố định bị bỏ qua. Ghi nhận thêm: một URL `.aspx` của `ojs` thực chất trả PDF
+với `Content-Type: text/html` → bước bóc tách kiểm tra chữ ký tệp (`%PDF`) và xử lý như tài liệu.
+
+## 19. Thuật toán tìm khối nội dung (trọng tâm)
+
+### 19.1 Mô hình trang (`PageModel`)
+
+DOM sau khi bỏ `script/style/svg/form-control/.hidden…` được duỗi thành dãy **token** đúng như bài toán Ch10 tr.17:
+mỗi thẻ mở/đóng là một token "thẻ", mỗi từ là một token "từ". Đồng thời văn bản được chia thành các **khối** (đoạn văn bản liên tục
+trong một phần tử cấp khối: `p, div, li, td, h1–h6…`), mỗi khối có số từ, số từ nằm trong `<a>` (mật độ liên kết), vị trí token.
+Vị trí token của `<a>`/`<img>` cho phép biết liên kết nằm trong hay ngoài nội dung chính.
+
+### 19.2 Các thuật toán đã cài đặt
+
+| Mã | Thuật toán | Ý tưởng | Nguồn |
+|---|---|---|---|
+| A | baseline `ContentExtractor` (jsoup) | loại `nav/aside/footer`, loại khối có >80% chữ là liên kết | bước 1 |
+| B1 | **BTE** | chọn `[i, j]` cực đại hóa *số thẻ trước i + số từ trong [i,j] + số thẻ sau j* | slide Ch10 tr.17 |
+| B2 | BTE-link | như B1 nhưng từ nằm trong `<a>` tính như thẻ | mở rộng |
+| C1/C2 | đặc trưng nông | quyết định theo số từ/mật độ liên kết của khối và hai khối kề (kiểu boilerpipe); C2 giữ cụm lớn nhất và lấp khoảng trống | ngoài slide |
+| E | quy tắc CSS theo host | `css_rules.tsv`: bộ chọn nội dung cho từng CMS/host | slide Ch10 tr.18 |
+| D | lọc khuôn mẫu theo host | khối xuất hiện ở ≥ 20% (và ≥ 5) trang của host là khuôn mẫu | slide Ch09 (trùng lặp) |
+| **L** | **bộ phân loại học có giám sát** | hồi quy logistic trên 37 đặc trưng khối (xem dưới) | ngoài slide |
+
+**BTE tính O(n)** bằng tổng tiền tố: đặt `g(i) = Tc[i] − Wc[i]`, `h(j) = Wc[j+1] − Tc[j+1]`, khi đó
+`f(i,j) = g(i) + h(j) + (tổng số thẻ)`; một lượt quét giữ `max g` là đủ. Test `bteMatchesBruteForceOnRandomStreams` so với cực đại hóa O(n²)
+theo định nghĩa trên 50 dãy ngẫu nhiên. Hạn chế đã biết của BTE: chỉ chọn **một** đoạn liền; trang CMS của HUST thường có phần dẫn + nội dung +
+danh sách + biểu mẫu rời nhau.
+
+**Bộ phân loại L.** Đặc trưng mỗi khối: log số từ, mật độ liên kết, loại thẻ chứa, vị trí tương đối và đứng trước/sau `<h1>`,
+**tần suất khối trong host** (khuôn mẫu), từ khóa `class/id` của tổ tiên gần/xa (`menu, footer, sidebar, widget, comment, related…` / `content, article, entry…`),
+tổ tiên `nav/footer/aside/header/form/article/main`, độ sâu, đặc trưng khối kề, mật độ liên kết của phần tử cha, dòng giống ngày tháng,
+và kết quả của B1, C1. Huấn luyện hồi quy logistic L2 trên 3.338 khối của 50 trang dev, trọng số mẫu √(số từ + 1); chọn `l2 = 1e-4`,
+3000 vòng bằng kiểm định chéo 5 phần theo trang (F1 micro 0,899; macro 0,842).
+
+### 19.3 Đánh giá
+
+**Tập vàng.** 100 trang lấy phân tầng *vòng tròn theo host* (để host nhỏ không bị host lớn lấn át), chia xen kẽ 50 dev / 50 test (1 trang test là PDF
+trá hình `.aspx`, bị loại). Nhãn mức khối (khối nào thuộc nội dung chính) + tiêu đề + ngày + tác giả, gán từ phiếu liệt kê khối
+(`eval/extract/sheets/`), quy ước ở `eval/extract/README.md`. Độ đo: P/R/F1 **mức từ**, macro (trung bình theo trang) và micro (gộp);
+kiểm định hoán vị dấu ghép cặp theo trang trên F1 (20.000 vòng).
+
+**Kết quả trên test (49 trang)** — mô hình L chỉ huấn luyện trên dev, test chạy một lần cho các khối:
+
+| Cấu hình | P macro | R macro | **F1 macro** | **F1 micro** |
+|---|---:|---:|---:|---:|
+| A: baseline jsoup (mật độ liên kết) | 0,799 | 0,870 | 0,813 | 0,930 |
+| B1: BTE (slide) | 0,665 | 0,696 | 0,662 | 0,895 |
+| B2: BTE-link | 0,751 | 0,626 | 0,656 | 0,919 |
+| C1: đặc trưng nông | 0,655 | 0,654 | 0,633 | 0,889 |
+| C2: đặc trưng nông + giữ cụm lớn | 0,661 | 0,667 | 0,645 | 0,852 |
+| E: quy tắc CSS theo host | 0,664 | 0,685 | 0,647 | 0,849 |
+| D: B1 + lọc khuôn mẫu | 0,736 | 0,690 | 0,694 | 0,919 |
+| D: C1 + lọc khuôn mẫu | 0,763 | 0,644 | 0,684 | 0,919 |
+| **L: học có giám sát** | 0,901 | 0,862 | 0,845 | **0,972** |
+| **L + lọc khuôn mẫu** (mặc định) | **0,950** | 0,841 | **0,870** | 0,971 |
+
+(Đầy đủ 13 cấu hình trên cả dev và test: `eval/extract/report_blocks_{dev,test}.md`; chi tiết theo trang: `*_per_page.csv`.)
+
+Nhận xét:
+* **Các thuật toán "cổ điển" (BTE, đặc trưng nông, CSS) đều thua baseline jsoup** trên macro F1, có ý nghĩa thống kê (p < 0,03 trên test):
+  trang HUST có nhiều khối nội dung rời, nhiều trang rất ngắn hoặc là danh sách liên kết, nơi nội dung *là* liên kết; BTE và quy tắc nông bị
+  chân trang/biểu mẫu "lấn" hoặc cắt mất danh sách. BTE (đúng slide) vẫn cho micro F1 0,895, tức tốt trên trang dài, kém trên trang ngắn.
+* **Lọc khuôn mẫu theo host** tăng precision ở mọi thuật toán (ví dụ C1: 0,655 → 0,763) nhưng giảm recall; lợi nhất khi kết hợp với L.
+* **L tốt nhất** ở cả macro và micro, hơn baseline +0,057 macro F1 (p = 0,14; 36 trang tốt hơn / 11 kém hơn) và +0,041 micro F1.
+  Với 49 trang, chênh lệch macro **chưa đạt ý nghĩa thống kê**; chỉ có thể khẳng định L không kém baseline và hơn rõ rệt nhóm BTE/đặc trưng nông/CSS.
+  Trên dev, L hơn baseline +0,18 (p = 0,0001) nhưng đây là số trong mẫu huấn luyện.
+* Quy tắc CSS theo host (E) không cải thiện vì khối của CMS lẫn tiêu đề/ngày/chân bài; học có giám sát tự rút ra tín hiệu `class`/`id` tương tự mà không cần viết tay.
+
+## 20. Bóc tách metadata
+
+Mỗi trường gắn `source` và `conf`; chuỗi ưu tiên (xem `MetadataExtractor`):
+
+| Trường | Thứ tự thử |
+|---|---|
+| **tiêu đề** | `<h1>` (không phải biểu ngữ lặp ở nhiều trang) → `og:title` → `<title>` bỏ hậu tố tên site → heading/khối đầu của nội dung |
+| **ngày đăng** | JSON-LD `datePublished` → `meta:article:published_time`… → thẻ `<time>`/`.entry-date` trong vùng nội dung → dòng "ngày" ngay quanh tiêu đề bài |
+| **tác giả** | JSON-LD/meta `author` (bỏ tên đơn vị: "Trường…", "Viện…", "admin") → `[itemprop=author]` → dòng "Tác giả/Đăng bởi/By: X" |
+| **nguồn** | dòng "Nguồn: …" cuối bài |
+| tài liệu | Tika: `dc:title`, `dc:creator`, `dcterms:created`, số trang |
+
+Các quyết định rút ra từ dữ liệu thật:
+* **Giá trị là hằng số của site** (cùng `<title>`/`<h1>`/`author` ở ≥ 3 trang và ≥ 2% số trang host) không mô tả riêng trang → bị bỏ. Ví dụ `<title>` của `ctt` luôn là "CTT ĐHBKHN";
+  `sme` luôn khai tác giả "Trường Cơ khí".
+* **`Last-Modified` của server không dùng làm ngày đăng** (trang động trả đúng thời điểm tải): trong đánh giá dev + test, cả 7 trường hợp dùng nó đều sai.
+* **Trang danh sách/lưu trữ** (nhiều tiêu đề kèm dòng ngày, hoặc URL `?m=`, `/author/`, `/category/`, `/page/N`) không có ngày đăng riêng; dòng ngày chỉ nhận khi là dòng ngày thuần túy hoặc có từ khóa "Đăng/Cập nhật/Posted".
+* Ngày JSON-LD của trang hồ sơ cá nhân thực ra là ngày tạo trang (người gán nhãn không thấy trên phiếu): đã **gán lại** 5 nhãn vàng theo dữ liệu có cấu trúc.
+
+**Kết quả** (độ chính xác tính cả "không có" khi nhãn vàng không có; P/R theo số trường được điền / có nhãn):
+
+| Trường | Dev (50) | Test (49) | Test: precision / recall |
+|---|---:|---:|---|
+| tiêu đề | 0,78 | 0,75 | 0,75 / 0,78 |
+| ngày đăng | 0,92 | 0,96 | 0,82 / 0,90 |
+| tác giả | 0,96 | 0,96 | 0,75 / 0,60 |
+
+**Lưu ý trung thực:** khác với bộ phân loại khối, các quy tắc metadata được tinh chỉnh qua nhiều vòng nhìn lỗi trên **cả dev lẫn test**, nên số test ở đây là
+ước lượng lạc quan, không phải số giữ kín. Tiêu đề kém nhất vì nhãn vàng chủ quan với trang không phải bài viết (trang chủ, trang con của CMS, "Home | SEDIC"…).
+Tác giả hiếm (14% trang) và hầu hết site không hiển thị; nhãn vàng chỉ có 5–6 trường hợp mỗi tập nên số P/R rất nhiễu.
+
+**Phủ toàn bộ 22.172 trang:** tiêu đề 20.854 (94,1%; `dom:h1` 11.710, heading/khối đầu 5.382, `og:title` 2.174, `<title>` 786, Tika 802);
+ngày đăng 11.894 (53,6%; JSON-LD 5.733, `tika:created` 2.065, `meta:article:published_time` 2.050, văn bản đầu bài 1.981, `<time>` 59);
+tác giả 3.180 (14,3%; Tika 1.686, dòng "Tác giả:" 1.343, JSON-LD 80, DOM 71). Phủ theo host (14 host lớn nhất): `seee`/`research` ngày 12–19%,
+`clc`/`sep`/`sem` ≥ 92% (WordPress có JSON-LD), `ctt`/`sdh` ~22% (ASP.NET không có metadata).
+
+## 21. Đồ thị liên kết, ảnh, tài liệu
+
+**Cạnh.** Với mỗi `<a href>`, `<area>`, `<img>`, `<iframe>`, `<embed>`: `{src, dst, kind, anchor, alt, title, caption, inContent, nofollow, count}`.
+`anchor` là văn bản liên kết (nếu `<a>` chỉ bọc ảnh: lấy `alt`/`title`/`aria-label`); ảnh còn có `alt`, `title` và chú thích (`figcaption`/`[class*=caption]`).
+`inContent` cho biết liên kết nằm trong khối nội dung chính (khối đã phân loại là nội dung; liên kết giữa các khối nội dung được tính là nội dung),
+đây là phân biệt quan trọng: **chỉ 3,1%** liên kết `<a>` (46.130/1.509.799) thuộc nội dung, phần còn lại là menu/chân trang lặp ở hàng nghìn trang.
+
+**Quy đích về URL chuẩn.** Đích được ánh xạ qua bản đồ chuyển hướng/trùng lặp/canonical (3.319 mục từ `urls_invalid.tsv` và chuỗi chuyển hướng
+lúc chụp); 90.689 cạnh thô (5,7%) được quy về URL khác. **Văn bản neo** gộp theo đích, bỏ neo vô nghĩa ("Xem thêm", "Tải về", số trang, URL trần).
+
+**Nút.** Ngoài 22.172 trang của bộ dữ liệu, đồ thị có các nút phụ: 23.284 ảnh, 2.944 tài liệu chưa tải, 14.805 trang nội bộ chưa tải (hàng đợi crawler),
+16.855 URL ngoài miền. Ảnh **không tải về**: nút ảnh có URL, trang giới thiệu, văn bản neo, `alt`, chú thích. Ví dụ ảnh trong bài soict:
+`PXL_20250625_025330741.jpg` ← 1 trang, chú thích "GS. Marco Abbiati, Tham tán Khoa học và Công nghệ, Đại sứ quán Ý trao đổi…".
+Ví dụ tài liệu: `Noi dung CT-GDTC-K62.pdf` ← 15 trang với neo "KHUNG CHƯƠNG TRÌNH ĐÀO TẠO GIÁO DỤC THỂ CHẤT K62 XEM TẠI ĐÂY".
+
+**PageRank** (d = 0,85, 40 vòng) trên cạnh `<a>` giữa các nút, hai biến thể: mọi liên kết (`pagerank`) và chỉ liên kết trong nội dung (`pagerankContent`).
+
+## 22. Lược đồ MongoDB
+
+Đặc tả đầy đủ: `docs/SCHEMA.md`. Tóm tắt:
+* `pages` — một nút (trang, tài liệu, ảnh, URL ngoài); `_id = sha1(url)`; tiêu đề/ngày/tác giả dạng `{value, source, conf}`; `content{text, words, algo, root}`;
+  `inlinks`, `inlinksContent`, `anchors[{text,count}]`, `altTexts`, `captions`, `pagerank`, `pagerankContent`. Có `$jsonSchema` (kiểu, enum `kind`, trường bắt buộc, `minimum`).
+* `links` — một cạnh; chỉ mục `(dst, inContent)`, `src`, `(srcHost, dstHost)`. Danh sách liên kết **không nhúng** vào `pages` để tránh vượt giới hạn 16 MB
+  ở các trang hub (có trang trỏ ra hàng trăm đích) và để truy vấn "ai trỏ tới X" bằng chỉ mục.
+* `meta` — một tài liệu mô tả đợt nạp (thời điểm, số lượng, `graph_stats`).
+
+## 23. Truy hồi: văn bản liên kết và nội dung chính có giúp không?
+
+Dựng `index/ver1x` (cùng 22.135 tài liệu và mã như `ver1`) thêm `main_t` (nội dung chính bóc ở trên), `anchor_t` (mọi văn bản neo, bỏ neo chung trỏ tới > 30 đích),
+`anchor_c` (chỉ neo từ liên kết trong nội dung), PageRank. So sánh bằng hạ tầng `eval/` hiện có (BM25 đa trường, 20 truy vấn dev / 40 test, cùng qrels), tham số chọn trên dev:
+
+| Hệ thống (test, 40 truy vấn) | nDCG@10 | Judged@10 | nDCG@10 danh sách rút gọn (†) |
+|---|---:|---:|---:|
+| `full` (BM25 tiêu đề×3 + toàn văn + URL) = `bm25` cũ | 0,6752 | 1,000 | 0,6752 |
+| `main` (thay toàn văn bằng nội dung chính) | 0,6736 | 0,985 | 0,6758 |
+| `main + anchor` (trọng số 0,3) | 0,6540 | 0,953 | 0,6669 |
+| `main + anchor` (trọng số 1,5) | 0,6258 | 0,910 | 0,6470 |
+| `main + anchor_c` (0,5) | 0,6344 (có ý nghĩa, kém hơn) | 0,895 | 0,6624 |
+| `main` + prior PageRank nội dung (0,2) | 0,6564 | 0,925 | 0,6718 |
+
+(†) danh sách rút gọn = bỏ tài liệu chưa có nhãn trước khi tính, để giảm thiên lệch của pool (dựng từ các hệ thống không có văn bản liên kết).
+
+**Kết luận (âm tính, trung thực):** trên 40 truy vấn này, nội dung chính không khác toàn văn (test −0,002, p = 0,78; dev +0,009, p = 0,12, R@100 trên dev 0,645 so với 0,594) và
+**văn bản liên kết không giúp**: trọng số 0,3 trung tính (−0,021, p = 0,12), từ 0,5 trở lên giảm có ý nghĩa (`anchor_c` 0,5: −0,041, Holm p = 0,006). Nguyên nhân khả dĩ: (i) neo nội bộ của site chủ yếu là điều hướng và tự tham chiếu
+("Giới thiệu chung", tên khoa) nên nhiễu nặng dù đã bỏ neo chung; (ii) chỉ 3% liên kết thuộc nội dung nên `anchor_c` thưa; (iii) truy vấn chủ yếu dạng từ khóa
+mà tiêu đề trang đã khớp tốt; (iv) tập qrels thiếu nhãn cho tài liệu mới được đẩy lên (Judged@10 giảm tới 0,77). Giá trị thực của văn bản neo nhiều
+khả năng nằm ở **ảnh và tài liệu không có văn bản** — loại truy vấn chưa có trong bộ truy vấn hiện tại. Các báo cáo: `eval/report/extract_{dev,test}[_condensed].md`.
+
+## 24. Hạn chế, vấn đề và việc còn lại
+
+* **MongoDB:** Docker Desktop không khởi động được trên máy (tệp socket AF_UNIX `dockerInference` mồ côi, không xóa được; thường cần khởi động lại Windows), nên dùng MongoDB Community 7.0.14 bản zip chạy trực tiếp (`scripts/mongo.bat`, dữ liệu `data/mongo`, chỉ nghe `127.0.0.1`). Đã nạp `pages` = 80.060, `links` = 1.601.816, kiểm tra: số nút theo `kind` khớp `graph_stats.json`; 6 chỉ mục `pages` + 4 chỉ mục `links`; `$jsonSchema` chặn tài liệu sai kiểu; truy vấn mẫu (nguồn giới thiệu của một ảnh, bài soict năm 2023 = 116, top PageRank nội dung) trả đúng. Lưu ý chất lượng: chú thích ảnh lấy theo heuristic `figcaption`/`[class*=caption]` gần ảnh nên đôi khi gán nhầm đoạn trích bài kế bên (ví dụ ảnh clipart ở `ds.soict` mang chú thích của bài tin đầu trang); `alt` và văn bản neo đáng tin hơn.
+* **Nhãn vàng do một người gán** (không có kappa như tập qrels của bước 5); tập nhỏ (99 trang), phân tầng theo host nên host nhỏ được đại diện đủ
+  nhưng trang kiểu `ctt`/`fami` (nhiều nhất) chỉ vài mẫu. Chưa có chỉ số đồng thuận giữa người gán nhãn.
+* **Bộ phân loại học trên 50 trang** của các CMS hiện có; CMS mới có thể cần gán nhãn thêm. Tần suất khối theo host chỉ dùng khi host ≥ 20 trang.
+* **Trang dựng bằng JavaScript** (đã bị loại `no-content` ở bước 1) không có trong tập này; `research.hust.edu.vn` (Next.js) chỉ lấy phần HTML tải sẵn.
+* **Chưa tách từ ghép tiếng Việt** (giữ từ bước 2); văn bản neo được đánh chỉ mục theo âm tiết.
+* **Chưa cập nhật tăng dần**: `snapshot` chỉ bổ sung URL mới; khi nội dung đổi cần xóa bản ghi tương ứng để tải lại.
+* 6 URL của `sep.hust.edu.vn` luôn trả 421 ("Misdirected Request"), chưa tải được.
+
+## 25. Cấu trúc sản phẩm (cập nhật bước 3)
+
+```
+├── scripts/extract.bat, extract_all.bat     snapshot | run | graph | index | load | eval | eval-meta | train-blocks | show | sheet
+├── src/main/java/vn/hust/ir/extract/        lớp: Snapshot, RawStore, PageModel, BlockFinder, BlockFeatures, LogReg, BlockTrainer,
+│                                            MetadataExtractor, DocExtractor, LinkExtractor, Extractor, GraphBuilder, MongoLoader, ExtractIndexer, BlockEval…
+├── src/main/resources/extract/              css_rules.tsv, block_model.json (mô hình đã huấn luyện, 37 hệ số)
+├── eval/extract/                            tập vàng (gold_dev.tsv, gold_test.tsv), phiếu gán nhãn, báo cáo, README.md
+├── docs/SCHEMA.md                           lược đồ MongoDB
+├── data/raw/                                HTML/tài liệu thô gzip + manifest.jsonl          (không đưa vào git)
+├── data/extract/v1/                         pages/links(.final).jsonl, graph_stats.json      (không đưa vào git)
+└── index/ver1x/                             chỉ mục thử nghiệm (main_t, anchor_t, anchor_c)  (không đưa vào git)
+```

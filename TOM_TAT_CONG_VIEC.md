@@ -59,3 +59,25 @@ Dựa trên danh sách URL đã crawl: tạo bộ dữ liệu `ver1` và chỉ m
 - 43 tài liệu font cũ chưa chuyển mã; chưa tách từ ghép tiếng Việt; chưa có tập đánh giá có nhãn.
 - Độ phủ dữ liệu vẫn như bước 1 (11.159 URL chờ); chạy `update` rồi dựng `ver2`.
 - `ký túc xá` và `quy chế đào tạo đại học` còn kết quả chưa tốt ở top 3 (xem báo cáo mục 12.4).
+
+---
+
+# Cập nhật bước 3 — Bóc tách nội dung, đồ thị liên kết, MongoDB (2026-10-10)
+
+## Yêu cầu
+Cài đặt thuật toán tìm khối nội dung; bóc trang (tiêu đề, ngày đăng, tác giả, nội dung, nguồn giới thiệu – văn bản liên kết), tài liệu (nội dung, nguồn giới thiệu), ảnh (nguồn giới thiệu); đồ thị liên kết nguồn → đích : văn bản mô tả; lưu MongoDB với lược đồ tự xây dựng và có mô tả.
+
+## Đã thực hiện (P1–P7)
+1. **P1 Snapshot:** tải lại 22.178 URL, lưu HTML/tài liệu thô (1,5 GB gzip) + manifest; chạy lại được; 22.172 thành công.
+2. **P2–P3 Tìm khối nội dung:** `PageModel` (DOM → token thẻ/từ + khối), cài BTE (slide Ch10, O(n), kiểm tra bằng brute force), đặc trưng nông, quy tắc CSS, lọc khuôn mẫu theo host, **bộ phân loại học có giám sát** (hồi quy logistic, 37 đặc trưng). Đánh giá trên tập vàng 99 trang: test F1 mức từ 0,870 macro / 0,971 micro (baseline jsoup 0,813 / 0,930).
+3. **P4 Metadata:** chuỗi nguồn nhiều tầng + loại giá trị hằng số của site; test: tiêu đề 0,75, ngày 0,96, tác giả 0,96. Phủ toàn bộ: tiêu đề 94%, ngày 54%, tác giả 14%.
+4. **P5 Đồ thị:** 80.060 nút, 1,6 triệu cạnh (có `inContent`), neo, ảnh (23.284), tài liệu, PageRank; đích quy về URL chuẩn.
+5. **P6 MongoDB:** lược đồ `pages`/`links`/`meta` + `$jsonSchema` + chỉ mục + bộ nạp; `docs/SCHEMA.md`. Đã nạp thật vào MongoDB 7.0.14 bản zip (`scripts/mongo.bat`): 80.060 pages, 1.601.816 links.
+6. **P7:** 17 test mới; chỉ mục `ver1x`; so sánh truy hồi: nội dung chính ≈ toàn văn, văn bản liên kết không giúp trên bộ 40 truy vấn.
+7. **Tài liệu:** README (Bước 3), `report/BAO_CAO.md` Phần C, `eval/extract/README.md`.
+
+## Lệnh
+`scripts/extract.bat snapshot` → `scripts/extract_all.bat` (run + graph + index) → `scripts/extract.bat load` (cần MongoDB).
+
+## Hạn chế chính
+- Chú thích ảnh theo heuristic đôi khi gán nhầm; nhãn vàng do một người gán; quy tắc metadata đã chỉnh sau khi xem lỗi cả dev và test; văn bản liên kết không cải thiện truy hồi trên bộ truy vấn hiện tại.

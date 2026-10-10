@@ -1,0 +1,638 @@
+url,goldWords,config,tp,pred
+https://ai4life.hust.edu.vn/blog/page/3/,422,A:baseline(jsoup link-density),351,369
+https://ai4life.hust.edu.vn/blog/page/3/,422,B1:bte,0,102
+https://ai4life.hust.edu.vn/blog/page/3/,422,B2:bte-link,22,22
+https://ai4life.hust.edu.vn/blog/page/3/,422,C1:rules,20,31
+https://ai4life.hust.edu.vn/blog/page/3/,422,C2:rules-largest,0,19
+https://ai4life.hust.edu.vn/blog/page/3/,422,E:css(host rules; else rules-largest),0,19
+https://ai4life.hust.edu.vn/blog/page/3/,422,D:B1:bte+template,0,102
+https://ai4life.hust.edu.vn/blog/page/3/,422,D:B2:bte-link+template,22,22
+https://ai4life.hust.edu.vn/blog/page/3/,422,D:C1:rules+template,20,31
+https://ai4life.hust.edu.vn/blog/page/3/,422,D:C2:rules-largest+template,0,19
+https://ai4life.hust.edu.vn/blog/page/3/,422,D:E:css+template,0,19
+https://ai4life.hust.edu.vn/blog/page/3/,422,L:learned (logistic regression),298,298
+https://ai4life.hust.edu.vn/blog/page/3/,422,D:L:learned+template,284,284
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,A:baseline(jsoup link-density),97,122
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,B1:bte,92,92
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,B2:bte-link,92,92
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,C1:rules,88,107
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,C2:rules-largest,88,88
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,E:css(host rules; else rules-largest),88,88
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,D:B1:bte+template,92,92
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,D:B2:bte-link+template,92,92
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,D:C1:rules+template,88,88
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,D:C2:rules-largest+template,88,88
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,D:E:css+template,88,88
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,L:learned (logistic regression),97,97
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/youngone-nam-inh-tuyen-dung,97,D:L:learned+template,97,97
+https://csv.hust.edu.vn/hao-tam/undefined,4,A:baseline(jsoup link-density),4,87
+https://csv.hust.edu.vn/hao-tam/undefined,4,B1:bte,0,59
+https://csv.hust.edu.vn/hao-tam/undefined,4,B2:bte-link,0,59
+https://csv.hust.edu.vn/hao-tam/undefined,4,C1:rules,0,51
+https://csv.hust.edu.vn/hao-tam/undefined,4,C2:rules-largest,4,65
+https://csv.hust.edu.vn/hao-tam/undefined,4,E:css(host rules; else rules-largest),4,65
+https://csv.hust.edu.vn/hao-tam/undefined,4,D:B1:bte+template,0,59
+https://csv.hust.edu.vn/hao-tam/undefined,4,D:B2:bte-link+template,0,59
+https://csv.hust.edu.vn/hao-tam/undefined,4,D:C1:rules+template,0,51
+https://csv.hust.edu.vn/hao-tam/undefined,4,D:C2:rules-largest+template,4,4
+https://csv.hust.edu.vn/hao-tam/undefined,4,D:E:css+template,4,4
+https://csv.hust.edu.vn/hao-tam/undefined,4,L:learned (logistic regression),4,61
+https://csv.hust.edu.vn/hao-tam/undefined,4,D:L:learned+template,4,4
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,A:baseline(jsoup link-density),100,138
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,B1:bte,100,122
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,B2:bte-link,100,122
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,C1:rules,100,122
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,C2:rules-largest,100,122
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,E:css(host rules; else rules-largest),100,100
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,D:B1:bte+template,100,100
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,D:B2:bte-link+template,100,100
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,D:C1:rules+template,100,100
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,D:C2:rules-largest+template,100,100
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,D:E:css+template,100,100
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,L:learned (logistic regression),7,7
+https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=34446,100,D:L:learned+template,7,7
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,A:baseline(jsoup link-density),179,276
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,B1:bte,211,349
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,B2:bte-link,211,211
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,C1:rules,203,209
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,C2:rules-largest,211,215
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,E:css(host rules; else rules-largest),211,269
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,D:B1:bte+template,211,263
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,D:B2:bte-link+template,211,211
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,D:C1:rules+template,203,203
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,D:C2:rules-largest+template,211,211
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,D:E:css+template,211,263
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,L:learned (logistic regression),211,215
+https://fami.hust.edu.vn/su-kien/hoi-nghi-sinh-vien-nghien-cuu-khoa-hoc/,211,D:L:learned+template,211,211
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,A:baseline(jsoup link-density),185,190
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,B1:bte,182,182
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,B2:bte-link,182,182
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,C1:rules,166,166
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,C2:rules-largest,185,185
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,E:css(host rules; else rules-largest),185,185
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,D:B1:bte+template,182,182
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,D:B2:bte-link+template,182,182
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,D:C1:rules+template,166,166
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,D:C2:rules-largest+template,185,185
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,D:E:css+template,185,185
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,L:learned (logistic regression),184,184
+https://fintech.hust.edu.vn/get-involved/fir/about-us,185,D:L:learned+template,184,184
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,A:baseline(jsoup link-density),998,1026
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,B1:bte,998,1238
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,B2:bte-link,994,994
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,C1:rules,998,1034
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,C2:rules-largest,998,998
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,E:css(host rules; else rules-largest),998,998
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,D:B1:bte+template,934,1068
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,D:B2:bte-link+template,930,930
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,D:C1:rules+template,934,934
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,D:C2:rules-largest+template,934,934
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,D:E:css+template,934,934
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,L:learned (logistic regression),998,1033
+https://giving.hust.edu.vn/en/cau-chuyen/mai-nha-bach-khoa-va-diem-tua-tiep-suc-cho-chang-sinh-vien-toan-tin-nguyen-xuan-bach,998,D:L:learned+template,934,966
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,A:baseline(jsoup link-density),68,89
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,B1:bte,68,217
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,B2:bte-link,0,118
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,C1:rules,128,308
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,C2:rules-largest,128,256
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,E:css(host rules; else rules-largest),128,256
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,D:B1:bte+template,68,68
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,D:B2:bte-link+template,0,118
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,D:C1:rules+template,128,128
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,D:C2:rules-largest+template,128,128
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,D:E:css+template,128,128
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,L:learned (logistic regression),128,206
+https://icea.hust.edu.vn/phong-dieu-khien-qua-trinh-va-tu-dong-hoa-xi-nghiep,128,D:L:learned+template,128,128
+https://icef.hust.edu.vn/category/show?id=26,27,A:baseline(jsoup link-density),11,116
+https://icef.hust.edu.vn/category/show?id=26,27,B1:bte,0,82
+https://icef.hust.edu.vn/category/show?id=26,27,B2:bte-link,0,80
+https://icef.hust.edu.vn/category/show?id=26,27,C1:rules,16,92
+https://icef.hust.edu.vn/category/show?id=26,27,C2:rules-largest,0,74
+https://icef.hust.edu.vn/category/show?id=26,27,E:css(host rules; else rules-largest),0,74
+https://icef.hust.edu.vn/category/show?id=26,27,D:B1:bte+template,0,82
+https://icef.hust.edu.vn/category/show?id=26,27,D:B2:bte-link+template,0,80
+https://icef.hust.edu.vn/category/show?id=26,27,D:C1:rules+template,16,16
+https://icef.hust.edu.vn/category/show?id=26,27,D:C2:rules-largest+template,0,74
+https://icef.hust.edu.vn/category/show?id=26,27,D:E:css+template,0,74
+https://icef.hust.edu.vn/category/show?id=26,27,L:learned (logistic regression),26,26
+https://icef.hust.edu.vn/category/show?id=26,27,D:L:learned+template,26,26
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,A:baseline(jsoup link-density),20,30
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,B1:bte,0,35
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,B2:bte-link,0,35
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,C1:rules,0,39
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,C2:rules-largest,0,39
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,E:css(host rules; else rules-largest),0,39
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,D:B1:bte+template,0,35
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,D:B2:bte-link+template,0,35
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,D:C1:rules+template,0,39
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,D:C2:rules-largest+template,0,39
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,D:E:css+template,0,39
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,L:learned (logistic regression),32,67
+https://icpt.hust.edu.vn/en/news/author/ICPT/,32,D:L:learned+template,32,32
+https://lms-sepd.hust.edu.vn/,465,A:baseline(jsoup link-density),461,476
+https://lms-sepd.hust.edu.vn/,465,B1:bte,465,465
+https://lms-sepd.hust.edu.vn/,465,B2:bte-link,461,461
+https://lms-sepd.hust.edu.vn/,465,C1:rules,453,485
+https://lms-sepd.hust.edu.vn/,465,C2:rules-largest,455,455
+https://lms-sepd.hust.edu.vn/,465,E:css(host rules; else rules-largest),455,455
+https://lms-sepd.hust.edu.vn/,465,D:B1:bte+template,465,465
+https://lms-sepd.hust.edu.vn/,465,D:B2:bte-link+template,461,461
+https://lms-sepd.hust.edu.vn/,465,D:C1:rules+template,453,453
+https://lms-sepd.hust.edu.vn/,465,D:C2:rules-largest+template,455,455
+https://lms-sepd.hust.edu.vn/,465,D:E:css+template,455,455
+https://lms-sepd.hust.edu.vn/,465,L:learned (logistic regression),465,465
+https://lms-sepd.hust.edu.vn/,465,D:L:learned+template,465,465
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,A:baseline(jsoup link-density),112,131
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,B1:bte,240,240
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,B2:bte-link,25,25
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,C1:rules,1,11
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,C2:rules-largest,0,9
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,E:css(host rules; else rules-largest),0,9
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,D:B1:bte+template,224,224
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,D:B2:bte-link+template,25,25
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,D:C1:rules+template,1,11
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,D:C2:rules-largest+template,0,9
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,D:E:css+template,0,9
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,L:learned (logistic regression),242,251
+http://mso.soict.hust.edu.vn/?limit=9&page_id=17,253,D:L:learned+template,224,224
+https://research.hust.edu.vn/lan.lethi1,819,A:baseline(jsoup link-density),553,560
+https://research.hust.edu.vn/lan.lethi1,819,B1:bte,729,729
+https://research.hust.edu.vn/lan.lethi1,819,B2:bte-link,729,729
+https://research.hust.edu.vn/lan.lethi1,819,C1:rules,699,756
+https://research.hust.edu.vn/lan.lethi1,819,C2:rules-largest,766,831
+https://research.hust.edu.vn/lan.lethi1,819,E:css(host rules; else rules-largest),766,831
+https://research.hust.edu.vn/lan.lethi1,819,D:B1:bte+template,683,683
+https://research.hust.edu.vn/lan.lethi1,819,D:B2:bte-link+template,683,683
+https://research.hust.edu.vn/lan.lethi1,819,D:C1:rules+template,653,653
+https://research.hust.edu.vn/lan.lethi1,819,D:C2:rules-largest+template,720,720
+https://research.hust.edu.vn/lan.lethi1,819,D:E:css+template,720,720
+https://research.hust.edu.vn/lan.lethi1,819,L:learned (logistic regression),796,796
+https://research.hust.edu.vn/lan.lethi1,819,D:L:learned+template,739,739
+http://sedic.soict.hust.edu.vn/,188,A:baseline(jsoup link-density),188,212
+http://sedic.soict.hust.edu.vn/,188,B1:bte,188,188
+http://sedic.soict.hust.edu.vn/,188,B2:bte-link,188,188
+http://sedic.soict.hust.edu.vn/,188,C1:rules,188,190
+http://sedic.soict.hust.edu.vn/,188,C2:rules-largest,188,190
+http://sedic.soict.hust.edu.vn/,188,E:css(host rules; else rules-largest),188,190
+http://sedic.soict.hust.edu.vn/,188,D:B1:bte+template,188,188
+http://sedic.soict.hust.edu.vn/,188,D:B2:bte-link+template,188,188
+http://sedic.soict.hust.edu.vn/,188,D:C1:rules+template,188,190
+http://sedic.soict.hust.edu.vn/,188,D:C2:rules-largest+template,188,190
+http://sedic.soict.hust.edu.vn/,188,D:E:css+template,188,190
+http://sedic.soict.hust.edu.vn/,188,L:learned (logistic regression),188,194
+http://sedic.soict.hust.edu.vn/,188,D:L:learned+template,188,194
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,A:baseline(jsoup link-density),227,315
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,B1:bte,227,254
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,B2:bte-link,209,209
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,C1:rules,227,291
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,C2:rules-largest,227,233
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,E:css(host rules; else rules-largest),227,227
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,D:B1:bte+template,227,254
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,D:B2:bte-link+template,209,209
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,D:C1:rules+template,227,227
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,D:C2:rules-largest+template,227,227
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,D:E:css+template,227,227
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,L:learned (logistic regression),227,227
+http://sis.hust.edu.vn/NewsModule/?ID=120,227,D:L:learned+template,227,227
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,A:baseline(jsoup link-density),303,325
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,B1:bte,254,254
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,B2:bte-link,254,254
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,C1:rules,267,298
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,C2:rules-largest,275,275
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,E:css(host rules; else rules-largest),275,275
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,D:B1:bte+template,250,250
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,D:B2:bte-link+template,250,250
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,D:C1:rules+template,259,259
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,D:C2:rules-largest+template,267,267
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,D:E:css+template,267,267
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,L:learned (logistic regression),303,307
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-le-thanh-huong,303,D:L:learned+template,285,285
+https://srn.hust.edu.vn/events/6,260,A:baseline(jsoup link-density),255,257
+https://srn.hust.edu.vn/events/6,260,B1:bte,260,295
+https://srn.hust.edu.vn/events/6,260,B2:bte-link,260,260
+https://srn.hust.edu.vn/events/6,260,C1:rules,234,257
+https://srn.hust.edu.vn/events/6,260,C2:rules-largest,260,260
+https://srn.hust.edu.vn/events/6,260,E:css(host rules; else rules-largest),260,260
+https://srn.hust.edu.vn/events/6,260,D:B1:bte+template,260,280
+https://srn.hust.edu.vn/events/6,260,D:B2:bte-link+template,260,260
+https://srn.hust.edu.vn/events/6,260,D:C1:rules+template,234,234
+https://srn.hust.edu.vn/events/6,260,D:C2:rules-largest+template,260,260
+https://srn.hust.edu.vn/events/6,260,D:E:css+template,260,260
+https://srn.hust.edu.vn/events/6,260,L:learned (logistic regression),107,107
+https://srn.hust.edu.vn/events/6,260,D:L:learned+template,107,107
+https://ts-hn.hust.edu.vn/,0,A:baseline(jsoup link-density),0,100
+https://ts-hn.hust.edu.vn/,0,B1:bte,0,14
+https://ts-hn.hust.edu.vn/,0,B2:bte-link,0,14
+https://ts-hn.hust.edu.vn/,0,C1:rules,0,50
+https://ts-hn.hust.edu.vn/,0,C2:rules-largest,0,47
+https://ts-hn.hust.edu.vn/,0,E:css(host rules; else rules-largest),0,47
+https://ts-hn.hust.edu.vn/,0,D:B1:bte+template,0,14
+https://ts-hn.hust.edu.vn/,0,D:B2:bte-link+template,0,14
+https://ts-hn.hust.edu.vn/,0,D:C1:rules+template,0,50
+https://ts-hn.hust.edu.vn/,0,D:C2:rules-largest+template,0,47
+https://ts-hn.hust.edu.vn/,0,D:E:css+template,0,47
+https://ts-hn.hust.edu.vn/,0,L:learned (logistic regression),0,60
+https://ts-hn.hust.edu.vn/,0,D:L:learned+template,0,60
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,A:baseline(jsoup link-density),204,242
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,B1:bte,259,346
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,B2:bte-link,259,259
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,C1:rules,259,293
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,C2:rules-largest,262,262
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,E:css(host rules; else rules-largest),262,262
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,D:B1:bte+template,259,260
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,D:B2:bte-link+template,259,259
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,D:C1:rules+template,259,259
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,D:C2:rules-largest+template,259,259
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,D:E:css+template,259,259
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,L:learned (logistic regression),267,267
+https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/phong-lab-he-thong-va-thiet-bi-thong-minh/gioi-thieu-chung-1.html,267,D:L:learned+template,259,259
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,A:baseline(jsoup link-density),119,125
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,B1:bte,116,116
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,B2:bte-link,116,116
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,C1:rules,70,70
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,C2:rules-largest,52,52
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,E:css(host rules; else rules-largest),52,52
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,D:B1:bte+template,116,116
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,D:B2:bte-link+template,116,116
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,D:C1:rules+template,67,67
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,D:C2:rules-largest+template,49,49
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,D:E:css+template,49,49
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,L:learned (logistic regression),119,122
+https://bkcs.hust.edu.vn/courses/cyber-security-essentials/,119,D:L:learned+template,116,116
+https://congnghegiaoduc.hust.edu.vn/,1806,A:baseline(jsoup link-density),1787,1792
+https://congnghegiaoduc.hust.edu.vn/,1806,B1:bte,1712,1712
+https://congnghegiaoduc.hust.edu.vn/,1806,B2:bte-link,1707,1707
+https://congnghegiaoduc.hust.edu.vn/,1806,C1:rules,1720,1720
+https://congnghegiaoduc.hust.edu.vn/,1806,C2:rules-largest,1765,1765
+https://congnghegiaoduc.hust.edu.vn/,1806,E:css(host rules; else rules-largest),1765,1765
+https://congnghegiaoduc.hust.edu.vn/,1806,D:B1:bte+template,1712,1712
+https://congnghegiaoduc.hust.edu.vn/,1806,D:B2:bte-link+template,1707,1707
+https://congnghegiaoduc.hust.edu.vn/,1806,D:C1:rules+template,1720,1720
+https://congnghegiaoduc.hust.edu.vn/,1806,D:C2:rules-largest+template,1765,1765
+https://congnghegiaoduc.hust.edu.vn/,1806,D:E:css+template,1765,1765
+https://congnghegiaoduc.hust.edu.vn/,1806,L:learned (logistic regression),1780,1782
+https://congnghegiaoduc.hust.edu.vn/,1806,D:L:learned+template,1780,1782
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,A:baseline(jsoup link-density),67,103
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,B1:bte,27,27
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,B2:bte-link,27,27
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,C1:rules,35,58
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,C2:rules-largest,29,44
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,E:css(host rules; else rules-largest),29,44
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,D:B1:bte+template,27,27
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,D:B2:bte-link+template,27,27
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,D:C1:rules+template,35,58
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,D:C2:rules-largest+template,29,44
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,D:E:css+template,29,44
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,L:learned (logistic regression),31,31
+https://ctt-sis.hust.edu.vn/pub/SearchCertificate.aspx,67,D:L:learned+template,31,31
+http://ds.soict.hust.edu.vn/?m=20210929,41,A:baseline(jsoup link-density),41,54
+http://ds.soict.hust.edu.vn/?m=20210929,41,B1:bte,26,58
+http://ds.soict.hust.edu.vn/?m=20210929,41,B2:bte-link,26,26
+http://ds.soict.hust.edu.vn/?m=20210929,41,C1:rules,0,2
+http://ds.soict.hust.edu.vn/?m=20210929,41,C2:rules-largest,0,2
+http://ds.soict.hust.edu.vn/?m=20210929,41,E:css(host rules; else rules-largest),0,2
+http://ds.soict.hust.edu.vn/?m=20210929,41,D:B1:bte+template,26,26
+http://ds.soict.hust.edu.vn/?m=20210929,41,D:B2:bte-link+template,26,26
+http://ds.soict.hust.edu.vn/?m=20210929,41,D:C1:rules+template,0,2
+http://ds.soict.hust.edu.vn/?m=20210929,41,D:C2:rules-largest+template,0,2
+http://ds.soict.hust.edu.vn/?m=20210929,41,D:E:css+template,0,2
+http://ds.soict.hust.edu.vn/?m=20210929,41,L:learned (logistic regression),41,41
+http://ds.soict.hust.edu.vn/?m=20210929,41,D:L:learned+template,37,37
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,A:baseline(jsoup link-density),454,555
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,B1:bte,430,688
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,B2:bte-link,427,427
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,C1:rules,432,493
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,C2:rules-largest,454,484
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,E:css(host rules; else rules-largest),454,484
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,D:B1:bte+template,430,644
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,D:B2:bte-link+template,427,427
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,D:C1:rules+template,432,432
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,D:C2:rules-largest+template,454,454
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,D:E:css+template,454,454
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,L:learned (logistic regression),454,454
+https://fed.hust.edu.vn/vi/news/tin-tuc/boi-duong-nghiep-vu-su-pham-cho-doi-ngu-giang-vien-noi-bo-cong-ty-dien-luc-phu-tho-296277.html,454,D:L:learned+template,454,454
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,A:baseline(jsoup link-density),43,57
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,B1:bte,0,49
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,B2:bte-link,0,27
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,C1:rules,0,27
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,C2:rules-largest,0,27
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,E:css(host rules; else rules-largest),0,27
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,D:B1:bte+template,0,49
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,D:B2:bte-link+template,0,27
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,D:C1:rules+template,0,27
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,D:C2:rules-largest+template,0,27
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,D:E:css+template,0,27
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,L:learned (logistic regression),43,43
+https://fpt.hust.edu.vn/vi/bo-mon/author/dpt/,43,D:L:learned+template,43,43
+https://icamt2024.smse.hust.edu.vn/author/admin,45,A:baseline(jsoup link-density),33,33
+https://icamt2024.smse.hust.edu.vn/author/admin,45,B1:bte,17,17
+https://icamt2024.smse.hust.edu.vn/author/admin,45,B2:bte-link,17,17
+https://icamt2024.smse.hust.edu.vn/author/admin,45,C1:rules,29,52
+https://icamt2024.smse.hust.edu.vn/author/admin,45,C2:rules-largest,41,64
+https://icamt2024.smse.hust.edu.vn/author/admin,45,E:css(host rules; else rules-largest),41,64
+https://icamt2024.smse.hust.edu.vn/author/admin,45,D:B1:bte+template,17,17
+https://icamt2024.smse.hust.edu.vn/author/admin,45,D:B2:bte-link+template,17,17
+https://icamt2024.smse.hust.edu.vn/author/admin,45,D:C1:rules+template,29,29
+https://icamt2024.smse.hust.edu.vn/author/admin,45,D:C2:rules-largest+template,41,41
+https://icamt2024.smse.hust.edu.vn/author/admin,45,D:E:css+template,41,41
+https://icamt2024.smse.hust.edu.vn/author/admin,45,L:learned (logistic regression),13,13
+https://icamt2024.smse.hust.edu.vn/author/admin,45,D:L:learned+template,13,13
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,A:baseline(jsoup link-density),293,321
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,B1:bte,293,293
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,B2:bte-link,293,293
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,C1:rules,277,315
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,C2:rules-largest,293,293
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,E:css(host rules; else rules-largest),293,293
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,D:B1:bte+template,292,292
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,D:B2:bte-link+template,292,292
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,D:C1:rules+template,276,276
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,D:C2:rules-largest+template,292,292
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,D:E:css+template,292,292
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,L:learned (logistic regression),293,293
+https://icech.hust.edu.vn/article/the-influence-of-female-ceos-on-capital-structure-and-firm-performance-of-listed-firms-in-vietnam/,293,D:L:learned+template,292,292
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,A:baseline(jsoup link-density),4352,4355
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,B1:bte,4350,4411
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,B2:bte-link,4350,4411
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,C1:rules,4157,4225
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,C2:rules-largest,2257,2257
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,E:css(host rules; else rules-largest),2257,2257
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,D:B1:bte+template,4350,4350
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,D:B2:bte-link+template,4350,4350
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,D:C1:rules+template,4157,4157
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,D:C2:rules-largest+template,2257,2257
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,D:E:css+template,2257,2257
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,L:learned (logistic regression),4352,4360
+https://icpmat-icamt.hust.edu.vn/invited-speakers.html,4352,D:L:learned+template,4350,4350
+https://library.hust.edu.vn/vi/node/1291,465,A:baseline(jsoup link-density),465,469
+https://library.hust.edu.vn/vi/node/1291,465,B1:bte,465,469
+https://library.hust.edu.vn/vi/node/1291,465,B2:bte-link,465,469
+https://library.hust.edu.vn/vi/node/1291,465,C1:rules,465,525
+https://library.hust.edu.vn/vi/node/1291,465,C2:rules-largest,465,525
+https://library.hust.edu.vn/vi/node/1291,465,E:css(host rules; else rules-largest),425,425
+https://library.hust.edu.vn/vi/node/1291,465,D:B1:bte+template,465,465
+https://library.hust.edu.vn/vi/node/1291,465,D:B2:bte-link+template,465,465
+https://library.hust.edu.vn/vi/node/1291,465,D:C1:rules+template,465,465
+https://library.hust.edu.vn/vi/node/1291,465,D:C2:rules-largest+template,465,465
+https://library.hust.edu.vn/vi/node/1291,465,D:E:css+template,425,425
+https://library.hust.edu.vn/vi/node/1291,465,L:learned (logistic regression),465,469
+https://library.hust.edu.vn/vi/node/1291,465,D:L:learned+template,465,465
+https://login.icech.hust.edu.vn/register,44,A:baseline(jsoup link-density),44,50
+https://login.icech.hust.edu.vn/register,44,B1:bte,0,12
+https://login.icech.hust.edu.vn/register,44,B2:bte-link,0,12
+https://login.icech.hust.edu.vn/register,44,C1:rules,0,13
+https://login.icech.hust.edu.vn/register,44,C2:rules-largest,0,13
+https://login.icech.hust.edu.vn/register,44,E:css(host rules; else rules-largest),0,13
+https://login.icech.hust.edu.vn/register,44,D:B1:bte+template,0,12
+https://login.icech.hust.edu.vn/register,44,D:B2:bte-link+template,0,12
+https://login.icech.hust.edu.vn/register,44,D:C1:rules+template,0,13
+https://login.icech.hust.edu.vn/register,44,D:C2:rules-largest+template,0,13
+https://login.icech.hust.edu.vn/register,44,D:E:css+template,0,13
+https://login.icech.hust.edu.vn/register,44,L:learned (logistic regression),44,62
+https://login.icech.hust.edu.vn/register,44,D:L:learned+template,44,62
+https://nct.soict.hust.edu.vn/,45,A:baseline(jsoup link-density),45,47
+https://nct.soict.hust.edu.vn/,45,B1:bte,41,41
+https://nct.soict.hust.edu.vn/,45,B2:bte-link,41,41
+https://nct.soict.hust.edu.vn/,45,C1:rules,34,34
+https://nct.soict.hust.edu.vn/,45,C2:rules-largest,34,34
+https://nct.soict.hust.edu.vn/,45,E:css(host rules; else rules-largest),34,34
+https://nct.soict.hust.edu.vn/,45,D:B1:bte+template,41,41
+https://nct.soict.hust.edu.vn/,45,D:B2:bte-link+template,41,41
+https://nct.soict.hust.edu.vn/,45,D:C1:rules+template,34,34
+https://nct.soict.hust.edu.vn/,45,D:C2:rules-largest+template,34,34
+https://nct.soict.hust.edu.vn/,45,D:E:css+template,34,34
+https://nct.soict.hust.edu.vn/,45,L:learned (logistic regression),45,45
+https://nct.soict.hust.edu.vn/,45,D:L:learned+template,45,45
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,A:baseline(jsoup link-density),30,31
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,B1:bte,0,16
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,B2:bte-link,0,16
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,C1:rules,12,17
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,C2:rules-largest,12,22
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,E:css(host rules; else rules-largest),12,22
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,D:B1:bte+template,0,16
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,D:B2:bte-link+template,0,16
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,D:C1:rules+template,12,17
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,D:C2:rules-largest+template,12,22
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,D:E:css+template,12,22
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,L:learned (logistic regression),6,6
+https://research.hust.edu.vn/sme-welding-processes/nghien-cuu,31,D:L:learned+template,6,6
+http://sedic.soict.hust.edu.vn/contact.html,77,A:baseline(jsoup link-density),77,93
+http://sedic.soict.hust.edu.vn/contact.html,77,B1:bte,76,76
+http://sedic.soict.hust.edu.vn/contact.html,77,B2:bte-link,76,76
+http://sedic.soict.hust.edu.vn/contact.html,77,C1:rules,76,85
+http://sedic.soict.hust.edu.vn/contact.html,77,C2:rules-largest,77,86
+http://sedic.soict.hust.edu.vn/contact.html,77,E:css(host rules; else rules-largest),77,86
+http://sedic.soict.hust.edu.vn/contact.html,77,D:B1:bte+template,76,76
+http://sedic.soict.hust.edu.vn/contact.html,77,D:B2:bte-link+template,76,76
+http://sedic.soict.hust.edu.vn/contact.html,77,D:C1:rules+template,76,85
+http://sedic.soict.hust.edu.vn/contact.html,77,D:C2:rules-largest+template,77,86
+http://sedic.soict.hust.edu.vn/contact.html,77,D:E:css+template,77,86
+http://sedic.soict.hust.edu.vn/contact.html,77,L:learned (logistic regression),77,83
+http://sedic.soict.hust.edu.vn/contact.html,77,D:L:learned+template,77,83
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,A:baseline(jsoup link-density),0,88
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,B1:bte,7,46
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,B2:bte-link,0,35
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,C1:rules,0,60
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,C2:rules-largest,0,58
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,E:css(host rules; else rules-largest),7,141
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,D:B1:bte+template,7,46
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,D:B2:bte-link+template,0,35
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,D:C1:rules+template,0,60
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,D:C2:rules-largest+template,0,58
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,D:E:css+template,7,46
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,L:learned (logistic regression),0,0
+http://sis.hust.edu.vn/NewsModule/?ID=244,7,D:L:learned+template,0,0
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,A:baseline(jsoup link-density),610,638
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,B1:bte,606,606
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,B2:bte-link,606,606
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,C1:rules,573,604
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,C2:rules-largest,596,596
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,E:css(host rules; else rules-largest),596,596
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,D:B1:bte+template,582,582
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,D:B2:bte-link+template,582,582
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,D:C1:rules+template,555,555
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,D:C2:rules-largest+template,578,578
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,D:E:css+template,578,578
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,L:learned (logistic regression),610,614
+https://sofl.hust.edu.vn/bai-viet/-/asset_publisher/ATrC9k30TC0S/content/ths-tran-hong-thuy,610,D:L:learned+template,586,586
+https://srn.hust.edu.vn/news/14,196,A:baseline(jsoup link-density),172,177
+https://srn.hust.edu.vn/news/14,196,B1:bte,196,226
+https://srn.hust.edu.vn/news/14,196,B2:bte-link,188,188
+https://srn.hust.edu.vn/news/14,196,C1:rules,172,199
+https://srn.hust.edu.vn/news/14,196,C2:rules-largest,196,200
+https://srn.hust.edu.vn/news/14,196,E:css(host rules; else rules-largest),196,200
+https://srn.hust.edu.vn/news/14,196,D:B1:bte+template,194,224
+https://srn.hust.edu.vn/news/14,196,D:B2:bte-link+template,186,186
+https://srn.hust.edu.vn/news/14,196,D:C1:rules+template,170,170
+https://srn.hust.edu.vn/news/14,196,D:C2:rules-largest+template,194,194
+https://srn.hust.edu.vn/news/14,196,D:E:css+template,194,194
+https://srn.hust.edu.vn/news/14,196,L:learned (logistic regression),165,165
+https://srn.hust.edu.vn/news/14,196,D:L:learned+template,165,165
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,A:baseline(jsoup link-density),473,484
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,B1:bte,473,473
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,B2:bte-link,461,461
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,C1:rules,444,455
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,C2:rules-largest,473,488
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,E:css(host rules; else rules-largest),473,488
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,D:B1:bte+template,473,473
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,D:B2:bte-link+template,461,461
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,D:C1:rules+template,444,455
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,D:C2:rules-largest+template,473,488
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,D:E:css+template,473,488
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,L:learned (logistic regression),473,477
+https://users.soict.hust.edu.vn/phuongnh/thdl.html,473,D:L:learned+template,473,477
+https://ai4life.hust.edu.vn/category/schoolarship/,135,A:baseline(jsoup link-density),115,126
+https://ai4life.hust.edu.vn/category/schoolarship/,135,B1:bte,0,102
+https://ai4life.hust.edu.vn/category/schoolarship/,135,B2:bte-link,22,22
+https://ai4life.hust.edu.vn/category/schoolarship/,135,C1:rules,6,17
+https://ai4life.hust.edu.vn/category/schoolarship/,135,C2:rules-largest,0,19
+https://ai4life.hust.edu.vn/category/schoolarship/,135,E:css(host rules; else rules-largest),0,19
+https://ai4life.hust.edu.vn/category/schoolarship/,135,D:B1:bte+template,0,102
+https://ai4life.hust.edu.vn/category/schoolarship/,135,D:B2:bte-link+template,22,22
+https://ai4life.hust.edu.vn/category/schoolarship/,135,D:C1:rules+template,6,17
+https://ai4life.hust.edu.vn/category/schoolarship/,135,D:C2:rules-largest+template,0,19
+https://ai4life.hust.edu.vn/category/schoolarship/,135,D:E:css+template,0,19
+https://ai4life.hust.edu.vn/category/schoolarship/,135,L:learned (logistic regression),105,105
+https://ai4life.hust.edu.vn/category/schoolarship/,135,D:L:learned+template,99,99
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,A:baseline(jsoup link-density),213,246
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,B1:bte,280,280
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,B2:bte-link,280,280
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,C1:rules,285,304
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,C2:rules-largest,285,285
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,E:css(host rules; else rules-largest),285,285
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,D:B1:bte+template,280,280
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,D:B2:bte-link+template,280,280
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,D:C1:rules+template,285,285
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,D:C2:rules-largest+template,285,285
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,D:E:css+template,285,285
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,L:learned (logistic regression),285,285
+https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/hoi-thao-len-cuu-merino,285,D:L:learned+template,285,285
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,A:baseline(jsoup link-density),46,74
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,B1:bte,0,15
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,B2:bte-link,0,15
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,C1:rules,6,29
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,C2:rules-largest,12,27
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,E:css(host rules; else rules-largest),12,27
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,D:B1:bte+template,0,15
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,D:B2:bte-link+template,0,15
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,D:C1:rules+template,6,29
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,D:C2:rules-largest+template,12,27
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,D:E:css+template,12,27
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,L:learned (logistic regression),30,30
+https://ctt-sis.hust.edu.vn/Account/Login.aspx,46,D:L:learned+template,30,30
+http://ds.soict.hust.edu.vn/?m=20180316,49,A:baseline(jsoup link-density),49,65
+http://ds.soict.hust.edu.vn/?m=20180316,49,B1:bte,26,58
+http://ds.soict.hust.edu.vn/?m=20180316,49,B2:bte-link,26,26
+http://ds.soict.hust.edu.vn/?m=20180316,49,C1:rules,0,2
+http://ds.soict.hust.edu.vn/?m=20180316,49,C2:rules-largest,0,2
+http://ds.soict.hust.edu.vn/?m=20180316,49,E:css(host rules; else rules-largest),0,2
+http://ds.soict.hust.edu.vn/?m=20180316,49,D:B1:bte+template,26,26
+http://ds.soict.hust.edu.vn/?m=20180316,49,D:B2:bte-link+template,26,26
+http://ds.soict.hust.edu.vn/?m=20180316,49,D:C1:rules+template,0,2
+http://ds.soict.hust.edu.vn/?m=20180316,49,D:C2:rules-largest+template,0,2
+http://ds.soict.hust.edu.vn/?m=20180316,49,D:E:css+template,0,2
+http://ds.soict.hust.edu.vn/?m=20180316,49,L:learned (logistic regression),49,49
+http://ds.soict.hust.edu.vn/?m=20180316,49,D:L:learned+template,49,49
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,A:baseline(jsoup link-density),1408,1493
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,B1:bte,1408,1639
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,B2:bte-link,1402,1402
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,C1:rules,1402,1451
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,C2:rules-largest,1402,1402
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,E:css(host rules; else rules-largest),1402,1402
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,D:B1:bte+template,1408,1612
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,D:B2:bte-link+template,1402,1402
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,D:C1:rules+template,1402,1402
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,D:C2:rules-largest+template,1402,1402
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,D:E:css+template,1402,1402
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,L:learned (logistic regression),1408,1408
+https://fed.hust.edu.vn/vi/news/tin-tuc/tu-khoa-hoc-hanh-vi-den-bai-toan-nhan-su-doanh-nghiep-khoa-khoa-hoc-va-cong-nghe-giao-duc-tap-huan-xay-dung-va-kiem-dinh-cong-cu-danh-gia-nang-luc-tai-ngan-hang-dau-tu-va-phat-trien-viet-nam-bidv-302833.html,1408,D:L:learned+template,1408,1408
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,A:baseline(jsoup link-density),128,205
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,B1:bte,0,49
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,B2:bte-link,0,27
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,C1:rules,96,159
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,C2:rules-largest,128,157
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,E:css(host rules; else rules-largest),128,157
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,D:B1:bte+template,0,49
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,D:B2:bte-link+template,0,27
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,D:C1:rules+template,85,92
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,D:C2:rules-largest+template,117,124
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,D:E:css+template,117,124
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,L:learned (logistic regression),128,128
+https://fpt.hust.edu.vn/vi/sinh-vien/quy-dinh-bieu-mau/mau-don-phuc-tra-diem-thi-227358.html,128,D:L:learned+template,117,117
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,A:baseline(jsoup link-density),69,79
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,B1:bte,67,67
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,B2:bte-link,67,67
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,C1:rules,73,100
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,C2:rules-largest,73,132
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,E:css(host rules; else rules-largest),73,132
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,D:B1:bte+template,67,67
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,D:B2:bte-link+template,67,67
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,D:C1:rules+template,71,71
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,D:C2:rules-largest+template,71,71
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,D:E:css+template,71,71
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,L:learned (logistic regression),73,113
+https://icamt2024.smse.hust.edu.vn/conference-info/conference-venue,73,D:L:learned+template,71,71
+https://icech.hust.edu.vn/article/page/3/,732,A:baseline(jsoup link-density),731,731
+https://icech.hust.edu.vn/article/page/3/,732,B1:bte,731,731
+https://icech.hust.edu.vn/article/page/3/,732,B2:bte-link,560,560
+https://icech.hust.edu.vn/article/page/3/,732,C1:rules,561,582
+https://icech.hust.edu.vn/article/page/3/,732,C2:rules-largest,578,607
+https://icech.hust.edu.vn/article/page/3/,732,E:css(host rules; else rules-largest),578,607
+https://icech.hust.edu.vn/article/page/3/,732,D:B1:bte+template,731,731
+https://icech.hust.edu.vn/article/page/3/,732,D:B2:bte-link+template,560,560
+https://icech.hust.edu.vn/article/page/3/,732,D:C1:rules+template,561,561
+https://icech.hust.edu.vn/article/page/3/,732,D:C2:rules-largest+template,578,578
+https://icech.hust.edu.vn/article/page/3/,732,D:E:css+template,578,578
+https://icech.hust.edu.vn/article/page/3/,732,L:learned (logistic regression),732,732
+https://icech.hust.edu.vn/article/page/3/,732,D:L:learned+template,732,732
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,A:baseline(jsoup link-density),241,245
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,B1:bte,301,301
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,B2:bte-link,301,301
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,C1:rules,290,353
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,C2:rules-largest,311,311
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,E:css(host rules; else rules-largest),311,311
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,D:B1:bte+template,301,301
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,D:B2:bte-link+template,301,301
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,D:C1:rules+template,290,290
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,D:C2:rules-largest+template,309,309
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,D:E:css+template,309,309
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,L:learned (logistic regression),322,327
+https://icpmat-icamt.hust.edu.vn/vietnam-visa.html,322,D:L:learned+template,320,320
+https://library.hust.edu.vn/vi/node/1566,681,A:baseline(jsoup link-density),575,590
+https://library.hust.edu.vn/vi/node/1566,681,B1:bte,654,654
+https://library.hust.edu.vn/vi/node/1566,681,B2:bte-link,654,654
+https://library.hust.edu.vn/vi/node/1566,681,C1:rules,666,707
+https://library.hust.edu.vn/vi/node/1566,681,C2:rules-largest,681,681
+https://library.hust.edu.vn/vi/node/1566,681,E:css(host rules; else rules-largest),666,666
+https://library.hust.edu.vn/vi/node/1566,681,D:B1:bte+template,654,654
+https://library.hust.edu.vn/vi/node/1566,681,D:B2:bte-link+template,654,654
+https://library.hust.edu.vn/vi/node/1566,681,D:C1:rules+template,666,666
+https://library.hust.edu.vn/vi/node/1566,681,D:C2:rules-largest+template,681,681
+https://library.hust.edu.vn/vi/node/1566,681,D:E:css+template,666,666
+https://library.hust.edu.vn/vi/node/1566,681,L:learned (logistic regression),681,685
+https://library.hust.edu.vn/vi/node/1566,681,D:L:learned+template,681,681
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,A:baseline(jsoup link-density),167,186
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,B1:bte,199,199
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,B2:bte-link,126,126
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,C1:rules,81,91
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,C2:rules-largest,111,129
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,E:css(host rules; else rules-largest),111,129
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,D:B1:bte+template,192,192
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,D:B2:bte-link+template,126,126
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,D:C1:rules+template,80,80
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,D:C2:rules-largest+template,111,111
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,D:E:css+template,111,111
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,L:learned (logistic regression),202,211
+http://mso.soict.hust.edu.vn/?limit=2&page_id=17,203,D:L:learned+template,193,193
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,A:baseline(jsoup link-density),146,287
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,B1:bte,76,588
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,B2:bte-link,0,200
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,C1:rules,93,329
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,C2:rules-largest,0,224
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,E:css(host rules; else rules-largest),0,224
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,D:B1:bte+template,70,70
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,D:B2:bte-link+template,0,200
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,D:C1:rules+template,72,72
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,D:C2:rules-largest+template,0,224
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,D:E:css+template,0,224
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,L:learned (logistic regression),140,151
+https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/5853016458526721,146,D:L:learned+template,93,93

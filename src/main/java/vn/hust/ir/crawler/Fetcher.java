@@ -20,6 +20,7 @@ public final class Fetcher {
     public static final class Result {
         public int status;
         public String location;
+        public String lastModified;
         public long retryAfterMs;
         public String contentType = "";
         public String charset;
@@ -75,6 +76,7 @@ public final class Fetcher {
             try (InputStream body = in) {
                 r.status = resp.statusCode();
                 r.location = resp.headers().firstValue("location").orElse(null);
+                r.lastModified = resp.headers().firstValue("last-modified").orElse(null);
                 try {
                     r.retryAfterMs = Long.parseLong(resp.headers().firstValue("retry-after").orElse("0").trim()) * 1000;
                 } catch (NumberFormatException ignored) { }

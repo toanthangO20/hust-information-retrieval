@@ -33,7 +33,7 @@ import vn.hust.ir.search.SearchEngine;
  *   | dense | hybrid[:k1=,b=,w=,rrf=]
  */
 public final class EvalMain {
-    private static final Path INDEX = Paths.get("index", "ver1");
+    private static Path INDEX = Paths.get("index", "ver1");
     private static final Path MODEL = Paths.get("models", "multilingual-e5-small");
     private static final Path DENSE = Paths.get("index", "ver1", "dense_e5small_int8_256.bin");
 
@@ -45,6 +45,7 @@ public final class EvalMain {
         }
         Map<String, String> o = new HashMap<>();
         for (int i = 1; i + 1 < args.length; i += 2) o.put(args[i].replaceFirst("^--", ""), args[i + 1]);
+        if (o.containsKey("index")) INDEX = Paths.get(o.get("index"));   // chỉ mục khác (vd. index/ver1x có main_t, anchor_t)
         switch (args[0]) {
             case "embed": embed(o); break;
             case "run": run(o); break;
@@ -121,6 +122,21 @@ public final class EvalMain {
                     return vsm;
                 case "bm25":
                     return new Bm25Retriever(corpus, f(p, "k1", 1.2f), f(p, "b", 0.75f));
+                case "bm25x": {      // BM25 trên chỉ mục ver1x: ctx=full|main [+anchor], aw=trọng số văn bản liên kết, pr=tiên nghiệm PageRank
+                    String ctx = p.getOrDefault("ctx", "full");
+                    List<String> fl = new ArrayList<>(List.of("title_t", ctx.contains("main") ? "main_t" : "content", "url_t"));
+                    List<Float> bl = new ArrayList<>(List.of(3.0f, 1.0f, 0.6f));
+                    if (ctx.contains("anchorc")) {           // văn bản liên kết chỉ từ các liên kết nằm trong nội dung chính
+                        fl.add("anchor_c");
+                        bl.add(f(p, "aw", 1.5f));
+                    } else if (ctx.contains("anchor")) {     // mọi văn bản liên kết (đã bỏ neo vô nghĩa / neo chung)
+                        fl.add("anchor_t");
+                        bl.add(f(p, "aw", 1.5f));
+                    }
+                    float[] bs = new float[bl.size()];
+                    for (int q = 0; q < bs.length; q++) bs[q] = bl.get(q);
+                    return new FieldBm25Retriever(corpus, f(p, "k1", 1.2f), f(p, "b", 0.75f), fl.toArray(new String[0]), bs, f(p, "pr", 0f));
+                }
                 case "prf":
                     return new PrfRetriever(corpus, f(p, "k1", 1.2f), f(p, "b", 0.75f), i(p, "docs", 10), i(p, "terms", 20),
                             f(p, "lambda", 0.5f));
@@ -293,8 +309,16 @@ public final class EvalMain {
     /** Trung bình từng độ đo của một hệ thống trên các truy vấn của `qids`; mảng [truy vấn][độ đo]. */
     private static double[][] perQuery(Map<String, List<Integer>> run, Map<String, Map<Integer, Integer>> qrels, List<String> qids) {
         double[][] m = new double[qids.size()][];
-        for (int i = 0; i < qids.size(); i++)
-            m[i] = score(run.getOrDefault(qids.get(i), new ArrayList<>()), qrels.getOrDefault(qids.get(i), new HashMap<>()));
+        for (int i = 0; i < qids.size(); i++) {
+            List<Integer> ranked = run.getOrDefault(qids.get(i), new ArrayList<>());
+            Map<Integer, Integer> rels = qrels.getOrDefault(qids.get(i), new HashMap<>());
+            if (CONDENSED) {                    // danh sách rút gọn: bỏ tài liệu chưa có nhãn (giảm thiên lệch pool với hệ thống mới)
+                List<Integer> c = new ArrayList<>();
+                for (int d : ranked) if (rels.containsKey(d)) c.add(d);
+                ranked = c;
+            }
+            m[i] = score(ranked, rels);
+        }
         return m;
     }
 
@@ -304,7 +328,10 @@ public final class EvalMain {
         return x;
     }
 
+    private static boolean CONDENSED = false;
+
     private static void evaluate(Map<String, String> o) throws Exception {
+        CONDENSED = "true".equals(o.get("condensed"));
         List<Topic> topics = EvalIo.readTopics(Paths.get(o.getOrDefault("topics", "eval/topics.tsv")), o.getOrDefault("split", "all"));
         Map<String, Map<Integer, Integer>> qrels = EvalIo.readQrels(Paths.get(o.get("qrels")));
         // chỉ giữ truy vấn đã có nhãn

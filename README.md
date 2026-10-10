@@ -86,3 +86,42 @@ API: `GET /api/search?q=&host=&type=&page=&size=` và `GET /api/stats` (JSON).
 | `src/main/resources/web` | Giao diện (HTML/CSS/JS thuần, phông Be Vietnam Pro) |
 
 `documents.jsonl` (~116 MB) và `index/` (~123 MB) không đưa vào git; dựng lại bằng hai lệnh đầu. `dataset/ver1/manifest.json` có số liệu và SHA-256.
+
+---
+
+# Bước 3 — Bóc tách nội dung, đồ thị liên kết, MongoDB
+
+Tìm **khối nội dung chính** của từng trang (Ch10 tr.15–18), bóc tiêu đề / ngày đăng / tác giả / nguồn, văn bản tài liệu, và dựng
+**đồ thị liên kết nguồn → đích : văn bản mô tả** (gồm cả ảnh và tài liệu). Chi tiết thuật toán, đánh giá: `report/BAO_CAO.md` (Phần C);
+lược đồ dữ liệu: `docs/SCHEMA.md`; tập vàng và quy ước gán nhãn: `eval/extract/README.md`.
+
+```
+scripts\extract.bat snapshot          :: P1: tải lại urls_valid.txt, lưu HTML/tài liệu thô vào data\raw\ (chạy lại được, ~1 giờ)
+scripts\extract.bat run               :: P2-P5: tìm khối nội dung + metadata + liên kết -> data\extract\v1\pages.jsonl, links.jsonl
+scripts\extract.bat graph             :: gộp đích về URL chuẩn, văn bản neo, PageRank -> pages.final.jsonl, links.final.jsonl
+scripts\extract.bat index             :: chỉ mục thử nghiệm index\ver1x (main_t, anchor_t, anchor_c, PageRank)
+scripts\extract.bat load              :: P6: nạp MongoDB (mặc định mongodb://localhost:27017, CSDL hust_ir)
+scripts\extract_all.bat               :: run + graph + index
+scripts\extract.bat eval  --gold eval\extract\gold_test.tsv --report ...   :: đánh giá thuật toán tìm khối (so 13 cấu hình)
+scripts\extract.bat eval-meta --gold eval\extract\gold_test.tsv --report ... :: đánh giá tiêu đề/ngày/tác giả
+scripts\extract.bat train-blocks      :: huấn luyện bộ phân loại khối (hồi quy logistic) trên tập vàng dev
+scripts\extract.bat show --url URL    :: chẩn đoán một trang: khối, nhãn nội dung, metadata
+scripts\eval.bat run --index index\ver1x --systems "bm25x:ctx=main+anchor,aw=0.3;..." --split dev --out ...  :: so sánh truy hồi
+```
+
+MongoDB: `scripts\mongo.bat` (MongoDB 7.0.14 bản zip trong `tools\mongodb`, dữ liệu `data\mongo`; hoặc `docker run -d -p 27017:27017 mongo:7`)
+rồi `scripts\extract.bat load` (tuỳ chọn `--uri`, `--db`, `--keep`). Đã nạp và kiểm tra: `hust_ir.pages` 80.060, `hust_ir.links` 1.601.816.
+Không có MongoDB vẫn dùng được toàn bộ kết quả ở dạng JSONL (`data\extract\v1\*.final.jsonl`, cùng lược đồ).
+
+| Lớp (`vn.hust.ir.extract`) | Vai trò |
+|---|---|
+| `Snapshot`, `RawStore` | Tải lại và lưu HTML/tài liệu thô (gzip) + manifest; theo chuyển hướng, thử lại, lịch thiệp theo host |
+| `PageModel` | DOM → dãy token (thẻ/từ) và các khối văn bản |
+| `BlockFinder` | BTE (slide Ch10), phân loại đặc trưng nông, quy tắc CSS theo host, lọc khuôn mẫu theo host, bộ phân loại học có giám sát |
+| `BlockFeatures`, `LogReg`, `BlockTrainer` | Đặc trưng khối, hồi quy logistic, huấn luyện + kiểm định chéo |
+| `MetadataExtractor`, `DocExtractor` | Tiêu đề / ngày đăng / tác giả / nguồn (HTML), metadata tệp (Tika) |
+| `LinkExtractor`, `GraphBuilder` | Cạnh `a/img/iframe`, văn bản neo, `inContent`, quy đích về URL chuẩn, PageRank |
+| `MongoLoader`, `ExtractIndexer` | Nạp MongoDB có `$jsonSchema`; chỉ mục thử nghiệm cho so sánh truy hồi |
+| `BlockEval`, `GoldSheet` | Đánh giá trên tập vàng; tạo phiếu gán nhãn |
+
+`data/raw` (~1,5 GB) và `data/extract` (~1,4 GB) không đưa vào git.

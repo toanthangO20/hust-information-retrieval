@@ -1,0 +1,3639 @@
+##### 1 https://act.hust.edu.vn/vi/organs/vieworg/Vien-cong-nghe-dieu-khien-va-tu-dong-hoa-1/
+title: Danh sách cán bộ
+og:title: Danh sách cán bộ
+pub:  | author: Viện Công nghệ Điều khiển và Tự động hóa
+h1: Viện Công nghệ Điều khiển và Tự động hóa
+0|w5|l0.0|div|Nhập từ khóa tìm kiếm
+1|w6|l1.0|li|Đại học Bách khoa Hà Nội
+2|w9|l1.0|li|Viện Công nghệ Điều khiển và Tự động hóa
+3|w2|l1.0|li|Đại học
+4|w4|l1.0|li|Bách khoa Hà Nội
+5|w3|l1.0|li|Lịch làm việc
+6|w2|l1.0|li|Liên hệ
+7|w2|l1.0|li|Đăng nhập
+8|w2|l1.0|div|Giới thiệu
+9|w3|l1.0|div|Giới thiệu chung
+10|w7|l1.0|div|Quá trình hình thành và phát triển
+11|w4|l1.0|div|Cơ sở vật chất
+12|w3|l1.0|div|Văn phòng viện
+13|w4|l1.0|div|Cơ cấu tổ chức
+14|w4|l1.0|div|Danh sách cán bộ
+15|w2|l1.0|div|Tin Tức
+16|w2|l1.0|div|Tin tức
+17|w2|l1.0|div|Thông báo
+18|w2|l1.0|div|Tin bài
+19|w2|l1.0|div|Sự kiện
+20|w5|l1.0|div|Sự kiện sắp diễn ra
+21|w5|l1.0|div|Sự kiện đã diễn ra
+22|w2|l1.0|div|Học bổng
+23|w2|l1.0|div|Đào tạo
+24|w3|l1.0|div|Giới thiệu chung
+25|w4|l1.0|div|Đào tạo tiến sĩ
+26|w4|l1.0|div|Đào tạo công nghiệp
+27|w4|l1.0|div|Phòng lab nghiên cứu
+28|w9|l1.0|div|Phòng LAB Hệ thống và Thiết bị thông minh
+29|w10|l1.0|div|Phòng LAB Robot thông minh và Điều khiển chuyển động
+30|w12|l1.0|div|Phòng LAB Điều khiển và tối ưu các quá trình công nghiệp
+31|w11|l1.0|div|Phòng LAB Điều khiển và tối ưu hệ thống năng lượng
+32|w9|l1.0|div|Phòng LAB Tự động hóa Sản xuất kinh doanh
+33|w12|l1.0|div|Phòng LAB Động học hệ thống và các phương pháp điều khiển
+34|w6|l1.0|div|Lab hợp tác doanh nghiệp EVSE
+35|w6|l1.0|div|Lab hợp tác doanh nghiệp KIMSEN
+36|w7|l1.0|div|Lab hợp tác doanh nghiệp Hải Anh
+37|w2|l1.0|div|Nghiên cứu
+38|w4|l1.0|div|Lĩnh vực nghiên cứu
+39|w4|l1.0|div|Đề tài nghiên cứu
+40|w4|l1.0|div|Sản phẩm nghiên cứu
+41|w4|l1.0|div|Công bố khoa học
+42|w2|l1.0|div|Hợp tác
+43|w4|l1.0|div|Hợp tác trong nước
+44|w4|l1.0|div|Hợp tác quốc tế
+45|w2|l1.0|li|Trang nhất
+46|w2|l1.0|li|Giới thiệu
+47|w3|l1.0|li|Giới thiệu chung
+48|w7|l1.0|li|Quá trình hình thành và phát triển
+49|w4|l1.0|li|Cơ sở vật chất
+50|w3|l1.0|li|Văn phòng viện
+51|w4|l1.0|li|Cơ cấu tổ chức
+52|w4|l1.0|li|Danh sách cán bộ
+53|w2|l1.0|li|Tin Tức
+54|w2|l1.0|li|Tin tức
+55|w2|l1.0|li|Thông báo
+56|w2|l1.0|li|Tin bài
+57|w2|l1.0|li|Sự kiện
+58|w5|l1.0|li|Sự kiện sắp diễn ra
+59|w5|l1.0|li|Sự kiện đã diễn ra
+60|w2|l1.0|li|Học bổng
+61|w2|l1.0|li|Đào tạo
+62|w3|l1.0|li|Giới thiệu chung
+63|w4|l1.0|li|Đào tạo tiến sĩ
+64|w4|l1.0|li|Đào tạo công nghiệp
+65|w4|l1.0|li|Phòng lab nghiên cứu
+66|w9|l1.0|li|Phòng LAB Hệ thống và Thiết bị thông minh
+67|w10|l1.0|li|Phòng LAB Robot thông minh và Điều khiển chuyển động
+68|w12|l1.0|li|Phòng LAB Điều khiển và tối ưu các quá trình công nghiệp
+69|w11|l1.0|li|Phòng LAB Điều khiển và tối ưu hệ thống năng lượng
+70|w9|l1.0|li|Phòng LAB Tự động hóa Sản xuất kinh doanh
+71|w12|l1.0|li|Phòng LAB Động học hệ thống và các phương pháp điều khiển
+72|w6|l1.0|li|Lab hợp tác doanh nghiệp EVSE
+73|w6|l1.0|li|Lab hợp tác doanh nghiệp KIMSEN
+74|w7|l1.0|li|Lab hợp tác doanh nghiệp Hải Anh
+75|w2|l1.0|li|Nghiên cứu
+76|w4|l1.0|li|Lĩnh vực nghiên cứu
+77|w4|l1.0|li|Đề tài nghiên cứu
+78|w4|l1.0|li|Sản phẩm nghiên cứu
+79|w4|l1.0|li|Công bố khoa học
+80|w2|l1.0|li|Hợp tác
+81|w4|l1.0|li|Hợp tác trong nước
+82|w4|l1.0|li|Hợp tác quốc tế
+83|w9|l0.0|div|Viện công nghệ điều khiển và tự động hóa
+84|w4|l1.0|h3|PGS.TS. Nguyễn Quang Địch
+85|w3|l0.0|p|Giảng viên dich.nguyenquang@hust.edu.vn
+86|w4|l1.0|h3|TS. Phạm Quang Đăng
+87|w2|l0.0|p|Giảng viên
+88|w4|l1.0|h3|PGS.TS. Nguyễn Kiên Trung
+89|w3|l0.0|p|Giảng viên trung.nguyenkien1@hust.edu.vn
+90|w4|l1.0|h3|PGS.TS. Bùi Đăng Thảnh
+91|w2|l0.0|p|Giảng viên
+92|w4|l1.0|h3|GS.TSKH. Nguyễn Phùng Quang
+93|w2|l0.0|p|Giảng viên
+94|w4|l1.0|h3|PGS.TS. Trần Trọng Minh
+95|w2|l0.0|p|Giảng viên
+96|w4|l1.0|h3|PGS.TS. Vũ Hoàng Phương
+97|w3|l0.0|p|Giảng viên phuong.vuhoang@hust.edu.vn
+98|w4|l1.0|h3|TS. Nguyễn Anh Tân
+99|w2|l0.0|p|Giảng viên
+100|w4|l1.0|h3|TS. Bùi Đăng Quang
+101|w2|l0.0|p|Giảng viên
+102|w4|l1.0|h3|PGS.TS. Nguyễn Tùng Lâm
+103|w3|l0.0|p|Giảng viên lam.nguyentung@hust.edu.vn
+104|w1|l1.0|li|«
+105|w1|l1.0|li|1
+106|w1|l1.0|li|2
+107|w1|l1.0|li|3
+108|w1|l1.0|li|4
+109|w1|l1.0|li|»
+110|w3|l1.0|li|Giới thiệu chung
+111|w7|l1.0|li|Quá trình hình thành và phát triển
+112|w4|l1.0|li|Cơ sở vật chất
+113|w3|l1.0|li|Văn phòng viện
+114|w4|l1.0|li|Cơ cấu tổ chức
+115|w4|l1.0|li|Danh sách cán bộ
+116|w2|l0.0|div|Tìm kiếm
+117|w2|l0.0|div|Họ tên:
+118|w2|l0.0|div|Chức vụ:
+119|w3|l0.0|div|Thuộc đơn vị:
+120|w4|l0.0|div|Bản đồ chỉ dẫn
+121|w14|l0.0|div|Văn phòng Viện Địa chỉ: Phòng 202 - Tòa nhà Công nghệ cao (C1B)
+122|w6|l1.0|div|Đại học Bách khoa Hà Nội
+123|w3|l0.0|div|Mạng xã hội
+124|w4|l0.0|div|Sơ đồ trang act.hust.edu.vn
+125|w5|l1.0|div|Xem sơ đồ trang ...
+126|w2|l0.0|div|Liên hệ
+127|w4|l0.0|h3|Thông tin liên hệ
+128|w4|l0.0|li|(+84) 4 3868 3518
+129|w1|l1.0|li|act@hust.edu.vn
+130|w27|l0.0|div|Bản quyền thuộc về Đại học Bách khoa Hà Nội Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội Điện thoại: 024 38…
+131|w22|l0.5|div|Bạn đã không sử dụng Site, Bấm vào đây để duy trì trạng thái đăng nhập . Thời gian chờ: 60 giây
+
+##### 2 https://bkcs.hust.edu.vn/news/recap-bksec-training/
+title: Recap BKSEC training – Bach Khoa Cybersecurity Center
+og:title: 
+pub:  | author: 
+h1: Recap BKSEC training
+0|w4|l1.0|div|Bach Khoa Cybersecurity Center
+1|w1|l1.0|li|Home
+2|w1|l1.0|li|People
+3|w1|l1.0|li|Projects
+4|w1|l1.0|li|Publications
+5|w1|l1.0|li|Courses
+6|w1|l1.0|li|Resources
+7|w1|l1.0|li|News
+8|w4|l1.0|div|Bach Khoa Cybersecurity Center
+9|w1|l1.0|li|Home
+10|w1|l1.0|li|People
+11|w1|l1.0|li|Projects
+12|w1|l1.0|li|Publications
+13|w1|l1.0|li|Courses
+14|w1|l1.0|li|Resources
+15|w1|l1.0|li|News
+16|w1|l1.0|li|Home
+17|w1|l1.0|li|News
+18|w3|l0.0|li|Recap BKSEC training
+19|w3|l0.0|h1|Recap BKSEC training
+20|w45|l0.0|p|The two-week BKSEC training session has concluded, garnering significant interest from students at Hanoi Unive…
+21|w27|l0.0|p|[ BKSEC is a student club within the School of Information and Communication Technology. The club has arranged…
+22|w1|l1.0|div|Previous
+23|w9|l1.0|p|Field trip to the Muong Sang 3 hydropower plant
+24|w1|l1.0|div|Next
+25|w5|l1.0|p|Field trip to manufacturing facilities
+26|w1|l0.0|form|Search
+27|w1|l0.0|h2|Projects
+28|w10|l1.0|h6|A comprehensive solution for the security of industrial control systems
+29|w15|l1.0|h6|An AI-driven Security Information and Event Management system for enhancing the security of e-Government servi…
+30|w1|l0.0|h2|News
+31|w5|l1.0|h6|Field trip to manufacturing facilities
+32|w3|l1.0|h6|Recap BKSEC training
+33|w9|l1.0|h6|Field trip to the Muong Sang 3 hydropower plant
+34|w1|l0.0|h2|Courses
+35|w3|l1.0|h6|Cyber Security Essentials
+36|w2|l1.0|h6|Malware Analysis
+37|w4|l1.0|h1|Bach Khoa Cybersecurity Center
+38|w6|l0.0|p|Address: Room 409, B1 Building, HUST
+39|w2|l0.5|p|E-mail: bkcs@hust.edu.vn
+40|w2|l0.5|p|Website: https://bkcs.hust.edu.vn
+41|w1|l0.0|h2|Research
+42|w1|l1.0|li|Projects
+43|w1|l1.0|li|Publications
+44|w1|l1.0|li|Resources
+45|w1|l0.0|h2|Social
+46|w2|l1.0|p|BKCS Center
+
+##### 3 https://congnghegiaoduc.hust.edu.vn/gui-thong-tin-thanh-cong-34253
+title: Gửi thông tin thành công
+og:title: Gửi thông tin thành công
+pub:  | author: 
+h1: 
+0|w31|l0.0|p|Quý khách đã gửi thông tin thành công. Chúng tôi sẽ liên hệ trong thời gian sớm nhất! You have successfully se…
+1|w13|l0.0|p|Quý khách sẽ được tự động chuyển về trang trước trong 5 giây
+2|w2|l1.0|body|HOTLINE 0902.282.489
+3|w1|l1.0|div|1
+4|w4|l1.0|div|Bạn cần hỗ trợ?
+
+##### 4 https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx
+title: 
+og:title: 
+pub:  | author: 
+h1: 
+0|w4|l0.0|div|Đào tạo Đại học
+1|w5|l0.0|div|Đào tạo Sau đại học
+2|w4|l0.0|div|Công tác Sinh viên
+3|w4|l0.0|div|Tra cứu văn bằng
+4|w1|l0.0|div|Item
+5|w4|l0.0|div|Đào tạo Đại học
+6|w5|l0.0|div|Đào tạo Sau đại học
+7|w4|l0.0|div|Công tác Sinh viên
+8|w4|l0.0|div|Tra cứu văn bằng
+9|w1|l0.0|div|Item
+10|w8|l0.5|h2|TRA CỨU VĂN BẰNG TRA CỨU CHỨNG CHỈ
+11|w2|l0.0|div|Họ tên
+12|w4|l0.0|div|Mã số sinh viên
+13|w2|l0.0|div|Ngày sinh
+14|w3|l0.0|div|Năm tốt nghiệp
+15|w3|l0.0|div|Số hiệu bằng
+16|w4|l0.0|td|Điền mã xác thực
+17|w5|l0.0|td|The submitted code is incorrect
+18|w2|l0.0|div|Tìm kiếm
+19|w21|l0.0|div|Chú ý: Trường nào không có thông tin thì để trống. Dữ liệu chỉ hiển thị tối đa 10 kết quả.
+20|w6|l0.0|div|Đại học Bách Khoa Hà Nội
+21|w9|l0.0|p|Số 1 Đại Cồ Việt, Bạch Mai, Hà Nội
+
+##### 5 http://ds.soict.hust.edu.vn/?m=202508
+title: August 2025 – Data Science Laboratory
+og:title: 
+pub:  | author: 
+h1: Month: August 2025
+0|w3|l1.0|h2|Data Science Laboratory
+1|w1|l1.0|li|Home
+2|w1|l1.0|li|Members
+3|w1|l1.0|li|Research
+4|w1|l1.0|li|Projects
+5|w1|l1.0|li|Publications
+6|w1|l1.0|li|Contact
+7|w3|l0.0|h1|Month: August 2025
+8|w7|l1.0|h3|Seminar by Prof. Can Le on 21/8/2025
+9|w4|l0.8|div|2025-08-17 Khoat Than 0
+10|w26|l0.0|p|Professor Can Le (from University of California, Davis, USA) will visit our Lab to discuss future collaboratio…
+11|w2|l0.0|h4|Recent Posts
+12|w7|l1.0|li|6 papers got accepted at NeurIPS 2026
+13|w7|l1.0|li|4 papers got accepted at ICML 2026
+14|w8|l1.0|li|A new paper got accepted at CVPR 2026
+15|w8|l1.0|li|A new paper got accepted at ICLR 2026
+16|w4|l1.0|li|Summary of Year 2025
+17|w1|l0.0|h4|Categories
+18|w2|l1.0|li|Industrial partners
+19|w1|l1.0|li|News
+20|w1|l1.0|li|Opportunities
+21|w2|l1.0|li|Recent projects
+22|w2|l1.0|li|Recent publications
+23|w2|l1.0|li|Social activities
+24|w2|l1.0|li|Some faces
+25|w1|l1.0|li|Sponsors
+26|w2|l0.0|caption|August 2025
+27|w1|l0.0|th|M
+28|w1|l0.0|th|T
+29|w1|l0.0|th|W
+30|w1|l0.0|th|T
+31|w1|l0.0|th|F
+32|w1|l0.0|th|S
+33|w1|l0.0|th|S
+34|w2|l1.0|td|« Jul
+35|w2|l1.0|td|Jan »
+36|w1|l0.0|td|1
+37|w1|l0.0|td|2
+38|w1|l0.0|td|3
+39|w1|l0.0|td|4
+40|w1|l0.0|td|5
+41|w1|l0.0|td|6
+42|w1|l0.0|td|7
+43|w1|l0.0|td|8
+44|w1|l0.0|td|9
+45|w1|l0.0|td|10
+46|w1|l0.0|td|11
+47|w1|l0.0|td|12
+48|w1|l0.0|td|13
+49|w1|l0.0|td|14
+50|w1|l0.0|td|15
+51|w1|l0.0|td|16
+52|w1|l1.0|td|17
+53|w1|l0.0|td|18
+54|w1|l0.0|td|19
+55|w1|l0.0|td|20
+56|w1|l0.0|td|21
+57|w1|l0.0|td|22
+58|w1|l0.0|td|23
+59|w1|l0.0|td|24
+60|w1|l0.0|td|25
+61|w1|l0.0|td|26
+62|w1|l0.0|td|27
+63|w1|l0.0|td|28
+64|w1|l0.0|td|29
+65|w1|l0.0|td|30
+66|w1|l0.0|td|31
+67|w9|l0.2|p|Copyright © 2026 | WordPress Theme by MH Themes
+
+##### 6 https://fed.hust.edu.vn/vi/news/tin-tuc/hoi-nghi-svnckh-lan-thu-39-cua-phan-ban-spkt-2021-2022-276382.html
+title: Hội nghị SVNCKH lần thứ 39 của phân ban SPKT (2021-2022)
+og:title: Hội nghị SVNCKH lần thứ 39 của phân ban SPKT (2021-2022)
+pub: 2022-06-09+0713:12:00 | author: Khoa Khoa học & Công nghệ giáo dục
+h1: Hội nghị SVNCKH lần thứ 39 của phân ban SPKT (2021-2022)
+0|w5|l0.0|div|Nhập từ khóa tìm kiếm
+1|w6|l1.0|li|Đại học Bách khoa Hà Nội
+2|w8|l1.0|li|Khoa Khoa học & Công nghệ giáo dục
+3|w6|l1.0|li|Đại học Bách khoa Hà Nội
+4|w4|l1.0|li|Khoa Khoa học &
+5|w4|l1.0|li|Công nghệ giáo dục
+6|w3|l1.0|li|Lịch công tác
+7|w3|l1.0|li|Thư viện ảnh
+8|w1|l1.0|li|Video
+9|w2|l1.0|div|Giới thiệu
+10|w3|l1.0|div|Giới thiệu chung
+11|w5|l1.0|div|Thư ngỏ của Trưởng khoa
+12|w4|l1.0|div|Lịch sử hình thành
+13|w4|l1.0|div|Kiểm định chất lượng
+14|w5|l1.0|div|Cán bộ - Giảng viên
+15|w4|l1.0|div|Các nhóm chuyên môn
+16|w1|l1.0|div|CNGD
+17|w1|l1.0|div|QLGD
+18|w12|l1.0|div|Lý luận - Phương pháp dạy học và Tâm lý ứng dụng
+19|w2|l1.0|div|Tin tức
+20|w2|l1.0|div|Đào tạo
+21|w2|l1.0|div|Đại học
+22|w3|l1.0|div|Sau đại học
+23|w2|l1.0|div|Cao học
+24|w3|l1.0|div|Nghiên cứu sinh
+25|w4|l1.0|div|Danh sách học viên
+26|w4|l1.0|div|Đào tạo ngắn hạn
+27|w2|l1.0|div|Tuyển sinh
+28|w4|l1.0|div|Tuyển sinh Đại học
+29|w5|l1.0|div|Tuyển sinh Sau Đại học
+30|w2|l1.0|div|Nghiên cứu
+31|w3|l1.0|div|Thông tin chung
+32|w5|l1.0|div|Đề tài - Dự án
+33|w2|l1.0|div|Hợp tác
+34|w4|l1.0|div|Đối tác trong nước
+35|w4|l1.0|div|Đối tác quốc tế
+36|w5|l1.0|div|Liên hệ để hợp tác
+37|w2|l1.0|div|Sinh viên
+38|w4|l1.0|div|Hoạt động nổi bật
+39|w3|l1.0|div|Đoàn - Hội
+40|w4|l1.0|div|Cơ hội việc làm
+41|w2|l1.0|div|Học bổng
+42|w2|l1.0|div|Hỗ trợ
+43|w2|l1.0|li|Trang nhất
+44|w2|l1.0|li|Giới thiệu
+45|w3|l1.0|li|Giới thiệu chung
+46|w5|l1.0|li|Thư ngỏ của Trưởng khoa
+47|w4|l1.0|li|Lịch sử hình thành
+48|w4|l1.0|li|Kiểm định chất lượng
+49|w5|l1.0|li|Cán bộ - Giảng viên
+50|w4|l1.0|li|Các nhóm chuyên môn
+51|w1|l1.0|li|CNGD
+52|w1|l1.0|li|QLGD
+53|w12|l1.0|li|Lý luận - Phương pháp dạy học và Tâm lý ứng dụng
+54|w2|l1.0|li|Tin tức
+55|w2|l1.0|li|Đào tạo
+56|w2|l1.0|li|Đại học
+57|w3|l1.0|li|Sau đại học
+58|w2|l1.0|li|Cao học
+59|w3|l1.0|li|Nghiên cứu sinh
+60|w4|l1.0|li|Danh sách học viên
+61|w4|l1.0|li|Đào tạo ngắn hạn
+62|w2|l1.0|li|Tuyển sinh
+63|w4|l1.0|li|Tuyển sinh Đại học
+64|w5|l1.0|li|Tuyển sinh Sau Đại học
+65|w2|l1.0|li|Nghiên cứu
+66|w3|l1.0|li|Thông tin chung
+67|w5|l1.0|li|Đề tài - Dự án
+68|w2|l1.0|li|Hợp tác
+69|w4|l1.0|li|Đối tác trong nước
+70|w4|l1.0|li|Đối tác quốc tế
+71|w5|l1.0|li|Liên hệ để hợp tác
+72|w2|l1.0|li|Sinh viên
+73|w4|l1.0|li|Hoạt động nổi bật
+74|w3|l1.0|li|Đoàn - Hội
+75|w4|l1.0|li|Cơ hội việc làm
+76|w2|l1.0|li|Học bổng
+77|w2|l1.0|li|Hỗ trợ
+78|w11|l0.0|h1|Hội nghị SVNCKH lần thứ 39 của phân ban SPKT (2021-2022)
+79|w5|l0.0|div|Thứ năm - 09/06/2022 13:12
+80|w54|l0.0|div|Viện Sư phạm Kỹ thuật chào đón hội nghị sinh viên NCHK lần thứ 39 Năm nay các báo cáo tại phân ban Sư phạm Kỹ …
+81|w18|l0.0|div|Viện Sư phạm Kỹ thuật kính mời cán bộ cùng các bạn sinh viên quan tâm tham dự.
+82|w5|l0.6|p|Tác giả: Biên tập 1
+83|w12|l0.0|p|Tổng số điểm của bài viết là: 0 trong 0 đánh giá
+84|w6|l0.0|div|Click để đánh giá bài viết
+85|w4|l0.0|p|Những tin mới hơn
+86|w20|l1.0|h4|Lễ ký kết thỏa thuận hợp tác giữa Viện Sư phạm Kỹ thuật & Công ty CP Edulive Toàn cầu
+87|w1|l0.0|li|(12/06/2022)
+88|w12|l1.0|h4|Cơ hội mới cho sinh viên Sư phạm Kỹ thuật Bách khoa
+89|w1|l0.0|li|(13/06/2022)
+90|w13|l1.0|h4|Kết quả tại hội nghị SVNCKH lần thứ 39 tại phân ban SPKT
+91|w1|l0.0|li|(18/06/2022)
+92|w12|l1.0|h4|Ngưỡng yêu cầu theo phương thức xét tuyển tài năng năm 2022
+93|w1|l0.0|li|(29/06/2022)
+94|w11|l1.0|h4|Sinh viên đạt học bổng khuyến khích học tập kỳ 2021-2
+95|w1|l0.0|li|(17/07/2022)
+96|w15|l1.0|h4|Gieo mầm mới cùng Khoa Giáo dục, Đại học Kỹ thuật TU Dresden, CHLB Đức
+97|w1|l0.0|li|(17/07/2022)
+98|w4|l0.0|p|Những tin cũ hơn
+99|w16|l1.0|h4|Công bố các nền tảng dạy học trực tuyến đáp ứng yêu cầu trong tháng 6/2022
+100|w1|l0.0|li|(26/05/2022)
+101|w7|l1.0|h4|Tin tuyển dụng - interns & freshers
+102|w1|l0.0|li|(23/05/2022)
+103|w8|l1.0|h4|Fieldtrip 2022 - Thăm quan học viện Viettel
+104|w1|l0.0|li|(23/05/2022)
+105|w12|l1.0|h4|Đại hội chi bộ viện Sư phạm Kỹ thuật nhiệm kỳ 2022-2024
+106|w1|l0.0|li|(23/05/2022)
+107|w11|l1.0|h4|Bùng nổ tọa đàm cho sinh viên trong lĩnh vực EdTech
+108|w1|l0.0|li|(23/05/2022)
+109|w14|l1.0|h4|TALKSHOW 3 KỸ NĂNG & TƯ DUY CHO BẠN TRẺ TRONG LĨNH VỰC EDTECH
+110|w1|l0.0|li|(19/05/2022)
+111|w4|l0.0|div|Bản đồ chỉ dẫn
+112|w13|l0.0|div|Khoa Khoa học & Công nghệ giáo dục ĐH Bách Khoa Hà Nội
+113|w6|l1.0|div|Đại học Bách khoa Hà Nội
+114|w3|l0.0|div|Mạng xã hội
+115|w4|l0.0|div|Danh sách cán bộ
+116|w9|l1.0|li|Bộ môn Khoa học & Công nghệ Giáo dục
+117|w8|l1.0|li|Bộ môn Sư phạm các ngành kỹ thuật
+118|w4|l0.0|div|Sơ đồ trang web
+119|w5|l1.0|div|Xem sơ đồ trang ...
+120|w29|l0.0|div|Bản quyền thuộc về Đại học Bách khoa Hà Nội Địa chỉ: Số 1 Đại Cồ Việt, phường Bạch Mai, Thành phố Hà Nội Điện …
+121|w22|l0.5|div|Bạn đã không sử dụng Site, Bấm vào đây để duy trì trạng thái đăng nhập . Thời gian chờ: 60 giây
+122|w7|l0.0|div|Giới thiệu bài viết cho bạn bè
+
+##### 7 https://fpt.hust.edu.vn/vi/bo-mon/tu-tuong-ho-chi-minh/bm-tthcm-sach-xuat-ban-225190.html
+title: BM TTHCM Sách xuất bản
+og:title: BM TTHCM Sách xuất bản
+pub: 2020-11-23+0703:03:00 | author: Khoa Lý luận Chính trị
+h1: BM TTHCM Sách xuất bản
+0|w5|l0.0|div|Nhập từ khóa tìm kiếm
+1|w6|l1.0|li|Đại học Bách khoa Hà Nội
+2|w5|l1.0|li|Khoa Lý luận Chính trị
+3|w2|l1.0|li|Đại học
+4|w4|l1.0|li|Bách khoa Hà Nội
+5|w3|l1.0|li|Khoa Lý luận
+6|w2|l1.0|li|Chính trị
+7|w2|l1.0|li|Liên hệ
+8|w3|l1.0|li|Thư viện ảnh
+9|w1|l1.0|li|Video
+10|w3|l1.0|div|Giới thiệu chung
+11|w7|l1.0|div|Quá trình hình thành và phát triển
+12|w4|l1.0|div|Cơ cấu tổ chức
+13|w3|l1.0|div|Văn phòng khoa
+14|w4|l1.0|div|Cơ sở vật chất
+15|w5|l1.0|div|Cán bộ & Giảng viên
+16|w4|l1.0|div|Địa chỉ liên hệ
+17|w5|l1.0|div|Tin Tức - Thông báo
+18|w2|l1.0|div|Tin tức
+19|w2|l1.0|div|Thông báo
+20|w2|l1.0|div|Giảng dạy
+21|w8|l1.0|div|Chương trình LLCT theo học chế tín chỉ
+22|w4|l1.0|div|Giới thiệu học phần
+23|w5|l1.0|div|Giáo trình & Bài giảng
+24|w4|l1.0|div|Bộ phận chuyên môn
+25|w2|l1.0|div|Triết học
+26|w4|l1.0|div|Kinh tế chính trị
+27|w6|l1.0|div|Chủ nghĩa xã hội khoa học
+28|w5|l1.0|div|Tư tưởng Hồ Chí Minh
+29|w7|l1.0|div|Lịch sử Đảng Cộng sản Việt Nam
+30|w2|l1.0|div|Hợp tác
+31|w2|l1.0|div|Sinh viên
+32|w2|l1.0|div|Thông báo
+33|w5|l1.0|div|Quy định - Biểu mẫu
+34|w4|l1.0|div|Hộp thư phản ánh
+35|w4|l1.0|div|Hội thảo khoa học
+36|w2|l1.0|div|Thông báo
+37|w2|l1.0|div|Thể lệ
+38|w2|l1.0|div|Gửi bài
+39|w2|l1.0|div|Ấn phẩm
+40|w4|l1.0|div|Tư liệu hình ảnh
+41|w2|l1.0|div|Liên hệ
+42|w2|l1.0|li|Trang nhất
+43|w3|l1.0|li|Giới thiệu chung
+44|w7|l1.0|li|Quá trình hình thành và phát triển
+45|w4|l1.0|li|Cơ cấu tổ chức
+46|w3|l1.0|li|Văn phòng khoa
+47|w4|l1.0|li|Cơ sở vật chất
+48|w5|l1.0|li|Cán bộ & Giảng viên
+49|w4|l1.0|li|Địa chỉ liên hệ
+50|w5|l1.0|li|Tin Tức - Thông báo
+51|w2|l1.0|li|Tin tức
+52|w2|l1.0|li|Thông báo
+53|w2|l1.0|li|Giảng dạy
+54|w8|l1.0|li|Chương trình LLCT theo học chế tín chỉ
+55|w4|l1.0|li|Giới thiệu học phần
+56|w5|l1.0|li|Giáo trình & Bài giảng
+57|w4|l1.0|li|Bộ phận chuyên môn
+58|w2|l1.0|li|Triết học
+59|w4|l1.0|li|Kinh tế chính trị
+60|w6|l1.0|li|Chủ nghĩa xã hội khoa học
+61|w5|l1.0|li|Tư tưởng Hồ Chí Minh
+62|w7|l1.0|li|Lịch sử Đảng Cộng sản Việt Nam
+63|w2|l1.0|li|Hợp tác
+64|w2|l1.0|li|Sinh viên
+65|w2|l1.0|li|Thông báo
+66|w5|l1.0|li|Quy định - Biểu mẫu
+67|w4|l1.0|li|Hộp thư phản ánh
+68|w4|l1.0|li|Hội thảo khoa học
+69|w2|l1.0|li|Thông báo
+70|w2|l1.0|li|Thể lệ
+71|w2|l1.0|li|Gửi bài
+72|w2|l1.0|li|Ấn phẩm
+73|w4|l1.0|li|Tư liệu hình ảnh
+74|w2|l1.0|li|Liên hệ
+75|w5|l0.0|h1|BM TTHCM Sách xuất bản
+76|w5|l0.0|div|Thứ hai - 23/11/2020 03:03
+77|w14|l0.0|div|Bộ môn đã xuất bản Bài giảng Tư tưởng Hồ Chí Minh năm 2007
+78|w4|l0.5|p|Tác giả: Admin Super
+79|w12|l0.0|p|Tổng số điểm của bài viết là: 0 trong 0 đánh giá
+80|w6|l0.0|div|Click để đánh giá bài viết
+81|w4|l0.0|p|Ý kiến bạn đọc
+82|w3|l0.0|div|Mã an toàn
+83|w4|l0.0|p|Những tin mới hơn
+84|w8|l1.0|h4|Nhóm chuyên môn Tư tưởng Hồ Chí Minh
+85|w1|l0.0|li|(14/01/2021)
+86|w5|l1.0|h4|TS. Hà Thị Dáng Hương
+87|w1|l0.0|li|(30/06/2021)
+88|w5|l1.0|h4|ThS. Phạm Thị Mai Duyên
+89|w1|l0.0|li|(30/06/2021)
+90|w5|l1.0|h4|ThS. Nguyễn Thị Thu Hà
+91|w1|l0.0|li|(30/06/2021)
+92|w4|l1.0|h4|ThS. Nguyễn Quốc Đoàn
+93|w1|l0.0|li|(30/06/2021)
+94|w4|l1.0|h4|ThS. Lê Thu Nguyệt
+95|w1|l0.0|li|(05/10/2021)
+96|w4|l0.0|p|Những tin cũ hơn
+97|w6|l1.0|h4|BM TTHCM Cơ sở vật chất
+98|w1|l0.0|li|(23/11/2020)
+99|w6|l1.0|h4|BM TTHCM Đề tài nghiên cứu
+100|w1|l0.0|li|(23/11/2020)
+101|w5|l1.0|h4|BM TTHCM Hướng nghiên cứu
+102|w1|l0.0|li|(23/11/2020)
+103|w7|l1.0|h4|Nhóm chuyên môn TTHCM Giới thiệu chung
+104|w1|l0.0|li|(23/11/2020)
+105|w5|l1.0|li|Tin Tức - Thông báo
+106|w2|l1.0|li|Tin tức
+107|w2|l1.0|li|Thông báo
+108|w2|l1.0|li|Sự kiện
+109|w2|l1.0|li|Giảng dạy
+110|w8|l1.0|li|Chương trình LLCT theo học chế tín chỉ
+111|w4|l1.0|li|Đề cương môn học
+112|w5|l1.0|li|Giáo trình & Bài giảng
+113|w4|l1.0|li|Bộ phận chuyên môn
+114|w2|l1.0|li|Triết học
+115|w4|l1.0|li|Kinh tế chính trị
+116|w6|l1.0|li|Chủ nghĩa xã hội khoa học
+117|w5|l1.0|li|Tư tưởng Hồ Chí Minh
+118|w7|l1.0|li|Lịch sử Đảng Cộng sản Việt Nam
+119|w2|l1.0|li|Hợp tác
+120|w2|l1.0|li|Sinh viên
+121|w2|l1.0|li|Thông báo
+122|w5|l1.0|li|Quy định - Biểu mẫu
+123|w5|l1.0|li|Tài liệu - Bài giảng
+124|w4|l1.0|li|Hộp thư phản ánh
+125|w4|l1.0|li|Hội thảo khoa học
+126|w2|l1.0|li|Thông báo
+127|w2|l1.0|li|Gửi bài
+128|w2|l1.0|li|Ấn phẩm
+129|w2|l1.0|li|Thể lệ
+130|w4|l1.0|li|Tư liệu hình ảnh
+131|w2|l1.0|li|Liên hệ
+132|w4|l0.0|div|Bản đồ chỉ dẫn
+133|w11|l0.0|div|Khoa Lý luận Chính trị - ĐH Bách Khoa Hà Nội
+134|w6|l1.0|div|Đại học Bách khoa Hà Nội
+135|w3|l0.0|div|Mạng xã hội
+136|w4|l0.0|div|Đơn vị trực thuộc
+137|w4|l1.0|li|Bộ phận chuyên môn
+138|w4|l1.0|li|Kinh tế chính trị
+139|w2|l1.0|li|Triết học
+140|w6|l1.0|li|Chủ nghĩa xã hội khoa học
+141|w2|l1.0|li|Xem thêm
+142|w4|l0.0|div|Sơ đồ trang web
+143|w5|l1.0|div|Xem sơ đồ trang ...
+144|w27|l0.0|div|Bản quyền thuộc về Đại học Bách khoa Hà Nội Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội Điện thoại: 024 38…
+145|w22|l0.5|div|Bạn đã không sử dụng Site, Bấm vào đây để duy trì trạng thái đăng nhập . Thời gian chờ: 60 giây
+146|w7|l0.0|div|Giới thiệu bài viết cho bạn bè
+
+##### 8 https://icamt2024.smse.hust.edu.vn/hello-world.html
+title: Hello world! – ICAMT2024
+og:title: Hello world!
+pub:  | author: 
+h1: Hello world!
+0|w1|l1.0|li|HOME
+1|w1|l1.0|li|COMMITTEES
+2|w2|l1.0|li|INVITED SPEAKERS
+3|w1|l1.0|li|PROGRAM
+4|w2|l1.0|li|CONFERENCE INFO
+5|w2|l1.0|div|CONFERENCE TOPICS
+6|w2|l1.0|div|IMPORTANT DATES
+7|w3|l1.0|div|REGISTRATION & SUBMISSIONS
+8|w2|l1.0|div|CONFERENCE FEE
+9|w3|l1.0|div|HOTELS & TOURS
+10|w2|l1.0|div|CONFERENCE VENUE
+11|w1|l1.0|div|SCHOLARSHIP
+12|w3|l1.0|li|ABTRACTS & PROCEEDINGS
+13|w1|l1.0|li|CONTACT
+14|w2|l0.0|h1|Hello world!
+15|w6|l0.3|div|Home / Uncategorized / Hello world!
+16|w2|l0.0|h2|Hello world!
+17|w15|l0.0|p|Welcome to WordPress. This is your first post. Edit or delete it, then start writing!
+18|w10|l0.2|div|By admin | 2024-01-25T02:01:51+00:00 25/01/2024 | Uncategorized | Comments Off
+19|w6|l0.0|h4|Share This Story, Choose Your Platform!
+20|w4|l0.3|h3|About the Author: admin
+21|w2|l0.0|h4|ICAMT2024 SECRETARIAT
+22|w20|l0.2|p|Hanoi University of Science and Technology, 1 Dai Co Viet Road, Ha Noi, Viet Nam Mobile: (+84) 984.050.213 Ema…
+23|w1|l0.0|h4|SPONSORS
+24|w2|l0.0|h4|CONFERENCE VENUE
+25|w13|l0.6|p|Copyright belongs to ICAMT2024 | School of Materials Science and Engineering | HUST
+
+##### 9 https://icech.hust.edu.vn/article/digital-transformation-in-vietnamese-commercial-banks-current-situation-and-future-research-directions/
+title: DIGITAL TRANSFORMATION IN VIETNAMESE COMMERCIAL BANKS CURRENT SITUATION AND FUTURE RESEARCH DIRECTIONS - ICECH2026
+og:title: DIGITAL TRANSFORMATION IN VIETNAMESE COMMERCIAL BANKS CURRENT SITUATION AND FUTURE RESEARCH DIRECTIONS - ICECH2026
+pub:  | author: 
+h1: DIGITAL TRANSFORMATION IN VIETNAMESE COMMERCIAL BANKS CURRENT SITUATION AND FUTURE RESEARCH DIRECTIONS
+0|w1|l1.0|li|HOME
+1|w1|l1.0|li|CONFERENCE
+2|w3|l1.0|li|Call for Papers
+3|w2|l1.0|li|Important Dates
+4|w2|l1.0|li|Scientific Committee
+5|w2|l1.0|li|Organizing Committee
+6|w2|l1.0|li|Keynote Speakers
+7|w2|l1.0|li|Publication Opportunities
+8|w2|l1.0|li|Institutional Organizers
+9|w1|l1.0|li|Sponsors
+10|w2|l1.0|li|Conference Updates
+11|w2|l1.0|li|Conference Photos
+12|w2|l1.0|li|Opening speech
+13|w2|l1.0|li|PAPER SUBMISSION
+14|w1|l1.0|li|Templates
+15|w2|l1.0|li|Submission Guidelines
+16|w2|l1.0|li|Submission HERE
+17|w3|l1.0|li|Peer review process
+18|w2|l1.0|li|Review policy
+19|w1|l1.0|li|REGISTRATION
+20|w2|l1.0|li|Registration Fee
+21|w1|l1.0|li|Visa
+22|w1|l1.0|li|PROGRAM
+23|w1|l1.0|li|VENUE
+24|w2|l1.0|li|Conference Venue
+25|w1|l1.0|li|Accommodation
+26|w2|l1.0|li|Tourism Information
+27|w2|l1.0|li|CONTACT US
+28|w2|l1.0|li|PAST SYMPOSIUMS
+29|w2|l1.0|li|ICECH 2019
+30|w1|l0.0|div|HOT
+31|w2|l1.0|li|Keynote Speakers
+32|w5|l1.0|li|Registration Deadline: 15 July, 2026
+33|w4|l1.0|li|Conference: 21-22 August, 2026
+34|w2|l1.0|p|Login Register
+35|w2|l1.0|p|Login Register
+36|w1|l1.0|li|HOME
+37|w1|l1.0|li|CONFERENCE
+38|w3|l1.0|li|Call for Papers
+39|w2|l1.0|li|Important Dates
+40|w2|l1.0|li|Scientific Committee
+41|w2|l1.0|li|Organizing Committee
+42|w2|l1.0|li|Keynote Speakers
+43|w2|l1.0|li|Publication Opportunities
+44|w2|l1.0|li|Institutional Organizers
+45|w1|l1.0|li|Sponsors
+46|w2|l1.0|li|Conference Updates
+47|w2|l1.0|li|Conference Photos
+48|w2|l1.0|li|Opening speech
+49|w2|l1.0|li|PAPER SUBMISSION
+50|w1|l1.0|li|Templates
+51|w2|l1.0|li|Submission Guidelines
+52|w2|l1.0|li|Submission HERE
+53|w3|l1.0|li|Peer review process
+54|w2|l1.0|li|Review policy
+55|w1|l1.0|li|REGISTRATION
+56|w2|l1.0|li|Registration Fee
+57|w1|l1.0|li|Visa
+58|w1|l1.0|li|PROGRAM
+59|w1|l1.0|li|VENUE
+60|w2|l1.0|li|Conference Venue
+61|w1|l1.0|li|Accommodation
+62|w2|l1.0|li|Tourism Information
+63|w2|l1.0|li|CONTACT US
+64|w2|l1.0|li|PAST SYMPOSIUMS
+65|w2|l1.0|li|ICECH 2019
+66|w22|l0.3|p|HOME > Articles > Articles of ICECH HUST 2025 > DIGITAL TRANSFORMATION IN VIETNAMESE COMMERCIAL BANKS CURRENT …
+67|w1|l0.0|header|ICECH.HUST.2025.41
+68|w12|l0.0|h1|DIGITAL TRANSFORMATION IN VIETNAMESE COMMERCIAL BANKS CURRENT SITUATION AND FUTURE RESEARCH DIRECTIONS
+69|w124|l0.0|p|Research purpose: In the current era of digital technological development, the traditional business model of c…
+70|w78|l0.0|p|Research motivation: In Vietnam, the digitalization of the banking sector is recognized as one of eight priori…
+71|w82|l0.0|p|Research design, approach, and method: This study applied a narrative review approach to examine the challenge…
+72|w132|l0.0|p|Main findings: The study emphasized that digital transformation is crucial for enhancing customer satisfaction…
+73|w60|l0.0|p|Practical/Managerial implications: The proposed practical implications include establishing a comprehensive le…
+74|w1|l1.0|div|fin5-final-completed-1337-20251009-130848
+75|w2|l0.0|h2|Latest News
+76|w2|l0.5|li|26/06/2026 ICECH2026
+77|w3|l0.7|li|26/06/2026 Important Dates
+78|w3|l0.7|li|26/06/2026 Keynote Speakers
+79|w2|l0.0|h2|Important Dates
+80|w2|l0.0|h1|IMPORTANT DATES
+81|w5|l0.0|td|Abstract and Full Paper Submission
+82|w3|l0.0|h5|15 June, 2026
+83|w6|l0.0|td|Double-Blind Review and Full Paper Revision
+84|w6|l0.0|h5|15 June – 30 June, 2026
+85|w5|l0.0|td|Announcement of Full Paper Acceptance
+86|w3|l0.0|h5|30 June, 2026
+87|w2|l0.0|td|Registration Deadline
+88|w3|l0.0|h5|15 July, 2026
+89|w1|l0.0|td|Conference
+90|w3|l0.0|h5|21-22 August, 2026
+91|w8|l0.0|p|© ICECH - International Conference on Emerging Challenges
+92|w10|l0.0|p|C9, HUST, No. 1 Dai Co Viet street, Hanoi, Vietnam
+93|w11|l0.1|p|Tel: +84 983 837 780 (Ms. Huong Giang) - Email: icech@hust.edu.vn
+
+##### 10 https://icpmat-icamt.hust.edu.vn/call-for-abstracts.html
+title: Call for abstracts
+og:title: Call for abstracts
+pub:  | author: 
+h1: Call for abstracts
+0|w12|l0.0|div|ICPMAT - ICAMT 2026 | 23–25 th July, 2026 | Hanoi, Vietnam
+1|w1|l1.0|div|Registration
+2|w2|l0.0|nav|☰ Menu
+3|w1|l1.0|li|Home
+4|w4|l1.0|li|ICPMAT - ICAMT 2026
+5|w2|l1.0|li|Invited speakers
+6|w1|l1.0|li|Comittees
+7|w1|l1.0|li|Venue
+8|w1|l1.0|li|Sponsors
+9|w1|l1.0|li|Submission
+10|w3|l1.0|li|Call for abstracts
+11|w2|l1.0|li|Abstract Submission
+12|w3|l1.0|li|Full paper submission
+13|w1|l1.0|li|Program
+14|w1|l1.0|li|Registration
+15|w2|l1.0|li|Conference Fee
+16|w2|l1.0|li|Travel Support
+17|w2|l1.0|li|Vietnam visa
+18|w1|l1.0|li|Transportation
+19|w1|l1.0|li|Accommodation
+20|w1|l1.0|li|Tour
+21|w1|l1.0|li|Contact
+22|w3|l0.0|h1|Call for abstracts
+23|w5|l0.0|h3|About ICPMAT - ICAMT 2026
+24|w15|l0.0|p|THE 20TH INTERNATIONAL CONFERENCE ON THE PHYSICAL PROPERTIES AND APPLICATION OF ADVANCED MATERIALS (ICPMAT 202…
+25|w11|l0.0|p|The 2nd International Conference on Advanced Materials and Technologies (ICAMT 2026)
+26|w30|l0.0|p|DATE: 23-25 July 2026, TQT 2 Hotel - Nha Khach Tong Lien Doan (95 Tran Quoc Toan Street, Cua Nam Ward, Hanoi (…
+27|w2|l0.5|p|Email: icpmat-icamt@hust.edu.vn
+28|w1|l0.0|div|×
+29|w3|l0.0|h2|Subscribe for Updates
+30|w11|l0.0|p|Enter your email to receive the latest information about ICPMAT 2026
+31|w3|l0.0|div|Email Address *
+32|w1|l0.0|div|×
+33|w1|l0.0|div|✓
+34|w2|l0.0|h3|Thank You!
+35|w12|l0.0|p|You have successfully subscribed to receive updates about ICPMAT - ICAMT 2026.
+36|w4|l0.0|div|asset('vendor/jsvalidation/js/jsvalidation.js') ]); @endphp @endphp
+
+##### 11 https://library.hust.edu.vn/vi/node/28
+title: Cơ cấu tổ chức | Thư viện
+og:title: 
+pub:  | author: 
+h1: Cơ cấu tổ chức
+0|w3|l1.0|li|Module đếm lượt
+1|w3|l1.0|li|Tài nguyên số
+2|w6|l1.0|li|Đại học Bách Khoa Hà Nội
+3|w2|l1.0|li|Trang chủ
+4|w2|l1.0|li|Tìm kiếm
+5|w5|l1.0|li|Sản phẩm - Dịch vụ
+6|w2|l1.0|li|Tin tức
+7|w2|l1.0|li|Trợ giúp
+8|w2|l1.0|li|Liên hệ
+9|w2|l1.0|li|Giới thiệu
+10|w2|l0.0|p|Search Scope
+11|w4|l0.0|h1|Cơ cấu tổ chức
+12|w1|l1.0|li|English
+13|w4|l0.0|h2|Giới thiệu liên quan
+14|w4|l1.0|div|Phân công phụ trách
+15|w13|l1.0|div|Bản đồ các tầng - Trung tâm Truyền thông và Tri thức số
+16|w5|l1.0|div|Thông tin dành cho khách
+17|w7|l1.0|div|Lịch sử hình thành và phát triển
+18|w4|l1.0|div|Danh sách cán bộ
+19|w4|l1.0|div|Cơ cấu tổ chức
+20|w5|l1.0|div|Chức năng - Nhiệm vụ
+21|w4|l0.0|h2|Tài nguyên điện tử
+22|w2|l0.0|h2|Trợ giúp
+23|w8|l1.0|div|Hướng dẫn quản lý tài khoản bạn đọc
+24|w5|l1.0|div|Các câu hỏi thường gặp
+25|w8|l1.0|div|Hướng dẫn tìm kiếm tài liệu qua OPAC
+26|w8|l1.0|div|Hướng dẫn sử dụng trang Tài nguyên số
+27|w7|l1.0|div|Lớp hướng dẫn sử dụng Thư viện
+28|w8|l1.0|div|Tài liệu hướng dẫn sử dụng thư viện
+29|w6|l1.0|div|Đề tài nghiên cứu khoa học
+30|w6|l1.0|div|Hướng dẫn gia hạn tài liệu
+31|w1|l0.0|h2|Trang
+32|w1|l0.0|li|1
+33|w1|l1.0|li|2
+34|w1|l1.0|li|3
+35|w2|l1.0|li|next ›
+36|w2|l1.0|li|last »
+37|w3|l1.0|h2|Ảnh thư viện
+38|w3|l1.0|div|Ảnh thư viện
+39|w3|l1.0|div|Ảnh thư viện
+40|w3|l1.0|div|Ảnh thư viện
+41|w3|l1.0|div|Ảnh thư viện
+42|w5|l1.0|div|Ảnh hoạt động thư viện
+43|w5|l1.0|div|Ảnh hoạt động thư viện
+44|w5|l1.0|div|Ảnh hoạt động thư viện
+45|w1|l0.0|div|1
+46|w1|l0.0|div|2
+47|w1|l0.0|div|3
+48|w1|l0.0|div|4
+49|w1|l0.0|div|5
+50|w1|l0.0|div|6
+51|w1|l0.0|div|7
+52|w15|l0.0|div|Trung tâm Truyền thông và Tri thức số - Đại học Bách khoa Hà Nội
+53|w12|l0.0|div|Số 1 Đại Cồ Việt, phường Bạch Mai, Thành phố Hà Nội
+54|w7|l0.1|div|Điện thoại: (84-24) 3869 2243, Email: tvtqb@hust.edu.vn
+55|w1|l1.0|p|Sitemap
+56|w3|l0.0|h2|Mạng xã hội
+57|w19|l0.0|div|Bản quyền © 2026, Trung tâm Truyền thông và Tri thức số - Đại học Bách khoa Hà Nội.
+
+##### 12 https://login.icech.hust.edu.vn/login
+title: ICECH - Login Account
+og:title: ICECH - Login Account
+pub:  | author: ICECH
+h1: 
+0|w1|l1.0|li|Home
+1|w4|l0.0|h5|Login to your account
+2|w4|l0.0|div|Enter your credentials below
+3|w2|l0.0|div|Email *
+4|w2|l0.0|div|Password *
+5|w3|l0.7|div|Remember Forgot password?
+6|w4|l0.0|div|Don't have an account?
+7|w2|l1.0|div|Sign up
+8|w14|l0.0|div|By continuing, you're confirming that you've read our Terms & Conditions and Cookie Policy
+9|w12|l0.2|div|© ICECH - International Conference on Emerging Challenges Email: icech@hust.edu.vn or icech.sem.hust@gmail.com
+10|w1|l0.0|h5|Notifications
+11|w2|l0.0|div|New notifications
+12|w3|l0.0|div|No new notifications.
+
+##### 13 http://nct.soict.hust.edu.vn/?p=1
+title: Welcome to NCT Lab | Networking and Communication Technology Laboratory
+og:title: 
+pub:  | author: 
+h1: Welcome to NCT Lab
+0|w3|l1.0|nav|Skip to content
+1|w2|l1.0|li|NCT Lab
+2|w1|l1.0|li|NEWS
+3|w1|l1.0|li|Reseach
+4|w1|l1.0|li|Members
+5|w1|l1.0|li|Publications
+6|w1|l1.0|li|Activities
+7|w2|l1.0|li|Alumni Members
+8|w1|l1.0|li|Contacts
+9|w4|l0.0|h1|Welcome to NCT Lab
+10|w4|l0.3|div|By nctadmin | 21/05/2014
+11|w2|l1.0|div|0 Comment
+12|w27|l0.0|p|We cooperate with many partners in both academic and industrial research projects for innovative ideas in the …
+13|w3|l0.0|li|Advanced Network Technologies
+14|w4|l0.0|li|Network and Information Security
+15|w3|l0.0|li|Multimedia Communication Technologies
+16|w4|l0.0|li|Mobile and Distributed Computing
+17|w2|l0.5|footer|Category: Overview
+18|w2|l0.0|div|Post navigation
+19|w5|l1.0|nav|Nafosted research project completed →
+20|w3|l0.0|h3|Leave a Reply
+21|w9|l0.2|p|You must be logged in to post a comment.
+22|w2|l0.0|p|Recent Posts
+23|w6|l1.0|li|Scientific Research Award for HUST Student
+24|w6|l1.0|li|Seminar of Dr. Tran Quang Duc
+25|w5|l1.0|li|The International Techmart Vietnam 2015
+26|w6|l1.0|li|Congratulation to Assoc. Professor Dieu Linh
+27|w3|l1.0|li|New office kick-off
+28|w13|l0.0|div|Copyright © 2014 Communication Technology Laboratory - SoICT - HUST. All Rights Reserved.
+29|w7|l0.4|div|Iconic One Theme | Powered by Wordpress
+
+##### 14 https://qldt.hust.edu.vn/students/hop-tac-doi-ngoai/4604521164570625
+title: Chương trình trao đổi HÈ AOTULE Tại Science Tokyo - Cổng thông tin sinh viên - ĐẠI HỌC BÁCH KHOA HÀ NỘI HUST
+og:title: Chương trình trao đổi HÈ AOTULE Tại Science Tokyo
+pub:  | author: 
+h1: Chương trình trao đổi HÈ AOTULE Tại Science Tokyo
+0|w6|l0.0|h2|ĐẠI HỌC BÁCH KHOA HÀ NỘI
+1|w4|l0.0|p|HỢP TÁC ĐỐI NGOẠI
+2|w9|l0.0|h1|Chương trình trao đổi HÈ AOTULE Tại Science Tokyo
+3|w4|l0.0|div|HỢP TÁC ĐỐI NGOẠI
+4|w2|l0.0|p|2 suất
+5|w2|l0.0|div|KINH PHÍ
+6|w4|l0.0|div|ĐƠN VỊ CHỦ TRÌ
+7|w6|l0.0|p|Đại học Bách Khoa Hà nội
+8|w4|l0.0|p|THÔNG TIN CHƯƠNG TRÌNH
+9|w2|l0.0|div|Đối tác
+10|w8|l0.0|p|Tokyo Institute of Technology, Tokyo Institute of Technology
+11|w5|l0.0|div|Kinh phí được tài trợ
+12|w2|l0.0|p|0 ₫
+13|w3|l0.0|div|Nguồn kinh phí
+14|w8|l0.0|p|Science Tokyo tài trợ chi phí ăn ở
+15|w4|l0.0|div|Hình thức trao đổi
+16|w3|l0.0|p|Trao đổi đi
+17|w5|l0.0|div|Ngày bắt đầu đăng ký
+18|w1|l0.0|p|01/06/2026
+19|w5|l0.0|div|Ngày kết thúc đăng ký
+20|w1|l0.0|p|31/08/2026
+21|w6|l0.0|div|THÔNG TIN CHI TIẾT CHƯƠNG TRÌNH
+22|w17|l0.0|p|Các em up load các file applicaton form và hồ sơ như trong thông báo đính kèm.
+23|w6|l0.0|p|Liên hệ, cô Mai Chi: 0968566369
+24|w3|l0.0|div|CHƯƠNG TRÌNH KHÁC
+25|w12|l1.0|h3|Trao đổi sinh viên tại Đại học Porto, Bồ Đào Nha [MOBILE25]
+26|w8|l1.0|div|University of Porto University of Porto 1 suất
+27|w25|l0.5|p|1. Thông tin chi tiết xem tại website của chương trình: https://mobile25.up.pt/ (ứng viên vui lòng đọc kỹ thôn…
+28|w5|l0.0|p|2. Số lượng học bổng:
+29|w3|l0.0|td|Loại học bổng
+30|w2|l0.0|td|Thời gian
+31|w2|l0.0|td|Trợ cấp
+32|w2|l0.0|td|Số lượng
+33|w7|l0.0|td|Trao đổi sinh viên/học viên cao học/NCS
+34|w6|l0.0|td|Tối thiểu 120 ngày (04 tháng)
+35|w8|l0.0|li|Sinh hoạt phí: 850 EUR/tháng * 04 tháng
+36|w7|l0.0|li|Vé máy bay khứ hồi: 1735 EUR
+37|w2|l0.0|li|Bảo hiểm
+38|w1|l0.0|td|01
+39|w38|l0.0|p|3. Thời gian thực hiện trao đổi: Trong năm học 2026-2027 theo lịch của ĐH Porto (khi đăng ký học bổng trên eHU…
+40|w43|l0.0|p|4. Cách thức đăng ký học bổng: Ứng viên hoàn thiện đầy đủ hai bước dưới đây để đăng ký học bổng: Bước 1 : Đối …
+41|w14|l0.1|div|Bước 2: Ứng viên nộp hồ sơ trực tiếp cho ĐH Porto tại: https://mobile25.up.pt/apply
+42|w105|l0.0|p|5. Hồ sơ đăng ký bao gồm (các tài liệu cần dịch sang tiếng Anh): chi tiết tại "Guidelines for Applicants" . Lư…
+43|w12|l1.0|h3|Chương trình Đào tạo AI năm 2026 tại ĐH CNĐT Quế Lâm
+44|w20|l1.0|div|Trường Đại học Công nghệ Điện tử Quế Lâm Trường Đại học Công nghệ Điện tử Quế Lâm 0 suất
+45|w58|l1.0|p|Toàn bộ chi phí của giảng viên và sinh viên sau khi đến Quế Lâm sẽ do Trường Đại học Công nghệ Điện tử Quế Lâm…
+46|w1|l1.0|p|https://hust.edu.vn/vi/hop-tac-doi-ngoai/tin-tuc-hoc-bong/thong-bao-chuong-trinh-dao-tao-tri-tue-nhan-tao-nam-…
+47|w5|l1.0|h3|KAIST SoC Global Preview Week
+48|w16|l1.0|div|Korea Advanced Institute of Science and Technology Korea Advanced Institute of Science and Technology 5 suất
+49|w5|l1.0|h3|2025 CCU/CoE INTERNATIONAL INTERNSHIP PROGRAM
+50|w10|l1.0|div|National Chung Cheng University National Chung Cheng University 10 suất
+51|w5|l1.0|h3|Trao đổi sinh viên TUMSAT
+52|w16|l1.0|div|Tokyo University of Marine Science and Technology Tokyo University of Marine Science and Technology 5 suất
+53|w15|l1.0|h3|Trao đổi sinh viên tại HTWG Konstanz Đức bằng học bổngBaden - Wurttenberg Đức -
+54|w14|l1.0|div|HTWG Konstaz University of Applied Sciences HTWG Konstaz University of Applied Sciences 2 suất
+55|w9|l1.0|h3|Chương trình trao đổi HÈ AOTULE Tại Science Tokyo
+56|w10|l1.0|div|Tokyo Institute of Technology Tokyo Institute of Technology 2 suất
+57|w17|l1.0|p|Các em up load các file applicaton form và hồ sơ như trong thông báo đính kèm.
+58|w6|l1.0|p|Liên hệ, cô Mai Chi: 0968566369
+59|w8|l1.0|h3|Trường hè Peking University Computer Science Summer School
+60|w6|l1.0|div|Peking University Peking University 1 suất
+61|w9|l1.0|h3|Trao đổi sinh viên về Sản xuất thông minh
+62|w4|l1.0|div|Shandong University 18 suất
+63|w5|l1.0|h3|NUS Enterprise Summer Programme 2026
+64|w6|l1.0|div|National University of Singapore 5 suất
+65|w17|l0.0|footer|Copyright © 2025 HỆ THỐNG DO ĐẠI HỌC BÁCH KHOA HÀ NỘI THIẾT KẾ & PHÁT TRIỂN.
+
+##### 15 https://sdh.hust.edu.vn/default.aspx?CategoryID=117&nid=3189&scid=23
+title: Ban đào tạo - Bộ phận sau đại học
+og:title: 
+pub:  | author: 
+h1: 
+0|w2|l0.0|td|Tìm kiếm
+1|w1|l1.0|li|Home
+2|w2|l1.0|li|Giới thiệu
+3|w3|l1.0|div|Giới thiệu chung
+4|w5|l1.0|li|Tin tức & sự kiện
+5|w3|l1.0|div|Tin tức chung
+6|w2|l1.0|div|Ðào tạo
+7|w2|l1.0|li|Tuyển sinh
+8|w2|l1.0|div|Cao học
+9|w3|l1.0|div|Nghiên cứu sinh
+10|w2|l1.0|li|Ðào tạo
+11|w2|l1.0|div|Học phí
+12|w2|l1.0|div|Ngoại ngữ
+13|w2|l1.0|div|Cao học
+14|w3|l1.0|div|Nghiên cứu sinh
+15|w5|l1.0|li|Văn bản & Quy chế
+16|w5|l1.0|div|Quy chế sau đại học
+17|w2|l1.0|div|Thạc sỹ
+18|w3|l1.0|div|Nghiên cứu sinh
+19|w4|l1.0|li|Các mẫu giấy tờ
+20|w2|l1.0|div|Cao học
+21|w3|l1.0|div|Nghiên cứu sinh
+22|w4|l1.0|li|Chương trình đào tạo
+23|w2|l1.0|div|Cao học
+24|w3|l1.0|div|Nghiên cứu sinh
+25|w4|l1.0|div|Kỹ sư chuyên sâu
+26|w3|l1.0|li|Thư viện ảnh
+27|w11|l1.0|div|Lễ phát bằng thạc sĩ ngày 30 tháng 05 năm 2015
+28|w11|l1.0|div|Lễ phát bằng thạc sĩ ngày 07 tháng 08 năm 2015
+29|w7|l1.0|div|Lễ phát bằng thạc sỹ khóa 2007
+30|w4|l1.0|li|Dành cho học viên
+31|w5|l1.0|li|Tra cứu thông tin bằng
+32|w9|l0.0|td|Trang chủ >> Ðào tạo >> Nghiên cứu sinh
+33|w21|l0.0|p|Bảo vệ luận án Tiến sĩ cấp Đại học Bách khoa Hà Nội cho nghiên cứu sinh Nguyễn Thị Tú Trinh
+34|w3|l0.0|p|Ngày đăng: 07/12/2023
+35|w86|l0.0|p|8 giờ 30 ngày 8 tháng 1 năm 2024 tại phòng C1-318, Đại học Bách khoa Hà Nội tổ chức bảo vệ luận án Tiến sĩ cấp…
+36|w6|l1.0|p|Nội dung chi tiết luận án
+37|w4|l0.0|td|Các tin liên quan
+38|w20|l1.0|td|» NCS Nguyễn Mậu Tùng - Luận án đã chỉnh sửa, hoàn thiện sau bảo vệ cấp ĐHBK Hà Nội
+39|w35|l1.0|td|» Luận án tiến sĩ: Nghiên cứu tổng hợp ở nhiệt độ thấp chất phát quang đơn pha trên cơ sở kẽm orthosilicat pha…
+40|w20|l1.0|td|» NCS Đào Vũ Hiệp - Luận án đã chỉnh sửa, hoàn thiện sau bảo vệ cấp ĐHBK Hà Nội
+41|w20|l1.0|td|» NCS Cao Thành Trung - Luận án đã chỉnh sửa, hoàn thiện sau bảo vệ cấp ĐHBK Hà Nội
+42|w21|l1.0|td|» Bảo vệ luận án Tiến sĩ cấp Đại học Bách khoa Hà Nội cho nghiên cứu sinh Trần Thị Thịnh
+43|w20|l1.0|td|» NCS Vũ Thanh Quang - Luận án đã chỉnh sửa, hoàn thiện sau bảo vệ cấp ĐHBK Hà Nội
+44|w20|l1.0|td|» NCS Vũ Tiến Hiếu - Luận án đã chỉnh sửa, hoàn thiện sau bảo vệ cấp ĐHBK Hà Nội
+45|w21|l1.0|td|» Bảo vệ luận án Tiến sĩ cấp Đại học Bách khoa Hà Nội cho nghiên cứu sinh Võ Thanh Được
+46|w20|l1.0|td|» NCS Hoàng Trung Tuyến - Luận án đã chỉnh sửa, hoàn thiện sau bảo vệ cấp ĐHBK Hà Nội
+47|w21|l1.0|td|» Bảo vệ luận án Tiến sĩ cấp Đại học Bách khoa Hà Nội cho nghiên cứu sinh Nguyễn Thành Long
+48|w3|l0.0|h3|Bộ phận SĐH
+49|w2|l1.0|li|Giới thiệu
+50|w3|l1.0|li|Giới thiệu chung
+51|w5|l1.0|li|Tin tức & sự kiện
+52|w3|l1.0|li|Tin tức chung
+53|w2|l1.0|li|Ðào tạo
+54|w2|l1.0|li|Tuyển sinh
+55|w2|l1.0|li|Cao học
+56|w3|l1.0|li|Nghiên cứu sinh
+57|w2|l1.0|li|Ðào tạo
+58|w2|l1.0|li|Học phí
+59|w2|l1.0|li|Ngoại ngữ
+60|w2|l1.0|li|Cao học
+61|w3|l1.0|li|Nghiên cứu sinh
+62|w5|l1.0|li|Văn bản & Quy chế
+63|w5|l1.0|li|Quy chế sau đại học
+64|w2|l1.0|li|Thạc sỹ
+65|w3|l1.0|li|Nghiên cứu sinh
+66|w4|l1.0|li|Các mẫu giấy tờ
+67|w2|l1.0|li|Cao học
+68|w3|l1.0|li|Nghiên cứu sinh
+69|w4|l1.0|li|Chương trình đào tạo
+70|w2|l1.0|li|Cao học
+71|w3|l1.0|li|Nghiên cứu sinh
+72|w4|l1.0|li|Kỹ sư chuyên sâu
+73|w3|l1.0|li|Thư viện ảnh
+74|w11|l1.0|li|Lễ phát bằng thạc sĩ ngày 30 tháng 05 năm 2015
+75|w11|l1.0|li|Lễ phát bằng thạc sĩ ngày 07 tháng 08 năm 2015
+76|w7|l1.0|li|Lễ phát bằng thạc sỹ khóa 2007
+77|w4|l1.0|li|Dành cho học viên
+78|w5|l1.0|li|Tra cứu thông tin bằng
+79|w3|l0.0|div|Điện thoại: 02438692115
+80|w35|l0.0|div|Ban đào tạo- Bộ phận quản lý đào tạo sau đại học - Tầng 1 - C1 - Đại học Bách khoa Hà Nội, Số 1 Đại Cồ Việt - …
+
+##### 16 https://seee.hust.edu.vn/vi/tin-tuc/2026-04-19_hoi-nghi-sinh-vien-nckh-lan-thu-43-truong-dien-dien-tu/
+title: Hội nghị Sinh viên NCKH lần thứ 43 - Trường Điện - Điện tử | Tin tức SEEE
+og:title: Hội nghị Sinh viên NCKH lần thứ 43 - Trường Điện - Điện tử | Tin tức SEEE
+pub:  | author: 
+h1: Hội nghị Sinh viên NCKH lần thứ 43 - Trường Điện - Điện tử
+time:  / 19/04/2026
+0|w6|l1.0|div|(024) 3869 6211 Email VI EN
+1|w2|l1.0|div|Liên hệ
+2|w16|l1.0|div|Giới thiệu Con người Đào tạo Tuyển sinh Nghiên cứu Sinh viên Kết nối Tin tức
+3|w2|l1.0|li|Trang chủ
+4|w2|l1.0|li|Tin tức
+5|w5|l1.0|li|Khoa học – Công nghệ
+6|w14|l0.0|li|Hội nghị Sinh viên NCKH lần thứ 43 - Trường Điện - Điện tử
+7|w5|l0.0|header|Khoa học – Công nghệ
+8|w14|l0.0|h1|Hội nghị Sinh viên NCKH lần thứ 43 - Trường Điện - Điện tử
+9|w1|l0.0|header|19/04/2026
+10|w35|l0.0|p|Để triển khai hiệu quả Hội nghị Sinh viên Nghiên cứu Khoa học năm học 2025 – 2026, BTC xin thông báo kế hoạch …
+11|w10|l0.0|p|Thông tin các hội đồng cấp Trường và Đại học
+12|w52|l0.0|p|1. Hội đồng SVNCKH cấp Trường Điện - Điện tử Đối tượng: Tất cả các đề tài đã đăng ký qua hệ thống sẽ được báo …
+13|w9|l0.0|p|Chi tiết: 09 hội đồng theo các lĩnh vực
+14|w1|l0.0|td|STT
+15|w2|l0.0|td|Hội đồng
+16|w2|l0.0|td|Thời gian
+17|w2|l0.0|td|Địa điểm
+18|w6|l0.0|td|Hội đồng Điện SEEE - Đ
+19|w7|l0.0|td|8h – 17h thứ 2 ngày 20/4/2026
+20|w3|l0.0|td|E626 - C7
+21|w11|l0.0|td|Hội đồng Điện tử - 01 SEEE – ĐT - 01
+22|w7|l0.0|td|8h – 17h thứ 3 ngày 21/4/2026
+23|w3|l0.0|td|E601 - C7
+24|w11|l0.0|td|Hội đồng Điện tử - 02 SEEE – ĐT – 02
+25|w7|l0.0|td|8h – 17h thứ 3 ngày 21/4/2026
+26|w3|l0.0|td|E803 - C7
+27|w11|l0.0|td|Hội đồng Điện tử - 03 SEEE – ĐT - 03
+28|w7|l0.0|td|8h – 17h thứ 3 ngày 21/4/2026
+29|w3|l0.0|td|E626 - C7
+30|w9|l0.0|td|Hội đồng Kỹ thuật truyền thông SEEE – KTTT
+31|w7|l0.0|td|13h30 – 17h30 thứ 3 ngày 21/4/2026
+32|w3|l0.0|td|E603 - C7
+33|w12|l0.0|td|Hội đồng Tự động hóa - 01 SEEE – TĐH - 01
+34|w7|l0.0|td|8h – 17h thứ 3 ngày 21/4/2026
+35|w3|l0.0|td|E613 - C7
+36|w12|l0.0|td|Hội đồng Tự động hóa - 02 SEEE – TĐH - 02
+37|w7|l0.0|td|8h – 17h thứ 3 ngày 21/4/2026
+38|w3|l0.0|td|E615 - C7
+39|w12|l0.0|td|Hội đồng Tự động hóa - 03 SEEE – TĐH - 03
+40|w7|l0.0|td|8h – 17h thứ 3 ngày 21/4/2026
+41|w3|l0.0|td|E801 - C7
+42|w6|l0.0|td|Báo cáo Poster SEEE - P
+43|w7|l0.0|td|8h – 17h thứ 3 ngày 21/4/2026
+44|w5|l0.0|td|Sảnh tầng 6 - C7
+45|w2|l0.0|p|Chú ý:
+46|w30|l0.0|li|Mỗi Hội đồng sẽ chọn ra 3-5 đề tài tiềm năng (tuỳ thuộc vào số lượng đăng ký của từng Hội đồng) để nhận tài tr…
+47|w12|l0.0|li|Các nhóm nghiên cứu cần chuẩn bị slide báo cáo theo mẫu
+48|w24|l0.0|li|Đề nghị các nhóm nghiên cứu đến bảo vệ theo đúng lịch và theo thứ tự của từng Hội đồng Tài liệu đính kèm:
+49|w2|l0.0|li|Mẫu slide
+50|w22|l0.0|p|2. Hội đồng SVNCKH cấp Phân Ban Đại học Thời gian: Ngày 15 -16/05/2026 Địa điểm: Đại học Bách Khoa Hà Nội
+51|w5|l0.0|p|Hội nghị Sinh viên NCKH
+52|w8|l0.0|p|Trân trọng VP Trường Điện - Điện tử
+53|w5|l0.8|p|Nguồn: bài gốc trên seee.hust.edu.vn
+54|w3|l0.0|h2|Tin liên quan
+55|w16|l1.0|div|SEEE tham gia Dự án KH&CN cấp quốc gia về thiết bị điện 500 kV 28/09/2026
+56|w19|l1.0|div|Bách khoa Hà Nội kết nối học thuật quốc tế trong lĩnh vực công nghệ siêu cao tần 29/07/2026
+57|w21|l1.0|div|IEEE ICCE 2026: Bản sắc 70 năm Bách khoa Hà Nội hòa dòng chảy đổi mới sáng tạo thế giới 29/07/2026
+58|w4|l1.0|p|Quay lại tin tức
+59|w2|l0.0|h2|Liên hệ
+60|w10|l0.0|p|Phòng E.605, Nhà C7, Đại học Bách khoa Hà Nội
+61|w3|l1.0|p|Email Văn phòng
+62|w3|l0.0|p|(024) 3869 6211
+63|w3|l1.0|div|Gửi câu hỏi
+64|w3|l0.0|h2|Liên kết nhanh
+65|w2|l1.0|li|Tuyển sinh
+66|w4|l1.0|li|Chương trình đào tạo
+67|w3|l1.0|li|Tìm chuyên gia
+68|w4|l1.0|li|Thủ tục sinh viên
+69|w2|l0.0|h2|Kết nối
+70|w10|l0.0|p|© 2026 Trường Điện - Điện tử, ĐHBK Hà Nội
+
+##### 17 https://sme.hust.edu.vn/en/about/general-introduction.html
+title: General introduction
+og:title: General introduction
+pub:  | author: Trường Cơ khí
+h1: General introduction
+0|w3|l0.0|div|Enter search keywords
+1|w6|l1.0|li|Hanoi University OF SCIENCE AND TECHNOLOGY
+2|w4|l1.0|li|School of Mechanical Engineering
+3|w2|l1.0|li|Hanoi University
+4|w4|l1.0|li|of sciense and technology
+5|w2|l1.0|li|School of
+6|w1|l1.0|li|Contact
+7|w1|l1.0|div|About
+8|w2|l1.0|div|General introduction
+9|w2|l1.0|div|Educational philosophy
+10|w2|l1.0|div|Organizational structure
+11|w1|l1.0|div|Facility
+12|w2|l1.0|div|Staff List
+13|w1|l1.0|div|News
+14|w2|l1.0|div|News articles
+15|w1|l1.0|div|Notification
+16|w1|l1.0|div|Event
+17|w2|l1.0|div|Upcoming events
+18|w4|l1.0|div|The event took place
+19|w1|l1.0|div|Academics
+20|w2|l1.0|div|Academic Model
+21|w2|l1.0|div|Undergraduate Program
+22|w2|l1.0|div|Standard Programmes
+23|w2|l1.0|div|ELITECH Programmes
+24|w4|l1.0|div|International Joint Training Programmes
+25|w2|l1.0|div|Graduate Program
+26|w3|l1.0|div|Department - Center
+27|w3|l1.0|div|Department of Mechatronics
+28|w6|l1.0|div|Department of Mechanical and Manufacturing Engineering
+29|w4|l1.0|div|Department of Thermal Energy
+30|w7|l1.0|div|Department of Vehicle and Energy Conversion Engineering
+31|w3|l1.0|div|Mechanical Engineering Center
+32|w8|l1.0|div|Research Center for Propulsion Systems and Autonomous Vehicles
+33|w4|l1.0|div|Smart Digital Factory Laboratory
+34|w5|l1.0|div|Joining and Welding Research Institute
+35|w1|l1.0|div|FACILITIES
+36|w2|l1.0|div|TECHNICAL SERVICES
+37|w3|l1.0|div|LIST OF STAFF
+38|w1|l1.0|div|Research
+39|w2|l1.0|div|Research Groups
+40|w3|l1.0|div|Department of Mechatronics
+41|w6|l1.0|div|Department of Mechanical and Manufacturing Engineering
+42|w7|l1.0|div|Department of Vehicle and Energy Conversion Engineering
+43|w4|l1.0|div|Department of Thermal Energy
+44|w2|l1.0|div|Research Areas
+45|w2|l1.0|div|Research Topics
+46|w2|l1.0|div|Research products
+47|w1|l1.0|div|Student
+48|w6|l1.0|div|Student at the School of Mechanical
+49|w1|l1.0|div|Alumni
+50|w1|l1.0|div|Cooperate
+51|w2|l1.0|div|General Introduction
+52|w2|l1.0|div|Domestic cooperation
+53|w2|l1.0|div|International cooperation
+54|w1|l1.0|li|Home
+55|w1|l1.0|li|About
+56|w2|l1.0|li|General introduction
+57|w2|l1.0|li|Educational philosophy
+58|w2|l1.0|li|Organizational structure
+59|w1|l1.0|li|Facility
+60|w2|l1.0|li|Staff List
+61|w1|l1.0|li|News
+62|w2|l1.0|li|News articles
+63|w1|l1.0|li|Notification
+64|w1|l1.0|li|Event
+65|w2|l1.0|li|Upcoming events
+66|w4|l1.0|li|The event took place
+67|w1|l1.0|li|Academics
+68|w2|l1.0|li|Academic Model
+69|w2|l1.0|li|Undergraduate Program
+70|w2|l1.0|li|Standard Programmes
+71|w2|l1.0|li|ELITECH Programmes
+72|w4|l1.0|li|International Joint Training Programmes
+73|w2|l1.0|li|Graduate Program
+74|w3|l1.0|li|Department - Center
+75|w3|l1.0|li|Department of Mechatronics
+76|w6|l1.0|li|Department of Mechanical and Manufacturing Engineering
+77|w4|l1.0|li|Department of Thermal Energy
+78|w7|l1.0|li|Department of Vehicle and Energy Conversion Engineering
+79|w3|l1.0|li|Mechanical Engineering Center
+80|w8|l1.0|li|Research Center for Propulsion Systems and Autonomous Vehicles
+81|w4|l1.0|li|Smart Digital Factory Laboratory
+82|w5|l1.0|li|Joining and Welding Research Institute
+83|w1|l1.0|li|FACILITIES
+84|w2|l1.0|li|TECHNICAL SERVICES
+85|w3|l1.0|li|LIST OF STAFF
+86|w1|l1.0|li|Research
+87|w2|l1.0|li|Research Groups
+88|w3|l1.0|li|Department of Mechatronics
+89|w6|l1.0|li|Department of Mechanical and Manufacturing Engineering
+90|w7|l1.0|li|Department of Vehicle and Energy Conversion Engineering
+91|w4|l1.0|li|Department of Thermal Energy
+92|w2|l1.0|li|Research Areas
+93|w2|l1.0|li|Research Topics
+94|w2|l1.0|li|Research products
+95|w1|l1.0|li|Student
+96|w6|l1.0|li|Student at the School of Mechanical
+97|w1|l1.0|li|Alumni
+98|w1|l1.0|li|Cooperate
+99|w2|l1.0|li|General Introduction
+100|w2|l1.0|li|Domestic cooperation
+101|w2|l1.0|li|International cooperation
+102|w2|l0.0|h1|General introduction
+103|w2|l0.0|h1|General introduction
+104|w2|l0.0|h1|OPEN LETTER
+105|w118|l0.0|p|The School of Mechanical Engineering, Hanoi University of Science and Technology currently trains 02 groups of…
+106|w154|l0.0|p|With the establishment of Hanoi University of Technology, the Faculty of Mechanical – Electrical was establish…
+107|w98|l0.0|p|With the goal of training and providing highly qualified technical human resources to society, the School of M…
+108|w90|l0.0|p|Currently, the School of Mechanical Engineering is allowed by Hanoi University of Science and Technology to be…
+109|w4|l0.0|p|School of Mechanical Engineering
+110|w2|l1.0|h3|Organizational structure
+111|w1|l1.0|h3|Facility
+112|w2|l1.0|h3|Educational philosophy
+113|w2|l1.0|li|General introduction
+114|w2|l1.0|li|Educational philosophy
+115|w2|l1.0|li|Organizational structure
+116|w1|l1.0|li|Facility
+117|w2|l1.0|li|Staff list
+118|w2|l0.0|div|Directions Map
+119|w4|l0.0|div|School of Mechanical Engineering
+120|w6|l1.0|div|HaNoi University of science and technology
+121|w2|l0.0|div|Social network
+122|w3|l0.0|div|The subordinate units
+123|w3|l1.0|li|Department - Center
+124|w1|l0.0|div|Sitemap
+125|w3|l1.0|div|View sitemap ...
+126|w15|l0.3|div|You did not use the site, Click here to remain logged . Timeout: 60 second
+
+##### 18 https://soict.hust.edu.vn/en/ph-d-nguyen-an-hung.html
+title: Ph.D. Nguyen An Hung - SOICT
+og:title: Ph.D. Nguyen An Hung - SOICT
+pub:  | author: 
+h1: 
+0|w18|l0.0|li|Hanoi University of Science and Technology School of Information and Communications Technology School of Infor…
+1|w18|l0.0|li|Hanoi University of Science and Technology School of Information and Communications Technology School of Infor…
+2|w1|l1.0|li|Introduction
+3|w2|l1.0|li|Educational philosophy
+4|w1|l1.0|li|Organization
+5|w2|l1.0|li|School Council
+6|w3|l1.0|li|Board of Deans
+7|w3|l1.0|li|Lecturer and Staff
+8|w3|l1.0|li|Department – Center
+9|w1|l1.0|li|Department
+10|w3|l1.0|li|Computer Science Department
+11|w3|l1.0|li|Computer Engineering Department
+12|w1|l1.0|li|Center
+13|w2|l1.0|li|Computer Center
+14|w2|l1.0|li|Innovation Center
+15|w3|l1.0|li|BK AI Center
+16|w2|l1.0|li|BKCS Center
+17|w2|l1.0|li|EdTech Center
+18|w2|l1.0|li|NAVIS Center
+19|w1|l1.0|li|Academics
+20|w2|l1.0|li|Undergraduate Programs
+21|w2|l1.0|li|Master Programs
+22|w2|l1.0|li|Doctoral Programs
+23|w3|l1.0|li|Short-term Training Courses
+24|w1|l1.0|li|Research
+25|w2|l1.0|li|Research Centers
+26|w2|l1.0|li|Research Projects
+27|w1|l1.0|li|Publications
+28|w3|l1.0|li|Find an expert?
+29|w1|l1.0|li|Admission
+30|w6|l1.0|li|Enlightening your digital future with SoICT
+31|w1|l1.0|li|Admission
+32|w2|l1.0|li|Reference benchmarks
+33|w1|l1.0|li|Student
+34|w3|l1.0|li|Forms and regulations
+35|w1|l1.0|li|Consultant
+36|w2|l1.0|li|Student Activities
+37|w2|l1.0|li|International cooperation
+38|w2|l1.0|li|Academic Partnerships
+39|w2|l1.0|li|Enterprise Partnerships
+40|w8|l0.3|div|Home » Officer » Ph.D. Nguyen An Hung
+41|w3|l0.0|p|Nguyen An Hung
+42|w4|l0.0|p|Technical Staff, Computer Center
+43|w6|l0.0|div|Ph.D. (Shibaura Institute of Technology, 2020)
+44|w10|l0.0|div|M.S. (Computer Engineering, Hanoi University of Science and Technology, 2014)
+45|w8|l0.0|div|B.S. (Hanoi University of Science and Technology, 2011)
+46|w4|l0.5|div|Email: hung.nguyenan@hust.edu.vn , hungna@soict.hust.edu.vn
+47|w3|l0.0|div|Department & Center
+48|w3|l1.0|li|Computer Science Department
+49|w3|l1.0|li|Computer Engineering Department
+50|w2|l1.0|li|BKCS Center
+51|w2|l1.0|li|Innovation Center
+52|w2|l1.0|li|NAVIS Center
+53|w2|l1.0|li|BK.AI Center
+54|w2|l1.0|li|Computer Center
+55|w2|l1.0|li|School Office
+56|w2|l0.0|div|Education program
+57|w1|l1.0|li|Undergraduate
+58|w1|l1.0|li|Master
+59|w1|l1.0|li|Doctor
+60|w3|l0.0|div|Systems and resources
+61|w3|l1.0|li|University administration system
+62|w5|l1.0|li|Company and alumni management system
+63|w3|l1.0|li|Forms and regulations
+64|w4|l0.0|p|(+84) 24 3869 2463
+65|w1|l0.0|p|vp@soict.hust.edu.vn
+66|w10|l0.0|p|Room 505, B1 Building, Hanoi University of Science and Technology
+67|w11|l0.0|p|No.1, Dai Co Viet Street, Hai Ba Trung District, Hanoi City
+68|w8|l0.0|div|Copyright © School of Information and Communications Technology
+69|w1|l1.0|li|Introduction
+70|w2|l1.0|li|Educational philosophy
+71|w1|l1.0|li|Organization
+72|w2|l1.0|li|School Council
+73|w3|l1.0|li|Board of Deans
+74|w3|l1.0|li|Lecturer and Staff
+75|w3|l1.0|li|Department – Center
+76|w1|l1.0|li|Department
+77|w3|l1.0|li|Computer Science Department
+78|w3|l1.0|li|Computer Engineering Department
+79|w1|l1.0|li|Center
+80|w2|l1.0|li|Computer Center
+81|w2|l1.0|li|Innovation Center
+82|w3|l1.0|li|BK AI Center
+83|w2|l1.0|li|BKCS Center
+84|w2|l1.0|li|EdTech Center
+85|w2|l1.0|li|NAVIS Center
+86|w1|l1.0|li|Academics
+87|w2|l1.0|li|Undergraduate Programs
+88|w2|l1.0|li|Master Programs
+89|w2|l1.0|li|Doctoral Programs
+90|w3|l1.0|li|Short-term Training Courses
+91|w1|l1.0|li|Research
+92|w2|l1.0|li|Research Centers
+93|w2|l1.0|li|Research Projects
+94|w1|l1.0|li|Publications
+95|w3|l1.0|li|Find an expert?
+96|w1|l1.0|li|Admission
+97|w6|l1.0|li|Enlightening your digital future with SoICT
+98|w1|l1.0|li|Admission
+99|w2|l1.0|li|Reference benchmarks
+100|w1|l1.0|li|Student
+101|w3|l1.0|li|Forms and regulations
+102|w1|l1.0|li|Consultant
+103|w2|l1.0|li|Student Activities
+104|w2|l1.0|li|International cooperation
+105|w2|l1.0|li|Academic Partnerships
+106|w2|l1.0|li|Enterprise Partnerships
+
+##### 19 https://svbk.hust.edu.vn/vi/news/author/dtn/page-25/
+title: Đoàn Thanh Niên - Trang 25
+og:title: Đoàn Thanh Niên - Trang 25
+pub:  | author: Đoàn thanh niên Đại học Bách khoa Hà Nội
+h1: Đoàn thanh niên Đại học Bách khoa Hà Nội
+0|w5|l0.0|div|Nhập từ khóa tìm kiếm
+1|w6|l1.0|li|Đại học Bách khoa Hà Nội
+2|w5|l1.0|li|Đoàn TNCS Hồ Chí Minh
+3|w2|l1.0|li|Đại học
+4|w4|l1.0|li|Bách khoa Hà Nội
+5|w5|l1.0|li|Đoàn TNCS Hồ Chí Minh
+6|w3|l1.0|li|Hội Sinh Viên
+7|w3|l1.0|li|Thư viện ảnh
+8|w1|l1.0|li|Video
+9|w2|l1.0|div|Giới thiệu
+10|w9|l1.0|div|Chức năng, nhiệm vụ & cơ cấu tổ chức
+11|w6|l1.0|div|Ban chấp hành Đoàn Đại học
+12|w8|l1.0|div|Ban chấp hành Hội Sinh viên Đại học
+13|w2|l1.0|div|Tin Tức
+14|w3|l1.0|div|Tin hoạt động
+15|w2|l1.0|div|Thông báo
+16|w4|l1.0|div|Đơn vị trực thuộc
+17|w3|l1.0|div|Ban chuyên môn
+18|w7|l1.0|div|Liên chi đoàn - Liên chi hội
+19|w4|l1.0|div|Chi đoàn trực thuộc
+20|w3|l1.0|div|Câu lạc bộ
+21|w5|l1.0|div|Văn bản - Tài liệu
+22|w3|l1.0|div|Lịch làm việc
+23|w2|l1.0|div|Liên hệ
+24|w2|l1.0|li|Trang nhất
+25|w2|l1.0|li|Giới thiệu
+26|w9|l1.0|li|Chức năng, nhiệm vụ & cơ cấu tổ chức
+27|w6|l1.0|li|Ban chấp hành Đoàn Đại học
+28|w8|l1.0|li|Ban chấp hành Hội Sinh viên Đại học
+29|w2|l1.0|li|Tin Tức
+30|w3|l1.0|li|Tin hoạt động
+31|w2|l1.0|li|Thông báo
+32|w4|l1.0|li|Đơn vị trực thuộc
+33|w3|l1.0|li|Ban chuyên môn
+34|w7|l1.0|li|Liên chi đoàn - Liên chi hội
+35|w4|l1.0|li|Chi đoàn trực thuộc
+36|w3|l1.0|li|Câu lạc bộ
+37|w5|l1.0|li|Văn bản - Tài liệu
+38|w3|l1.0|li|Lịch làm việc
+39|w2|l1.0|li|Liên hệ
+40|w16|l1.0|h3|SINH VIÊN BÁCH KHOA HÀ NỘI PHÁT HUY LỐI SỐNG XANH VÀ THỰC HÀNH TIẾT KIỆM
+41|w2|l0.0|p|04:14 12/03/2021
+42|w62|l0.0|div|Thay vì vứt bừa bãi những phế phẩm như: Giấy vụn, vỏ chai, lọ nhựa... sinh viên trường Đại học Bách khoa Hà Nộ…
+43|w12|l1.0|h3|TRUÔNG BỒN: ĐỊA CHỈ ĐỎ CHỨNG TÍCH MỘT HUYỀN THOẠI BẤT TỬ
+44|w2|l0.0|p|04:50 10/03/2021
+45|w51|l0.0|div|Nhân dịp chào mừng kỉ niệm 90 năm ngày thành lập Đoàn thanh niên Cộng sản HCM, Đoàn TN trường ĐHBK Hà Nội xin …
+46|w21|l1.0|h3|HỘI NGHỊ HỌC TẬP, NGHIÊN CỨU, QUÁN TRIỆT NGHỊ QUYẾT ĐẠI HỘI ĐẢNG BỘ THÀNH PHỐ HÀ NỘI LẦN THỨ XVII
+47|w2|l0.0|p|01:00 03/02/2021
+48|w63|l0.0|div|Chiều ngày 2 tháng 2 năm 2021, Đoàn Trường Đại học Bách Khoa Hà Nội đã tổ chức Hội nghị trực tuyến học tập, ng…
+49|w20|l1.0|h3|KỶ NIỆM 80 NĂM NGÀY BÁC HỒ VỀ NƯỚC, TRỰC TIẾP LÃNH ĐẠO CÁCH MẠNG VIỆT NAM (28/01/1941 - 28/01/2021)
+50|w2|l0.0|p|01:00 20/01/2021
+51|w34|l0.0|div|Đoàn trường Đại học BKHN xin gửi tới các Đoàn viên Đề cương tuyên truyền kỷ niệm 80 năm Ngày Bác Hồ về nước, t…
+52|w12|l1.0|h3|PHÁT TRIỂN ĐẢNG TRONG TRƯỜNG HỌC: ĐỂ KHÔNG RƠI "HẠT GIỐNG ĐỎ"
+53|w2|l0.0|p|11:00 12/01/2021
+54|w42|l0.0|div|Công tác phát triển đảng viên trong trường đại học càng có vai trò quan trọng khi đây là nguồn nhân sự kế cận …
+55|w6|l1.0|h3|[KẾT QUẢ TRẬN CHUNG KẾT BKCUP2020]
+56|w2|l0.0|p|10:55 12/01/2021
+57|w14|l0.9|li|ĐỐI THOẠI GIỮA SINH VIÊN VÀ LÃNH ĐẠO NHÀ TRƯỜNG NĂM 2020 (13:20 29/12/2020)
+58|w10|l0.8|li|MR AND MISS BK 2020 – BRIGHT KOSMOS (09:53 17/12/2020)
+59|w20|l0.9|li|CHƯƠNG TRÌNH HỖ TRỢ SINH VIÊN CÓ HOÀN CẢNH KHÓ KHĂN DO ẢNH HƯỞNG CỦA LŨ LỤT 2020 (08:01 17/12/2020)
+60|w4|l0.5|li|Liên hệ (03:22 09/12/2020)
+61|w18|l0.9|li|THÔNG BÁO “LỚP BỒI DƯỠNG NHẬN THỨC VỀ ĐẢNG CỘNG SẢN VIỆT NAM” NĂM HỌC 2020-2021 (04:24 24/09/2020)
+62|w1|l1.0|li|«
+63|w1|l1.0|li|1
+64|w1|l0.0|li|...
+65|w1|l1.0|li|24
+66|w1|l1.0|li|25
+67|w1|l1.0|li|26
+68|w1|l1.0|li|»
+69|w2|l1.0|li|Tin Tức
+70|w3|l1.0|li|Tin hoạt động
+71|w2|l1.0|li|Thông báo
+72|w4|l0.0|div|Bản đồ chỉ dẫn
+73|w9|l0.0|div|Hội sinh viên - ĐH Bách Khoa Hà Nội
+74|w6|l1.0|div|Đại học Bách khoa Hà Nội
+75|w3|l0.0|div|Mạng xã hội
+76|w4|l0.0|div|Đơn vị trực thuộc
+77|w3|l1.0|li|Ban chuyên môn
+78|w7|l1.0|li|Liên chi đoàn - Liên chi hội
+79|w4|l1.0|li|Chi đoàn trực thuộc
+80|w3|l1.0|li|Câu lạc bộ
+81|w4|l0.0|div|Sơ đồ trang web
+82|w5|l1.0|div|Xem sơ đồ trang ...
+83|w27|l0.0|div|Bản quyền thuộc về Đại học Bách khoa Hà Nội Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội Điện thoại: 024 38…
+84|w22|l0.5|div|Bạn đã không sử dụng Site, Bấm vào đây để duy trì trạng thái đăng nhập . Thời gian chờ: 60 giây
+
+##### 20 https://users.soict.hust.edu.vn/hungpn/
+title: Pham Ngoc Hung's Home page
+og:title: 
+pub:  | author: 
+h1: 
+0|w3|l0.0|p|PHẠM NGỌC HƯNG
+1|w2|l0.0|p|CONTACT INFORMATION
+2|w29|l0.4|td|Lecturer, PhD. Department of Computer Engineering School of Information and Communication Technology Hanoi Uni…
+3|w1|l0.0|p|EDUCATIONS
+4|w1|l0.0|p|2014-2017
+5|w6|l0.0|p|Ph.D. Shibaura Institute of Technology, Japan
+6|w13|l0.0|p|Thesis title: Learning and Executing Everyday Task from Instruction Manual and Human Demonstration
+7|w1|l0.0|p|2008-2010
+8|w11|l0.0|p|M.Sc. (Information Processing and Communications) Hanoi University of Science and Technology
+9|w15|l0.0|p|Thesis title: Generating human motion for humanoid robot using motion capture system in real time
+10|w1|l0.0|p|2003-2008
+11|w9|l0.0|p|B.Eng. (Information Technology) Hanoi University of Science and Technology
+12|w14|l0.0|p|Thesis title: Design and develop a multi-hops wireless sensor network using RF transceiver modules
+13|w2|l0.0|p|RESEARCH INTERESTS
+14|w8|l0.0|p|- Robotics, Intelligent Robot Systems, Learning from Demonstration
+15|w6|l0.2|p|- Embedded System (Website: https://sites.google.com/site/embedded247/ )
+16|w3|l0.0|p|- Image Processing
+17|w3|l0.0|p|- Machine Learning
+18|w1|l0.0|p|TEACHING
+19|w10|l0.0|p|- IT1110 Introduction to Information Technology (Tin học Đại cương)
+20|w5|l0.0|p|- IT3270E Logic Circuit Lab
+21|w6|l0.0|p|- IT4210 Embedded System (Hệ nhúng)
+22|w8|l0.0|p|- IT4786 System Programming (Lập trình Hệ thống)
+23|w8|l0.0|p|- IT4272E Computer Systems (Hệ thống Máy tính)
+24|w6|l0.0|p|- IT4160 Microprocessor (Vi xử lý)
+25|w1|l0.0|p|PUBLICATION
+26|w406|l0.0|td|[1] Pham Ngoc Hung, Takashi Yoshimi, "Extracting actions from instruction manual and testing their execution i…
+
+##### 21 https://ai4life.hust.edu.vn/nguyen-tuan-dung/
+title: Nguyen Tuan Dung - AI4LIFE
+og:title: AI4LIFE
+pub:  | author: 
+h1: Nguyen Tuan Dung
+0|w7|l0.0|div|L o a d i n g
+1|w1|l1.0|li|ai4life@hust.edu.vn
+2|w1|l1.0|li|Home
+3|w2|l1.0|li|Our Team
+4|w2|l1.0|li|Research Labs
+5|w6|l1.0|li|AICORE – Học máy (Machine Learning)
+6|w10|l1.0|li|AI4Semi – Công nghệ bán dẫn thông minh (Smart Semiconductor)
+7|w8|l1.0|li|AI4SENSE – Hệ thống thông minh (Intelligent Systems):
+8|w8|l1.0|li|AI4Envi – Môi trường thông minh (Smart Environment)
+9|w11|l1.0|li|AI4HEALTH – Khoa học sự sống thông minh (Smart Life Sciences)
+10|w8|l1.0|li|AI4Edu – Giáo dục thông minh (Smart Education)
+11|w1|l1.0|li|Projects
+12|w1|l1.0|li|Solutions
+13|w1|l1.0|li|Publications
+14|w3|l1.0|li|News and Events
+15|w1|l1.0|li|Contact
+16|w3|l0.0|h1|Nguyen Tuan Dung
+17|w1|l1.0|li|Home
+18|w3|l0.0|li|Nguyen Tuan Dung
+19|w2|l0.0|h3|Short Bio
+20|w52|l0.0|li|Tuan Dung Nguyen received his B.E. degree from Hanoi University of Science and Technology (HUST) in 2023. Curr…
+21|w1|l0.0|h3|Education
+22|w17|l0.0|li|B.E. in Data Science and Artificial Intelligence (Advanced Program), Hanoi University of Science and Technolog…
+23|w3|l0.0|h3|Honors and Awards
+24|w9|l0.0|p|First Place, AI4VN 2022 Air quality forecasting challenge 2022
+25|w11|l0.0|p|First Place, SOICT – HUST Student Scientific Research Conference Summer 2023
+26|w10|l0.0|p|Best Presentation Award, SOICT – HUST Thesis Defense Summer 2023
+27|w8|l0.0|p|Second Place, Ministerial-level Student Scientific Research Fall 2023
+28|w2|l0.0|h3|Selected Publications
+29|w43|l0.0|p|Tuan Dung Nguyen , T. T. Huynh, V. M. H. Phan, H. Nguyen, and P. L. Nguyen, “Carer – clinical reasoning-enhanc…
+30|w38|l0.0|p|Tuan Dung Nguyen , N. A. Tong, T. T. Huynh, B. P.Nguyen, H. Nguyen, and P. L. Nguyen, “Hierarchical federated …
+31|w35|l0.0|p|N. S. Dinh, Tuan Dung Nguyen , D. T. Tran, et al., “Sign language recognition: A large-scale multi-view datase…
+32|w1|l0.0|h3|Teaching
+33|w3|l0.0|p|SD6702: Mobile Programming
+34|w3|l0.0|li|SD6702: Project 2
+35|w2|l0.0|h3|Quick Link
+36|w2|l1.0|li|Our team
+37|w1|l1.0|li|Projects
+38|w1|l1.0|li|Solutions
+39|w1|l1.0|li|News
+40|w2|l0.0|h3|Contact Us
+41|w12|l0.0|p|Room 618, Ta Quang Buu Library, Hanoi University of Science and Technology
+42|w2|l0.0|h5|Opening Hours:
+43|w8|l0.0|p|Mon - Sat: 8.30 AM - 4.30 PM
+44|w7|l0.1|p|2024 By AI4LIFE . All Rights Reserved.
+45|w3|l1.0|li|Terms & Condition
+46|w2|l1.0|li|Privacy Policy
+
+##### 22 https://bktextile.hust.edu.vn/tin-tuc1/-/asset_publisher/L3swsazlHgWT/content/cong-ty-cp-tong-cty-may-bac-giang-lgg-tuyen-dung
+title: BKTEXLET 2018
+og:title: 
+pub:  | author: 
+h1: Tin nổi bật Tin nổi bật
+0|w5|l1.0|body|Truy cập nội dung luôn
+1|w5|l0.8|div|Đăng nhập | Liên hệ
+2|w6|l0.2|div|Ngôn ngữ: Tiếng Việt [Beta] English
+3|w1|l1.0|li|.
+4|w2|l1.0|li|Giới thiệu
+5|w3|l1.0|li|Thông tin chung
+6|w7|l1.0|li|Lịch sử hình thành và phát triển
+7|w4|l1.0|li|Cơ sở vật chất
+8|w4|l1.0|li|Triết lý giáo dục
+9|w2|l1.0|li|Tổ chức
+10|w4|l1.0|li|Cơ cấu tổ chức
+11|w3|l1.0|li|Chi bộ Viện
+12|w4|l1.0|li|Ban lãnh đạo Viện
+13|w3|l1.0|li|Hội đồng viện
+14|w3|l1.0|li|Văn phòng Viện
+15|w3|l1.0|li|Công đoàn Viện
+16|w1|l1.0|li|Đoàn-Hội
+17|w5|l1.0|li|Chi hội cựu giáo chức
+18|w5|l1.0|li|Chi hội cựu sinh viên
+19|w2|l1.0|li|Tuyển sinh
+20|w6|l1.0|li|Tuyển sinh đại học chính quy
+21|w4|l1.0|li|Thông tin tuyển sinh
+22|w4|l1.0|li|Câu hỏi tuyển sinh
+23|w9|l1.0|li|Tuyển sinh đại học hệ vừa học vừa làm
+24|w3|l1.0|li|Công nghệ Dệt
+25|w6|l1.0|li|Công nghệ Nhuộm và Hoàn tất
+26|w3|l1.0|li|Công nghệ May
+27|w4|l1.0|li|Công nghệ Da giầy
+28|w5|l1.0|li|Tuyển sinh sau đại học
+29|w2|l1.0|li|Thạc sỹ
+30|w2|l1.0|li|Tiến sỹ
+31|w2|l1.0|li|Đào tạo
+32|w4|l1.0|li|Mô hình đào tạo
+33|w4|l1.0|li|Đào tạo đại học
+34|w8|l1.0|li|Chương trình đào tạo chính quy (đến K61)
+35|w8|l1.0|li|Chương trình Đào tạo chính quy (Từ K62)
+36|w6|l1.0|li|Formal Education Program (From Course 65)
+37|w8|l1.0|li|Chương trình đào tạo liên kết doanh nghiệp
+38|w7|l1.0|li|Đào tạo hệ vừa học vừa làm
+39|w4|l1.0|li|Đào tạo thạc sỹ
+40|w6|l1.0|li|Chương trình đào tạo (đến 2018A)
+41|w5|l1.0|li|Chương trình đào tạo(Từ 2018B)
+42|w4|l1.0|li|Đào tạo tiến sỹ
+43|w4|l1.0|li|Đào tạo ngắn hạn
+44|w2|l1.0|li|Nghiên cứu
+45|w4|l1.0|li|Lĩnh vực nghiên cứu
+46|w4|l1.0|li|Đề tài nghiên cứu
+47|w4|l1.0|li|Sản phẩm nghiên cứu
+48|w4|l1.0|li|Bài báo công bố
+49|w2|l1.0|li|Hợp tác
+50|w2|l1.0|li|Trong nước
+51|w2|l1.0|li|Quốc tế
+52|w3|l1.0|li|Bộ môn-Trung tâm
+53|w5|l1.0|li|Bộ môn Công nghệ Dệt
+54|w3|l1.0|li|Giới thiệu chung
+55|w4|l1.0|li|Danh mục cán bộ
+56|w4|l1.0|li|Các hướng nghiên cứu
+57|w6|l1.0|li|Danh sách đề tài nghiên cứu
+58|w4|l1.0|li|Cơ sở vật chất
+59|w3|l1.0|li|Các môn học
+60|w3|l1.0|li|Sách xuất bản
+61|w2|l1.0|li|HỢP TÁC
+62|w2|l1.0|li|Liên hệ
+63|w9|l1.0|li|Bộ môn Vật liệu và Công nghệ Hóa dệt
+64|w3|l1.0|li|Giới thiệu chung
+65|w4|l1.0|li|Danh mục cán bộ
+66|w4|l1.0|li|Các hướng nghiên cứu
+67|w6|l1.0|li|Danh sách đề tài nghiên cứu
+68|w4|l1.0|li|Cơ sở vật chất
+69|w3|l1.0|li|Các môn học
+70|w3|l1.0|li|Sách xuất bản
+71|w2|l1.0|li|Hợp tác
+72|w2|l1.0|li|Liên hệ
+73|w8|l1.0|li|Bộ môn Công nghệ May và Thời trang
+74|w3|l1.0|li|Giới thiệu chung
+75|w4|l1.0|li|Danh mục cán bộ
+76|w4|l1.0|li|Các hướng nghiên cứu
+77|w6|l1.0|li|Danh sách đề tài nghiên cứu
+78|w4|l1.0|li|Cơ sở vật chất
+79|w3|l1.0|li|Các môn học
+80|w3|l1.0|li|Sách xuất bản
+81|w2|l1.0|li|Hợp tác
+82|w2|l1.0|li|Liên hệ
+83|w9|l1.0|li|Trung tâm Thí nghiệm Vật liệu Dệt may-Da giầy
+84|w3|l1.0|li|Giới thiệu chung
+85|w4|l1.0|li|Danh sách cán bộ
+86|w4|l1.0|li|Cơ sở vật chất
+87|w4|l1.0|li|Năng lực thử nghiệm
+88|w2|l1.0|li|Đào tạo
+89|w4|l1.0|li|Các hướng nghiên cứu
+90|w4|l1.0|li|Các mẫu giấy tờ
+91|w2|l1.0|li|Hợp tác
+92|w5|l1.0|li|Góp ý và liên hệ
+93|w5|l1.0|li|Tin tức & Thông báo
+94|w10|l1.0|li|Thông tin về Dệt may, Da giầy và Thời trang
+95|w2|l1.0|li|Đào tạo
+96|w4|l1.0|li|Nghiên cứu khoa học
+97|w2|l1.0|li|Đoàn hội
+98|w2|l1.0|li|Học bổng
+99|w2|l1.0|li|Tuyển dụng
+100|w3|l1.0|li|Thông báo khác
+101|w2|l1.0|li|Sinh viên
+102|w5|l1.0|li|Ban Tư vấn học tập
+103|w2|l1.0|li|Quy trình
+104|w2|l1.0|li|Biểu mẫu
+105|w4|l1.0|li|Hệ thống trực tuyến
+106|w2|l1.0|li|Liên hệ
+107|w2|l1.0|div|Quay lại
+108|w12|l0.0|h3|Công ty CP - Tổng cty may Bắc Giang LGG tuyển dụng
+109|w12|l0.0|p|Công ty CP - Tổng cty may Bắc Giang LGG tuyển dụng:
+110|w125|l0.0|p|Tuyển 2 bạn Nam, Trình độ ĐHBK ở mức khá, ưu tiên các bạn học ở khoa dệt may của BK. - Công việc: Làm NV phòng…
+111|w1|l1.0|li|Tweet
+112|w6|l0.0|h1|Tin nổi bật Tin nổi bật
+113|w6|l1.0|li|K67 – SINH VIÊN CẦN BIẾT
+114|w10|l1.0|li|K66 KỸ THUẬT DỆT MAY - SINH VIÊN CẦN BIẾT
+115|w14|l1.0|li|THÔNG BÁO CHƯƠNG TRÌNH TUYỂN DỤNG GIÁM ĐỐC TƯƠNG LAI CRYSTAL ASSOCIATE PROGRAMME 2021
+116|w14|l1.0|li|Bổ nhiệm các chức vụ quản lý của Viện nhiệm kỳ 2020 - 2025
+117|w10|l1.0|li|Ngành dệt may, da giày trước cơ hội bứt phá
+118|w8|l0.0|h1|Thống kê truy cập Thống kê truy cập
+119|w8|l0.0|div|1 8 4 2 9 8 2 5
+120|w3|l0.0|div|Đang online: 365
+121|w3|l0.0|div|Hôm nay: 3850
+122|w3|l0.0|div|Trong tuần: 124444
+123|w3|l0.0|div|Trong tháng: 210235
+124|w1|l0.0|p|BKTEXLET-HUST
+125|w3|l0.0|p|(+84) 43 8692401
+126|w1|l0.0|p|stlf@hust.edu.vn
+127|w10|l0.0|p|Địa chỉ: Nhà C5-P216- Đại học Bách Khoa Hà Nội
+128|w5|l0.0|h3|Kết nối với chúng tôi
+129|w3|l0.0|h3|Liên kết ngoài
+130|w8|l1.0|li|Trang thông tin tuyển sinh Đại học BKHN
+131|w4|l1.0|li|Khóa Đào tạo METI
+132|w13|l0.0|p|Copyright © 2019 - Viện Dệt May - Da giầy và Thời trang
+
+##### 23 https://csv.hust.edu.vn/hao-tam/5245948974333953
+title: TẤM LÒNG VÀNG CỦA NGƯỜI BÁCH KHOA
+og:title: TẤM LÒNG VÀNG CỦA NGƯỜI BÁCH KHOA
+pub:  | author: 
+h1: 
+0|w2|l1.0|div|Giới thiệu
+1|w8|l1.0|div|Quyền lợi và nghĩa vụ của thành viên
+2|w2|l1.0|div|Tin tức
+3|w2|l1.0|div|Tin tức
+4|w2|l1.0|div|Sự kiện
+5|w5|l1.0|div|Sự kiện sắp diễn ra
+6|w5|l1.0|div|Sự kiện đang diễn ra
+7|w5|l1.0|div|Sự kiện đã kết thúc
+8|w2|l1.0|div|Mạng lưới
+9|w3|l1.0|div|Câu lạc bộ
+10|w2|l1.0|div|Kết nối
+11|w2|l1.0|div|Vinh danh
+12|w2|l1.0|div|Hảo tâm
+13|w2|l1.0|li|Trang chủ
+14|w2|l1.0|li|Hảo tâm
+15|w7|l1.0|li|TẤM LÒNG VÀNG CỦA NGƯỜI BÁCH KHOA
+16|w7|l0.0|h3|TẤM LÒNG VÀNG CỦA NGƯỜI BÁCH KHOA
+17|w1|l0.0|div|29/07/2025
+18|w2|l0.0|div|GIỚI THIỆU
+19|w35|l0.0|div|Mạng lưới cựu sinh viên Đại học Bách Khoa Hà Nội Địa chỉ: Tòa nhà BK Alumni - Đại học Bách khoa Hà Nội Fanpage…
+20|w3|l0.0|div|Liên kết web
+21|w5|l0.0|li|Đại học Bách khoa HN
+22|w3|l0.0|li|Danh sách khoa/viện
+23|w5|l0.0|li|Hỗ trợ cựu sinh viên
+24|w6|l0.0|li|Ban liên lạc cựu sinh viên
+25|w2|l0.0|li|Sự kiện
+26|w2|l0.0|li|Tra cứu
+27|w2|l0.0|li|Vinh danh
+28|w3|l0.0|li|Câu lạc bộ
+29|w2|l0.0|li|Hảo tâm
+
+##### 24 https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=28215
+title: CTT ĐHBKHN
+og:title: 
+pub:  | author: 
+h1: 
+0|w2|l1.0|div|Đăng nhập
+1|w4|l1.0|div|Dành cho phụ huynh
+2|w2|l1.0|li|Trang chủ
+3|w2|l1.0|li|Thông báo
+4|w2|l1.0|li|Đại học
+5|w3|l1.0|li|Sau đại học
+6|w4|l1.0|li|Vừa làm vừa học
+7|w2|l1.0|li|Quy định
+8|w2|l1.0|li|Đại học
+9|w3|l1.0|li|Sau đại học
+10|w4|l1.0|li|Vừa làm vừa học
+11|w2|l1.0|li|Biểu mẫu
+12|w2|l1.0|li|Sổ tay
+13|w2|l1.0|li|Dịch vụ
+14|w2|l1.0|li|Tra cứu
+15|w2|l1.0|li|Liên hệ
+16|w2|l1.0|li|Trang chủ
+17|w2|l1.0|li|Thông báo
+18|w2|l1.0|li|Đại học
+19|w3|l1.0|li|Sau đại học
+20|w4|l1.0|li|Vừa làm vừa học
+21|w2|l1.0|li|Kế hoạch
+22|w2|l1.0|li|Đại học
+23|w3|l1.0|li|Sau đại học
+24|w4|l1.0|li|Vừa làm vừa học
+25|w2|l1.0|li|Quy định
+26|w2|l1.0|li|Đại học
+27|w3|l1.0|li|Sau đại học
+28|w4|l1.0|li|Vừa làm vừa học
+29|w2|l1.0|li|Dịch vụ
+30|w13|l0.0|h3|Công ty thang máy Mitsubishi tuyển dụng kỹ sư bảo trì thang máy
+31|w12|l0.0|div|Số lượng cần tuyển: 2 Giới tính: Nam Mô tả công việc:
+32|w4|l0.0|li|Lên lịch bảo trì
+33|w13|l0.0|li|Cập nhật hư hỏng về phụ tùng và cập nhật lên hệ thống
+34|w13|l0.0|li|Xem xét lại và cập nhật biên bản bảo trì lên hệ thống
+35|w14|l0.0|li|Hỗ trợ việc theo dõi an toàn và chất lượng bảo trì trong Ban
+36|w9|l0.0|li|Công việc khác theo yêu cầu của cấp trên
+37|w13|l0.0|li|Thời gian làm việc: Từ thứ 2 - thứ 6 (8:00 - 17:30)
+38|w2|l0.0|div|Yêu cầu:
+39|w5|l0.0|li|Tuổi: 22 - 28 tuổi
+40|w3|l0.0|li|Giới tính: Nam
+41|w16|l0.0|li|Tốt nghiệp Đại học chuyên ngành Cơ/ Điện, điện tử, cơ điện, tự động hóa ...
+42|w8|l0.0|li|Chưa có kinh nghiệm sẽ được đào tạo
+43|w12|l0.0|li|Sử dụng tốt tiêng Anh (Toeic 450) và vi tính văn phòng
+44|w2|l0.0|div|Quyền lợi
+45|w13|l0.0|li|Được hưởng đầy đủ chế độ bảo hiểm theo quy định nhà nước
+46|w10|l0.0|li|Được hưởng lương và thưởng theo quy định công ty
+47|w16|l0.0|li|Được tham gia hoạt động thường niên của Công ty, khám sức khỏe 1 lần/ năm
+48|w8|l0.0|li|Có cơ hội thăng tiến trong tương lai
+49|w10|l0.0|li|Thời gian làm việc: từ thứ 2 - thứ 6.
+50|w15|l0.0|li|Được đào tạo tay nghề, đào tạo an toàn lao động, phòng cháy chữa cháy...
+51|w79|l0.0|div|Nơi làm việc: Hà Nội Ứng viên quan tâm gửi hồ sơ về địa chỉ Email: tran-dai.nghia@vmec.vn / recruitment.HN@vme…
+52|w10|l0.0|p|Bản quyền thuộc về Đại học Bách Khoa Hà Nội
+53|w12|l0.0|p|Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội
+
+##### 25 https://fami.hust.edu.vn/publication/simulation-of-linear-elastic-equation-and-application-in-mechanics-of-materials/
+title: » Simulation of linear elastic equation and application in mechanics of materials
+og:title: 
+pub:  | author: 
+h1: Simulation of linear elastic equation and application in mechanics of materials
+0|w6|l1.0|nav|Đại học Bách Khoa Hà Nội
+1|w1|l1.0|li|English
+2|w2|l1.0|li|Giới thiệu
+3|w3|l1.0|li|Giới thiệu chung
+4|w5|l1.0|li|Sứ mạng và Tầm nhìn
+5|w4|l1.0|li|Triết lý giáo dục
+6|w5|l1.0|li|Cơ cấu tổ chức Khoa
+7|w4|l1.0|li|Ban lãnh đạo Khoa
+8|w6|l1.0|li|Đảng bộ và Công đoàn Khoa
+9|w4|l1.0|li|Lịch sử hình thành
+10|w3|l1.0|li|Cựu giáo chức
+11|w3|l1.0|li|Giới thiệu Hội
+12|w5|l1.0|li|Danh sách cựu giáo chức
+13|w3|l1.0|li|Nhóm chuyên môn
+14|w7|l1.0|li|Khoa học dữ liệu và ứng dụng
+15|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+16|w4|l1.0|li|Danh sách thành viên
+17|w12|l1.0|li|Cơ sở toán học cho tin học và hệ thống thông tin
+18|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+19|w4|l1.0|li|Danh sách thành viên
+20|w8|l1.0|li|Tối ưu hóa và tính toán khoa học
+21|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+22|w4|l1.0|li|Danh sách thành viên
+23|w7|l1.0|li|Xác suất thống kê và ứng dụng
+24|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+25|w4|l1.0|li|Danh sách thành viên
+26|w2|l1.0|li|Giải tích
+27|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+28|w4|l1.0|li|Danh sách thành viên
+29|w2|l1.0|li|Đại số
+30|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+31|w4|l1.0|li|Danh sách thành viên
+32|w4|l1.0|li|Giảng viên tạo nguồn
+33|w4|l1.0|li|Danh sách thành viên
+34|w2|l1.0|li|Đào tạo
+35|w4|l1.0|li|Đào tạo đại học
+36|w6|l1.0|li|Chương trình Đào tạo Toán Tin
+37|w8|l1.0|li|Chương trình Hệ thống thông tin quản lý
+38|w11|l1.0|li|CTĐT Khoa học tính toán cho các hệ thống thông minh
+39|w9|l1.0|li|Chương trình Khoa học máy tính – ĐH TROY
+40|w4|l1.0|li|Đào tạo thạc sĩ
+41|w4|l1.0|li|Đào tạo tiến sĩ
+42|w4|l1.0|li|Sách đã xuất bản
+43|w3|l1.0|li|Nghiên cứu&Hợp tác
+44|w4|l1.0|li|Lĩnh vực nghiên cứu
+45|w4|l1.0|li|Các nhóm nghiên cứu
+46|w4|l1.0|li|Đề tài khoa học
+47|w5|l1.0|li|Hợp tác và liên kết
+48|w4|l1.0|li|Hội thảo khoa học
+49|w2|l1.0|li|Lịch seminar
+50|w2|l1.0|li|Tuyển sinh
+51|w4|l1.0|li|Giới thiệu về Khoa
+52|w6|l1.0|li|Giới thiệu tuyển sinh đại học
+53|w6|l1.0|li|Một số câu hỏi thường gặp
+54|w3|l1.0|li|Đặt câu hỏi
+55|w5|l1.0|li|Tuyển sinh sau đại học
+56|w3|l1.0|li|Sinh viên&Học viên
+57|w3|l1.0|li|Liên chi Đoàn
+58|w3|l1.0|li|Liên chi Hội
+59|w4|l1.0|li|Sinh viên tiêu biểu
+60|w6|l1.0|li|Nghiên cứu khoa học sinh viên
+61|w4|l1.0|li|Học viên cao học
+62|w3|l1.0|li|Nghiên cứu sinh
+63|w4|l1.0|li|Góc con người FaMI
+64|w5|l1.0|li|Blog Ứng dụng Toán học
+65|w2|l1.0|li|Liên hệ
+66|w3|l0.0|h2|Liên kết nhanh
+67|w5|l1.0|li|Thông tin cho sinh viên
+68|w5|l1.0|li|Thông tin cựu sinh viên
+69|w4|l1.0|li|Dành cho cán bộ
+70|w7|l1.0|li|Đề cương và Bài giảng môn học
+71|w4|l1.0|li|Tài liệu tham khảo
+72|w5|l1.0|li|Mẫu đơn cho sinh viên
+73|w4|l1.0|li|Cố vấn học tập
+74|w2|l1.0|li|Điểm thi
+75|w11|l0.0|h1|Simulation of linear elastic equation and application in mechanics of materials
+76|w4|l0.0|h3|Đánh giá bài viết
+77|w2|l0.0|h3|Xem thêm
+78|w12|l0.9|div|09/02/2026. An adaptive numerical scheme for solving incompressible two-phase and free-surface flows
+79|w13|l0.9|div|09/02/2026. Shape optimization for Stokes flows using sensitivity analysis and finite element method
+80|w9|l0.9|div|09/02/2026. The proper 2-connection number of several graph classes
+81|w14|l0.9|div|09/02/2026. Shape optimization for linear elasticity structure using sensitivity analysis and finite element m…
+82|w19|l0.9|div|09/02/2026. Numerical simulation of the incompressible Navier-Stokes equations by the method of characteristic…
+83|w10|l0.9|div|09/02/2026. Polynomial interpolation of holomorphic functions based on Radon projections
+84|w29|l0.0|p|Văn phòng: C9-101, Số 1 Đại Cồ Việt, phường Bạch Mai, Thành phố Hà Nội Điện thoại: 04 3869 2137 - Fax: 04 3868…
+85|w2|l0.0|h2|ĐÀO TẠO
+86|w4|l1.0|li|Đào tạo đại học
+87|w4|l1.0|li|Đào tạo thạc sĩ
+88|w4|l1.0|li|Đào tạo tiến sĩ
+89|w3|l0.0|h2|NHÓM CHUYÊN MÔN
+90|w7|l1.0|li|Khoa học dữ liệu và ứng dụng
+91|w12|l1.0|li|Cơ sở toán học cho tin học và hệ thống thông tin
+92|w8|l1.0|li|Tối ưu hóa và tính toán khoa học
+93|w7|l1.0|li|Xác suất thống kê và ứng dụng
+94|w2|l1.0|li|Giải tích
+95|w2|l1.0|li|Đại số
+96|w11|l0.0|p|© 2026 Khoa Toán - Tin, ĐH Bách Khoa Hà Nội.
+
+##### 26 https://fintech.hust.edu.vn/research/r&d-funding-projects/cyber-clinic
+title: 
+og:title: 
+pub:  | author: 
+h1: 
+0|w2|l0.0|h4|Học viên
+1|w26|l0.0|p|Khám phá lộ trình học tập, trải nghiệm và cơ hội phát triển nghề nghiệp trong lĩnh vực an toàn thông tin và ch…
+2|w3|l1.0|div|Khám phá thêm
+3|w2|l0.0|h4|Giảng viên
+4|w27|l0.0|p|Tham gia chương trình Train-the-Trainer (ToT), khai thác học liệu số và đồng hành hỗ trợ doanh nghiệp về an to…
+5|w3|l1.0|div|Khám phá thêm
+6|w2|l0.0|h4|Doanh nghiệp
+7|w26|l0.0|p|Tiếp cận các chương trình hỗ trợ, tư vấn và kết nối nguồn nhân lực trong lĩnh vực an toàn thông tin và chuyển …
+8|w3|l1.0|div|Khám phá thêm
+9|w19|l0.0|body|Vườn ươm Nhân lực An toàn thông tin trong nền kinh tế số - ĐH Bách khoa Hà Nội
+
+##### 27 https://giving.hust.edu.vn/en/cau-chuyen/am-ap-ngay-tro-ve-nha-quy-chap-canh-trao-55-suat-hoc-bong-tai-dai-hoc-bach-khoa-ha-noi
+title: Chap Canh Foundation awards 55 scholarships at HUST
+og:title: Chap Canh Foundation awards 55 scholarships at HUST
+pub:  | author: 
+h1: A warm “homecoming”: Chap Canh Foundation awards 55 scholarships at HUST
+0|w3|l1.0|body|Skip to content
+1|w2|l1.0|div|HUST Giving
+2|w10|l1.0|nav|Stories Recognition Look up Policies and transparency About HUST Giving
+3|w2|l1.0|div|Give Now
+4|w15|l0.1|p|Home · Stories · A warm “homecoming”: Chap Canh Foundation awards 55 scholarships at HUST
+5|w4|l0.0|div|Scholarships 20 Sept 2026
+6|w11|l0.0|h1|A warm “homecoming”: Chap Canh Foundation awards 55 scholarships at HUST
+7|w40|l0.0|p|On the morning of 9 June 2026, Hanoi University of Science and Technology and CC Foundation presented 55 Chap …
+8|w100|l0.0|p|“Every time I come back to Bach Khoa, I feel like I am coming home.” That heartfelt remark by Mr. Tran Tuan An…
+9|w4|l0.0|p|Supporting journeys of perseverance
+10|w81|l0.0|p|On the morning of 9 June 2026, Hanoi University of Science and Technology, together with Chap Canh Foundation …
+11|w42|l0.0|p|Speaking at the ceremony, Assoc. Prof. Dr. Huynh Dang Chinh, Vice President of Hanoi University of Science and…
+12|w32|l0.0|p|He stressed that the scholarships presented that day carry not only material value but also precious moral enc…
+13|w38|l0.0|p|“I hope you will keep your resolve firm and turn the care and support of the Chap Canh Foundation into motivat…
+14|w37|l0.0|p|He also expressed his hope that the scholarship recipients would continue to embody the spirit of overcoming h…
+15|w8|l0.0|p|Nearly five years of sowing trust and opportunity
+16|w35|l0.0|p|Since 2021, CC Foundation has become a close companion of students at Hanoi University of Science and Technolo…
+17|w60|l0.0|p|What makes the Chap Canh Foundation distinctive is not only the figures behind its support, but also its philo…
+18|w53|l0.0|p|On 28 January 2026, CC Foundation and Hanoi University of Science and Technology signed a further scholarship …
+19|w13|l0.0|div|Mr. Tran Tuan Anh, Executive Director of CC Foundation, speaking at the ceremony
+20|w31|l0.0|p|Speaking at the ceremony, Mr. Tran Tuan Anh, Executive Director of CC Foundation, said with emotion: “Every ti…
+21|w27|l0.0|p|That was not merely a personal sentiment; it also reflected the close and trusting relationship built between …
+22|w83|l0.0|p|Mr. Tran Tuan Anh shared that the greatest happiness for the Foundation is to witness the eagerness to learn t…
+23|w5|l0.0|p|Sweet fruits nurtured by trust
+24|w69|l0.0|p|The joy of those who give opportunity is multiplied when they witness the growth of former scholarship recipie…
+25|w62|l0.0|p|Speaking on behalf of the recipients, Le Xuan Phuc expressed his gratitude to CC Foundation and to the staff o…
+26|w16|l0.0|div|Le Xuan Phuc, School of Information and Communication Technology, speaking on behalf of the scholarship recipi…
+27|w5|l0.0|p|Scholarships today, wings for tomorrow
+28|w60|l0.0|p|The ceremony closed in joy and emotion as the scholarship certificates were handed to the students. On behalf …
+29|w67|l0.0|p|The Foundation’s valuable support carries not only material value; it also helps spread a humane spirit and gi…
+30|w50|l0.0|p|For beyond the scholarships themselves, what is given today is opportunity, trust and aspiration. These are th…
+31|w5|l0.0|p|Author: Truong Thi Thuy Mai
+32|w4|l0.0|p|Photos: Student Affairs Department
+33|w7|l1.0|div|Give to this fund ← All stories
+34|w2|l0.0|div|More stories
+35|w6|l0.0|h2|From the same fund and others
+36|w4|l1.0|div|Scholarships 28 Sept 2026
+37|w13|l1.0|h3|A graduation gift for his mother: the journey of valedictorian Lê Cảnh Hải
+38|w47|l1.0|p|At the graduation ceremony on 26 September 2026, Lê Cảnh Hải, one of eight top graduates of Hanoi University o…
+39|w4|l1.0|div|Scholarships 20 Sept 2026
+40|w8|l1.0|h3|HUST awards scholarships to students facing difficult circumstances
+41|w39|l1.0|p|On the morning of 15 October, the Alumni Golf Club of Hanoi University of Science and Technology presented 20 …
+42|w3|l1.0|div|21 Sept 2026
+43|w15|l1.0|h3|A home at Bách khoa: the support that brought Nguyễn Xuân Bách back to class
+44|w46|l1.0|p|In September 2026 Nguyễn Xuân Bách walked quietly through the gates of Hanoi University of Science and Technol…
+45|w2|l0.0|div|HUST Giving
+46|w5|l0.0|div|Accompanying knowledge - Empowering dreams
+47|w29|l0.2|div|Student Affairs Office — Hanoi University of Science and Technology Rooms 101–105, Building C1, 1 Dai Co Viet,…
+48|w2|l0.0|h4|HUST Giving
+49|w1|l1.0|li|Stories
+50|w1|l1.0|li|Recognition
+51|w3|l1.0|li|Policies and transparency
+52|w3|l1.0|li|About HUST Giving
+53|w1|l0.0|h4|Links
+54|w2|l1.0|li|Give Now
+55|w4|l1.0|li|Other ways to give
+56|w3|l1.0|li|Live giving board
+57|w1|l1.0|li|hust.edu.vn
+58|w8|l0.0|div|© 2026 Hanoi University of Science and Technology
+
+##### 28 https://icea.hust.edu.vn/dao-tao
+title: ICEA
+og:title: 
+pub:  | author: 
+h1: Giới thiệu Giới thiệu
+0|w5|l1.0|body|Truy cập nội dung luôn
+1|w5|l0.8|div|Đăng nhập | Liên hệ
+2|w6|l0.2|div|Ngôn ngữ: Tiếng Việt [Beta] English
+3|w2|l1.0|li|.Trang chủ
+4|w2|l1.0|li|Giới thiệu
+5|w7|l1.0|li|Quá trình hình thành và phát triển
+6|w4|l1.0|li|Cơ cấu tổ chức
+7|w4|l1.0|li|Đội ngũ cán bộ
+8|w4|l1.0|li|Cơ sở vật chất
+9|w3|l1.0|li|Văn phòng Viện
+10|w4|l1.0|li|Địa chỉ liên hệ
+11|w2|l1.0|li|Đào tạo
+12|w4|l1.0|li|Đào tạo Tiến sĩ
+13|w4|l1.0|li|Đào tạo công nghiệp
+14|w2|l1.0|li|Nghiên cứu
+15|w4|l1.0|li|Lĩnh vực nghiên cứu
+16|w4|l1.0|li|Đề tài nghiên cứu
+17|w4|l1.0|li|Sản phẩm nghiên cứu
+18|w4|l1.0|li|Công bố khoa học
+19|w2|l1.0|li|Hợp tác
+20|w2|l1.0|li|Trong nước
+21|w2|l1.0|li|Quốc tế
+22|w3|l1.0|li|Phòng nghiên cứu
+23|w10|l1.0|li|Phòng cơ chế chấp hành và điện tử công suất
+24|w3|l1.0|li|Giới thiệu chung
+25|w4|l1.0|li|Các hướng nghiên cứu
+26|w4|l1.0|li|Cơ sở vật chất
+27|w2|l1.0|li|Liên hệ
+28|w7|l1.0|li|Phòng Robot và điều khiển chuyển động
+29|w3|l1.0|li|Giới thiệu chung
+30|w4|l1.0|li|Các hướng nghiên cứu
+31|w4|l1.0|li|Cơ sở vật chất
+32|w2|l1.0|li|Liên hệ
+33|w11|l1.0|li|Phòng điều khiển quá trình và tự động hóa xí nghiệp
+34|w3|l1.0|li|Giới thiệu chung
+35|w4|l1.0|li|Các hướng nghiên cứu
+36|w4|l1.0|li|Cơ sở vật chất
+37|w2|l1.0|li|Liên hệ
+38|w12|l1.0|li|Phòng kỹ thuật đo và kiểm chuẩn thiết bị đo công nghiệp
+39|w3|l1.0|li|Giới thiệu chung
+40|w4|l1.0|li|Các hướng nghiên cứu
+41|w4|l1.0|li|Cơ sở vật chất
+42|w2|l1.0|li|Liên hệ
+43|w7|l1.0|li|Phòng điều khiển hệ thống năng lượng
+44|w3|l1.0|li|Giới thiệu chung
+45|w4|l1.0|li|Các hướng nghiên cứu
+46|w4|l1.0|li|Cơ sở vật chất
+47|w2|l1.0|li|Liên hệ
+48|w11|l1.0|li|Phòng động học hệ thống và các phương pháp điều khiển
+49|w3|l1.0|li|Giới thiệu chung
+50|w4|l1.0|li|Các hướng nghiên cứu
+51|w4|l1.0|li|Cơ sở vật chất
+52|w2|l1.0|li|Liên hệ
+53|w4|l1.0|li|Tin tức- Sự kiện
+54|w2|l1.0|li|Tin tức
+55|w2|l1.0|li|Sự kiện
+56|w2|l1.0|li|Học bổng
+57|w2|l1.0|li|Tuyển dụng
+58|w3|l0.7|li|Đào tạo /
+59|w4|l0.0|h1|Giới thiệu Giới thiệu
+60|w77|l0.0|p|GIỚI THIỆU MÔ HÌNH VÀ CHƯƠNG TRÌNH ĐÀO TẠO CỦA TRƯỜNG ĐHBK HÀ NỘI (áp dụng từ K62) – Trường Đại học Bách khoa …
+61|w13|l0.0|p|Mô hình đào tạo được thực hiện từ năm học 2017-2018 (Khóa 62)
+62|w13|l0.0|p|Mô hình đào tạo được thực hiện từ năm học 2017-2018 (Khóa 62)
+63|w353|l0.0|p|– Chương trình đào tạo Cử nhân kỹ thuật có mục tiêu và nội dung được xây dựng theo hướng kiến thức nền tảng cơ…
+64|w6|l0.0|h1|Công bố mới Công bố mới
+65|w51|l0.0|p|- Thanh Ngo Ngoc, Eleonora Riva Sanseverino, Ninh Nguyen Quang, Pietro Romano, Fabio Viola, Binh Doan Van, Hoa…
+66|w27|l0.0|p|- PH Pham, KT Hoang, Dich Quang Nguyen , " Trapezoidal-shaped electrostatic comb-drive actuator with large dis…
+67|w40|l0.0|p|- Tri-Vien Vu, Truong Van Vu, Dang Thanh Bui , " Numerical study of deformation and breakup of a multi-core co…
+68|w8|l1.0|p|DANH SÁCH CÁC CÔNG BỐ / FULL PUBLICATIONS
+69|w6|l0.0|h1|Thư viện ảnh Thư viện ảnh
+70|w1|l1.0|div|1.jpg
+71|w1|l1.0|div|1.png
+72|w1|l1.0|div|2.jpg
+73|w1|l1.0|div|2.png
+74|w1|l1.0|div|3.jpg
+75|w9|l1.0|blockquote|Viện Kỹ thuật Điều khiển & Tự động hóa
+76|w8|l0.0|h1|thống kê truy cập thống kê truy cập
+77|w7|l0.0|div|7 7 1 1 3 7 7
+78|w3|l0.0|div|Đang online: 413
+79|w3|l0.0|div|Hôm nay: 139
+80|w3|l0.0|div|Trong tuần: 3123
+81|w3|l0.0|div|Trong tháng: 104387
+82|w39|l0.0|div|Copyright@ 2019 - Viện kỹ thuật Điều khiển Tự động hóa Địa chỉ: Phòng 202 - Tòa nhà Công nghệ cao, Đại học Bác…
+
+##### 29 https://icef.hust.edu.vn/category/show?id=6
+title: ICEF
+og:title: 
+pub:  | author: 
+h1: 
+0|w1|l1.0|li|Login
+1|w1|l0.0|li|/
+2|w1|l1.0|li|Register
+3|w1|l1.0|li|HOME
+4|w1|l1.0|li|CONFERENCE
+5|w3|l1.0|li|Call for Papers
+6|w2|l1.0|li|Important Dates
+7|w2|l1.0|li|Scientific Committee
+8|w2|l1.0|li|Organizing Committee
+9|w2|l1.0|li|Keynote Speakers
+10|w2|l1.0|li|Publication Opportunities
+11|w2|l1.0|li|Institutional Organizers
+12|w1|l1.0|li|Sponsors
+13|w2|l1.0|li|Conference Updates
+14|w2|l1.0|li|Conference Photos
+15|w2|l1.0|li|PAPER SUBMISSION
+16|w1|l1.0|li|Templates
+17|w2|l1.0|li|Submission Guidelines
+18|w2|l1.0|li|Submission HERE
+19|w1|l1.0|li|REGISTRATION
+20|w2|l1.0|li|Registration Fee
+21|w1|l1.0|li|Visa
+22|w1|l1.0|li|PROGRAM
+23|w1|l1.0|li|VENUE
+24|w2|l1.0|li|Conference Venue
+25|w1|l1.0|li|Accommodation
+26|w2|l1.0|li|Tourism Information
+27|w2|l1.0|li|CONTACT US
+28|w5|l0.0|div|ICEF 2026 - Keynote Speakers
+29|w2|l0.0|h2|Keynote Speakers
+30|w2|l0.0|div|H-index: 22
+31|w3|l0.0|h3|Prof. Thomas Kohler
+32|w5|l0.0|p|Dresden University of Technology, Germany
+33|w42|l0.0|p|Professor of Educational Technology at the Institute of Vocational Education. He also serves as the Director o…
+34|w6|l0.0|h3|Assoc. Prof. Dr. Lee Ju Seong
+35|w7|l0.0|p|The Education University of Hong Kong, China
+36|w6|l0.0|p|Associate Professor of English Language Education.
+37|w3|l0.0|h3|Dr. Lizana Oberholzer
+38|w12|l0.0|p|University of Wolverhampton (UK) & Chair of International Professional Development Association (IPDA)
+39|w8|l0.0|p|Senior Lecturer in Teacher Education & MEd Director.
+40|w3|l0.0|h3|Prof. Alandeom Oliveira
+41|w9|l0.0|p|University at Albany, State University of New York, USA
+42|w3|l0.0|p|Professor of Linguistics.
+43|w3|l0.0|h3|Prof. Susan Drake
+44|w3|l0.0|p|Brock University, Canada
+45|w2|l0.0|p|Distinguished Professor.
+46|w3|l0.0|h3|Prof. Sujatha Mukiri
+47|w7|l0.0|p|The English and Foreign Languages University, India
+48|w3|l0.0|p|Professor of Communication.
+49|w4|l0.0|h3|Prof. Gina O. Gonong
+50|w4|l0.0|p|Philippines Normal University, Philippines
+51|w3|l0.0|p|Professor of Linguistics.
+52|w4|l0.0|h3|Dr. John R. Baker
+53|w14|l0.0|p|Ho Chi Minh City University of Industry and Trade (VN) & Shinawatra University (Thailand)
+54|w4|l0.0|p|Lecturer & Research Fellow.
+55|w2|l0.0|div|Latest News
+56|w4|l0.5|li|2026-06-05 15:09:17 Important date
+57|w5|l0.6|li|2025-11-19 15:51:56 Full Paper 2025
+58|w13|l0.8|li|2025-07-29 07:35:43 SECOND NOTICE: Regarding: Updated Deadlines, Transportation, Accommodation, Meals, and Pay…
+59|w2|l0.0|div|Important Dates
+60|w6|l0.0|p|- June 19, 2026: Abstract submission.
+61|w7|l0.0|p|- June 25, 2026: Abstract review results.
+62|w7|l0.0|p|- August 5, 2026: Full paper submission.
+63|w8|l0.0|p|- August 20, 2026: Full paper review result.
+64|w9|l0.0|p|- August 25, 2026: Full paper submission after review.
+65|w8|l0.0|p|- September 20, 2026: Register for participation only
+66|w17|l0.0|blockquote|Completion of registration fees: Before September 05, 2026 (early registration) and before September 25, 2026 …
+67|w18|l0.1|div|© ICEF - 2026 C7, HUST, No. 1 Dai Co Viet street, Hanoi, Vietnam Tel: - Email: icef@hust.edu.vn
+
+##### 30 https://icpt.hust.edu.vn/en/workcalendar/School-of-Materials-Science-and-Engineering/View-week/Week-15-2025/
+title: School of Materials Science and Engineering 15 Year 2025
+og:title: School of Materials Science and Engineering 15 Year 2025
+pub:  | author: ICPT.HUST – International conference on human resources for sustainable development
+h1: School of Materials Science and Engineering
+0|w3|l0.0|div|Enter search keywords
+1|w6|l1.0|li|Hanoi University OF SCIENCE AND TECHNOLOGY
+2|w1|l1.0|li|ICPT.HUST
+3|w2|l1.0|li|Hanoi University
+4|w4|l1.0|li|of sciense and technology
+5|w1|l1.0|li|ICPT.HUST
+6|w1|l1.0|li|Calendar
+7|w2|l1.0|li|Contact us
+8|w1|l1.0|li|Albums
+9|w1|l1.0|li|Videos
+10|w2|l1.0|div|ICPT 2023
+11|w3|l1.0|div|Call for papers
+12|w1|l1.0|div|Submission
+13|w1|l1.0|div|Template
+14|w2|l1.0|div|Submission Guidelines
+15|w2|l1.0|div|Submission HERE
+16|w1|l1.0|div|Payment
+17|w2|l1.0|div|Conference News
+18|w1|l1.0|div|Proceedings
+19|w2|l1.0|div|Contact us
+20|w1|l1.0|li|Home
+21|w2|l1.0|li|ICPT 2023
+22|w3|l1.0|li|Call for papers
+23|w1|l1.0|li|Submission
+24|w1|l1.0|li|Template
+25|w2|l1.0|li|Submission Guidelines
+26|w2|l1.0|li|Submission HERE
+27|w1|l1.0|li|Payment
+28|w2|l1.0|li|Conference News
+29|w1|l1.0|li|Proceedings
+30|w2|l1.0|li|Contact us
+31|w6|l0.0|h1|School of Materials Science and Engineering
+32|w14|l0.3|h3|Last week - Week 15 năm học 2024-2025 (7/4/2025 - 13/4/2025) - Next week
+33|w1|l0.0|th|Date
+34|w1|l0.0|th|Session
+35|w1|l0.0|th|Hour
+36|w1|l0.0|th|Content
+37|w1|l0.0|th|Composition/Invitation
+38|w1|l0.0|th|Location
+39|w2|l0.0|td|Monday 07/04/2025
+40|w1|l0.0|td|Morning
+41|w1|l0.0|td|Afternoon
+42|w2|l0.0|td|Tuesday 08/04/2025
+43|w1|l0.0|td|Morning
+44|w1|l0.0|td|Afternoon
+45|w2|l0.0|td|Wednesday 09/04/2025
+46|w1|l0.0|td|Morning
+47|w1|l0.0|td|Afternoon
+48|w2|l0.0|td|Thursday 10/04/2025
+49|w1|l0.0|td|Morning
+50|w1|l0.0|td|Afternoon
+51|w2|l0.0|td|Friday 11/04/2025
+52|w1|l0.0|td|Morning
+53|w1|l0.0|td|Afternoon
+54|w2|l0.0|td|Saturday 12/04/2025
+55|w1|l0.0|td|Morning
+56|w1|l0.0|td|Afternoon
+57|w2|l0.0|td|Sunday 13/04/2025
+58|w1|l0.0|td|Morning
+59|w1|l0.0|td|Afternoon
+60|w2|l0.0|div|Attach: Download
+61|w2|l0.0|div|Directions Map
+62|w3|l0.0|div|INTERNATIONAL CONFERENCE ICPT.HUST
+63|w6|l1.0|div|HaNoi University of science and technology
+64|w2|l0.0|div|Social network
+65|w2|l0.0|div|Menu Footer
+66|w2|l1.0|li|Conference News
+67|w2|l1.0|li|Contact us
+68|w1|l0.0|div|Sitemap
+69|w3|l1.0|div|View sitemap ...
+70|w15|l0.3|div|You did not use the site, Click here to remain logged . Timeout: 60 second
+
+##### 31 https://lms-sepd.hust.edu.vn/login/forgot_password.php?lang=en
+title: Forgotten password
+og:title: 
+pub:  | author: 
+h1: 
+0|w2|l1.0|div|Đăng nhập
+1|w2|l1.0|li|Tin tức
+2|w3|l1.0|li|Hoạt động chung
+3|w2|l1.0|li|Đào tạo
+4|w4|l1.0|li|Nghiên cứu khoa học
+5|w4|l1.0|li|Hợp tác đối ngoại
+6|w3|l1.0|li|Cựu Sinh viên
+7|w3|l1.0|li|Các khóa học
+8|w5|l1.0|li|Ôn tập Kỹ năng mềm
+9|w3|l1.0|li|Theo dự án
+10|w3|l1.0|li|Dế Xu Phình
+11|w2|l1.0|li|Lai Châu
+12|w2|l1.0|li|Quảng Bình
+13|w5|l1.0|li|Sản phẩm của Sinh viên
+14|w2|l1.0|li|English ‎(en)‎
+15|w2|l1.0|li|English ‎(en)‎
+16|w2|l1.0|li|Vietnamese ‎(vi)‎
+17|w36|l0.0|div|To reset your password, submit your username or your email address below. If we can find you in the database, …
+18|w3|l0.0|fieldset|Search by username
+19|w1|l0.0|div|Username
+20|w4|l0.0|fieldset|Search by email address
+21|w2|l0.0|div|Email address
+22|w1|l1.0|div|Back
+23|w1|l0.0|h5|Calendar
+24|w2|l1.0|h3|October 2026
+25|w1|l1.0|td|10
+26|w4|l0.0|h5|Liên kết hữu ích
+27|w2|l1.0|li|Đào tạo
+28|w2|l1.0|li|Tuyển sinh
+29|w2|l1.0|li|Nghiên cứu
+30|w3|l1.0|li|Góc Sinh viên
+31|w4|l1.0|li|Đăng ký khóa học
+32|w2|l0.0|h5|Liên hệ
+33|w19|l0.0|address|C7 - M321 - Đại học Bách Khoa Hà Nội - Số 1, Đường Đại Cồ Việt, Hà Nội
+34|w8|l0.1|div|Phone: (+84) 438681432 - (+84) 902282489 E-mail: sepd@hust.edu.vn
+35|w3|l0.0|h6|Connect with us:
+36|w5|l0.0|div|You are not logged in.
+
+##### 32 http://mso.soict.hust.edu.vn/?limit=6&page_id=17
+title: Publications – MSOLab
+og:title: 
+pub:  | author: 
+h1: Publications
+0|w1|l1.0|div|MSOLab
+1|w5|l0.0|p|Modelling, Simulation & Optimization Laboratory
+2|w1|l0.0|div|Menu
+3|w1|l1.0|li|Home
+4|w2|l1.0|li|Research Groups
+5|w1|l1.0|li|Projects
+6|w1|l0.0|li|Publications
+7|w1|l1.0|li|Resources
+8|w3|l1.0|li|Events & News
+9|w1|l1.0|li|Contact
+10|w1|l0.0|h1|Publications
+11|w9|l0.4|div|55 entries « ‹ 6 of 10 › »
+12|w1|l0.0|h3|2016
+13|w13|l0.0|p|Son, Dao Duy; Sang, Dinh Viet; Binh, Huynh Thi Thanh; Thuy, Nguyen Thi
+14|w9|l0.9|p|Label associated dictionary pair learning for face recognition Inproceedings
+15|w24|l0.0|p|Proceedings of the Seventh Symposium on Information and Communication Technology, SoICT 2016, Ho Chi Minh City…
+16|w3|l0.7|p|Links | BibTeX
+17|w14|l0.0|p|Hanh, Nguyen Thi; Hanh, Phan Thi Hong; Binh, Huynh Thi Thanh; Nghia, Nguyen Duc
+18|w14|l0.9|p|Heuristic algorithm for target coverage with connectivity fault-tolerance problem in wireless sensor networks …
+19|w19|l0.0|p|Conference on Technologies and Applications of Artificial Intelligence, TAAI 2016, Hsinchu, Taiwan, November 2…
+20|w3|l0.7|p|Links | BibTeX
+21|w7|l0.0|p|Bui, Quoc Trung; Deville, Yves; Quang-Dung, Pham
+22|w13|l0.8|p|Exact methods for solving the elementary shortest and longest path problems Journal Article
+23|w8|l0.0|p|Annals OR, 244 (2), pp. 313–348, 2016 .
+24|w3|l0.7|p|Links | BibTeX
+25|w8|l0.0|p|Nguyen, Van Son; Pham, Quang-Dung; Hà, Minh Hoàng
+26|w16|l0.9|p|Improving the connectivity of a bus system: a case study of Ho Chi Minh city Inproceedings
+27|w24|l0.0|p|Proceedings of the Seventh Symposium on Information and Communication Technology, SoICT 2016, Ho Chi Minh City…
+28|w3|l0.7|p|Links | BibTeX
+29|w8|l0.0|p|Do, Phan-Thuan; Nghiem, Nguyen-Viet-Dung; Nguyen, Ngoc-Quang; Nguyen, Duc-Nghia
+30|w12|l0.9|p|A practical dynamic share-a-ride problem with speed windows for Tokyo city Inproceedings
+31|w20|l0.0|p|2016 Eighth International Conference on Knowledge and Systems Engineering, KSE 2016, Hanoi, Vietnam, October 6…
+32|w3|l0.7|p|Links | BibTeX
+33|w12|l0.0|p|Binh, Huynh Thi Thanh; Hanh, Nguyen Thi; Quan, La Van; Dey, Nilanjan
+34|w19|l0.0|p|Improved Cuckoo Search and Chaotic Flower Pollination optimization algorithm for maximizing area coverage in W…
+35|w8|l0.0|p|Neural Computing and Applications, pp. 1-13, 2016 .
+36|w1|l1.0|p|BibTeX
+37|w9|l0.4|div|55 entries « ‹ 6 of 10 › »
+38|w9|l0.1|p|MSOLab © 2026 SoICT Modelling, Simulation and Optimization Lab
+39|w1|l1.0|body|➤
+
+##### 33 https://qldt.hust.edu.vn/students
+title: Cổng thông tin sinh viên - ĐẠI HỌC BÁCH KHOA HÀ NỘI HUST
+og:title: Cổng thông tin sinh viên - ĐẠI HỌC BÁCH KHOA HÀ NỘI HUST
+pub:  | author: 
+h1: 
+0|w1|l0.0|div|en
+1|w1|l0.0|div|vi
+2|w2|l1.0|div|Trang chủ
+3|w4|l1.0|div|Tin tức mới nhất
+4|w4|l1.0|div|Thành tựu Bách khoa
+5|w4|l1.0|div|Sự kiện nổi bật
+6|w4|l1.0|div|Câu hỏi thường gặp
+7|w7|l0.0|h2|Săn học bổng hàng đầu cùng HUST
+8|w34|l0.0|p|Với mục tiêu phát triển nền giáo dục chất lượng cao, HUST đã chính thức triển khai hàng trăm gói học bổng giá …
+9|w5|l1.0|div|Khám phá ngay hôm nay
+10|w9|l0.0|div|Học bổng Nhà giáo Bùi Long Biên kì 2026.1
+11|w4|l0.0|div|Học bổng Doanh nghiệp
+12|w5|l0.0|div|Hạn nộp : 12/10/2026 10.000.000
+13|w11|l0.0|div|HỌC BỔNG PETROLIMEX HỌC KỲ 1 NĂM HỌC 2026 – 2027
+14|w4|l0.0|div|Học bổng Doanh nghiệp
+15|w4|l0.0|div|Hạn nộp : 13/10/2026
+16|w10|l0.0|div|Chương trình Học bổng Toyota năm học 2026 – 2027
+17|w4|l0.0|div|Học bổng Doanh nghiệp
+18|w4|l0.0|div|Hạn nộp : 13/10/2026
+19|w9|l0.0|div|Học bổng Taikisha - Khởi đầu thành công 2026
+20|w4|l0.0|div|Học bổng Doanh nghiệp
+21|w5|l0.0|div|Hạn nộp : 16/10/2026 7.000.000
+22|w4|l0.0|div|Học bổng khuyến học
+23|w4|l0.0|div|Học bổng Doanh nghiệp
+24|w5|l0.0|div|Hạn nộp : 17/10/2026 5.000.000
+25|w11|l0.0|div|Học bổng “Hạt Ngọc Mùa Vàng” năm học 2026 – 2027.
+26|w4|l0.0|div|Học bổng Doanh nghiệp
+27|w5|l0.0|div|Hạn nộp : 22/10/2026 7.000.000
+28|w6|l0.0|div|ĐẠI HỌC BÁCH KHOA HÀ NỘI
+29|w1|l0.0|div|vp@hust.edu.vn
+30|w3|l0.0|div|024 3869 6099
+31|w10|l0.0|div|Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội
+32|w3|l0.0|div|Liên kết nhanh
+33|w2|l1.0|div|Trang chủ
+34|w2|l1.0|div|Liên hệ
+35|w3|l1.0|div|Hỏi - Đáp
+36|w7|l1.0|div|Phản hồi - Đóng góp ý kiến
+37|w3|l0.0|div|Cài ứng dụng
+38|w12|l0.0|div|Copyright © 2024 HANOI UNIVERSITY OF SCIENCE AND TECHNOLOGY. All rights reserved
+
+##### 34 https://sdh.hust.edu.vn/default.aspx?CategoryID=117&nid=1450&scid=23
+title: Ban đào tạo - Bộ phận sau đại học
+og:title: 
+pub:  | author: 
+h1: 
+0|w2|l0.0|td|Tìm kiếm
+1|w1|l1.0|li|Home
+2|w2|l1.0|li|Giới thiệu
+3|w3|l1.0|div|Giới thiệu chung
+4|w5|l1.0|li|Tin tức & sự kiện
+5|w3|l1.0|div|Tin tức chung
+6|w2|l1.0|div|Ðào tạo
+7|w2|l1.0|li|Tuyển sinh
+8|w2|l1.0|div|Cao học
+9|w3|l1.0|div|Nghiên cứu sinh
+10|w2|l1.0|li|Ðào tạo
+11|w2|l1.0|div|Học phí
+12|w2|l1.0|div|Ngoại ngữ
+13|w2|l1.0|div|Cao học
+14|w3|l1.0|div|Nghiên cứu sinh
+15|w5|l1.0|li|Văn bản & Quy chế
+16|w5|l1.0|div|Quy chế sau đại học
+17|w2|l1.0|div|Thạc sỹ
+18|w3|l1.0|div|Nghiên cứu sinh
+19|w4|l1.0|li|Các mẫu giấy tờ
+20|w2|l1.0|div|Cao học
+21|w3|l1.0|div|Nghiên cứu sinh
+22|w4|l1.0|li|Chương trình đào tạo
+23|w2|l1.0|div|Cao học
+24|w3|l1.0|div|Nghiên cứu sinh
+25|w4|l1.0|div|Kỹ sư chuyên sâu
+26|w3|l1.0|li|Thư viện ảnh
+27|w11|l1.0|div|Lễ phát bằng thạc sĩ ngày 30 tháng 05 năm 2015
+28|w11|l1.0|div|Lễ phát bằng thạc sĩ ngày 07 tháng 08 năm 2015
+29|w7|l1.0|div|Lễ phát bằng thạc sỹ khóa 2007
+30|w4|l1.0|li|Dành cho học viên
+31|w5|l1.0|li|Tra cứu thông tin bằng
+32|w9|l0.0|td|Trang chủ >> Ðào tạo >> Nghiên cứu sinh
+33|w24|l0.0|p|Luận án Tiến sĩ: Nghiên cứu mô hình năng lực cạnh tranh cấp tỉnh trong lĩnh vực du lịch - NCS Nguyễn Nam Thắng
+34|w4|l0.0|div|Đăng ngày:27/10/2015 10:57:49 AM
+35|w18|l0.0|p|Tên luận án: Nghiên cứu mô hình năng lực cạnh tranh cấp tỉnh trong lĩnh vực du lịch
+36|w8|l0.0|p|Chuyên ngành: Kinh tế học Mã số: 62310101
+37|w6|l0.0|p|Nghiên cứu sinh: Nguyễn Nam Thắng
+38|w9|l0.0|p|Người hướng dẫn khoa học: PGS.TS. Nguyễn Văn Thanh
+39|w11|l0.0|p|Cơ sở đào tạo: Trường Đại học Bách khoa Hà Nội
+40|w8|l0.0|p|TÓM TẮT KẾT LUẬN MỚI CỦA LUẬN ÁN
+41|w98|l0.0|p|1. Tổng hợp khoa học các khái niệm và các mô hình năng lực cạnh tranh ở các cấp độ trong các lĩnh vực du lịch …
+42|w71|l0.0|p|2. Phân tích, so sánh, chọn lọc trên cơ sở bộ tiêu chí ban đầu, xác định chính xác các nguồn lực cốt lõi đóng …
+43|w65|l0.0|p|3. Kiểm định thực tế khách quan mô hình năng lực cạnh tranh cấp tỉnh trong lĩnh vực du lịch Việt Nam tại tỉnh …
+44|w131|l0.0|p|4. Cách tổ chức và kết cấu của nghiên cứu theo trình tự logic chặt chẽ, vừa mang tính hàn lâm, vừa mang tính t…
+45|w3|l1.0|td|Nguyen Nam Thang.rar
+46|w4|l0.0|td|Các tin liên quan
+47|w38|l1.0|td|» Luận án Tiến sĩ: Nghiên cứu một số yếu tố ảnh hưởng đến chất lượng tạo hình bề mặt tự do cấu trúc elip lõm k…
+48|w47|l1.0|td|» Luận án Tiến sĩ: Nghiên cứu thành phần hóa học & khảo sát hoạt tính sinh học của 3 loài thực vật: cây Sói đứ…
+49|w41|l1.0|td|» Luận án Tiến sĩ: Tổng hợp và khảo sát đặc tính điện hoá của vật liệu oxit mangan có chứa kim…
+50|w21|l1.0|td|» Luận án Tiến sĩ: Khung Cộng Tác Đa Dụng Trong Môi Trường Tính Toán Lưới - NCS Nguyễn Thanh Bình
+51|w38|l1.0|td|» Luận án Tiến sĩ: Nghiên cứu ảnh hưởng của các yếu tố chính nhằm ổn định công nghệ thấm nitơ thê…
+52|w33|l1.0|td|» Luận án Tiến sĩ: Nghiên cứu các chế độ làm việc và ảnh hưởng của nhà máy phát điện chạy bằng sức gió kết nối…
+53|w35|l1.0|td|» Luận án Tiến sĩ: Nghiên cứu giải pháp tiết kiệm năng lượng cho hệ thống điều hòa không khí chiller bằng phươ…
+54|w31|l1.0|td|» Luận án Tiến sĩ: Nâng cao chất lượng xác định hướng sóng tới cho hệ thống vô tuyến tìm phương sử dụng dàn ăn…
+55|w21|l1.0|td|» Luận án Tiến sĩ: Một số hệ phương trình cặp trong cơ học chất lỏng - NCS Đặng Thanh Sơn
+56|w16|l0.9|td|» Bảo vệ Luận án Tiến sĩ cấp trường Tuần 14 - NCS Ngô Hữu Mạnh
+57|w3|l0.0|h3|Bộ phận SĐH
+58|w2|l1.0|li|Giới thiệu
+59|w3|l1.0|li|Giới thiệu chung
+60|w5|l1.0|li|Tin tức & sự kiện
+61|w3|l1.0|li|Tin tức chung
+62|w2|l1.0|li|Ðào tạo
+63|w2|l1.0|li|Tuyển sinh
+64|w2|l1.0|li|Cao học
+65|w3|l1.0|li|Nghiên cứu sinh
+66|w2|l1.0|li|Ðào tạo
+67|w2|l1.0|li|Học phí
+68|w2|l1.0|li|Ngoại ngữ
+69|w2|l1.0|li|Cao học
+70|w3|l1.0|li|Nghiên cứu sinh
+71|w5|l1.0|li|Văn bản & Quy chế
+72|w5|l1.0|li|Quy chế sau đại học
+73|w2|l1.0|li|Thạc sỹ
+74|w3|l1.0|li|Nghiên cứu sinh
+75|w4|l1.0|li|Các mẫu giấy tờ
+76|w2|l1.0|li|Cao học
+77|w3|l1.0|li|Nghiên cứu sinh
+78|w4|l1.0|li|Chương trình đào tạo
+79|w2|l1.0|li|Cao học
+80|w3|l1.0|li|Nghiên cứu sinh
+81|w4|l1.0|li|Kỹ sư chuyên sâu
+82|w3|l1.0|li|Thư viện ảnh
+83|w11|l1.0|li|Lễ phát bằng thạc sĩ ngày 30 tháng 05 năm 2015
+84|w11|l1.0|li|Lễ phát bằng thạc sĩ ngày 07 tháng 08 năm 2015
+85|w7|l1.0|li|Lễ phát bằng thạc sỹ khóa 2007
+86|w4|l1.0|li|Dành cho học viên
+87|w5|l1.0|li|Tra cứu thông tin bằng
+88|w3|l0.0|div|Điện thoại: 02438692115
+89|w35|l0.0|div|Ban đào tạo- Bộ phận quản lý đào tạo sau đại học - Tầng 1 - C1 - Đại học Bách khoa Hà Nội, Số 1 Đại Cồ Việt - …
+
+##### 35 https://seee.hust.edu.vn/vi/dao-tao/hoc-phan/ee3110e/
+title: EE3110E — KỸ THUẬT ĐO LƯỜNG | Trường Điện - Điện tử
+og:title: EE3110E — KỸ THUẬT ĐO LƯỜNG | Trường Điện - Điện tử
+pub:  | author: 
+h1: EE3110E — KỸ THUẬT ĐO LƯỜNG
+0|w6|l1.0|div|(024) 3869 6211 Email VI EN
+1|w2|l1.0|div|Liên hệ
+2|w16|l1.0|div|Giới thiệu Con người Đào tạo Tuyển sinh Nghiên cứu Sinh viên Kết nối Tin tức
+3|w2|l1.0|li|Trang chủ
+4|w2|l1.0|li|Đào tạo
+5|w2|l1.0|li|Học phần
+6|w1|l0.0|li|EE3110E
+7|w6|l0.0|h1|EE3110E — KỸ THUẬT ĐO LƯỜNG
+8|w2|l0.0|p|Đào tạo
+9|w2|l1.0|li|Tổng quan
+10|w4|l1.0|li|Chương trình đào tạo
+11|w2|l1.0|li|Học phần
+12|w4|l1.0|li|Kiểm định chất lượng
+13|w1|l0.0|div|EE3110E
+14|w4|l0.0|h2|KỸ THUẬT ĐO LƯỜNG
+15|w3|l0.0|p|Sensors and Instrumenttation
+16|w2|l0.0|dt|Khối lượng
+17|w19|l0.0|dd|3 tín chỉ · 4.67 ECTS (LT 45 · BT 0 · TN 15 · Tự học 90 tiết)
+18|w2|l0.0|dt|Vai trò
+19|w4|l0.0|dd|Bắt buộc (Mandatory course)
+20|w2|l0.0|dt|Học kỳ
+21|w1|l0.0|dd|6
+22|w2|l0.0|dt|Ngôn ngữ
+23|w2|l0.0|dd|Tiếng Việt
+24|w4|l0.0|dt|Giảng viên phụ trách
+25|w4|l1.0|dd|Nguyễn Thị Lan Hương
+26|w4|l0.0|h2|Mô tả học phần
+27|w96|l0.0|p|Cung cấp cho sinh viên các kiến thức cơ bản của kỹ thuật đo (sai số, khoảng đo của thiết bị, gia công kết quả …
+28|w3|l0.0|summary|Bản tiếng Anh
+29|w64|l0.0|p|To provide students with basic knowledge of measurement techniques (error, the measurement range of measuremen…
+30|w7|l0.0|h2|Chuẩn đầu ra học phần (CLO) 3
+31|w18|l0.0|p|Bấm vào từng chuẩn đầu ra để xem bản dịch, liên kết PLO và mức độ đóng góp.
+32|w17|l0.0|summary|CLO1 Áp dụng các quá trình đo lường cho việc đánh giá, tính toán kết quả đo
+33|w7|l0.0|p|Apply measurement processes and calculate measurement results
+34|w12|l0.0|summary|CLO2 Sử dụng các thiết bị đo thường gặp trong công nghiệp
+35|w7|l0.0|p|Use measurement devices for primary industrial quantities.
+36|w8|l0.0|summary|CLO3 Rèn luyện kỹ năng làm việc nhóm
+37|w3|l0.0|p|Collaborate in teams.
+38|w4|l0.0|h2|Đánh giá học phần
+39|w2|l0.0|th|Thành phần
+40|w2|l0.0|th|Tỉ trọng
+41|w2|l0.0|th|Thời gian
+42|w5|l0.0|td|Thi cuối kỳ (Final Examination)
+43|w1|l0.0|td|60.0%
+44|w2|l0.0|td|Tuần 16
+45|w5|l0.0|td|Bài kiểm tra giữa kỳ
+46|w1|l0.0|td|30.0%
+47|w2|l0.0|td|Tuần 9
+48|w4|l0.0|h2|Tài liệu học tập
+49|w2|l0.0|h3|Tham khảo
+50|w13|l0.0|li|[1] Cơ sở Kỹ thuật đo Quyển 1, Nguyễn Thị Lan Hương, 2024
+51|w15|l0.0|li|[2] Cơ sở kỹ thuật Đo lường Điện tử Quyển 1, Vũ Quý Điềm, 2023
+52|w4|l1.0|p|Tất cả học phần
+53|w2|l0.0|h2|Liên hệ
+54|w10|l0.0|p|Phòng E.605, Nhà C7, Đại học Bách khoa Hà Nội
+55|w3|l1.0|p|Email Văn phòng
+56|w3|l0.0|p|(024) 3869 6211
+57|w3|l1.0|div|Gửi câu hỏi
+58|w3|l0.0|h2|Liên kết nhanh
+59|w2|l1.0|li|Tuyển sinh
+60|w4|l1.0|li|Chương trình đào tạo
+61|w3|l1.0|li|Tìm chuyên gia
+62|w4|l1.0|li|Thủ tục sinh viên
+63|w2|l0.0|h2|Kết nối
+64|w10|l0.0|p|© 2026 Trường Điện - Điện tử, ĐHBK Hà Nội
+
+##### 36 https://sme.hust.edu.vn/en/research/
+title: Research
+og:title: Research
+pub:  | author: Trường Cơ khí
+h1: Trường Cơ khí
+0|w3|l0.0|div|Enter search keywords
+1|w6|l1.0|li|Hanoi University OF SCIENCE AND TECHNOLOGY
+2|w4|l1.0|li|School of Mechanical Engineering
+3|w2|l1.0|li|Hanoi University
+4|w4|l1.0|li|of sciense and technology
+5|w2|l1.0|li|School of
+6|w1|l1.0|li|Contact
+7|w1|l1.0|div|About
+8|w2|l1.0|div|General introduction
+9|w2|l1.0|div|Educational philosophy
+10|w2|l1.0|div|Organizational structure
+11|w1|l1.0|div|Facility
+12|w2|l1.0|div|Staff List
+13|w1|l1.0|div|News
+14|w2|l1.0|div|News articles
+15|w1|l1.0|div|Notification
+16|w1|l1.0|div|Event
+17|w2|l1.0|div|Upcoming events
+18|w4|l1.0|div|The event took place
+19|w1|l1.0|div|Academics
+20|w2|l1.0|div|Academic Model
+21|w2|l1.0|div|Undergraduate Program
+22|w2|l1.0|div|Standard Programmes
+23|w2|l1.0|div|ELITECH Programmes
+24|w4|l1.0|div|International Joint Training Programmes
+25|w2|l1.0|div|Graduate Program
+26|w3|l1.0|div|Department - Center
+27|w3|l1.0|div|Department of Mechatronics
+28|w6|l1.0|div|Department of Mechanical and Manufacturing Engineering
+29|w4|l1.0|div|Department of Thermal Energy
+30|w7|l1.0|div|Department of Vehicle and Energy Conversion Engineering
+31|w3|l1.0|div|Mechanical Engineering Center
+32|w8|l1.0|div|Research Center for Propulsion Systems and Autonomous Vehicles
+33|w4|l1.0|div|Smart Digital Factory Laboratory
+34|w5|l1.0|div|Joining and Welding Research Institute
+35|w1|l1.0|div|FACILITIES
+36|w2|l1.0|div|TECHNICAL SERVICES
+37|w3|l1.0|div|LIST OF STAFF
+38|w1|l1.0|div|Research
+39|w2|l1.0|div|Research Groups
+40|w3|l1.0|div|Department of Mechatronics
+41|w6|l1.0|div|Department of Mechanical and Manufacturing Engineering
+42|w7|l1.0|div|Department of Vehicle and Energy Conversion Engineering
+43|w4|l1.0|div|Department of Thermal Energy
+44|w2|l1.0|div|Research Areas
+45|w2|l1.0|div|Research Topics
+46|w2|l1.0|div|Research products
+47|w1|l1.0|div|Student
+48|w6|l1.0|div|Student at the School of Mechanical
+49|w1|l1.0|div|Alumni
+50|w1|l1.0|div|Cooperate
+51|w2|l1.0|div|General Introduction
+52|w2|l1.0|div|Domestic cooperation
+53|w2|l1.0|div|International cooperation
+54|w1|l1.0|li|Home
+55|w1|l1.0|li|About
+56|w2|l1.0|li|General introduction
+57|w2|l1.0|li|Educational philosophy
+58|w2|l1.0|li|Organizational structure
+59|w1|l1.0|li|Facility
+60|w2|l1.0|li|Staff List
+61|w1|l1.0|li|News
+62|w2|l1.0|li|News articles
+63|w1|l1.0|li|Notification
+64|w1|l1.0|li|Event
+65|w2|l1.0|li|Upcoming events
+66|w4|l1.0|li|The event took place
+67|w1|l1.0|li|Academics
+68|w2|l1.0|li|Academic Model
+69|w2|l1.0|li|Undergraduate Program
+70|w2|l1.0|li|Standard Programmes
+71|w2|l1.0|li|ELITECH Programmes
+72|w4|l1.0|li|International Joint Training Programmes
+73|w2|l1.0|li|Graduate Program
+74|w3|l1.0|li|Department - Center
+75|w3|l1.0|li|Department of Mechatronics
+76|w6|l1.0|li|Department of Mechanical and Manufacturing Engineering
+77|w4|l1.0|li|Department of Thermal Energy
+78|w7|l1.0|li|Department of Vehicle and Energy Conversion Engineering
+79|w3|l1.0|li|Mechanical Engineering Center
+80|w8|l1.0|li|Research Center for Propulsion Systems and Autonomous Vehicles
+81|w4|l1.0|li|Smart Digital Factory Laboratory
+82|w5|l1.0|li|Joining and Welding Research Institute
+83|w1|l1.0|li|FACILITIES
+84|w2|l1.0|li|TECHNICAL SERVICES
+85|w3|l1.0|li|LIST OF STAFF
+86|w1|l1.0|li|Research
+87|w2|l1.0|li|Research Groups
+88|w3|l1.0|li|Department of Mechatronics
+89|w6|l1.0|li|Department of Mechanical and Manufacturing Engineering
+90|w7|l1.0|li|Department of Vehicle and Energy Conversion Engineering
+91|w4|l1.0|li|Department of Thermal Energy
+92|w2|l1.0|li|Research Areas
+93|w2|l1.0|li|Research Topics
+94|w2|l1.0|li|Research products
+95|w1|l1.0|li|Student
+96|w6|l1.0|li|Student at the School of Mechanical
+97|w1|l1.0|li|Alumni
+98|w1|l1.0|li|Cooperate
+99|w2|l1.0|li|General Introduction
+100|w2|l1.0|li|Domestic cooperation
+101|w2|l1.0|li|International cooperation
+102|w3|l1.0|h2|Department of Mechatronics
+103|w2|l0.0|li|07/05/2026 10:31:00
+104|w2|l0.0|li|Viewed: 175
+105|w2|l0.0|li|Feedback: 0
+106|w7|l1.0|h3|Department of vehicle and energy conversion engineering
+107|w2|l0.0|li|07/05/2026 08:43:00
+108|w2|l0.0|li|Viewed: 179
+109|w2|l0.0|li|Feedback: 0
+110|w4|l1.0|h3|Department of thermal energy
+111|w2|l0.0|li|07/05/2026 08:31:00
+112|w2|l0.0|li|Viewed: 150
+113|w2|l0.0|li|Feedback: 0
+114|w6|l1.0|h3|Department of mechanical and manufacturing engineering
+115|w2|l0.0|li|07/05/2026 08:13:00
+116|w2|l0.0|li|Viewed: 183
+117|w2|l0.0|li|Feedback: 0
+118|w1|l1.0|li|Research
+119|w2|l1.0|li|Research Groups
+120|w3|l1.0|li|Department of Mechatronics
+121|w6|l1.0|li|Department of Mechanical and Manufacturing Engineering
+122|w7|l1.0|li|Department of Vehicle and Energy Conversion Engineering
+123|w4|l1.0|li|Department of Thermal Energy
+124|w2|l1.0|li|Research Areas
+125|w2|l1.0|li|Research Topics
+126|w2|l1.0|li|Research products
+127|w2|l0.0|div|Directions Map
+128|w4|l0.0|div|School of Mechanical Engineering
+129|w6|l1.0|div|HaNoi University of science and technology
+130|w2|l0.0|div|Social network
+131|w3|l0.0|div|The subordinate units
+132|w3|l1.0|li|Department - Center
+133|w1|l0.0|div|Sitemap
+134|w3|l1.0|div|View sitemap ...
+135|w15|l0.3|div|You did not use the site, Click here to remain logged . Timeout: 60 second
+
+##### 37 https://soict.hust.edu.vn/en/education/undergraduate/elitech-programs/global-ict
+title: Global ICT - SOICT
+og:title: Global ICT - SOICT
+pub:  | author: 
+h1: 
+0|w18|l0.0|li|Hanoi University of Science and Technology School of Information and Communications Technology School of Infor…
+1|w18|l0.0|li|Hanoi University of Science and Technology School of Information and Communications Technology School of Infor…
+2|w1|l1.0|li|Introduction
+3|w2|l1.0|li|Educational philosophy
+4|w1|l1.0|li|Organization
+5|w2|l1.0|li|School Council
+6|w3|l1.0|li|Board of Deans
+7|w3|l1.0|li|Lecturer and Staff
+8|w3|l1.0|li|Department – Center
+9|w1|l1.0|li|Department
+10|w3|l1.0|li|Computer Science Department
+11|w3|l1.0|li|Computer Engineering Department
+12|w1|l1.0|li|Center
+13|w2|l1.0|li|Computer Center
+14|w2|l1.0|li|Innovation Center
+15|w3|l1.0|li|BK AI Center
+16|w2|l1.0|li|BKCS Center
+17|w2|l1.0|li|EdTech Center
+18|w2|l1.0|li|NAVIS Center
+19|w1|l1.0|li|Academics
+20|w2|l1.0|li|Undergraduate Programs
+21|w2|l1.0|li|Master Programs
+22|w2|l1.0|li|Doctoral Programs
+23|w3|l1.0|li|Short-term Training Courses
+24|w1|l1.0|li|Research
+25|w2|l1.0|li|Research Centers
+26|w2|l1.0|li|Research Projects
+27|w1|l1.0|li|Publications
+28|w3|l1.0|li|Find an expert?
+29|w1|l1.0|li|Admission
+30|w6|l1.0|li|Enlightening your digital future with SoICT
+31|w1|l1.0|li|Admission
+32|w2|l1.0|li|Reference benchmarks
+33|w1|l1.0|li|Student
+34|w3|l1.0|li|Forms and regulations
+35|w1|l1.0|li|Consultant
+36|w2|l1.0|li|Student Activities
+37|w2|l1.0|li|International cooperation
+38|w2|l1.0|li|Academic Partnerships
+39|w2|l1.0|li|Enterprise Partnerships
+40|w11|l0.5|div|Home » Education » Undergraduate » Elitech Programs » Global ICT
+41|w1|l0.0|h2|Academics
+42|w1|l1.0|li|Undergraduate
+43|w1|l1.0|li|Master
+44|w1|l1.0|li|Doctor
+45|w3|l1.0|li|Short-term Training Courses
+46|w4|l1.0|h5|Global ICT Program (IT-E7)
+47|w3|l0.0|div|18 October, 2022
+48|w15|l0.0|p|GLOBAL ICT – GLOBAL ENGINEER PROGRAM IN INFORMATION AND COMMUNICATION TECHNOLOGY It is an advanced...
+49|w1|l0.0|aside|HIGHLIGHT_NEWS
+50|w6|l1.0|li|ENLIGHTENING YOUR DIGITAL FUTURE WITH SOICT
+51|w2|l0.0|aside|LATEST NEWS
+52|w2|l1.0|li|2025 Publications
+53|w4|l1.0|li|Cyber Security Program (IT-E15)
+54|w5|l1.0|li|Vietnam–France Information Technology Program (IT-EP)
+55|w3|l1.0|li|HEDSPI Program (IT-E6)
+56|w6|l1.0|li|Data Science and Artificial Intelligence (IT-E10)
+57|w3|l0.0|div|Department & Center
+58|w3|l1.0|li|Computer Science Department
+59|w3|l1.0|li|Computer Engineering Department
+60|w2|l1.0|li|BKCS Center
+61|w2|l1.0|li|Innovation Center
+62|w2|l1.0|li|NAVIS Center
+63|w2|l1.0|li|BK.AI Center
+64|w2|l1.0|li|Computer Center
+65|w2|l1.0|li|School Office
+66|w2|l0.0|div|Education program
+67|w1|l1.0|li|Undergraduate
+68|w1|l1.0|li|Master
+69|w1|l1.0|li|Doctor
+70|w3|l0.0|div|Systems and resources
+71|w3|l1.0|li|University administration system
+72|w5|l1.0|li|Company and alumni management system
+73|w3|l1.0|li|Forms and regulations
+74|w4|l0.0|p|(+84) 24 3869 2463
+75|w1|l0.0|p|vp@soict.hust.edu.vn
+76|w10|l0.0|p|Room 505, B1 Building, Hanoi University of Science and Technology
+77|w11|l0.0|p|No.1, Dai Co Viet Street, Hai Ba Trung District, Hanoi City
+78|w8|l0.0|div|Copyright © School of Information and Communications Technology
+79|w1|l1.0|li|Introduction
+80|w2|l1.0|li|Educational philosophy
+81|w1|l1.0|li|Organization
+82|w2|l1.0|li|School Council
+83|w3|l1.0|li|Board of Deans
+84|w3|l1.0|li|Lecturer and Staff
+85|w3|l1.0|li|Department – Center
+86|w1|l1.0|li|Department
+87|w3|l1.0|li|Computer Science Department
+88|w3|l1.0|li|Computer Engineering Department
+89|w1|l1.0|li|Center
+90|w2|l1.0|li|Computer Center
+91|w2|l1.0|li|Innovation Center
+92|w3|l1.0|li|BK AI Center
+93|w2|l1.0|li|BKCS Center
+94|w2|l1.0|li|EdTech Center
+95|w2|l1.0|li|NAVIS Center
+96|w1|l1.0|li|Academics
+97|w2|l1.0|li|Undergraduate Programs
+98|w2|l1.0|li|Master Programs
+99|w2|l1.0|li|Doctoral Programs
+100|w3|l1.0|li|Short-term Training Courses
+101|w1|l1.0|li|Research
+102|w2|l1.0|li|Research Centers
+103|w2|l1.0|li|Research Projects
+104|w1|l1.0|li|Publications
+105|w3|l1.0|li|Find an expert?
+106|w1|l1.0|li|Admission
+107|w6|l1.0|li|Enlightening your digital future with SoICT
+108|w1|l1.0|li|Admission
+109|w2|l1.0|li|Reference benchmarks
+110|w1|l1.0|li|Student
+111|w3|l1.0|li|Forms and regulations
+112|w1|l1.0|li|Consultant
+113|w2|l1.0|li|Student Activities
+114|w2|l1.0|li|International cooperation
+115|w2|l1.0|li|Academic Partnerships
+116|w2|l1.0|li|Enterprise Partnerships
+
+##### 38 https://svbk.hust.edu.vn/vi/news/tin-hoat-dong/chao-tan-sinh-vien-2026-khi-tieng-noi-cua-the-he-duoc-dinh-hinh-bang-nhiet-huyet-va-dam-me-303002.html
+title: ❤️‍🔥CHÀO TÂN SINH VIÊN 2026: KHI “TIẾNG NÓI CỦA THẾ HỆ” ĐƯỢC ĐỊNH HÌNH BẰNG NHIỆT HUYẾT VÀ ĐAM MÊ❤️‍🔥
+og:title: ❤️‍🔥CHÀO TÂN SINH VIÊN 2026: KHI “TIẾNG NÓI CỦA THẾ HỆ” ĐƯỢC ĐỊNH HÌNH BẰNG NHIỆT HUYẾT VÀ ĐAM MÊ❤️‍🔥
+pub: 2026-10-05+0717:10:00 | author: Đoàn thanh niên Đại học Bách khoa Hà Nội
+h1: ❤️‍🔥CHÀO TÂN SINH VIÊN 2026: KHI “TIẾNG NÓI CỦA THẾ HỆ” ĐƯỢC ĐỊNH HÌNH BẰNG NHIỆT HUYẾT VÀ ĐAM MÊ❤️‍🔥
+0|w5|l0.0|div|Nhập từ khóa tìm kiếm
+1|w6|l1.0|li|Đại học Bách khoa Hà Nội
+2|w5|l1.0|li|Đoàn TNCS Hồ Chí Minh
+3|w2|l1.0|li|Đại học
+4|w4|l1.0|li|Bách khoa Hà Nội
+5|w5|l1.0|li|Đoàn TNCS Hồ Chí Minh
+6|w3|l1.0|li|Hội Sinh Viên
+7|w3|l1.0|li|Thư viện ảnh
+8|w1|l1.0|li|Video
+9|w2|l1.0|div|Giới thiệu
+10|w9|l1.0|div|Chức năng, nhiệm vụ & cơ cấu tổ chức
+11|w6|l1.0|div|Ban chấp hành Đoàn Đại học
+12|w8|l1.0|div|Ban chấp hành Hội Sinh viên Đại học
+13|w2|l1.0|div|Tin Tức
+14|w3|l1.0|div|Tin hoạt động
+15|w2|l1.0|div|Thông báo
+16|w4|l1.0|div|Đơn vị trực thuộc
+17|w3|l1.0|div|Ban chuyên môn
+18|w7|l1.0|div|Liên chi đoàn - Liên chi hội
+19|w4|l1.0|div|Chi đoàn trực thuộc
+20|w3|l1.0|div|Câu lạc bộ
+21|w5|l1.0|div|Văn bản - Tài liệu
+22|w3|l1.0|div|Lịch làm việc
+23|w2|l1.0|div|Liên hệ
+24|w2|l1.0|li|Trang nhất
+25|w2|l1.0|li|Giới thiệu
+26|w9|l1.0|li|Chức năng, nhiệm vụ & cơ cấu tổ chức
+27|w6|l1.0|li|Ban chấp hành Đoàn Đại học
+28|w8|l1.0|li|Ban chấp hành Hội Sinh viên Đại học
+29|w2|l1.0|li|Tin Tức
+30|w3|l1.0|li|Tin hoạt động
+31|w2|l1.0|li|Thông báo
+32|w4|l1.0|li|Đơn vị trực thuộc
+33|w3|l1.0|li|Ban chuyên môn
+34|w7|l1.0|li|Liên chi đoàn - Liên chi hội
+35|w4|l1.0|li|Chi đoàn trực thuộc
+36|w3|l1.0|li|Câu lạc bộ
+37|w5|l1.0|li|Văn bản - Tài liệu
+38|w3|l1.0|li|Lịch làm việc
+39|w2|l1.0|li|Liên hệ
+40|w20|l0.0|h1|❤️‍🔥CHÀO TÂN SINH VIÊN 2026: KHI “TIẾNG NÓI CỦA THẾ HỆ” ĐƯỢC ĐỊNH HÌNH BẰNG NHIỆT HUYẾT VÀ ĐAM MÊ❤️‍🔥
+41|w5|l0.0|div|Thứ hai - 05/10/2026 17:10
+42|w1|l0.0|figcaption|DSC06848
+43|w61|l0.0|p|Khi ánh đèn sân khấu dần lắng xuống, ngày hội Chào Tân sinh viên Bách khoa 2026 cũng đã khép lại sau một ngày …
+44|w76|l0.0|p|Từ những bước chạy đón bình minh đầy sảng khoái, qua nhịp sống sôi động không ngừng nghỉ tại triển lãm và các …
+45|w57|l0.0|p|Cảm ơn các bạn tân sinh viên K71 đã mang đến một nguồn năng lượng tươi mới, tự tin và bứt phá. Chúc các bạn sẽ…
+46|w5|l0.6|p|Tác giả: Đoàn Thanh Niên
+47|w12|l0.0|p|Tổng số điểm của bài viết là: 0 trong 0 đánh giá
+48|w6|l0.0|div|Click để đánh giá bài viết
+49|w4|l0.0|p|Những tin mới hơn
+50|w11|l1.0|h4|SINH VIÊN BÁCH KHOA HÀ NỘI HƯỞNG ỨNG DI CHUYỂN XANH
+51|w1|l0.0|li|(05/10/2026)
+52|w15|l1.0|h4|GẶP MẶT CÁC THẾ HỆ CÁN BỘ ĐOÀN-DẤU ẤN 70 NĂM TUỔI TRẺ BÁCH KHOA
+53|w1|l0.0|li|(05/10/2026)
+54|w4|l0.0|p|Những tin cũ hơn
+55|w13|l1.0|h4|Hướng dẫn làm thủ tục chuyển sinh hoạt đoàn cho tân sinh viên
+56|w1|l0.0|li|(05/09/2026)
+57|w19|l1.0|h4|TRẠI HÈ TUỔI TRẺ BÁCH KHOA 2026 | KHÉP LẠI HÀNH TRÌNH – MỞ RA NHỮNG KHÁT VỌNG MỚI
+58|w1|l0.0|li|(07/08/2026)
+59|w29|l1.0|h4|CÔNG BỐ KẾT QUẢ CUỘC THI CHÍNH LUẬN VỀ BẢO VỆ NỀN TẢNG TƯ TƯỞNG CỦA ĐẢNG LẦN THỨ VI NĂM 2026 CẤP ĐẠI HỌC BÁCH …
+60|w1|l0.0|li|(31/07/2026)
+61|w18|l1.0|h4|NGÀY CHỦ NHẬT XANH – TUỔI TRẺ BÁCH KHOA ĐỒNG HÀNH CÙNG PHƯỜNG BẠCH MAI XANH, SẠCH, ĐẸP
+62|w1|l0.0|li|(26/07/2026)
+63|w18|l1.0|h4|NOI GƯƠNG TINH THẦN HỌC NGOẠI NGỮ VÀ HỌC TẬP SUỐT ĐỜI CỦA CHỦ TỊCH HỒ CHÍ MINH
+64|w1|l0.0|li|(27/05/2026)
+65|w17|l1.0|h4|TUỔI TRẺ BÁCH KHOA HÀ NỘI RA QUÂN “NGÀY CHỦ NHẬT XANH” TẠI PHƯỜNG HAI BÀ TRƯNG
+66|w1|l0.0|li|(25/05/2026)
+67|w2|l1.0|li|Tin Tức
+68|w3|l1.0|li|Tin hoạt động
+69|w2|l1.0|li|Thông báo
+70|w4|l0.0|div|Bản đồ chỉ dẫn
+71|w9|l0.0|div|Hội sinh viên - ĐH Bách Khoa Hà Nội
+72|w6|l1.0|div|Đại học Bách khoa Hà Nội
+73|w3|l0.0|div|Mạng xã hội
+74|w4|l0.0|div|Đơn vị trực thuộc
+75|w3|l1.0|li|Ban chuyên môn
+76|w7|l1.0|li|Liên chi đoàn - Liên chi hội
+77|w4|l1.0|li|Chi đoàn trực thuộc
+78|w3|l1.0|li|Câu lạc bộ
+79|w4|l0.0|div|Sơ đồ trang web
+80|w5|l1.0|div|Xem sơ đồ trang ...
+81|w27|l0.0|div|Bản quyền thuộc về Đại học Bách khoa Hà Nội Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội Điện thoại: 024 38…
+82|w22|l0.5|div|Bạn đã không sử dụng Site, Bấm vào đây để duy trì trạng thái đăng nhập . Thời gian chờ: 60 giây
+83|w7|l0.0|div|Giới thiệu bài viết cho bạn bè
+
+##### 39 https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/research-design-and-manufacture-of-a-system-to-quickly-fix-short-term-voltage-increase-decrease-incidents-for-load-22.html
+title: Research, design and manufacture of a system to quickly fix short-term voltage increase / decrease incidents for load
+og:title: Research, design and manufacture of a system to quickly fix short-term voltage increase / decrease incidents for load
+pub: 2025-07-24+0715:32:00 | author: Viện Công nghệ Điều khiển và Tự động hóa
+h1: Research, design and manufacture of a system to quickly fix short-term voltage increase / decrease incidents for load
+0|w5|l0.0|div|Nhập từ khóa tìm kiếm
+1|w6|l1.0|li|Đại học Bách khoa Hà Nội
+2|w9|l1.0|li|Viện Công nghệ Điều khiển và Tự động hóa
+3|w2|l1.0|li|Đại học
+4|w4|l1.0|li|Bách khoa Hà Nội
+5|w3|l1.0|li|Lịch làm việc
+6|w2|l1.0|li|Liên hệ
+7|w2|l1.0|li|Đăng nhập
+8|w2|l1.0|div|Giới thiệu
+9|w3|l1.0|div|Giới thiệu chung
+10|w7|l1.0|div|Quá trình hình thành và phát triển
+11|w4|l1.0|div|Cơ sở vật chất
+12|w3|l1.0|div|Văn phòng viện
+13|w4|l1.0|div|Cơ cấu tổ chức
+14|w4|l1.0|div|Danh sách cán bộ
+15|w2|l1.0|div|Tin Tức
+16|w2|l1.0|div|Tin tức
+17|w2|l1.0|div|Thông báo
+18|w2|l1.0|div|Tin bài
+19|w2|l1.0|div|Sự kiện
+20|w5|l1.0|div|Sự kiện sắp diễn ra
+21|w5|l1.0|div|Sự kiện đã diễn ra
+22|w2|l1.0|div|Học bổng
+23|w2|l1.0|div|Đào tạo
+24|w3|l1.0|div|Giới thiệu chung
+25|w4|l1.0|div|Đào tạo tiến sĩ
+26|w4|l1.0|div|Đào tạo công nghiệp
+27|w4|l1.0|div|Phòng lab nghiên cứu
+28|w9|l1.0|div|Phòng LAB Hệ thống và Thiết bị thông minh
+29|w10|l1.0|div|Phòng LAB Robot thông minh và Điều khiển chuyển động
+30|w12|l1.0|div|Phòng LAB Điều khiển và tối ưu các quá trình công nghiệp
+31|w11|l1.0|div|Phòng LAB Điều khiển và tối ưu hệ thống năng lượng
+32|w9|l1.0|div|Phòng LAB Tự động hóa Sản xuất kinh doanh
+33|w12|l1.0|div|Phòng LAB Động học hệ thống và các phương pháp điều khiển
+34|w6|l1.0|div|Lab hợp tác doanh nghiệp EVSE
+35|w6|l1.0|div|Lab hợp tác doanh nghiệp KIMSEN
+36|w7|l1.0|div|Lab hợp tác doanh nghiệp Hải Anh
+37|w2|l1.0|div|Nghiên cứu
+38|w4|l1.0|div|Lĩnh vực nghiên cứu
+39|w4|l1.0|div|Đề tài nghiên cứu
+40|w4|l1.0|div|Sản phẩm nghiên cứu
+41|w4|l1.0|div|Công bố khoa học
+42|w2|l1.0|div|Hợp tác
+43|w4|l1.0|div|Hợp tác trong nước
+44|w4|l1.0|div|Hợp tác quốc tế
+45|w2|l1.0|li|Trang nhất
+46|w2|l1.0|li|Giới thiệu
+47|w3|l1.0|li|Giới thiệu chung
+48|w7|l1.0|li|Quá trình hình thành và phát triển
+49|w4|l1.0|li|Cơ sở vật chất
+50|w3|l1.0|li|Văn phòng viện
+51|w4|l1.0|li|Cơ cấu tổ chức
+52|w4|l1.0|li|Danh sách cán bộ
+53|w2|l1.0|li|Tin Tức
+54|w2|l1.0|li|Tin tức
+55|w2|l1.0|li|Thông báo
+56|w2|l1.0|li|Tin bài
+57|w2|l1.0|li|Sự kiện
+58|w5|l1.0|li|Sự kiện sắp diễn ra
+59|w5|l1.0|li|Sự kiện đã diễn ra
+60|w2|l1.0|li|Học bổng
+61|w2|l1.0|li|Đào tạo
+62|w3|l1.0|li|Giới thiệu chung
+63|w4|l1.0|li|Đào tạo tiến sĩ
+64|w4|l1.0|li|Đào tạo công nghiệp
+65|w4|l1.0|li|Phòng lab nghiên cứu
+66|w9|l1.0|li|Phòng LAB Hệ thống và Thiết bị thông minh
+67|w10|l1.0|li|Phòng LAB Robot thông minh và Điều khiển chuyển động
+68|w12|l1.0|li|Phòng LAB Điều khiển và tối ưu các quá trình công nghiệp
+69|w11|l1.0|li|Phòng LAB Điều khiển và tối ưu hệ thống năng lượng
+70|w9|l1.0|li|Phòng LAB Tự động hóa Sản xuất kinh doanh
+71|w12|l1.0|li|Phòng LAB Động học hệ thống và các phương pháp điều khiển
+72|w6|l1.0|li|Lab hợp tác doanh nghiệp EVSE
+73|w6|l1.0|li|Lab hợp tác doanh nghiệp KIMSEN
+74|w7|l1.0|li|Lab hợp tác doanh nghiệp Hải Anh
+75|w2|l1.0|li|Nghiên cứu
+76|w4|l1.0|li|Lĩnh vực nghiên cứu
+77|w4|l1.0|li|Đề tài nghiên cứu
+78|w4|l1.0|li|Sản phẩm nghiên cứu
+79|w4|l1.0|li|Công bố khoa học
+80|w2|l1.0|li|Hợp tác
+81|w4|l1.0|li|Hợp tác trong nước
+82|w4|l1.0|li|Hợp tác quốc tế
+83|w18|l0.0|h1|Research, design and manufacture of a system to quickly fix short-term voltage increase / decrease incidents f…
+84|w5|l0.0|div|Thứ năm - 24/07/2025 15:32
+85|w1|l0.0|p|Objective:
+86|w26|l0.0|p|- Designed mastery and technology of manufaturing the system to quickly fix short-term voltage increase / decr…
+87|w24|l0.0|p|- Fabrication, installation and operational testing the system to quickly fix short-term voltage increase / de…
+88|w3|l0.0|p|The overall structure:
+89|w8|l0.0|p|Structure diagram of the main components of AVC
+90|w2|l0.0|p|Experimental Result:
+91|w5|l0.0|p|AVC 150 kVA electrical cabinet
+92|w5|l0.0|p|Gird side converter (Shunt Converter)
+93|w5|l0.0|p|Load side converter (Series Converter)
+94|w4|l0.0|p|Những tin mới hơn
+95|w4|l1.0|h4|Intelligent Storage Management Device
+96|w1|l0.0|li|(24/07/2025)
+97|w8|l1.0|h4|Design the 400Hz Ground Power Unit for Aircraft
+98|w1|l0.0|li|(24/07/2025)
+99|w10|l1.0|h4|Development of Output Filter for Inverter with long motor cable
+100|w1|l0.0|li|(24/07/2025)
+101|w4|l0.0|p|Những tin cũ hơn
+102|w17|l1.0|h4|Research, design and build wireless smart sensor systems for Smart grid- Ministry of Education and Training- 2…
+103|w1|l0.0|li|(24/07/2025)
+104|w13|l1.0|h4|Studying and design the wireless dust concentration measurement and supervisor system in industry
+105|w1|l0.0|li|(24/07/2025)
+106|w17|l1.0|h4|Study design of motion control system for 4-dimensional CNC milling machine- Ministry of Science and Technolog…
+107|w1|l0.0|li|(24/07/2025)
+108|w15|l1.0|h4|Research and manufacture three-phase AC Servo drives - Ministry of Science and Technology - 2019
+109|w1|l0.0|li|(24/07/2025)
+110|w4|l1.0|h4|Đề tài nghiên cứu
+111|w1|l0.0|li|(24/07/2025)
+112|w2|l1.0|li|Nghiên cứu
+113|w4|l1.0|li|Lĩnh vực nghiên cứu
+114|w4|l1.0|li|Đề tài nghiên cứu
+115|w4|l1.0|li|Sản phẩm nghiên cứu
+116|w4|l1.0|li|Công bố khoa học
+117|w4|l0.0|div|Bản đồ chỉ dẫn
+118|w14|l0.0|div|Văn phòng Viện Địa chỉ: Phòng 202 - Tòa nhà Công nghệ cao (C1B)
+119|w6|l1.0|div|Đại học Bách khoa Hà Nội
+120|w3|l0.0|div|Mạng xã hội
+121|w4|l0.0|div|Sơ đồ trang act.hust.edu.vn
+122|w5|l1.0|div|Xem sơ đồ trang ...
+123|w2|l0.0|div|Liên hệ
+124|w4|l0.0|h3|Thông tin liên hệ
+125|w4|l0.0|li|(+84) 4 3868 3518
+126|w1|l1.0|li|act@hust.edu.vn
+127|w27|l0.0|div|Bản quyền thuộc về Đại học Bách khoa Hà Nội Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội Điện thoại: 024 38…
+128|w22|l0.5|div|Bạn đã không sử dụng Site, Bấm vào đây để duy trì trạng thái đăng nhập . Thời gian chờ: 60 giây
+129|w7|l0.0|div|Giới thiệu bài viết cho bạn bè
+
+##### 40 https://bkcs.hust.edu.vn/
+title: Bach Khoa Cybersecurity Center
+og:title: 
+pub:  | author: 
+h1: Join us now
+0|w4|l1.0|div|Bach Khoa Cybersecurity Center
+1|w1|l1.0|li|Home
+2|w1|l1.0|li|People
+3|w1|l1.0|li|Projects
+4|w1|l1.0|li|Publications
+5|w1|l1.0|li|Courses
+6|w1|l1.0|li|Resources
+7|w1|l1.0|li|News
+8|w4|l1.0|div|Bach Khoa Cybersecurity Center
+9|w1|l1.0|li|Home
+10|w1|l1.0|li|People
+11|w1|l1.0|li|Projects
+12|w1|l1.0|li|Publications
+13|w1|l1.0|li|Courses
+14|w1|l1.0|li|Resources
+15|w1|l1.0|li|News
+16|w3|l0.0|h1|Join us now
+17|w2|l1.0|div|Submit Application
+18|w3|l0.0|h1|ACM ASIACCS 2025
+19|w3|l0.0|p|25-29 August, Hanoi
+20|w1|l1.0|div|Readmore
+21|w2|l0.0|h2|About us
+22|w45|l0.0|p|Bach khoa Cybersecurity Research Center (BKCS) is a community of researchers and experts working on cybersecur…
+23|w39|l0.0|p|We are proud to be one of Vietnam’s leading centers in cybersecurity research. The center links members with a…
+24|w4|l1.0|h1|Bach Khoa Cybersecurity Center
+25|w6|l0.0|p|Address: Room 409, B1 Building, HUST
+26|w2|l0.5|p|E-mail: bkcs@hust.edu.vn
+27|w2|l0.5|p|Website: https://bkcs.hust.edu.vn
+28|w1|l0.0|h2|Research
+29|w1|l1.0|li|Projects
+30|w1|l1.0|li|Publications
+31|w1|l1.0|li|Resources
+32|w1|l0.0|h2|Social
+33|w2|l1.0|p|BKCS Center
+
+##### 41 https://csv.hust.edu.vn/hust-alumni-20
+title: HUST ALUMNI 2.0
+og:title: HUST ALUMNI 2.0
+pub:  | author: 
+h1: 
+0|w2|l1.0|div|Giới thiệu
+1|w8|l1.0|div|Quyền lợi và nghĩa vụ của thành viên
+2|w2|l1.0|div|Tin tức
+3|w2|l1.0|div|Tin tức
+4|w2|l1.0|div|Sự kiện
+5|w5|l1.0|div|Sự kiện sắp diễn ra
+6|w5|l1.0|div|Sự kiện đang diễn ra
+7|w5|l1.0|div|Sự kiện đã kết thúc
+8|w2|l1.0|div|Mạng lưới
+9|w3|l1.0|div|Câu lạc bộ
+10|w2|l1.0|div|Kết nối
+11|w2|l1.0|div|Vinh danh
+12|w2|l1.0|div|Hảo tâm
+13|w2|l1.0|li|Trang chủ
+14|w2|l1.0|li|Tin tức
+15|w3|l1.0|li|HUST ALUMNI 2.0
+16|w3|l0.0|h2|HUST ALUMNI 2.0
+17|w2|l0.0|div|Ngày: 11/04/2023
+18|w4|l0.0|p|Không có dữ liệu
+19|w2|l0.0|div|GIỚI THIỆU
+20|w35|l0.0|div|Mạng lưới cựu sinh viên Đại học Bách Khoa Hà Nội Địa chỉ: Tòa nhà BK Alumni - Đại học Bách khoa Hà Nội Fanpage…
+21|w3|l0.0|div|Liên kết web
+22|w5|l0.0|li|Đại học Bách khoa HN
+23|w3|l0.0|li|Danh sách khoa/viện
+24|w5|l0.0|li|Hỗ trợ cựu sinh viên
+25|w6|l0.0|li|Ban liên lạc cựu sinh viên
+26|w2|l0.0|li|Sự kiện
+27|w2|l0.0|li|Tra cứu
+28|w2|l0.0|li|Vinh danh
+29|w3|l0.0|li|Câu lạc bộ
+30|w2|l0.0|li|Hảo tâm
+
+##### 42 https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=33234
+title: CTT ĐHBKHN
+og:title: 
+pub:  | author: 
+h1: 
+0|w2|l1.0|div|Đăng nhập
+1|w4|l1.0|div|Dành cho phụ huynh
+2|w2|l1.0|li|Trang chủ
+3|w2|l1.0|li|Thông báo
+4|w2|l1.0|li|Đại học
+5|w3|l1.0|li|Sau đại học
+6|w4|l1.0|li|Vừa làm vừa học
+7|w2|l1.0|li|Quy định
+8|w2|l1.0|li|Đại học
+9|w3|l1.0|li|Sau đại học
+10|w4|l1.0|li|Vừa làm vừa học
+11|w2|l1.0|li|Biểu mẫu
+12|w2|l1.0|li|Sổ tay
+13|w2|l1.0|li|Dịch vụ
+14|w2|l1.0|li|Tra cứu
+15|w2|l1.0|li|Liên hệ
+16|w2|l1.0|li|Trang chủ
+17|w2|l1.0|li|Thông báo
+18|w2|l1.0|li|Đại học
+19|w3|l1.0|li|Sau đại học
+20|w4|l1.0|li|Vừa làm vừa học
+21|w2|l1.0|li|Kế hoạch
+22|w2|l1.0|li|Đại học
+23|w3|l1.0|li|Sau đại học
+24|w4|l1.0|li|Vừa làm vừa học
+25|w2|l1.0|li|Quy định
+26|w2|l1.0|li|Đại học
+27|w3|l1.0|li|Sau đại học
+28|w4|l1.0|li|Vừa làm vừa học
+29|w2|l1.0|li|Dịch vụ
+30|w12|l0.0|h3|Bảo vệ luận án TS cấp trường cho NCS Nguyễn Anh Tuấn
+31|w67|l0.0|div|08h30 ngày 10 Tháng 12 năm 2018 tại C1-318: Bảo vệ luận án TS cấp trường cho NCS Nguyễn Anh Tuấn, Đề tài: Nghi…
+32|w6|l1.0|div|Nội dung chi tiết luận án
+33|w10|l0.0|p|Bản quyền thuộc về Đại học Bách Khoa Hà Nội
+34|w12|l0.0|p|Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội
+
+##### 43 https://fami.hust.edu.vn/de-tai/bat-dang-thuc-ham-va-tinh-chat-cua-nghiem-cua-phuong-trinh-dao-ham-rieng/
+title: » Bất đẳng thức hàm và tính chất của nghiệm của phương trình đạo hàm riêng
+og:title: 
+pub:  | author: 
+h1: Bất đẳng thức hàm và tính chất của nghiệm của phương trình đạo hàm riêng
+0|w6|l1.0|nav|Đại học Bách Khoa Hà Nội
+1|w1|l1.0|li|English
+2|w2|l1.0|li|Giới thiệu
+3|w3|l1.0|li|Giới thiệu chung
+4|w5|l1.0|li|Sứ mạng và Tầm nhìn
+5|w4|l1.0|li|Triết lý giáo dục
+6|w5|l1.0|li|Cơ cấu tổ chức Khoa
+7|w4|l1.0|li|Ban lãnh đạo Khoa
+8|w6|l1.0|li|Đảng bộ và Công đoàn Khoa
+9|w4|l1.0|li|Lịch sử hình thành
+10|w3|l1.0|li|Cựu giáo chức
+11|w3|l1.0|li|Giới thiệu Hội
+12|w5|l1.0|li|Danh sách cựu giáo chức
+13|w3|l1.0|li|Nhóm chuyên môn
+14|w7|l1.0|li|Khoa học dữ liệu và ứng dụng
+15|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+16|w4|l1.0|li|Danh sách thành viên
+17|w12|l1.0|li|Cơ sở toán học cho tin học và hệ thống thông tin
+18|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+19|w4|l1.0|li|Danh sách thành viên
+20|w8|l1.0|li|Tối ưu hóa và tính toán khoa học
+21|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+22|w4|l1.0|li|Danh sách thành viên
+23|w7|l1.0|li|Xác suất thống kê và ứng dụng
+24|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+25|w4|l1.0|li|Danh sách thành viên
+26|w2|l1.0|li|Giải tích
+27|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+28|w4|l1.0|li|Danh sách thành viên
+29|w2|l1.0|li|Đại số
+30|w5|l1.0|li|Giới thiệu Nhóm chuyên môn
+31|w4|l1.0|li|Danh sách thành viên
+32|w4|l1.0|li|Giảng viên tạo nguồn
+33|w4|l1.0|li|Danh sách thành viên
+34|w2|l1.0|li|Đào tạo
+35|w4|l1.0|li|Đào tạo đại học
+36|w6|l1.0|li|Chương trình Đào tạo Toán Tin
+37|w8|l1.0|li|Chương trình Hệ thống thông tin quản lý
+38|w11|l1.0|li|CTĐT Khoa học tính toán cho các hệ thống thông minh
+39|w9|l1.0|li|Chương trình Khoa học máy tính – ĐH TROY
+40|w4|l1.0|li|Đào tạo thạc sĩ
+41|w4|l1.0|li|Đào tạo tiến sĩ
+42|w4|l1.0|li|Sách đã xuất bản
+43|w3|l1.0|li|Nghiên cứu&Hợp tác
+44|w4|l1.0|li|Lĩnh vực nghiên cứu
+45|w4|l1.0|li|Các nhóm nghiên cứu
+46|w4|l1.0|li|Đề tài khoa học
+47|w5|l1.0|li|Hợp tác và liên kết
+48|w4|l1.0|li|Hội thảo khoa học
+49|w2|l1.0|li|Lịch seminar
+50|w2|l1.0|li|Tuyển sinh
+51|w4|l1.0|li|Giới thiệu về Khoa
+52|w6|l1.0|li|Giới thiệu tuyển sinh đại học
+53|w6|l1.0|li|Một số câu hỏi thường gặp
+54|w3|l1.0|li|Đặt câu hỏi
+55|w5|l1.0|li|Tuyển sinh sau đại học
+56|w3|l1.0|li|Sinh viên&Học viên
+57|w3|l1.0|li|Liên chi Đoàn
+58|w3|l1.0|li|Liên chi Hội
+59|w4|l1.0|li|Sinh viên tiêu biểu
+60|w6|l1.0|li|Nghiên cứu khoa học sinh viên
+61|w4|l1.0|li|Học viên cao học
+62|w3|l1.0|li|Nghiên cứu sinh
+63|w4|l1.0|li|Góc con người FaMI
+64|w5|l1.0|li|Blog Ứng dụng Toán học
+65|w2|l1.0|li|Liên hệ
+66|w3|l0.0|h2|Liên kết nhanh
+67|w5|l1.0|li|Thông tin cho sinh viên
+68|w5|l1.0|li|Thông tin cựu sinh viên
+69|w4|l1.0|li|Dành cho cán bộ
+70|w7|l1.0|li|Đề cương và Bài giảng môn học
+71|w4|l1.0|li|Tài liệu tham khảo
+72|w5|l1.0|li|Mẫu đơn cho sinh viên
+73|w4|l1.0|li|Cố vấn học tập
+74|w2|l1.0|li|Điểm thi
+75|w15|l0.0|h1|Bất đẳng thức hàm và tính chất của nghiệm của phương trình đạo hàm riêng
+76|w4|l0.0|h3|Đánh giá bài viết
+77|w2|l0.0|h3|Xem thêm
+78|w22|l1.0|div|02/02/2026. Đặc trưng một số tính chất đại số và tính toán các bất biến liên quan bằng lí thuyết tổ hợp
+79|w17|l0.9|div|02/02/2026. Tính chất định tính nghiệm của một số lớp phương trình đạo hàm riêng phi tuyến
+80|w12|l0.9|div|05/09/2025. Phương trình nửa tuyến tính đối với toán tử kiểu Grushin
+81|w19|l0.9|div|02/02/2026. Đối đồng điều Galois trong đại số và lý thuyết số và một số vấn đề liên quan
+82|w19|l0.9|div|02/02/2026. Một số chủ đề về đa thức, ma trận và nhóm trong đại số và lý thuyết số
+83|w21|l1.0|div|02/02/2026. Sử dụng một số phương pháp tổ hợp trong một số bài toán chọn lọc của Đại số giao hoán
+84|w29|l0.0|p|Văn phòng: C9-101, Số 1 Đại Cồ Việt, phường Bạch Mai, Thành phố Hà Nội Điện thoại: 04 3869 2137 - Fax: 04 3868…
+85|w2|l0.0|h2|ĐÀO TẠO
+86|w4|l1.0|li|Đào tạo đại học
+87|w4|l1.0|li|Đào tạo thạc sĩ
+88|w4|l1.0|li|Đào tạo tiến sĩ
+89|w3|l0.0|h2|NHÓM CHUYÊN MÔN
+90|w7|l1.0|li|Khoa học dữ liệu và ứng dụng
+91|w12|l1.0|li|Cơ sở toán học cho tin học và hệ thống thông tin
+92|w8|l1.0|li|Tối ưu hóa và tính toán khoa học
+93|w7|l1.0|li|Xác suất thống kê và ứng dụng
+94|w2|l1.0|li|Giải tích
+95|w2|l1.0|li|Đại số
+96|w11|l0.0|p|© 2026 Khoa Toán - Tin, ĐH Bách Khoa Hà Nội.
+
+##### 44 https://fintech.hust.edu.vn/get-involved/fir/ecosystem/venture
+title: BK Fintech FIR
+og:title: BK Fintech FIR
+pub:  | author: 
+h1: Venture Studio
+0|w2|l0.0|h1|Venture Studio
+1|w74|l0.0|h5|Venture Studio đóng vai trò là Người đồng kiến tạo (Co-builder), tập trung vào việc cung cấp vốn pre-seed để g…
+2|w2|l0.0|h2|Hành Trình
+3|w5|l0.0|h4|Tìm kiếm & Ghép cặp
+4|w10|l0.0|p|Cam kết gói tài trợ vốn hạt giống ban đầu
+5|w7|l0.0|h4|Xây dựng dự án & Cố vấn
+6|w6|l0.0|p|Chỉ định Cố vấn chuyên trách
+7|w4|l0.0|h4|Chuyển đổi & Spin-off
+8|w14|l0.0|p|Tư vấn chiến lược gọi vốn và kết nối với các VCs lớn hơn
+9|w2|l0.0|h2|Quyền lợi
+10|w6|l0.0|h4|Cổ phần Xây dựng Dự án
+11|w6|l0.0|h4|Quyền ưu tiên mua lại (ROFR)
+12|w4|l0.0|h4|Chia sẻ doanh thu
+13|w4|l0.0|h4|Nhận diện thương hiệu
+14|w12|l0.0|p|© 2025 BK FINTECH FOUNDER IN RESIDENCE. Đã đăng ký bản quyền.
+15|w12|l1.0|div|Trang chủ Hệ sinh thái Sự kiện Về chúng tôi Liên hệ
+16|w1|l0.0|p|Contact
+17|w1|l1.0|div|marketing@a-star.group
+18|w5|l1.0|div|BK Fintech Founder In Residence
+
+##### 45 https://giving.hust.edu.vn/vi/cau-chuyen
+title: Câu chuyện — HUST Giving
+og:title: Câu chuyện — HUST Giving
+pub:  | author: 
+h1: Đóng góp đã trở thành điều gì
+0|w5|l1.0|body|Bỏ qua tới nội dung
+1|w2|l1.0|div|HUST Giving
+2|w14|l1.0|nav|Câu chuyện Ghi nhận Tra cứu Quy định và minh bạch Về HUST Giving
+3|w3|l1.0|div|Đóng góp ngay
+4|w5|l0.4|p|Trang chủ · Câu chuyện
+5|w7|l0.0|h1|Đóng góp đã trở thành điều gì
+6|w39|l0.0|p|Một học kỳ được giữ lại, một phòng thí nghiệm có thiết bị mới, một đội tuyển đến được vòng chung kết. Mỗi câu …
+7|w2|l0.0|div|169.663.867 đ
+8|w12|l0.0|div|đã huy động từ cựu sinh viên, doanh nghiệp và cộng đồng
+9|w1|l0.0|div|187
+10|w8|l0.0|div|lượt người và tổ chức đã đóng góp
+11|w3|l1.0|div|Học bổng 28/09/2026
+12|w19|l1.0|h3|Món quà tốt nghiệp dành cho mẹ – hành trình của thủ khoa Toán - Tin Lê Cảnh Hải
+13|w59|l1.0|p|Tại lễ tốt nghiệp ngày 26/9/2026, Lê Cảnh Hải, một trong 8 thủ khoa đầu ra của Đại học Bách khoa Hà Nội, đại d…
+14|w1|l1.0|div|21/09/2026
+15|w19|l1.0|h3|Mái nhà Bách khoa và điểm tựa tiếp sức cho chàng sinh viên Toán - Tin Nguyễn Xuân Bách
+16|w58|l1.0|p|Tháng 9/2026, trong không khí háo hức những ngày đầu năm học mới, Nguyễn Xuân Bách lặng lẽ bước qua cổng Đại h…
+17|w1|l1.0|div|20/09/2026
+18|w11|l1.0|h3|Hài hòa phép chia để đồng hành trên chặng đường dài
+19|w58|l1.0|p|Khiêm tốn nhận mình chỉ có “doanh nghiệp nhỏ” và “tấm lòng nhỏ”, nhưng TGĐ Công ty CP Hóa chất Toàn Phương Ngu…
+20|w1|l1.0|div|20/09/2026
+21|w18|l1.0|h3|Ngôi trường không ai bị bỏ lại phía sau: Chuyện của sinh viên Bách khoa Thái Mạnh Việt
+22|w69|l1.0|p|Mùa hè 2025, Thái Mạnh Việt - chàng trai quê Nghệ An, sinh viên K67 khoa Khoa học và Công nghệ Giáo dục, Đại h…
+23|w3|l1.0|div|Học bổng 20/09/2026
+24|w17|l1.0|h3|Đại học Bách khoa Hà Nội trao học bổng cho sinh viên có hoàn cảnh khó khăn
+25|w43|l1.0|p|Sáng 15/10, Câu lạc bộ Golf Cựu sinh viên Đại học Bách khoa Hà Nội đã trao 20 suất học bổng, tổng trị giá 200 …
+26|w2|l0.0|div|Lời nhắn
+27|w5|l0.0|h2|Người đóng góp nhắn gửi
+28|w19|l0.0|p|Lấy từ ô "Lời nhắn gửi" khi đóng góp. Người ẩn danh vẫn có thể để lại lời nhắn.
+29|w5|l1.0|div|Xem bảng ghi nhận →
+30|w1|l0.0|div|N
+31|w4|l0.0|div|Nguyễn Thị Hoài K60
+32|w15|l0.0|p|Chúc em luôn giữ mãi ngọn lửa đam mê và học tập thật tốt nhé!
+33|w3|l0.0|div|44 phút trước
+34|w1|l0.0|div|N
+35|w5|l0.0|div|Người đóng góp ẩn danh
+36|w6|l0.0|p|Chúc các em vững bước !
+37|w3|l0.0|div|1 giờ trước
+38|w1|l0.0|div|N
+39|w5|l0.0|div|Người đóng góp ẩn danh
+40|w18|l0.0|p|Chúc HUST luôn luôn tiến bước phát triển. Mãi luôn tự hào là một sinh viên Bách Khoa
+41|w3|l0.0|div|9 giờ trước
+42|w1|l0.0|div|Đ
+43|w3|l0.0|div|Đoàn Duy Trung
+44|w7|l0.0|p|Chúc các bạn sinh viên vững bước.
+45|w3|l0.0|div|10 giờ trước
+46|w1|l0.0|div|N
+47|w5|l0.0|div|Người đóng góp ẩn danh
+48|w5|l0.0|p|Chúc các em vững bước
+49|w3|l0.0|div|18 giờ trước
+50|w1|l0.0|div|P
+51|w3|l0.0|div|Phạm Thế Quyền
+52|w24|l0.0|p|Hi vọng chút tấm lòng giúp các em phát triển để trở thành trụ cột, xây dựng một Việt Nam hùng cường, mạnh mẽ!
+53|w3|l0.0|div|18 giờ trước
+54|w2|l0.0|div|HUST Giving
+55|w11|l0.0|div|Đồng hành cùng tri thức - Tiếp sức những ước mơ
+56|w33|l0.2|div|Ban Công tác sinh viên — Đại học Bách khoa Hà Nội P101–105 nhà C1, Số 1 Đại Cồ Việt, Hà Nội Tel : 19001510 · c…
+57|w2|l0.0|h4|HUST Giving
+58|w2|l1.0|li|Câu chuyện
+59|w2|l1.0|li|Ghi nhận
+60|w5|l1.0|li|Quy định và minh bạch
+61|w3|l1.0|li|Về HUST Giving
+62|w4|l1.0|li|Tra cứu biên nhận
+63|w2|l0.0|h4|Liên kết
+64|w3|l1.0|li|Đóng góp ngay
+65|w4|l1.0|li|Cách đồng hành khác
+66|w5|l1.0|li|Bảng đóng góp trực tiếp
+67|w1|l1.0|li|hust.edu.vn
+68|w8|l0.0|div|© 2026 Đại học Bách khoa Hà Nội
+
+##### 46 https://icea.hust.edu.vn/lien-he4
+title: ICEA
+og:title: 
+pub:  | author: 
+h1: 
+0|w5|l1.0|body|Truy cập nội dung luôn
+1|w5|l0.8|div|Đăng nhập | Liên hệ
+2|w6|l0.2|div|Ngôn ngữ: Tiếng Việt [Beta] English
+3|w2|l1.0|li|.Trang chủ
+4|w2|l1.0|li|Giới thiệu
+5|w7|l1.0|li|Quá trình hình thành và phát triển
+6|w4|l1.0|li|Cơ cấu tổ chức
+7|w4|l1.0|li|Đội ngũ cán bộ
+8|w4|l1.0|li|Cơ sở vật chất
+9|w3|l1.0|li|Văn phòng Viện
+10|w4|l1.0|li|Địa chỉ liên hệ
+11|w2|l1.0|li|Đào tạo
+12|w4|l1.0|li|Đào tạo Tiến sĩ
+13|w4|l1.0|li|Đào tạo công nghiệp
+14|w2|l1.0|li|Nghiên cứu
+15|w4|l1.0|li|Lĩnh vực nghiên cứu
+16|w4|l1.0|li|Đề tài nghiên cứu
+17|w4|l1.0|li|Sản phẩm nghiên cứu
+18|w4|l1.0|li|Công bố khoa học
+19|w2|l1.0|li|Hợp tác
+20|w2|l1.0|li|Trong nước
+21|w2|l1.0|li|Quốc tế
+22|w3|l1.0|li|Phòng nghiên cứu
+23|w10|l1.0|li|Phòng cơ chế chấp hành và điện tử công suất
+24|w3|l1.0|li|Giới thiệu chung
+25|w4|l1.0|li|Các hướng nghiên cứu
+26|w4|l1.0|li|Cơ sở vật chất
+27|w2|l1.0|li|Liên hệ
+28|w7|l1.0|li|Phòng Robot và điều khiển chuyển động
+29|w3|l1.0|li|Giới thiệu chung
+30|w4|l1.0|li|Các hướng nghiên cứu
+31|w4|l1.0|li|Cơ sở vật chất
+32|w2|l1.0|li|Liên hệ
+33|w11|l1.0|li|Phòng điều khiển quá trình và tự động hóa xí nghiệp
+34|w3|l1.0|li|Giới thiệu chung
+35|w4|l1.0|li|Các hướng nghiên cứu
+36|w4|l1.0|li|Cơ sở vật chất
+37|w2|l1.0|li|Liên hệ
+38|w12|l1.0|li|Phòng kỹ thuật đo và kiểm chuẩn thiết bị đo công nghiệp
+39|w3|l1.0|li|Giới thiệu chung
+40|w4|l1.0|li|Các hướng nghiên cứu
+41|w4|l1.0|li|Cơ sở vật chất
+42|w2|l1.0|li|Liên hệ
+43|w7|l1.0|li|Phòng điều khiển hệ thống năng lượng
+44|w3|l1.0|li|Giới thiệu chung
+45|w4|l1.0|li|Các hướng nghiên cứu
+46|w4|l1.0|li|Cơ sở vật chất
+47|w2|l1.0|li|Liên hệ
+48|w11|l1.0|li|Phòng động học hệ thống và các phương pháp điều khiển
+49|w3|l1.0|li|Giới thiệu chung
+50|w4|l1.0|li|Các hướng nghiên cứu
+51|w4|l1.0|li|Cơ sở vật chất
+52|w2|l1.0|li|Liên hệ
+53|w4|l1.0|li|Tin tức- Sự kiện
+54|w2|l1.0|li|Tin tức
+55|w2|l1.0|li|Sự kiện
+56|w2|l1.0|li|Học bổng
+57|w2|l1.0|li|Tuyển dụng
+58|w12|l0.0|p|Phòng 304, Nhà công nghệ cao, Trường ĐH Bách khoa Hà Nội
+59|w5|l0.0|p|Điện thoại: 024. 3828 3518
+60|w4|l0.0|p|Fax: 024. 3828 3519
+61|w3|l0.3|p|Facebook : https://www.facebook.com/icea.hust/
+62|w3|l1.0|li|Giới thiệu chung
+63|w4|l1.0|li|Các hướng nghiên cứu
+64|w4|l1.0|li|Cơ sở vật chất
+65|w2|l1.0|li|Liên hệ
+66|w6|l0.0|h1|Công bố mới Công bố mới
+67|w51|l0.0|p|- Thanh Ngo Ngoc, Eleonora Riva Sanseverino, Ninh Nguyen Quang, Pietro Romano, Fabio Viola, Binh Doan Van, Hoa…
+68|w27|l0.0|p|- PH Pham, KT Hoang, Dich Quang Nguyen , " Trapezoidal-shaped electrostatic comb-drive actuator with large dis…
+69|w40|l0.0|p|- Tri-Vien Vu, Truong Van Vu, Dang Thanh Bui , " Numerical study of deformation and breakup of a multi-core co…
+70|w8|l1.0|p|DANH SÁCH CÁC CÔNG BỐ / FULL PUBLICATIONS
+71|w10|l0.0|h1|Kết nối với chúng tôi Kết nối với chúng tôi
+72|w9|l1.0|blockquote|Viện Kỹ thuật Điều khiển & Tự động hóa
+73|w1|l1.0|div|1.jpg
+74|w1|l1.0|div|1.png
+75|w1|l1.0|div|2.jpg
+76|w1|l1.0|div|2.png
+77|w1|l1.0|div|3.jpg
+78|w7|l0.0|div|7 7 1 1 4 0 2
+79|w3|l0.0|div|Đang online: 438
+80|w3|l0.0|div|Hôm nay: 164
+81|w3|l0.0|div|Trong tuần: 3148
+82|w3|l0.0|div|Trong tháng: 104412
+83|w39|l0.0|div|Copyright@ 2019 - Viện kỹ thuật Điều khiển Tự động hóa Địa chỉ: Phòng 202 - Tòa nhà Công nghệ cao, Đại học Bác…
+
+##### 47 https://icef.hust.edu.vn/category/show?id=18
+title: ICEF
+og:title: 
+pub:  | author: 
+h1: 
+0|w1|l1.0|li|Login
+1|w1|l0.0|li|/
+2|w1|l1.0|li|Register
+3|w1|l1.0|li|HOME
+4|w1|l1.0|li|CONFERENCE
+5|w3|l1.0|li|Call for Papers
+6|w2|l1.0|li|Important Dates
+7|w2|l1.0|li|Scientific Committee
+8|w2|l1.0|li|Organizing Committee
+9|w2|l1.0|li|Keynote Speakers
+10|w2|l1.0|li|Publication Opportunities
+11|w2|l1.0|li|Institutional Organizers
+12|w1|l1.0|li|Sponsors
+13|w2|l1.0|li|Conference Updates
+14|w2|l1.0|li|Conference Photos
+15|w2|l1.0|li|PAPER SUBMISSION
+16|w1|l1.0|li|Templates
+17|w2|l1.0|li|Submission Guidelines
+18|w2|l1.0|li|Submission HERE
+19|w1|l1.0|li|REGISTRATION
+20|w2|l1.0|li|Registration Fee
+21|w1|l1.0|li|Visa
+22|w1|l1.0|li|PROGRAM
+23|w1|l1.0|li|VENUE
+24|w2|l1.0|li|Conference Venue
+25|w1|l1.0|li|Accommodation
+26|w2|l1.0|li|Tourism Information
+27|w2|l1.0|li|CONTACT US
+28|w2|l0.0|h3|Tourism Information
+29|w1|l1.0|blockquote|https://vietnam.travel/places-to-go/northern-vietnam/ninh-binh
+30|w21|l0.0|figcaption|A serene boat tour gliding through the emerald waters of Ninh Binh, surrounded by towering limestone karsts an…
+31|w19|l0.0|figcaption|A mesmerizing view of Ninh Binh’s majestic mountain ranges and winding rivers, beautifully framed through a ru…
+32|w30|l0.0|figcaption|A vibrant spread of authentic Ninh Binh cuisine, featuring local specialties like crispy rice crust (cơm cháy)…
+33|w24|l0.0|figcaption|A breathtaking aerial view of the majestic stupa at Bai Dinh Pagoda, rising grandly amidst the lush, rolling g…
+34|w2|l0.0|div|Latest News
+35|w4|l0.5|li|2026-06-05 15:09:17 Important date
+36|w5|l0.6|li|2025-11-19 15:51:56 Full Paper 2025
+37|w13|l0.8|li|2025-07-29 07:35:43 SECOND NOTICE: Regarding: Updated Deadlines, Transportation, Accommodation, Meals, and Pay…
+38|w2|l0.0|div|Important Dates
+39|w6|l0.0|p|- June 19, 2026: Abstract submission.
+40|w7|l0.0|p|- June 25, 2026: Abstract review results.
+41|w7|l0.0|p|- August 5, 2026: Full paper submission.
+42|w8|l0.0|p|- August 20, 2026: Full paper review result.
+43|w9|l0.0|p|- August 25, 2026: Full paper submission after review.
+44|w8|l0.0|p|- September 20, 2026: Register for participation only
+45|w17|l0.0|blockquote|Completion of registration fees: Before September 05, 2026 (early registration) and before September 25, 2026 …
+46|w18|l0.1|div|© ICEF - 2026 C7, HUST, No. 1 Dai Co Viet street, Hanoi, Vietnam Tel: - Email: icef@hust.edu.vn
+
+##### 48 https://icpt.hust.edu.vn/en/article/articles-of-icpt-hust-2023/04-40.html
+title: ICPT.HUST 2023 - 04
+og:title: ICPT.HUST 2023 - 04
+pub: 2024-01-30+0715:47:00 | author: ICPT.HUST – International conference on human resources for sustainable development
+h1: ICPT.HUST 2023 - 04
+0|w3|l0.0|div|Enter search keywords
+1|w6|l1.0|li|Hanoi University OF SCIENCE AND TECHNOLOGY
+2|w1|l1.0|li|ICPT.HUST
+3|w2|l1.0|li|Hanoi University
+4|w4|l1.0|li|of sciense and technology
+5|w1|l1.0|li|ICPT.HUST
+6|w1|l1.0|li|Calendar
+7|w2|l1.0|li|Contact us
+8|w1|l1.0|li|Albums
+9|w1|l1.0|li|Videos
+10|w2|l1.0|div|ICPT 2023
+11|w3|l1.0|div|Call for papers
+12|w1|l1.0|div|Submission
+13|w1|l1.0|div|Template
+14|w2|l1.0|div|Submission Guidelines
+15|w2|l1.0|div|Submission HERE
+16|w1|l1.0|div|Payment
+17|w2|l1.0|div|Conference News
+18|w1|l1.0|div|Proceedings
+19|w2|l1.0|div|Contact us
+20|w1|l1.0|li|Home
+21|w2|l1.0|li|ICPT 2023
+22|w3|l1.0|li|Call for papers
+23|w1|l1.0|li|Submission
+24|w1|l1.0|li|Template
+25|w2|l1.0|li|Submission Guidelines
+26|w2|l1.0|li|Submission HERE
+27|w1|l1.0|li|Payment
+28|w2|l1.0|li|Conference News
+29|w1|l1.0|li|Proceedings
+30|w2|l1.0|li|Contact us
+31|w4|l0.0|h1|ICPT.HUST 2023 - 04
+32|w4|l0.0|div|Tuesday - 30/01/2024 15:47
+33|w21|l0.6|div|HUMAN RESOURCES DEVELOPMENT TO RESPOND TO NON-TRADITIONAL SECURITY CHALLENGES IN VIETNAM TODAY PhD. Mai Dieu A…
+34|w286|l0.0|div|Abstract Humanity is facing great challenges to traditional security and non-traditional security. The world h…
+35|w3|l1.0|div|VIEW ALL ARTICLES
+36|w9|l0.0|p|Total notes of this article: 0 in 0 rating
+37|w7|l0.0|div|Click on stars to rate this article
+38|w1|l1.0|div|Tweet
+39|w2|l0.0|p|Reader Comments
+40|w12|l1.0|div|You need to log in as Member to be able to comment
+41|w2|l0.0|p|Newer articles
+42|w4|l1.0|h4|ICPT.HUST 2023 - 06
+43|w1|l0.0|li|(30/01/2024)
+44|w4|l1.0|h4|ICPT.HUST 2023 - 07
+45|w1|l0.0|li|(30/01/2024)
+46|w4|l1.0|h4|ICPT.HUST 2023 - 09
+47|w1|l0.0|li|(30/01/2024)
+48|w4|l1.0|h4|ICPT.HUST 2023 - 10
+49|w1|l0.0|li|(30/01/2024)
+50|w4|l1.0|h4|ICPT.HUST 2023 - 13
+51|w1|l0.0|li|(30/01/2024)
+52|w4|l1.0|h4|ICPT.HUST 2023 - 14
+53|w1|l0.0|li|(30/01/2024)
+54|w4|l1.0|h4|ICPT.HUST 2023 - 18
+55|w1|l0.0|li|(30/01/2024)
+56|w4|l1.0|h4|ICPT.HUST 2023 - 15
+57|w1|l0.0|li|(30/01/2024)
+58|w4|l1.0|h4|ICPT.HUST 2023 - 34
+59|w1|l0.0|li|(30/01/2024)
+60|w4|l1.0|h4|ICPT.HUST 2023 - 45
+61|w1|l0.0|li|(30/01/2024)
+62|w2|l0.0|p|Older articles
+63|w4|l1.0|h4|ICPT.HUST 2023 - 03
+64|w1|l0.0|li|(30/01/2024)
+65|w3|l1.0|h4|ICPT.HUST.2023 - 20
+66|w1|l0.0|li|(30/01/2024)
+67|w4|l1.0|h4|ICPT.HUST 2023 - 82
+68|w1|l0.0|li|(30/01/2024)
+69|w4|l1.0|h4|ICPT.HUST 2023 - 80
+70|w1|l0.0|li|(30/01/2024)
+71|w4|l1.0|h4|ICPT.HUST 2023 - 79
+72|w1|l0.0|li|(30/01/2024)
+73|w4|l1.0|h4|ICPT.HUST 2023 - 77
+74|w1|l0.0|li|(30/01/2024)
+75|w4|l1.0|h4|ICPT.HUST 2023 - 69
+76|w1|l0.0|li|(30/01/2024)
+77|w4|l1.0|h4|ICPT.HUST 2023 - 61
+78|w1|l0.0|li|(30/01/2024)
+79|w4|l1.0|h4|ICPT.HUST 2023 - 55
+80|w1|l0.0|li|(30/01/2024)
+81|w4|l1.0|h4|ICPT.HUST 2023 - 54
+82|w1|l0.0|li|(30/01/2024)
+83|w2|l1.0|li|ICPT 2023
+84|w3|l1.0|li|Call for papers
+85|w1|l1.0|li|Submission
+86|w1|l1.0|li|Template
+87|w2|l1.0|li|Submission Guidelines
+88|w2|l1.0|li|Submission HERE
+89|w1|l1.0|li|Payment
+90|w2|l1.0|li|Conference News
+91|w1|l1.0|li|Proceedings
+92|w2|l1.0|li|Contact us
+93|w2|l0.0|div|Impotant Dates
+94|w35|l0.0|p|Oct 20th, 2023 Full Paper Submission Deadline Oct 21th - Dec 29th, 2023 Review and Full Paper Revision Dec 14t…
+95|w2|l0.0|div|Directions Map
+96|w3|l0.0|div|INTERNATIONAL CONFERENCE ICPT.HUST
+97|w6|l1.0|div|HaNoi University of science and technology
+98|w2|l0.0|div|Social network
+99|w2|l0.0|div|Menu Footer
+100|w2|l1.0|li|Conference News
+101|w2|l1.0|li|Contact us
+102|w1|l0.0|div|Sitemap
+103|w3|l1.0|div|View sitemap ...
+104|w15|l0.3|div|You did not use the site, Click here to remain logged . Timeout: 60 second
+105|w5|l0.0|div|Recommend article to your friend
+
+##### 49 https://lms-sepd.hust.edu.vn/login/forgot_password.php
+title: Mật khẩu bị quên
+og:title: 
+pub:  | author: 
+h1: 
+0|w2|l1.0|div|Đăng nhập
+1|w2|l1.0|li|Tin tức
+2|w3|l1.0|li|Hoạt động chung
+3|w2|l1.0|li|Đào tạo
+4|w4|l1.0|li|Nghiên cứu khoa học
+5|w4|l1.0|li|Hợp tác đối ngoại
+6|w3|l1.0|li|Cựu Sinh viên
+7|w3|l1.0|li|Các khóa học
+8|w5|l1.0|li|Ôn tập Kỹ năng mềm
+9|w3|l1.0|li|Theo dự án
+10|w3|l1.0|li|Dế Xu Phình
+11|w2|l1.0|li|Lai Châu
+12|w2|l1.0|li|Quảng Bình
+13|w5|l1.0|li|Sản phẩm của Sinh viên
+14|w2|l1.0|li|Vietnamese ‎(vi)‎
+15|w2|l1.0|li|English ‎(en)‎
+16|w2|l1.0|li|Vietnamese ‎(vi)‎
+17|w43|l0.0|div|Để lấy lại mật khẩu, hãy cung cấp kí danh hay thư điện của bản vào bên dưới. Nếu bạn được tìm thấy trong CSDL,…
+18|w6|l0.0|fieldset|Tìm kiếm bằng tên tài khoản
+19|w3|l0.0|div|Tên tài khoản
+20|w5|l0.0|fieldset|Tìm kiếm bằng thư điện
+21|w5|l0.0|div|Địa chỉ thư điện tử
+22|w2|l1.0|div|Quay lại
+23|w1|l0.0|h5|Lịch
+24|w2|l1.0|h3|October 2026
+25|w1|l1.0|td|10
+26|w4|l0.0|h5|Liên kết hữu ích
+27|w2|l1.0|li|Đào tạo
+28|w2|l1.0|li|Tuyển sinh
+29|w2|l1.0|li|Nghiên cứu
+30|w3|l1.0|li|Góc Sinh viên
+31|w4|l1.0|li|Đăng ký khóa học
+32|w2|l0.0|h5|Liên hệ
+33|w19|l0.0|address|C7 - M321 - Đại học Bách Khoa Hà Nội - Số 1, Đường Đại Cồ Việt, Hà Nội
+34|w8|l0.1|div|Phone: (+84) 438681432 - (+84) 902282489 E-mail: sepd@hust.edu.vn
+35|w3|l0.0|h6|Connect with us:
+36|w4|l0.0|div|Bạn chưa đăng nhập.
+
+##### 50 https://nct.soict.hust.edu.vn/?page_id=15
+title: Contacts | Networking and Communication Technology Laboratory
+og:title: 
+pub:  | author: 
+h1: Contacts
+0|w3|l1.0|nav|Skip to content
+1|w2|l1.0|li|NCT Lab
+2|w1|l1.0|li|NEWS
+3|w1|l1.0|li|Reseach
+4|w1|l1.0|li|Members
+5|w1|l1.0|li|Publications
+6|w1|l1.0|li|Activities
+7|w2|l1.0|li|Alumni Members
+8|w1|l1.0|li|Contacts
+9|w1|l0.0|h1|Contacts
+10|w14|l0.0|p|Room 901 B1 – No. 1 Dai Co Viet, Hai Ba Trung, Hanoi, Vietnam
+11|w4|l0.0|p|Email: thunq (@) soict.hust.edu.vn
+12|w9|l0.0|p|Phone: +84 – 4 – 38 68 25 96
+13|w3|l0.0|h3|Leave a Reply
+14|w9|l0.2|p|You must be logged in to post a comment.
+15|w2|l0.0|p|Recent Posts
+16|w6|l1.0|li|Scientific Research Award for HUST Student
+17|w6|l1.0|li|Seminar of Dr. Tran Quang Duc
+18|w5|l1.0|li|The International Techmart Vietnam 2015
+19|w6|l1.0|li|Congratulation to Assoc. Professor Dieu Linh
+20|w3|l1.0|li|New office kick-off
+21|w13|l0.0|div|Copyright © 2014 Communication Technology Laboratory - SoICT - HUST. All Rights Reserved.
+22|w7|l0.4|div|Iconic One Theme | Powered by Wordpress
+

@@ -1,0 +1,7 @@
+# host-regex	chọn (phân tách ;;)	loại trừ (phân tách ;;)
+# Quy tắc theo CMS/host (xem report/BAO_CAO.md, phần C). Quy tắc khớp đầu tiên được dùng; không khớp -> thuật toán chung.
+^ctt\.hust\.edu\.vn$	div.body div.col-md-9.col-xs-12
+^fami\.hust\.edu\.vn$	#article-main
+^sis\.hust\.edu\.vn$	#dvNewsItem;;#mainTextBody
+^seee\.hust\.edu\.vn$	main#main div.section-content
+^library\.hust\.edu\.vn$	div.field-name-body;;#main-content
