@@ -76,6 +76,7 @@ Tuỳ chọn: `--version ver2` (đặt tên phiên bản), `--port N`, `--web-di
 
 Tìm được có dấu lẫn không dấu (`hoc bong`), hỗ trợ `"cụm từ"`, `+bắt buộc`, `-loại trừ`, `tiêu*`; lọc theo trang con và loại tài liệu.
 API: `GET /api/search?q=&host=&type=&page=&size=` và `GET /api/stats` (JSON).
+Xuất kết quả: nút **Xuất kết quả** trên trang kết quả, hoặc `GET /api/export?q=&host=&type=&n=100&format=csv|txt` (n tối đa 1000).
 
 | Thành phần | Vai trò |
 |---|---|

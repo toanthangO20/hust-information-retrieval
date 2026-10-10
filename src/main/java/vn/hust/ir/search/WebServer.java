@@ -8,7 +8,10 @@ import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.Executors;
 
@@ -25,6 +28,8 @@ public final class WebServer {
             "js", "text/javascript; charset=utf-8", "json", "application/json; charset=utf-8",
             "svg", "image/svg+xml", "ttf", "font/ttf", "woff2", "font/woff2", "png", "image/png", "ico", "image/x-icon");
 
+    private static final int MAX_EXPORT = 1000;
+
     private final SearchEngine engine;
     private final Path manifest;
     private final Path webDir;      // null: đọc từ classpath
@@ -38,6 +43,7 @@ public final class WebServer {
     public HttpServer start(int port) throws IOException {
         HttpServer s = HttpServer.create(new InetSocketAddress("127.0.0.1", port), 0);
         s.createContext("/api/search", this::search);
+        s.createContext("/api/export", this::export);
         s.createContext("/api/stats", this::stats);
         s.createContext("/", this::staticFile);
         s.setExecutor(Executors.newFixedThreadPool(8));
@@ -55,6 +61,75 @@ public final class WebServer {
             send(ex, 500, "application/json; charset=utf-8",
                     JSON.writeValueAsBytes(Map.of("error", String.valueOf(e.getMessage()))));
         }
+    }
+
+    /** Xuất top n kết quả: GET /api/export?q=&host=&type=&n=&format=csv|txt (n tối đa MAX_EXPORT). */
+    private void export(HttpExchange ex) throws IOException {
+        try {
+            Map<String, String> p = params(ex.getRequestURI().getRawQuery());
+            boolean csv = !"txt".equalsIgnoreCase(p.get("format"));
+            int n = Math.min(MAX_EXPORT, Math.max(1, intOr(p.get("n"), 100)));
+            String q = p.get("q") == null ? "" : p.get("q");
+            List<SearchEngine.Hit> hits = new ArrayList<>();
+            long total = 0;
+            for (int page = 1; hits.size() < n; page++) {
+                SearchEngine.Result r = engine.search(q, p.get("host"), p.get("type"), page, 50);
+                total = r.total;
+                if (r.hits.isEmpty()) break;
+                hits.addAll(r.hits);
+                if (hits.size() >= r.total) break;
+            }
+            if (hits.size() > n) hits = hits.subList(0, n);
+
+            StringBuilder sb = new StringBuilder();
+            if (csv) {
+                sb.append('﻿');     // BOM để Excel đọc đúng tiếng Việt
+                sb.append("rank,title,url,host,type,words,score,snippet\r\n");
+                int rank = 0;
+                for (SearchEngine.Hit h : hits) {
+                    sb.append(++rank).append(',').append(csvCell(h.title)).append(',').append(csvCell(h.url)).append(',')
+                            .append(csvCell(h.host)).append(',').append(csvCell(h.type)).append(',').append(h.words).append(',')
+                            .append(String.format(Locale.ROOT, "%.4f", h.score)).append(',')
+                            .append(csvCell(plain(h.snippet))).append("\r\n");
+                }
+            } else {
+                sb.append("Từ khóa: ").append(q).append("\r\n");
+                sb.append("Kết quả: ").append(hits.size()).append(" / ").append(total).append("\r\n\r\n");
+                int rank = 0;
+                for (SearchEngine.Hit h : hits) {
+                    sb.append(++rank).append(". ").append(h.title == null || h.title.isBlank() ? "(không có tiêu đề)" : h.title).append("\r\n")
+                            .append("   ").append(h.url).append("\r\n")
+                            .append("   ").append(h.host).append(" · ").append(h.type).append(" · ").append(h.words)
+                            .append(" từ · điểm ").append(String.format(Locale.ROOT, "%.4f", h.score)).append("\r\n")
+                            .append("   ").append(plain(h.snippet)).append("\r\n\r\n");
+                }
+            }
+            String base = "ket-qua-" + q.replaceAll("[^\\p{L}\\p{N}]+", "-").replaceAll("^-|-$", "");
+            if (base.equals("ket-qua-")) base = "ket-qua";
+            ex.getResponseHeaders().set("Content-Disposition", "attachment; filename=\"ket-qua." + (csv ? "csv" : "txt")
+                    + "\"; filename*=UTF-8''" + java.net.URLEncoder.encode(base + (csv ? ".csv" : ".txt"), StandardCharsets.UTF_8).replace("+", "%20"));
+            send(ex, 200, (csv ? "text/csv" : "text/plain") + "; charset=utf-8", sb.toString().getBytes(StandardCharsets.UTF_8));
+        } catch (Exception e) {
+            send(ex, 500, "application/json; charset=utf-8",
+                    JSON.writeValueAsBytes(Map.of("error", String.valueOf(e.getMessage()))));
+        }
+    }
+
+    private static String csvCell(String s) {
+        return '"' + (s == null ? "" : s.replace("\"", "\"\"")) + '"';
+    }
+
+    /** Bỏ thẻ tô sáng và giải mã thực thể HTML trong đoạn trích. */
+    private static String plain(String html) {
+        if (html == null) return "";
+        String s = html.replaceAll("</?mark>", "");
+        java.util.regex.Matcher m = java.util.regex.Pattern.compile("&#x([0-9A-Fa-f]+);").matcher(s);
+        StringBuilder sb = new StringBuilder();
+        while (m.find())
+            m.appendReplacement(sb, java.util.regex.Matcher.quoteReplacement(
+                    new String(Character.toChars(Integer.parseInt(m.group(1), 16)))));
+        m.appendTail(sb);
+        return sb.toString().replace("&lt;", "<").replace("&gt;", ">").replace("&quot;", "\"").replace("&amp;", "&");
     }
 
     private void stats(HttpExchange ex) throws IOException {

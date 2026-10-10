@@ -151,6 +151,19 @@ button, input { font: inherit; color: inherit; }
 .summary { font-size: 15px; color: var(--ink-soft); margin-bottom: 10px; min-height: 24px; }
 .summary strong { color: var(--ink); }
 .notice { background: var(--sun-soft); border: 2px solid var(--ink); border-radius: 10px; padding: 8px 12px; margin: 0 0 14px; font-size: 14.5px; }
+.export { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-bottom: 12px; font-size: 14px; }
+.export[hidden] { display: none; }
+.export-label { font-weight: 700; }
+.export label { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; }
+.export input, .export select {
+  font: inherit; color: var(--ink); background: var(--card); border: 2px solid var(--ink); border-radius: 8px; padding: 2px 8px;
+}
+.export input { width: 76px; }
+.export button {
+  font: inherit; font-weight: 700; color: #fff; background: var(--red); border: 2px solid var(--ink);
+  border-radius: 8px; padding: 2px 14px; cursor: pointer;
+}
+.export button:hover { background: var(--red-deep); }
 .active { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
 .active button {
   border: 2px solid var(--ink); background: var(--sun); border-radius: 999px; padding: 2px 10px 2px 12px;
