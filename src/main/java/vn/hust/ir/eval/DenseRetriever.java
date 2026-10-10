@@ -86,12 +86,32 @@ public final class DenseRetriever implements Retriever {
 
     @Override
     public List<Scored> search(String query, int k) throws IOException {
-        float[] q;
+        return searchVec(embedQuery(query), k);
+    }
+
+    public float[] embedQuery(String query) throws IOException {
         try {
-            q = encoder.embedQuery(query);
+            return encoder.embedQuery(query);
         } catch (Exception e) {
             throw new IOException(e);
         }
+    }
+
+    /** Vec-tơ của tài liệu theo mã dataset (bản sao). */
+    public float[] vectorOf(int docId) {
+        if (docOfId == null) {
+            docOfId = new java.util.HashMap<>();
+            for (int d = 0; d < corpus.n; d++) docOfId.put(corpus.idOf[d], d);
+        }
+        int dim = E5Encoder.DIM;
+        int d = docOfId.get(docId);
+        return Arrays.copyOfRange(vec, d * dim, (d + 1) * dim);
+    }
+
+    private java.util.Map<Integer, Integer> docOfId;
+
+    /** Xếp hạng theo một vec-tơ truy vấn đã có (dùng cho phản hồi giả định trong không gian vec-tơ). */
+    public List<Scored> searchVec(float[] q, int k) {
         int dim = E5Encoder.DIM;
         double[] s = new double[corpus.n];
         for (int d = 0; d < corpus.n; d++) {

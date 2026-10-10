@@ -145,6 +145,19 @@ public final class EvalMain {
                 case "hybrid":
                     return new HybridRetriever(new Bm25Retriever(corpus, f(p, "k1", 1.2f), f(p, "b", 0.75f)), dense(), 1.0,
                             f(p, "w", 1.0f), i(p, "rrf", 60), 100);
+                case "ce": {         // M6: cross-encoder xếp lại top-depth của hybrid (w=, depth=, len=, blend=)
+                    Retriever nb = new HybridRetriever(new Bm25Retriever(corpus, 1.2f, 0.75f), dense(), 1.0, f(p, "w", 1.0f), 60, 100);
+                    return new CrossEncoderRetriever(nb, corpus, Paths.get("models", "bge-reranker-v2-m3", "model_quantized.onnx"),
+                            MODEL.resolve("tokenizer.json"), Paths.get("eval", "work", "ce_cache.tsv"), i(p, "depth", 30),
+                            i(p, "len", 320), f(p, "blend", 0f), 60, 8);
+                }
+                case "drocchio": {   // M5: lai -> Rocchio dày -> lai lại
+                    Retriever lex = "prf".equals(p.get("lex"))
+                            ? new PrfRetriever(corpus, 1.2f, 0.75f, 5, 20, 0.5f)
+                            : new Bm25Retriever(corpus, f(p, "k1", 1.2f), f(p, "b", 0.75f));
+                    return new DenseRocchioRetriever(lex, dense(), i(p, "m", 5), f(p, "alpha", 0.5f), 1.0, f(p, "w", 1.0f),
+                            f(p, "wo", 0f), i(p, "rrf", 60), 100);
+                }
                 default:
                     throw new IllegalArgumentException("Hệ thống không hợp lệ: " + spec);
             }

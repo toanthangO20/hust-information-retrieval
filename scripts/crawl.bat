@@ -1,6 +1,7 @@
 @echo off
 rem Usage: crawl.bat crawl^|update^|export^|stats [options]
 setlocal
+chcp 65001 >nul
 cd /d "%~dp0.."
 rem Java 11+ required. Fall back to a known JDK when JAVA_HOME is unset or invalid.
 if not exist "%JAVA_HOME%\bin\java.exe" set "JAVA_HOME=C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot"

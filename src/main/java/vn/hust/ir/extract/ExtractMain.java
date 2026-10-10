@@ -118,6 +118,10 @@ public final class ExtractMain {
                         Paths.get(o.getOrDefault("invalid", "output/urls_invalid.tsv")), raw.resolve("manifest.jsonl"));
                 break;
             }
+            case "mongo-demo": {   // thống kê nhanh dữ liệu đã nạp (dùng khi báo cáo)
+                MongoDemo.run(o.getOrDefault("uri", "mongodb://localhost:27017"), o.getOrDefault("db", "hust_ir"));
+                break;
+            }
             case "load": {     // P6: nạp MongoDB
                 MongoLoader.load(Paths.get(o.getOrDefault("out", "data/extract/v1")), o.getOrDefault("uri", "mongodb://localhost:27017"),
                         o.getOrDefault("db", "hust_ir"), !o.containsKey("keep"));

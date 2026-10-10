@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kết quả công việc – HUST IR</title>
+<style>
+  :root {
+    --bg:#fbfaf7; --fg:#1d2433; --mute:#667085; --card:#fff; --line:#e4e0d6; --track:#f1eee6;
+    --a:#d4572c; --b:#2b6f8f; --c:#7a9a3c; --g:#b9b4a6;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; height:100%; }
+  body { background:var(--bg); color:var(--fg); font:18px/1.5 "Segoe UI", system-ui, sans-serif; }
+  .deck { height:100vh; overflow-y:auto; scroll-snap-type:y mandatory; scroll-behavior:smooth; }
+  .slide { min-height:100vh; scroll-snap-align:start; padding:4vh 6vw 6vh; display:flex; flex-direction:column; justify-content:center; max-width:1280px; margin:0 auto; }
+  h1 { font-size:2.4rem; margin:0 0 6px; line-height:1.2; }
+  h2 { font-size:1.7rem; margin:0 0 4px; }
+  .sub { color:var(--mute); margin:0 0 24px; font-size:1rem; }
+  .tag { display:inline-block; font-size:.8rem; color:var(--mute); border:1px solid var(--line); border-radius:99px; padding:1px 10px; margin-right:6px; background:var(--card); }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-top:8px; }
+  .kpi { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
+  .kpi b { display:block; font-size:2rem; line-height:1.15; font-variant-numeric:tabular-nums; }
+  .kpi span { color:var(--mute); font-size:.9rem; }
+  .flow { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin-top:6px; }
+  .step { background:var(--card); border:1px solid var(--line); border-top:4px solid var(--b); border-radius:10px; padding:12px 14px; font-size:.95rem; }
+  .step h3 { margin:0 0 4px; font-size:1.05rem; }
+  .step small { color:var(--mute); display:block; margin-top:6px; }
+  .step.hl { border-top-color:var(--a); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px 20px; }
+  .row { display:grid; grid-template-columns:260px 1fr 70px; gap:12px; align-items:center; margin:7px 0; }
+  .lab { text-align:right; font-size:.95rem; } .val { font-variant-numeric:tabular-nums; font-size:.95rem; }
+  .track { background:var(--track); border-radius:5px; height:22px; position:relative; }
+  .track.thin { height:14px; }
+  .bar { height:100%; border-radius:5px; background:var(--b); }
+  .bar.hl { background:var(--a); } .bar.gray { background:var(--g); } .bar.gr { background:var(--c); }
+  .grp { margin:12px 0 4px; }
+  .legend { display:flex; gap:18px; font-size:.85rem; color:var(--mute); margin:0 0 8px; }
+  .legend i { display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:6px; vertical-align:-1px; }
+  .stack { display:flex; height:44px; border-radius:8px; overflow:hidden; border:1px solid var(--line); }
+  .stack div { display:flex; align-items:center; justify-content:center; color:#fff; font-size:.9rem; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  ul.f { margin:0; padding-left:1.1em; } ul.f li { margin:8px 0; }
+  .two { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .neg { color:var(--a); font-weight:600; }
+  .foot { color:var(--mute); font-size:.8rem; margin-top:14px; }
+  .nav { position:fixed; right:16px; bottom:12px; font-size:.8rem; color:var(--mute); background:var(--card); border:1px solid var(--line); border-radius:99px; padding:3px 12px; }
+  @media (max-width:900px) {
+    body { font-size:16px; } .flow { grid-template-columns:1fr; } .two { grid-template-columns:1fr; }
+    .row { grid-template-columns:120px 1fr 56px; } .lab { font-size:.8rem; }
+  }
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+  <!-- 1. Tiêu đề + quy mô -->
+  <section class="slide">
+    <div><span class="tag">Môn Truy hồi thông tin</span><span class="tag">ĐH Bách khoa Hà Nội</span></div>
+    <h1>Hệ thống thu thập và truy vấn thông tin HUST</h1>
+    <p class="sub">Crawl <code>hust.edu.vn</code> và các subdomain → bộ dữ liệu → bóc tách nội dung → đồ thị liên kết → đánh giá các mô hình truy hồi.</p>
+    <div class="kpis">
+      <div class="kpi"><b>22.178</b><span>URL hợp lệ · 47 host</span></div>
+      <div class="kpi"><b>16,7 triệu</b><span>từ trong bộ dữ liệu ver1</span></div>
+      <div class="kpi"><b>80.060</b><span>nút đồ thị</span></div>
+      <div class="kpi"><b>1,60 triệu</b><span>cạnh liên kết</span></div>
+      <div class="kpi"><b>60</b><span>truy vấn (20 dev / 40 test)</span></div>
+      <div class="kpi"><b>6</b><span>mô hình truy hồi so sánh</span></div>
+    </div>
+    <p class="foot">Công nghệ: Java 11 · Tika · Lucene · jsoup · MongoDB · ONNX Runtime. Phím → / ← hoặc cuộn để chuyển slide.</p>
+  </section>
+
+  <!-- 2. Quy trình -->
+  <section class="slide">
+    <h2>Quy trình 5 giai đoạn</h2>
+    <p class="sub">Mỗi giai đoạn bám một phần kiến thức của môn học.</p>
+    <div class="flow">
+      <div class="step"><h3>1. Crawler</h3>Mercator frontier, robots.txt, chuẩn hoá URL, loại trùng, cập nhật tăng dần<small>Ch09, Ch10</small></div>
+      <div class="step"><h3>2. Dữ liệu + chỉ mục</h3>Bộ dữ liệu ver1, Lucene BM25, bộ phân tích tiếng Việt, giao diện web<small>Ch04, Ch07</small></div>
+      <div class="step"><h3>3. Bóc tách nội dung</h3>BTE, bộ phân loại học, lọc khuôn mẫu, metadata<small>Ch10</small></div>
+      <div class="step"><h3>4. Đồ thị + MongoDB</h3>PageRank hai biến thể, lược đồ <code>$jsonSchema</code><small>Ch10 (liên kết)</small></div>
+      <div class="step hl"><h3>5. Đánh giá truy hồi</h3>VSM, BM25, PRF, dense, hybrid, cross-encoder; kiểm định thống kê<small>Ch04–Ch07</small></div>
+    </div>
+  </section>
+
+  <!-- 3. Crawler -->
+  <section class="slide">
+    <h2>1. Crawler — kết quả thu thập</h2>
+    <p class="sub">Cập nhật tăng dần, 7 lượt chạy thật; mỗi URL bị loại đều có lý do.</p>
+    <div class="card">
+      <div class="stack" id="c-crawl"></div>
+      <div class="legend" style="margin-top:10px">
+        <span><i style="background:var(--c)"></i>Hợp lệ</span>
+        <span><i style="background:var(--g)"></i>Bị loại</span>
+        <span><i style="background:var(--a)"></i>Chưa tải</span>
+      </div>
+    </div>
+    <div class="two" style="margin-top:16px">
+      <div class="card"><b>Lý do loại URL</b>
+        <ul class="f"><li><code>no-content</code>, <code>soft-404</code> — trang rỗng / lỗi giả</li>
+        <li><code>duplicate</code> — trùng SHA-1 hoặc canonical</li>
+        <li><code>http-404</code>, <code>robots-disallow</code>, <code>redirect</code>…</li></ul></div>
+      <div class="card"><b>Kỹ thuật chính</b>
+        <ul class="f"><li>Frontier hai tầng: ưu tiên + mỗi host một hàng đợi</li>
+        <li>SHA-1 (trùng chính xác) + SimHash 64 bit (gần đúng)</li>
+        <li>Giảm tốc theo host khi gặp 429</li></ul></div>
+    </div>
+  </section>
+
+  <!-- 4. Bóc tách -->
+  <section class="slide">
+    <h2>2. Bóc tách khối nội dung chính</h2>
+    <p class="sub">F1 mức từ trên tập test 49 trang. BTE thuần (Ch10) kém baseline — phải kết hợp đặc trưng và học máy.</p>
+    <div class="card">
+      <div class="legend"><span><i style="background:var(--b)"></i>F1 macro</span><span><i style="background:var(--g)"></i>F1 micro</span></div>
+      <div id="c-blocks"></div>
+    </div>
+    <p class="foot">Metadata (độ chính xác): tiêu đề 0,75 · ngày đăng 0,96 · tác giả 0,96.</p>
+  </section>
+
+  <!-- 5. Đồ thị -->
+  <section class="slide">
+    <h2>3. Đồ thị liên kết + MongoDB</h2>
+    <p class="sub">Cạnh nguồn → đích kèm văn bản liên kết; <code>pagerankContent</code> chỉ tính liên kết trong khối nội dung chính.</p>
+    <div class="two">
+      <div class="card"><b>Số nút theo loại</b><div id="c-kind" style="margin-top:8px"></div></div>
+      <div class="kpis" style="grid-template-columns:1fr">
+        <div class="kpi"><b>1.601.816</b><span>cạnh liên kết</span></div>
+        <div class="kpi"><b>69.989</b><span>cạnh nằm trong nội dung chính</span></div>
+        <div class="kpi"><b>22.172</b><span>nút thuộc bộ dữ liệu</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Truy hồi -->
+  <section class="slide">
+    <h2>4. Đánh giá truy hồi — tập test, 40 truy vấn</h2>
+    <p class="sub">Hybrid (BM25 + dense, RRF) tốt nhất ở nDCG@10 và vượt trội ở Recall@100.</p>
+    <div class="card">
+      <div class="legend"><span><i style="background:var(--b)"></i>nDCG@10</span><span><i style="background:var(--g)"></i>Recall@100</span></div>
+      <div id="c-ret"></div>
+    </div>
+    <p class="foot">* = kém hơn BM25 có ý nghĩa thống kê (hoán vị ghép cặp, hiệu chỉnh Holm, p = 0,006).</p>
+  </section>
+
+  <!-- 7. Kết luận -->
+  <section class="slide">
+    <h2>Kết luận (kể cả kết quả âm)</h2>
+    <p class="sub">Báo cáo đúng theo số liệu, không thổi phồng.</p>
+    <div class="card">
+      <ul class="f">
+        <li>Chỉ <b>VSM</b> kém hơn BM25 có ý nghĩa thống kê; <b>PRF</b> không cải thiện so với BM25.</li>
+        <li><b>Hybrid</b> tăng Recall@100 rõ (0,69 → 0,88); nDCG@10 chưa khác biệt có ý nghĩa với 40 truy vấn.</li>
+        <li class="neg">Văn bản liên kết và PageRank không cải thiện xếp hạng.</li>
+        <li class="neg">Cross-encoder: dev tăng nhưng test ngang hybrid, ≈ 12 giây/truy vấn → không kết luận là cải thiện.</li>
+        <li>Công cụ hiện tại yếu trên truy vấn dạng câu hỏi (nDCG ≈ 0,04) → hướng cải tiến.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 8. Hạn chế -->
+  <section class="slide">
+    <h2>Hạn chế và hướng tiếp theo</h2>
+    <div class="two" style="margin-top:12px">
+      <div class="card"><b>Hạn chế</b>
+        <ul class="f">
+          <li>Độ phủ: 11.159 URL chưa tải; trang dựng bằng JavaScript bị loại.</li>
+          <li><b>Nhãn truy hồi do mô hình ngôn ngữ soạn/gán, chưa có người duyệt</b> (kappa 0,65 — nhất quán nội bộ).</li>
+          <li>Quy tắc metadata chỉnh sau khi xem lỗi cả dev và test → số test lạc quan.</li>
+          <li>Chỉ 40 truy vấn test: khoảng tin cậy rộng.</li>
+          <li>Chưa tách từ ghép tiếng Việt (đang dùng âm tiết).</li>
+        </ul></div>
+      <div class="card"><b>Hướng tiếp theo</b>
+        <ul class="f">
+          <li>Tách từ ghép tiếng Việt.</li>
+          <li>Mở rộng bộ truy vấn, nhãn do người gán.</li>
+          <li>Chạy <code>update</code> dựng <code>ver2</code> với 11.159 URL còn lại.</li>
+          <li>Học xếp hạng (LTR) kết hợp BM25 từng trường, dense, PageRank.</li>
+        </ul></div>
+    </div>
+  </section>
+
+</div>
+<div class="nav" id="nav">1 / 8</div>
+
+<script>
+  var nf = function (n) { return n.toLocaleString('vi-VN'); };
+  var f3 = function (n) { return n.toFixed(3).replace('.', ','); };
+
+  // Thanh ngang một chuỗi: rows = [nhãn, giá trị, tối đa, lớp màu, nhãn giá trị]
+  function bars(id, rows, max) {
+    var el = document.getElementById(id), h = '';
+    rows.forEach(function (r) {
+      h += '<div class="row"><div class="lab">' + r[0] + '</div><div class="track"><div class="bar ' + (r[2] || '') +
+           '" style="width:' + (100 * r[1] / max).toFixed(1) + '%"></div></div><div class="val">' + r[3] + '</div></div>';
+    });
+    el.innerHTML = h;
+  }
+  // Thanh ngang hai chuỗi: rows = [nhãn, v1, v2, hl]
+  function dual(id, rows, c2) {
+    var el = document.getElementById(id), h = '';
+    rows.forEach(function (r) {
+      h += '<div class="grp"><div class="row" style="margin:2px 0"><div class="lab">' + r[0] + '</div><div>' +
+           '<div class="track thin"><div class="bar ' + (r[3] ? 'hl' : '') + '" style="width:' + (100 * r[1]).toFixed(1) + '%"></div></div>' +
+           '<div class="track thin" style="margin-top:3px"><div class="bar ' + (c2 || 'gray') + '" style="width:' + (100 * r[2]).toFixed(1) + '%"></div></div>' +
+           '</div><div class="val">' + f3(r[1]) + '<br><span style="color:var(--mute)">' + f3(r[2]) + '</span></div></div></div>';
+    });
+    el.innerHTML = h;
+  }
+
+  // Crawler (22.178 / 12.589 / 11.159)
+  (function () {
+    var d = [['Hợp lệ', 22178, 'var(--c)'], ['Bị loại', 12589, 'var(--g)'], ['Chưa tải', 11159, 'var(--a)']];
+    var t = d.reduce(function (s, x) { return s + x[1]; }, 0), h = '';
+    d.forEach(function (x) {
+      h += '<div style="width:' + (100 * x[1] / t).toFixed(2) + '%;background:' + x[2] + '">' + x[0] + ' ' + nf(x[1]) + '</div>';
+    });
+    document.getElementById('c-crawl').innerHTML = h;
+  })();
+
+  // Bóc tách khối nội dung (F1 macro, micro)
+  dual('c-blocks', [
+    ['Baseline jsoup', 0.813, 0.930, false],
+    ['BTE thuần (Ch10)', 0.662, 0.895, false],
+    ['Phân loại học', 0.845, 0.972, false],
+    ['Học + lọc khuôn mẫu', 0.870, 0.971, true]
+  ]);
+
+  // Nút đồ thị theo loại
+  bars('c-kind', [
+    ['html', 34876, '', nf(34876)], ['ảnh', 23284, '', nf(23284)],
+    ['ngoài miền', 16855, 'gray', nf(16855)], ['tài liệu', 5045, 'gr', nf(5045)]
+  ], 34876);
+
+  // Truy hồi: nDCG@10, Recall@100
+  dual('c-ret', [
+    ['Công cụ hiện tại', 0.573, 0.448, false],
+    ['M1 VSM *', 0.492, 0.647, false],
+    ['M2 BM25', 0.675, 0.688, false],
+    ['M3 BM25 + PRF', 0.674, 0.668, false],
+    ['Dense (e5-small)', 0.631, 0.685, false],
+    ['M4 Hybrid (RRF)', 0.701, 0.876, true],
+    ['M6 Cross-encoder', 0.702, 0.876, false]
+  ]);
+
+  // Điều hướng slide bằng bàn phím
+  var deck = document.getElementById('deck'), nav = document.getElementById('nav');
+  var slides = Array.prototype.slice.call(deck.querySelectorAll('.slide'));
+  function cur() {
+    var best = 0, d = Infinity;
+    slides.forEach(function (s, i) {
+      var k = Math.abs(s.offsetTop - deck.offsetTop - deck.scrollTop);
+      if (k < d) { d = k; best = i; }
+    });
+    return best;
+  }
+  function go(i) { i = Math.max(0, Math.min(slides.length - 1, i)); slides[i].scrollIntoView(); }
+  deck.addEventListener('scroll', function () { nav.textContent = (cur() + 1) + ' / ' + slides.length; });
+  document.addEventListener('keydown', function (e) {
+    if (['ArrowRight', 'ArrowDown', 'PageDown', ' '].indexOf(e.key) >= 0) { e.preventDefault(); go(cur() + 1); }
+    if (['ArrowLeft', 'ArrowUp', 'PageUp'].indexOf(e.key) >= 0) { e.preventDefault(); go(cur() - 1); }
+    if (e.key === 'Home') go(0);
+    if (e.key === 'End') go(slides.length - 1);
+  });
+</script>
+</body>
+</html>

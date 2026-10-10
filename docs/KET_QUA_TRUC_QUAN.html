@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kết quả trực quan – HUST IR</title>
+<style>
+  :root { --bg:#fbfaf7; --fg:#1d2433; --mute:#667085; --card:#fff; --line:#e4e0d6; --a:#d4572c; --b:#2b6f8f; --c:#7a9a3c; --g:#b9b4a6; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 "Segoe UI", system-ui, sans-serif; }
+  main { max-width:1000px; margin:0 auto; padding:28px 20px 60px; }
+  h1 { font-size:26px; margin:0 0 4px; } .sub { color:var(--mute); margin:0 0 28px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px 20px; margin:0 0 18px; }
+  h2 { font-size:17px; margin:0 0 2px; } .note { color:var(--mute); font-size:13px; margin:0 0 12px; }
+  .row { display:grid; grid-template-columns:230px 1fr 64px; gap:10px; align-items:center; margin:5px 0; }
+  .lab { font-size:13.5px; text-align:right; } .val { font-variant-numeric:tabular-nums; font-size:13.5px; }
+  .track { background:#f1eee6; border-radius:4px; height:20px; position:relative; }
+  .bar { height:100%; border-radius:4px; background:var(--b); }
+  .bar.hl { background:var(--a); } .bar.gray { background:var(--g); } .bar.gr { background:var(--c); }
+  .tag { font-size:12px; color:var(--mute); }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; }
+  .kpi { border:1px solid var(--line); border-radius:8px; padding:10px 12px; }
+  .kpi b { display:block; font-size:22px; } .kpi span { color:var(--mute); font-size:13px; }
+  @media (max-width:640px){ .row{ grid-template-columns:120px 1fr 52px; } .lab{ font-size:12px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kết quả công việc – HUST Information Retrieval</h1>
+  <p class="sub">Dữ liệu lấy từ <code>output/</code>, <code>eval/report/</code>, <code>eval/extract/</code>. Thanh màu cam = cấu hình được chọn / đáng chú ý.</p>
+
+  <section>
+    <h2>0. Quy mô dữ liệu</h2>
+    <p class="note">Từ crawl đến đồ thị liên kết.</p>
+    <div class="kpis">
+      <div class="kpi"><b>22.178</b><span>URL hợp lệ (47 host)</span></div>
+      <div class="kpi"><b>12.589</b><span>URL bị loại (kèm lý do)</span></div>
+      <div class="kpi"><b>16,7 triệu</b><span>từ trong bộ dữ liệu ver1</span></div>
+      <div class="kpi"><b>80.060</b><span>nút đồ thị (trang/ảnh/tài liệu/ngoài)</span></div>
+      <div class="kpi"><b>1,60 triệu</b><span>cạnh nguồn → đích : văn bản</span></div>
+      <div class="kpi"><b>69.989</b><span>cạnh nằm trong nội dung chính</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>1. Nút đồ thị theo loại (MongoDB <code>pages</code>)</h2>
+    <p class="note">Số nút; ảnh không được tải về, chỉ giữ URL + ngữ cảnh giới thiệu.</p>
+    <div id="c-kind"></div>
+  </section>
+
+  <section>
+    <h2>2. Tìm khối nội dung – F1 mức từ (macro, tập test 49 trang)</h2>
+    <p class="note">BTE thuần (Ch10) kém baseline jsoup; bộ phân loại học có giám sát + lọc khuôn mẫu theo host vượt baseline.</p>
+    <div id="c-blocks"></div>
+  </section>
+
+  <section>
+    <h2>3. Truy hồi – nDCG@10 trên tập test (40 truy vấn)</h2>
+    <p class="note">Dấu * = kém hơn BM25 có ý nghĩa thống kê (hoán vị ghép cặp, hiệu chỉnh Holm). Reranker cross-encoder (M6) ngang hybrid, không vượt.</p>
+    <div id="c-test"></div>
+  </section>
+
+  <section>
+    <h2>4. Truy hồi – nDCG@10 trên tập dev (20 truy vấn)</h2>
+    <p class="note">Cross-encoder tăng mạnh trên dev (Holm p=0,02) nhưng <b>không lặp lại</b> trên test → chênh lệch dev–test do mẫu nhỏ/loại truy vấn.</p>
+    <div id="c-dev"></div>
+  </section>
+
+  <section>
+    <h2>5. Văn bản liên kết và PageRank có giúp truy hồi không? (nDCG@10, test)</h2>
+    <p class="note">Tham chiếu: BM25 toàn văn = 0,675. Không cấu hình nào vượt tham chiếu.</p>
+    <div id="c-anchor"></div>
+  </section>
+
+  <section>
+    <h2>6. Chi phí truy vấn (ms/truy vấn, 1 luồng CPU)</h2>
+    <p class="note">Cross-encoder chậm gấp ~500 lần hybrid nên không phù hợp giao diện web nếu không có GPU.</p>
+    <div id="c-cost"></div>
+  </section>
+</main>
+<script>
+function chart(id, rows, max, fmt) {
+  const el = document.getElementById(id);
+  el.innerHTML = rows.map(r => {
+    const w = Math.max(0.5, 100 * r.v / max);
+    return '<div class="row"><div class="lab">' + r.l + '</div><div class="track"><div class="bar ' + (r.c || '') +
+      '" style="width:' + w + '%"></div></div><div class="val">' + (fmt ? fmt(r.v) : r.v.toFixed(3).replace('.', ',')) + (r.s || '') + '</div></div>';
+  }).join('');
+}
+const nf = v => v.toLocaleString('vi-VN');
+chart('c-kind', [
+  {l:'html (trang)', v:34876, c:'hl'}, {l:'image (ảnh)', v:23284}, {l:'external (ngoài miền)', v:16855, c:'gray'}, {l:'document (PDF/Office…)', v:5045}
+], 36000, nf);
+chart('c-blocks', [
+  {l:'A. baseline jsoup (mật độ liên kết)', v:0.813, c:'gray'},
+  {l:'B1. BTE (Ch10)', v:0.662}, {l:'B2. BTE có xét liên kết', v:0.656},
+  {l:'C1. quy tắc đặc trưng nông', v:0.633}, {l:'E. quy tắc CSS theo host', v:0.647},
+  {l:'L. phân loại học (hồi quy logistic)', v:0.845, c:'gr'}, {l:'L + lọc khuôn mẫu host', v:0.870, c:'hl'}
+], 1);
+chart('c-test', [
+  {l:'current (công cụ ứng dụng)', v:0.573, c:'gray'}, {l:'M1 VSM tf-idf', v:0.492, c:'gray', s:' *'},
+  {l:'dense (e5-small)', v:0.631}, {l:'M2 BM25 đa trường', v:0.675}, {l:'M3 BM25 + PRF', v:0.674},
+  {l:'M4 hybrid (BM25+dense, RRF)', v:0.701, c:'hl'}, {l:'M6 cross-encoder (bge-m3)', v:0.702, c:'hl'}
+], 0.8);
+chart('c-dev', [
+  {l:'M2 BM25', v:0.538, c:'gray'}, {l:'M4 hybrid', v:0.608}, {l:'M5 Rocchio dày', v:0.613},
+  {l:'M6 cross-encoder', v:0.755, c:'hl'}
+], 0.8);
+chart('c-anchor', [
+  {l:'BM25 toàn văn (tham chiếu)', v:0.675, c:'hl'}, {l:'chỉ nội dung chính', v:0.674},
+  {l:'+ văn bản liên kết (w=0,3)', v:0.654}, {l:'+ văn bản liên kết (w=1,5)', v:0.626},
+  {l:'+ liên kết trong nội dung (w=0,5)', v:0.634, s:' *'}, {l:'nội dung chính + PageRank 0,2', v:0.656}
+], 0.8);
+chart('c-cost', [
+  {l:'BM25', v:23, c:'gr'}, {l:'hybrid', v:24, c:'gr'}, {l:'M5 Rocchio dày', v:29}, {l:'M6 cross-encoder (30 tài liệu)', v:12120, c:'hl'}
+], 12500, v => nf(v));
+</script>
+</body>
+</html>
