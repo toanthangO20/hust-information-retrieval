@@ -1,0 +1,61 @@
+# qid	split	type	query	narrative (nhu cầu thông tin)
+q01	dev	keyword	học bổng trao đổi sinh viên	Tìm thông báo về chương trình trao đổi sinh viên hoặc học bổng đi học tại trường đối tác nước ngoài.
+q02	dev	question	điều kiện chuẩn tiếng Anh đầu ra của sinh viên đại học chính quy là gì	Cần biết quy định về trình độ tiếng Anh (chuẩn đầu ra, chứng chỉ) sinh viên phải đạt.
+q03	dev	keyword	kết quả thi TOEIC	Tìm thông báo công bố kết quả các đợt thi TOEIC và thủ tục nhận chứng chỉ.
+q04	dev	keyword	lịch khai giảng khóa học tiếng Nhật	Tìm lịch khai giảng các lớp tiếng Nhật.
+q05	dev	paraphrase	công ty đến trường tìm kiếm nhân sự là sinh viên sắp ra trường	Tìm các thông tin tuyển dụng, doanh nghiệp tuyển sinh viên mới tốt nghiệp.
+q06	dev	keyword	seminar khoa học trường công nghệ thông tin và truyền thông	Tìm thông báo các buổi seminar của Trường CNTT&TT.
+q07	dev	known-item	chương trình đào tạo thạc sĩ ngành kỹ thuật điện	Tìm tài liệu chương trình đào tạo cao học chuyên ngành kỹ thuật điện.
+q08	dev	question	lịch hội đồng bảo vệ đồ án tốt nghiệp kỳ 2022.2	Cần xem lịch các hội đồng bảo vệ đồ án tốt nghiệp của kỳ 2022.2.
+q09	dev	keyword	danh sách xét tốt nghiệp	Tìm danh sách sinh viên được xét tốt nghiệp hoặc chưa đủ điều kiện.
+q10	dev	paraphrase	giấy chứng nhận độc quyền về giải pháp kỹ thuật của trường	Tìm các văn bằng sở hữu trí tuệ (sáng chế, giải pháp hữu ích) do trường sở hữu.
+q11	dev	keyword	phòng thí nghiệm trường Điện - Điện tử	Tìm thông tin các phòng thí nghiệm thuộc Trường Điện - Điện tử.
+q12	dev	question	hội nghị sinh viên nghiên cứu khoa học được tổ chức khi nào	Tìm thông báo, kế hoạch về hội nghị sinh viên nghiên cứu khoa học.
+q13	dev	english	scholarships for international students	Find information on scholarships or exchange programs for international students.
+q14	dev	paraphrase	quỹ gây dựng nguồn lực giúp đỡ sinh viên có hoàn cảnh khó khăn	Tìm thông tin về quỹ, chương trình đóng góp để hỗ trợ sinh viên khó khăn.
+q15	dev	keyword	thông báo tuần năm học 2021-2022	Tìm các bản thông báo công tác theo tuần của năm học 2021-2022.
+q16	dev	question	trường hỗ trợ sinh viên bị ảnh hưởng bởi lũ lụt như thế nào	Tìm thông tin chương trình hỗ trợ sinh viên bị thiệt hại do thiên tai, lũ lụt.
+q17	dev	keyword	kỳ thi đánh giá tư duy	Tìm thông tin về kỳ thi đánh giá tư duy (tuyển sinh).
+q18	dev	keyword	Đoàn thanh niên hoạt động tình nguyện	Tìm tin hoạt động tình nguyện của Đoàn Thanh niên, Hội sinh viên.
+q19	dev	paraphrase	các thầy cô được công nhận đủ tiêu chuẩn giáo sư phó giáo sư	Tìm tin về cán bộ được công nhận chức danh GS, PGS.
+q20	dev	keyword	chuyển giao công nghệ cho doanh nghiệp	Tìm tin về hoạt động chuyển giao công nghệ của trường.
+q21	test	keyword	tuyển sinh sau đại học	Tìm thông tin tuyển sinh thạc sĩ, tiến sĩ.
+q22	test	question	thủ tục đăng ký bảo vệ luận án tiến sĩ gồm những gì	Cần biết quy trình, hồ sơ bảo vệ luận án tiến sĩ.
+q23	test	keyword	học phí	Tìm thông tin mức học phí và thu học phí.
+q24	test	paraphrase	phong trào làm sạch môi trường trong khuôn viên trường do sinh viên tổ chức	Tìm tin về hoạt động tình nguyện dọn dẹp, giữ gìn cảnh quan, môi trường xanh - sạch trong trường.
+q25	test	question	đăng ký xét tuyển vào trường Bách khoa bằng những phương thức nào	Tìm thông tin về các phương thức tuyển sinh đại học chính quy.
+q26	test	keyword	thư viện Tạ Quang Bửu mượn sách	Tìm thông tin dịch vụ thư viện, mượn trả tài liệu.
+q27	test	paraphrase	đặt mượn tài liệu từ xa không cần đến thư viện	Tìm dịch vụ cho phép mượn tài liệu hoặc nhận tài liệu mà không phải đến thư viện.
+q28	test	question	lớp tiếng Hàn miễn học phí dành cho đối tượng nào	Tìm thông tin về lớp tiếng Hàn được miễn hoặc hỗ trợ học phí.
+q29	test	keyword	lịch thi cuối kỳ	Tìm thông báo lịch thi cuối kỳ.
+q30	test	keyword	cố vấn học tập	Tìm quy định hoặc thông tin về cố vấn học tập.
+q31	test	paraphrase	thủ tục xin nghỉ học tạm thời và bảo lưu kết quả	Tìm quy định về bảo lưu, nghỉ học tạm thời.
+q32	test	keyword	quy chế đào tạo đại học	Tìm quy chế, quy định đào tạo đại học.
+q33	test	keyword	thực tập tốt nghiệp	Tìm thông tin về thực tập tốt nghiệp.
+q34	test	keyword	cuộc thi lập trình sinh viên	Tìm thông tin các cuộc thi lập trình cho sinh viên.
+q35	test	english	international conference call for papers	Find calls for papers for conferences organized by or involving the university.
+q36	test	english	research laboratory introduction	Find English pages introducing research laboratories.
+q37	test	keyword	hợp tác quốc tế đại học đối tác	Tìm thông tin hợp tác quốc tế và trường đối tác.
+q38	test	question	sinh viên Toán Tin ra trường có thể làm những công việc gì	Tìm thông tin định hướng nghề nghiệp cho sinh viên ngành Toán - Tin.
+q39	test	keyword	đề tài nghiên cứu khoa học cấp bộ	Tìm thông tin các đề tài nghiên cứu cấp bộ.
+q40	test	keyword	học bổng khuyến khích học tập	Tìm thông tin xét học bổng khuyến khích học tập.
+q41	test	keyword	học bổng doanh nghiệp tài trợ	Tìm học bổng do doanh nghiệp, tổ chức tài trợ.
+q42	test	keyword	giải thưởng sinh viên nghiên cứu khoa học	Tìm tin về giải thưởng nghiên cứu khoa học sinh viên.
+q43	test	keyword	câu lạc bộ sinh viên	Tìm thông tin về các câu lạc bộ, đội nhóm sinh viên.
+q44	test	keyword	hướng dẫn đồ án tốt nghiệp	Tìm hướng dẫn, quy định làm đồ án tốt nghiệp.
+q45	test	keyword	trao bằng tốt nghiệp lễ tốt nghiệp	Tìm thông tin lễ tốt nghiệp, trao bằng.
+q46	test	keyword	vật lý kỹ thuật thí nghiệm	Tìm thông tin các bài thí nghiệm, lịch thí nghiệm của Viện Vật lý kỹ thuật.
+q47	test	keyword	năng lượng mặt trời	Tìm tin về nghiên cứu, ứng dụng năng lượng mặt trời.
+q48	test	keyword	trí tuệ nhân tạo	Tìm thông tin về trí tuệ nhân tạo (đào tạo, nghiên cứu, sự kiện).
+q49	test	paraphrase	học máy và học sâu bài báo được chấp nhận ở hội nghị hàng đầu	Tìm tin về công bố khoa học về machine learning/deep learning ở các hội nghị lớn.
+q50	test	keyword	chương trình học bổng toàn phần du học	Tìm học bổng toàn phần du học nước ngoài.
+q51	test	keyword	tiếng Anh blended lớp học	Tìm thông tin các lớp tiếng Anh blended.
+q52	test	question	kiểm tra trình độ tiếng Anh đầu khóa cho sinh viên mới ở đâu	Tìm thông báo kiểm tra tiếng Anh đầu khóa.
+q53	test	keyword	biểu mẫu đơn từ dành cho sinh viên	Tìm các biểu mẫu, mẫu đơn mà sinh viên cần dùng.
+q54	test	keyword	báo cáo thường niên	Tìm báo cáo thường niên của trường.
+q55	test	keyword	tuyển dụng giảng viên	Tìm thông báo tuyển dụng giảng viên.
+q56	test	keyword	công khai thông tin cơ sở vật chất	Tìm thông tin ba công khai: cơ sở vật chất, tài chính.
+q57	test	paraphrase	cải thiện kỹ năng giao tiếp bằng tiếng Anh hàng ngày	Tìm bài viết hướng dẫn học tiếng Anh giao tiếp.
+q58	test	keyword	cơ hội việc làm kỹ sư	Tìm thông tin việc làm, hội chợ việc làm.
+q59	test	paraphrase	ôn luyện để lấy chứng chỉ ngoại ngữ quốc tế trước khi ra trường	Tìm bài viết/hướng dẫn ôn thi chứng chỉ tiếng Anh quốc tế (TOEIC...).
+q60	test	keyword	khen thưởng cán bộ Đoàn Hội	Tìm quyết định khen thưởng cán bộ Đoàn, Hội.

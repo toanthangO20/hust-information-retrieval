@@ -4,3 +4,5 @@ data/
 logs/
 index/
 dataset/*/documents.jsonl
+models/
+eval/work/
