@@ -122,6 +122,7 @@
       $("hits").innerHTML = html;
       pager(d);
     }
+    $("exportForm").hidden = d.total === 0;
     filters(d);
     active();
   }
@@ -206,6 +207,15 @@
       }).join("");
     }).catch(function () { /* thống kê là phần phụ, bỏ qua lỗi */ });
   }
+
+  // ---------- xuất kết quả ----------
+  $("exportForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var n = Math.min(1000, Math.max(1, parseInt($("exportN").value, 10) || 100));
+    $("exportN").value = n;
+    var p = new URLSearchParams({ q: state.q, host: state.host, type: state.type, n: n, format: $("exportFmt").value });
+    window.location.href = "/api/export?" + p.toString();
+  });
 
   // ---------- sự kiện ----------
   $("heroSearch").addEventListener("submit", function (e) { e.preventDefault(); submitQuery($("heroQ").value); });

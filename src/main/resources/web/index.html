@@ -79,6 +79,16 @@
         <aside class="filters" id="filters" aria-label="Bộ lọc"></aside>
         <div class="list">
           <div class="summary" id="summary" role="status" aria-live="polite"></div>
+          <form class="export" id="exportForm" aria-label="Xuất kết quả" hidden>
+            <span class="export-label">Xuất kết quả</span>
+            <label>Top <input id="exportN" type="number" min="1" max="1000" value="100" inputmode="numeric"></label>
+            <label class="sr" for="exportFmt">Định dạng</label>
+            <select id="exportFmt">
+              <option value="csv">.csv</option>
+              <option value="txt">.txt</option>
+            </select>
+            <button type="submit">Tải về</button>
+          </form>
           <div class="active" id="active"></div>
           <ol class="hits" id="hits"></ol>
           <nav class="pager" id="pager" aria-label="Phân trang"></nav>
@@ -88,7 +98,7 @@
   </main>
 
   <footer class="foot">
-    <span>Đồ án môn Truy hồi thông tin · Lucene BM25 · dữ liệu <span id="footVer">ver1</span></span>
+    <span>Đồ án môn Tìm kiếm thông tin · Lucene BM25 · dữ liệu <span id="footVer">ver1</span></span>
     <span>Không liên kết chính thức với Đại học Bách khoa Hà Nội</span>
   </footer>
 
