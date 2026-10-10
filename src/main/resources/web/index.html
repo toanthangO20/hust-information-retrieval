@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tìm Bách Khoa</title>
+  <meta name="description" content="Tìm kiếm trong các trang web của Đại học Bách khoa Hà Nội (hust.edu.vn và các trang con).">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/" data-home aria-label="Tìm Bách Khoa, về trang đầu">
+      <svg class="mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#D6213A"/>
+        <path d="M9 8h7.5a4.5 4.5 0 0 1 2.2 8.4A4.8 4.8 0 0 1 17 25H9z" fill="#FFFAF0"/>
+        <circle cx="25" cy="8" r="4" fill="#FFC933"/>
+      </svg>
+      <span>Tìm Bách Khoa</span>
+    </a>
+    <form class="search compact" id="topSearch" role="search" autocomplete="off" hidden>
+      <label class="sr" for="topQ">Từ khóa</label>
+      <input id="topQ" name="q" type="search" placeholder="Nhập từ khóa…" spellcheck="false">
+      <button type="submit">Tìm</button>
+    </form>
+    <a class="about" href="#dataset" data-home-link>Về bộ dữ liệu</a>
+  </header>
+
+  <main>
+    <!-- Trang đầu -->
+    <section id="home">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="kicker">Bộ dữ liệu <span id="verLabel">ver1</span></p>
+          <h1>Hỏi gì về Bách khoa,<br>tìm là thấy.</h1>
+          <p class="lede">Tìm trong <strong id="heroDocs">22.135</strong> trang và tài liệu của hust.edu.vn cùng các trang con của viện, trường, phòng ban. Gõ có dấu hay không dấu đều được.</p>
+          <form class="search big" id="heroSearch" role="search" autocomplete="off">
+            <label class="sr" for="heroQ">Từ khóa</label>
+            <input id="heroQ" name="q" type="search" placeholder="Ví dụ: học phí kỳ 2024.1" spellcheck="false" autofocus>
+            <button type="submit">Tìm kiếm</button>
+          </form>
+          <ul class="examples" aria-label="Gợi ý tìm kiếm">
+            <li><button type="button" data-q="tuyển sinh đại học">tuyển sinh đại học</button></li>
+            <li><button type="button" data-q="học bổng">học bổng</button></li>
+            <li><button type="button" data-q="lịch thi cuối kỳ">lịch thi cuối kỳ</button></li>
+            <li><button type="button" data-q="ký túc xá">ký túc xá</button></li>
+            <li><button type="button" data-q="chương trình đào tạo kỹ sư">chương trình đào tạo kỹ sư</button></li>
+            <li><button type="button" data-q="trí tuệ nhân tạo">trí tuệ nhân tạo</button></li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span class="s s-sun"></span>
+          <span class="s s-red"></span>
+          <span class="s s-ink"></span>
+          <span class="s s-dots"></span>
+        </div>
+      </div>
+
+      <section class="dataset" id="dataset">
+        <h2>Có gì trong bộ dữ liệu</h2>
+        <dl class="facts" id="facts"></dl>
+        <div class="split">
+          <div>
+            <h3>Trang con nhiều tài liệu nhất</h3>
+            <ol class="bars" id="hostBars"></ol>
+          </div>
+          <div>
+            <h3>Theo loại tài liệu</h3>
+            <ol class="bars types" id="typeBars"></ol>
+            <p class="note">Dữ liệu được thu thập bằng crawler Java (Tika, Lucene, jsoup) từ các URL đã lọc: trả về HTTP 200, có nội dung và không trùng lặp.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Trang kết quả -->
+    <section id="results" hidden>
+      <div class="layout">
+        <aside class="filters" id="filters" aria-label="Bộ lọc"></aside>
+        <div class="list">
+          <div class="summary" id="summary" role="status" aria-live="polite"></div>
+          <div class="active" id="active"></div>
+          <ol class="hits" id="hits"></ol>
+          <nav class="pager" id="pager" aria-label="Phân trang"></nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>Đồ án môn Truy hồi thông tin · Lucene BM25 · dữ liệu <span id="footVer">ver1</span></span>
+    <span>Không liên kết chính thức với Đại học Bách khoa Hà Nội</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

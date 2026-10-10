@@ -2,3 +2,5 @@ target/
 tools/
 data/
 logs/
+index/
+dataset/*/documents.jsonl

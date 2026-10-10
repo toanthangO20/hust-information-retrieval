@@ -1,13 +1,13 @@
-# HUST Crawler — thu thập URL của hust.edu.vn và các subdomain
+# HUST Crawler + Tìm Bách Khoa — thu thập URL hust.edu.vn, bộ dữ liệu ver1, chỉ mục và giao diện tìm kiếm
 
 Crawler viết bằng **Java 11**, dùng **Apache Tika** (trích văn bản HTML/PDF/Office), **Apache Lucene** (kho URL bền vững
 và chỉ mục nội dung) và **jsoup** (phân tích DOM, lấy liên kết). Kết quả chính: `output/urls_valid.txt`.
 
-## Build
+## Build (chung cho crawler và ứng dụng tìm kiếm)
 
 ```
 set JAVA_HOME=C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot
-tools\apache-maven-3.9.9\bin\mvn package          # chạy 7 test, sinh target\hust-crawler-1.0.jar + target\lib\
+tools\apache-maven-3.9.9\bin\mvn package          # chạy 14 test, sinh target\hust-crawler-1.0.jar + target\lib\
 ```
 
 ## Chạy
@@ -57,3 +57,32 @@ schtasks /Create /SC DAILY /ST 02:00 /TN "HUST-Crawler-Update" /TR "\"E:\Project
 | `SimHash` | Dấu vân tay nội dung để phát hiện trùng lặp gần đúng |
 | `UrlStore` | Kho URL và chỉ mục nội dung bằng Lucene |
 | `Exporter` | Xuất danh sách, chênh lệch, nhật ký |
+
+---
+
+# Bước 2 — Bộ dữ liệu ver1, chỉ mục và ứng dụng tìm kiếm
+
+Xây trên `output/urls_valid.txt` và văn bản đã lưu trong `data/index` (không tải lại trang nào).
+
+```
+scripts\search.bat dataset            :: dựng dataset\ver1\ (documents.jsonl + manifest.json)
+scripts\search.bat index              :: dựng index\ver1\ (Lucene, BM25)
+scripts\search.bat serve              :: chạy giao diện tại http://localhost:8080
+scripts\search.bat query học bổng     :: truy vấn nhanh trên dòng lệnh (--host, --type, --size)
+```
+
+Tuỳ chọn: `--version ver2` (đặt tên phiên bản), `--port N`, `--web-dir DIR` (đọc giao diện từ thư mục để chỉnh sửa không cần build lại),
+`--urls FILE`, `--crawl-index DIR`. Cần `mvn package` trước (xem phần Build).
+
+Tìm được có dấu lẫn không dấu (`hoc bong`), hỗ trợ `"cụm từ"`, `+bắt buộc`, `-loại trừ`, `tiêu*`; lọc theo trang con và loại tài liệu.
+API: `GET /api/search?q=&host=&type=&page=&size=` và `GET /api/stats` (JSON).
+
+| Thành phần | Vai trò |
+|---|---|
+| `DatasetBuilder`, `Text`, `Mojibake` | Dựng bộ dữ liệu: làm sạch URL/dấu thời gian lẫn trong nội dung, sửa chữ vỡ UTF-8, gắn nhãn font cũ |
+| `ViAnalyzer`, `SearchIndexer` | Phân tích tiếng Việt (bỏ dấu) và dựng chỉ mục |
+| `SearchEngine` | Truy vấn BM25, thưởng khớp cụm/đúng dấu, lọc, facet, đoạn trích tô sáng |
+| `WebServer`, `SearchMain` | Máy chủ HTTP (`127.0.0.1`) và các lệnh |
+| `src/main/resources/web` | Giao diện (HTML/CSS/JS thuần, phông Be Vietnam Pro) |
+
+`documents.jsonl` (~116 MB) và `index/` (~123 MB) không đưa vào git; dựng lại bằng hai lệnh đầu. `dataset/ver1/manifest.json` có số liệu và SHA-256.

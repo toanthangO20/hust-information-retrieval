@@ -33,7 +33,7 @@ public final class Crawler {
     private final Fetcher fetcher;
     private final RobotsCache robots;
     private final ContentExtractor extractor = new ContentExtractor();
-    private final Frontier frontier = new Frontier();
+    private Frontier frontier = new Frontier();
 
     private final Map<String, String> hashOwner = new HashMap<>();          // contentHash -> url "gốc"
     private final Map<String, Long> simhashes = new HashMap<>();            // url hợp lệ -> simhash
@@ -73,7 +73,29 @@ public final class Crawler {
     public void run() throws Exception {
         seedFrontier();
         log("Bắt đầu: %d bản ghi đã biết, %d URL trong hàng đợi, %d luồng", records.size(), frontier.size(), cfg.threads);
+        runWorkers();
 
+        // Lượt bổ sung: URL bị loại vì trùng với một URL mà chính lượt này đã làm đổi nội dung (hoặc không còn hợp lệ)
+        // có thể đã bị xét theo trạng thái cũ của URL gốc, nên phải xét lại ngay thay vì chờ lần cập nhật sau.
+        List<String> retry = new ArrayList<>();
+        for (UrlRecord r : records.values()) {
+            if (r.state != UrlRecord.INVALID || !r.reason.startsWith("duplicate:")) continue;
+            UrlRecord owner = records.get(r.reason.substring("duplicate:".length()));
+            if (owner != null && owner.lastCrawled >= startedAt
+                    && (owner.state != UrlRecord.VALID || !owner.contentHash.equals(r.contentHash))) retry.add(r.url);
+        }
+        if (!retry.isEmpty() && fetchedTotal.get() < cfg.maxPages) {
+            frontier = new Frontier();
+            for (String u : retry) enqueue(u, 0);
+            log("Xét lại %d URL từng bị coi là trùng với URL đã thay đổi", retry.size());
+            runWorkers();
+        }
+        store.commit();
+        log("Kết thúc: đã tải %d trang (hợp lệ %d, không hợp lệ %d), phát hiện %d URL mới",
+                fetchedTotal.get(), validNow.get(), invalidNow.get(), discovered.get());
+    }
+
+    private void runWorkers() throws Exception {
         List<Thread> workers = new ArrayList<>();
         for (int i = 0; i < cfg.threads; i++) {
             Thread t = new Thread(this::workerLoop, "crawler-" + i);
@@ -92,9 +114,6 @@ public final class Crawler {
                 }
             }
         }
-        store.commit();
-        log("Kết thúc: đã tải %d trang (hợp lệ %d, không hợp lệ %d), phát hiện %d URL mới",
-                fetchedTotal.get(), validNow.get(), invalidNow.get(), discovered.get());
     }
 
     // ------------------------------------------------------------------ nạp hàng đợi

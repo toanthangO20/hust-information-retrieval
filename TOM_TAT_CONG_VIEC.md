@@ -35,3 +35,27 @@ Crawl thông tin về Đại học Bách khoa Hà Nội qua `hust.edu.vn` và c�
 - `report/BAO_CAO.md` — báo cáo chi tiết
 - `README.md` — hướng dẫn build/chạy/lập lịch
 - `scripts/crawl.bat` — chạy crawler (`crawl | update | export | stats | inspect`)
+
+---
+
+# Cập nhật bước 2 — Bộ dữ liệu ver1, chỉ mục, giao diện (2026-10-10)
+
+## Yêu cầu
+Dựa trên danh sách URL đã crawl: tạo bộ dữ liệu `ver1` và chỉ mục để truy vấn; xây giao diện đẹp, tươi sáng, ít dấu hiệu "do AI tạo"; cập nhật báo cáo.
+
+## Đã thực hiện
+1. **Bộ dữ liệu `dataset/ver1`** từ `urls_valid.txt` + văn bản trong kho Lucene: 22.178 tài liệu / 47 host / 16,7 triệu từ; `manifest.json` có thống kê và SHA-256.
+2. **Làm sạch** khi kiểm tra văn bản thật: bỏ URL/dấu thời gian CMS lẫn trong nội dung; **sửa chữ vỡ UTF-8** (41 tài liệu `ctt`); gắn nhãn 43 tài liệu font TCVN3/VNI cũ và loại khỏi chỉ mục.
+3. **Chỉ mục `index/ver1`** (Lucene BM25): 22.135 tài liệu, bỏ dấu tiếng Việt, thêm trường giữ dấu để phân biệt `ký/kỳ`, `xá/xã`; thưởng khớp cụm; tự nới `AND`→`OR`.
+4. **Ứng dụng web**: máy chủ HTTP Java + giao diện HTML/CSS/JS thuần; tô sáng, lọc theo trang con/loại, phân trang, thống kê bộ dữ liệu; chạy tốt trên điện thoại.
+5. **Sửa lỗi bước 1** phát hiện khi chạy lại test: `UpdateMechanismTest` chập chờn do URL trùng bị xét theo trạng thái cũ của URL gốc trong cùng một lượt; thêm lượt xét lại trong `Crawler.run()`.
+6. **Kiểm thử:** 14 test đạt (7 test mới); đo 13 truy vấn mẫu, ≈ 19 ms/truy vấn, 31/36 vị trí top-3 đúng chủ đề (nhận xét chủ quan).
+7. **Báo cáo:** thêm Phần B (mục 10–16) vào `report/BAO_CAO.md`; cập nhật `README.md`.
+
+## Lệnh chạy
+`scripts\search.bat dataset` → `scripts\search.bat index` → `scripts\search.bat serve` → http://localhost:8080
+
+## Hạn chế chính
+- 43 tài liệu font cũ chưa chuyển mã; chưa tách từ ghép tiếng Việt; chưa có tập đánh giá có nhãn.
+- Độ phủ dữ liệu vẫn như bước 1 (11.159 URL chờ); chạy `update` rồi dựng `ver2`.
+- `ký túc xá` và `quy chế đào tạo đại học` còn kết quả chưa tốt ở top 3 (xem báo cáo mục 12.4).

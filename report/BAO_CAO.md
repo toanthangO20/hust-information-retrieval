@@ -1,13 +1,17 @@
-# Báo cáo công việc: Thu thập URL của hust.edu.vn và các subdomain
+# Báo cáo công việc: Thu thập URL hust.edu.vn, bộ dữ liệu ver1, chỉ mục và ứng dụng tìm kiếm
 
 **Môn học:** Truy hồi thông tin (Information Retrieval)
-**Công việc:** Bước 1 của dự án — crawl miền `hust.edu.vn`, lọc URL không có nội dung, xuất danh sách URL đạt yêu cầu, có cơ chế cập nhật.
-**Ngôn ngữ / công cụ:** Java 11, Apache Tika 2.9.2, Apache Lucene 9.10.0, jsoup 1.17.2, Maven 3.9.9
+**Công việc:**
+
+* **Bước 1 (mục 1–9, Phần A)** — crawl miền `hust.edu.vn`, lọc URL không có nội dung, xuất danh sách URL đạt yêu cầu, có cơ chế cập nhật.
+* **Bước 2 (mục 10–16, Phần B)** — dựng bộ dữ liệu **ver1** từ danh sách URL đã crawl, dựng **chỉ mục** truy vấn (Lucene BM25) và xây dựng **giao diện web** tìm kiếm.
+
+**Ngôn ngữ / công cụ:** Java 11, Apache Tika 2.9.2, Apache Lucene 9.10.0, jsoup 1.17.2, Jackson 2.17, Maven 3.9.9; giao diện HTML/CSS/JavaScript thuần (không dùng framework)
 **Thư mục dự án:** `E:\Projects\Information Retrieval\hust-information-retrieval`
 
 ---
 
-## 1. Tóm tắt kết quả
+## 1. Tóm tắt kết quả (Phần A — bước 1: crawl)
 
 | Chỉ tiêu | Kết quả |
 |---|---|
@@ -266,4 +270,216 @@ hust-information-retrieval/
 ├── logs/                             nhật ký các lần crawl
 ├── report/BAO_CAO.md                 báo cáo này
 └── tools/apache-maven-3.9.9/         Maven đã tải về để build
+```
+
+---
+---
+
+# PHẦN B — BỘ DỮ LIỆU VER1, CHỈ MỤC VÀ ỨNG DỤNG TÌM KIẾM
+
+## 10. Tóm tắt kết quả bước 2
+
+| Hạng mục | Kết quả |
+|---|---|
+| Bộ dữ liệu `ver1` | `dataset/ver1/documents.jsonl` — **22.178 tài liệu** (đủ 100% URL trong `urls_valid.txt`), 47 host, 16,7 triệu từ, 116 MB; mô tả và SHA-256 trong `manifest.json` |
+| Chỉ mục truy vấn | `index/ver1` — **22.135 tài liệu**, 123 MB, dựng trong ≈ 14 giây; BM25 trên tiêu đề / nội dung / từ trong URL |
+| Chất lượng văn bản | 22.094 tốt, **41 đã sửa** chữ vỡ UTF-8, 43 dùng font cũ (TCVN3/VNI) bị loại khỏi chỉ mục nhưng vẫn nằm trong bộ dữ liệu có gắn nhãn |
+| Tốc độ truy vấn | trung bình **≈ 19 ms** / truy vấn (13 truy vấn mẫu, có tính cả tạo đoạn trích và đếm bộ lọc) |
+| Ứng dụng | Máy chủ HTTP Java + giao diện web: tìm có dấu/không dấu, tô sáng từ khóa, lọc theo trang con và loại tài liệu, phân trang, trang thống kê bộ dữ liệu; chạy tốt trên màn hình điện thoại |
+| Kiểm thử | **14 test đạt** (6 + 1 của bước 1, 7 mới: bỏ dấu, xếp hạng, lọc/facet, nới điều kiện, tô sáng, sửa chữ vỡ) |
+
+Chạy: `scripts\search.bat dataset` → `scripts\search.bat index` → `scripts\search.bat serve` rồi mở <http://localhost:8080>.
+
+---
+
+## 11. Bộ dữ liệu ver1
+
+### 11.1 Nguồn và nguyên tắc
+
+* **Đầu vào:** danh sách `output/urls_valid.txt` (22.178 URL) + văn bản trang đã được crawler trích và lưu trong kho Lucene `data/index` (trường `content`, tối đa 100.000 ký tự/trang).
+  Không tải lại bất kỳ trang nào, nên dựng bộ dữ liệu lặp lại được và độc lập với trạng thái website lúc đó.
+* **Một dòng JSON mỗi tài liệu**, sắp theo URL, `id` tăng dần — dễ đọc bằng bất kỳ ngôn ngữ nào và nạp được vào các bước sau (TF-IDF, BM25, phân lớp…).
+* **Đánh phiên bản:** thư mục `dataset/<version>/`; khi crawl thêm hoặc đổi cách làm sạch, dựng `ver2` mà không mất `ver1`.
+
+### 11.2 Lược đồ
+
+| Trường | Ý nghĩa |
+|---|---|
+| `id` | số thứ tự theo URL tăng dần |
+| `url`, `host` | địa chỉ chuẩn hóa, tên miền |
+| `title` | tiêu đề (nếu thiếu: dòng đầu văn bản hoặc tên tệp trong URL, đã giải mã `%xx`) |
+| `doc_type` | `html`, `pdf`, `word`, `excel`, `powerpoint`, `khac` |
+| `content_type` | Content-Type server trả về |
+| `text`, `text_len`, `word_count` | văn bản chính (Unicode NFC), số ký tự, số từ |
+| `quality` | `ok`, `repaired`, `legacy-font` (xem 11.3) |
+| `near_dup` | URL có nội dung gần giống (SimHash ≤ 3) hoặc `null` |
+| `first_seen`, `last_crawled` | thời điểm thấy lần đầu / tải gần nhất |
+
+### 11.3 Làm sạch dữ liệu — những gì phát hiện khi kiểm tra văn bản thật
+
+Bước 1 chỉ kiểm tra "có nội dung hay không"; khi dùng văn bản để tìm kiếm mới lộ ra ba loại nhiễu mà bộ dựng ver1 xử lý:
+
+| # | Hiện tượng | Quy mô | Xử lý |
+|---|---|---|---|
+| 1 | **Siêu dữ liệu CMS lẫn vào nội dung**: địa chỉ ảnh/trang và dấu thời gian ISO-8601 (`2026-03-23T14:56:58+07:00`, `https://…/uploads/…jpg`) nằm ngay trong đoạn trích | 9.161 tài liệu có URL, 2.216 có dấu thời gian; URL chiếm ≈ 2,1% số ký tự | Xóa URL và dấu thời gian khỏi `text`; gộp khoảng trắng (giữ ngắt đoạn) |
+| 2 | **Chữ vỡ (mojibake)**: nhiều bài của `ctt.hust.edu.vn` lưu sẵn văn bản UTF-8 bị đọc như Windows-1252/1250, ví dụ `Ä‘iá»�u chá»‰nh` thay cho `điều chỉnh`; hai bảng mã có thể trộn trong cùng một trang, và byte `0x81/0x8D/0x8F/0x90/0x9D` đã mất thành `�` | 41 tài liệu | Mã hóa ngược từng ký tự về byte (1252, nếu không có thì 1250), giải mã lại UTF-8 nghiêm ngặt; byte đã mất được thử đủ 5 ứng viên và chọn theo **tần suất từ** trong phần văn bản sạch của chính bộ dữ liệu; dấu cách (byte `0xA0` bị đổi) chỉ được nối lại khi tạo ra từ có trong từ vựng. Nhận diện theo token, không theo cả trang |
+| 3 | **Font tiếng Việt cũ (TCVN3/VNI)** trong PDF/Word: văn bản trích ra là ký hiệu `Bμi gi¶ng VËt lý §¹i c−¬ng` | 43 tài liệu | Gắn `quality = legacy-font`; không đưa vào chỉ mục (vẫn giữ trong bộ dữ liệu). Chưa chuyển mã được — xem mục 15 |
+
+Một bài học khi làm mục 2: lần đầu coi "Ã/Ä/Å/Æ xuất hiện ≥ 3 lần" là dấu hiệu chữ vỡ đã **nhận nhầm 790 tài liệu** vì `Ã` là chữ cái tiếng Việt hợp lệ (`MÃ`, `ĐÃ`, `HOÃN`). Luật cuối cùng chỉ tính khi sau `Ã/Ă/Ä/Å/Æ` là ký tự thuộc dải byte tiếp nối UTF-8, hoặc khi `Ã` đứng cuối từ ngay sau chữ thường (`vÃ` = `và`). Kết quả kiểm tra bằng mắt trên các trang `ctt` cho thấy văn bản đã khôi phục đúng.
+
+### 11.4 Thống kê
+
+| Chỉ số | Giá trị |
+|---|---|
+| Số tài liệu | 22.178 (HTML 20.078 · PDF 1.784 · Word 207 · Excel 91 · khác 12 · PowerPoint 6) |
+| Tổng ký tự / từ | 87,7 triệu / 16,7 triệu; trung bình 754 từ/tài liệu |
+| Số host | 47 (nhiều nhất: `fami` 3.286, `clc` 3.285, `ctt` 2.822, `sdh` 2.669, `soict` 1.798) |
+| Nhãn chất lượng | `ok` 22.094 · `repaired` 41 · `legacy-font` 43 |
+| SHA-256 `documents.jsonl` | `48ea35672469e5da05177d2b32bcea8bbe6281d46d6986ce5b66d5af7b763e22` |
+
+---
+
+## 12. Chỉ mục truy vấn
+
+### 12.1 Cấu trúc (Lucene 9.10)
+
+| Trường | Phân tích | Lưu | Vai trò |
+|---|---|---|---|
+| `title_t` | bỏ dấu | không | khớp tiêu đề, trọng số ×3 |
+| `content` | bỏ dấu | **có** (để tạo đoạn trích) | khớp nội dung, ×1 |
+| `url_t` | bỏ dấu | không | từ trong đường dẫn (`tuyen-sinh-dai-hoc`), ×0,6 |
+| `title_x`, `content_x` | **giữ dấu** | không | chỉ thưởng điểm khi khớp đúng dấu |
+| `host`, `type` | nguyên giá trị | có | bộ lọc; kèm `*_dv` (doc-values) để đếm facet |
+| `title`, `url`, `id`, `words` | — | có | hiển thị |
+
+Chỉ mục dựng từ `documents.jsonl`, bỏ 43 tài liệu `legacy-font`, gộp thành một segment (`forceMerge(1)`).
+
+### 12.2 Phân tích văn bản tiếng Việt
+
+`ViAnalyzer` = tách theo âm tiết (UAX#29) → chữ thường → bỏ dấu (`ASCIIFoldingFilter`, `đ`→`d`). **Không dùng từ dừng** vì nhiều âm tiết như "là", "có", "đi" vừa là từ dừng vừa có nghĩa riêng.
+Đây là điều kiện để người dùng gõ không dấu vẫn tìm được (`hoc bong` → `học bổng`); văn bản được đưa về Unicode NFC trước khi đánh chỉ mục vì một số trang lưu dấu ở dạng tổ hợp rời.
+
+**Cái giá của bỏ dấu** là gộp các âm tiết khác nghĩa: `ký/kỳ/kỷ`, `xá/xã`, `tuyển/tuyên`. Lần đầu (chỉ có trường bỏ dấu), truy vấn `ký túc xá` trả về cả những bài về "xã hội". Chỉ mục vì vậy có thêm các trường `*_x` giữ dấu; khi truy vấn có dấu, khớp đúng dấu được cộng điểm nên các bài về "ký túc xá" lên trước còn truy vấn không dấu vẫn không bị loại bài nào. Trọng số của các trường này phải nhỏ (`title_x` ×3, `content_x` ×0,3): thử trọng số lớn hơn thì truy vấn `quy chế đào tạo đại học` đẩy tài liệu quy chế thật xuống sau các tệp chương trình đào tạo vì nội dung bị tính hai lần.
+
+### 12.3 Xếp hạng
+
+* Tập kết quả: mọi từ khóa phải xuất hiện (toán tử `AND`) trong một trong ba trường bỏ dấu.
+* **Nới điều kiện:** nếu `AND` không có kết quả, tự chuyển sang `OR` và báo cho người dùng ("không có trang nào chứa đủ mọi từ khóa…") thay vì trả về trang trống.
+* Điểm BM25 (Lucene mặc định) cộng thêm: cụm từ liền nhau trong tiêu đề (×4), trong nội dung với độ lệch ≤ 2 (×1,5), cùng các thưởng đúng dấu ở 12.2.
+* Hỗ trợ cú pháp Lucene: `"cụm từ"`, `+bắt buộc`, `-loại trừ`, `tiêu*`.
+* Tìm chỉ theo bộ lọc (không từ khóa) = duyệt một trang con hoặc một loại tài liệu.
+
+### 12.4 Kiểm tra chất lượng trên 13 truy vấn mẫu
+
+Mỗi truy vấn đo trên chỉ mục đã dựng (lần chạy thứ hai, bộ nhớ đã nóng). "Đúng chủ đề" là nhận xét của người làm trên 3 kết quả đầu, không phải đánh giá có nhãn.
+
+| Truy vấn | Số kết quả | ms | Top 3 | Đúng chủ đề |
+|---|---:|---:|---|:--:|
+| tuyển sinh đại học 2025 | 835 | 48 | Thông tin tuyển sinh 2025 (SoICT); Tuyển sinh Đại học 2020 (SME); Tuyển sinh sau đại học (SME) | 3/3 |
+| học phí | 3.869 | 18 | Nhắc nộp học phí; Học phí và học bổng; Lớp tiếng Nhật hỗ trợ 55% học phí | 3/3 |
+| lịch thi cuối kỳ | 1.167 | 14 | Lịch thi cuối kỳ 2021.1 (FAMI); … học kỳ 20201 (FPT); … 2022.1 (SoICT) | 3/3 |
+| ký túc xá | 1.304 | 13 | Chủ nhật xanh – xây dựng KTX Bách khoa xanh; Triển khai giãn cách xã hội (COVID-19); Ngày hội bầu cử | 1/3 |
+| học bổng khuyến khích học tập | 289 | 11 | Lễ trao học bổng khuyến khích học tập; Lễ trao chứng nhận … kỳ 2023.2 / 2023.1 | 3/3 |
+| đăng ký học phần | 6.885 | 34 | Đăng ký học phần cho SV hệ KS; Điều chỉnh điều kiện đăng ký học phần ĐATN; Đăng ký học phần thay thế kỳ 2024.2 | 3/3 |
+| trí tuệ nhân tạo | 1.240 | 34 | 3 bộ bài giảng "Trí Tuệ Nhân Tạo" (users.soict) | 3/3 |
+| thư viện Tạ Quang Bửu | 492 | 15 | Liên hệ – Thư viện; Tòa nhà Tạ Quang Bửu (svbk); Thư viện | 3/3 |
+| quy chế đào tạo đại học | 1.743 | 36 | 2 tệp chương trình đào tạo (sdh); **Quy chế Đào tạo 116B** (ctt) | 1/3 |
+| hoc bong *(không dấu)* | 2.447 | 8 | Chương trình học bổng Panasonic; Học bổng (act); Học bổng (fami) | 3/3 |
+| "công nghệ thông tin" thạc sĩ | 367 | 15 | Chuyên ngành CNTT (sdh); Đào tạo Thạc sĩ khoa Toán Tin (×2) | 2/3 |
+| tốt nghiệp đồ án | 2.510 | 9 | Kế hoạch thu thập nguyện vọng ĐATN; Đồ án tốt nghiệp (×2) | 3/3 |
+| xyzzyqwk *(vô nghĩa)* | 0 | <1 | trang "Không có trang nào khớp" kèm gợi ý | — |
+
+Nhận xét: 31/36 vị trí đúng chủ đề (≈ 86%, mẫu nhỏ nên chỉ là chỉ báo). Hai chỗ yếu rõ nhất: (a) `ký túc xá` vẫn lẫn trang "giãn cách xã hội" vì có ít bài về ký túc xá và các bài còn lại khớp lỏng nhờ bỏ dấu; (b) `quy chế đào tạo đại học` ưu tiên các tệp chương trình đào tạo có nhiều từ khóa lặp, còn tài liệu quy chế thật (tên tệp không dấu) ở hạng 3. Hướng cải thiện: gộp kết quả trùng tiêu đề (nhiều bài lặp ở `fami`), chuẩn hóa độ dài, tách từ ghép tiếng Việt.
+
+---
+
+## 13. Ứng dụng tìm kiếm
+
+### 13.1 Kiến trúc
+
+```
+ trình duyệt ── GET /            ──►  giao diện tĩnh (index.html, app.css, app.js, phông Be Vietnam Pro)
+             ── GET /api/search  ──►  SearchEngine (Lucene) ──► JSON {total, hits[], hosts[], types[], tookMs, relaxed}
+             ── GET /api/stats   ──►  manifest.json của bộ dữ liệu + số tài liệu đã đánh chỉ mục
+```
+
+* Mã nguồn: `src/main/java/vn/hust/ir/search` — `DatasetBuilder`, `Mojibake`, `Text`, `ViAnalyzer`, `SearchIndexer`, `SearchEngine`, `WebServer`, `SearchMain`.
+* Máy chủ dùng `com.sun.net.httpserver` có sẵn trong JDK, **chỉ lắng nghe `127.0.0.1`**; không thêm phụ thuộc web.
+* Giao diện nằm trong jar (`src/main/resources/web`); `--web-dir DIR` đọc từ thư mục để chỉnh giao diện không cần build lại.
+* Địa chỉ trang phản ánh trạng thái (`/?q=học+bổng&host=…&type=pdf&page=2`) nên chia sẻ và nút Back hoạt động.
+
+### 13.2 Chức năng
+
+| Chức năng | Chi tiết |
+|---|---|
+| Tìm có/không dấu | xem 12.2 |
+| Đoạn trích có tô sáng | `Highlighter` theo truy vấn; các từ khóa liền nhau gộp thành một vệt; HTML được thoát ký tự |
+| Bộ lọc | theo trang con (≤ 40, kèm số lượng) và loại tài liệu; số lượng của một nhóm bỏ qua chính bộ lọc nhóm đó nên chuyển lựa chọn không bị về 0; chip "×" để bỏ lọc |
+| Duyệt | bấm một trang con/loại tài liệu ở trang đầu để xem toàn bộ tài liệu của nó |
+| Nới điều kiện | thông báo rõ khi hiển thị trang chứa một phần từ khóa |
+| Trang trống | gợi ý cách sửa truy vấn |
+| Phím tắt | `/` đưa con trỏ vào ô tìm kiếm |
+
+### 13.3 Thiết kế giao diện
+
+Mục tiêu: sáng, vui mắt, tránh vẻ "mẫu sẵn".
+
+* **Màu:** nền kem ấm `#FFFAF0`, đỏ Bách khoa `#D6213A` làm màu nhấn, vàng nắng `#FFC933` cho điểm nhấn và tô từ khóa, mực `#1D1B16` cho chữ và viền. Mỗi trang con có một nhãn màu cố định (6 màu nhạt, chọn theo băm tên miền) để nhận ra nguồn ngay.
+* **Hình khối:** viền mực 2 px, đổ bóng cứng lệch (không làm mờ), ô tìm kiếm nảy nhẹ và đổi bóng sang đỏ khi được chọn; minh họa ở trang đầu là các hình học vẽ bằng CSS. Không dùng gradient, kính mờ, emoji hay thẻ bo tròn đổ bóng mềm — những thứ thường thấy ở giao diện sinh tự động.
+* **Chữ:** *Be Vietnam Pro* (thiết kế riêng cho tiếng Việt, đủ dấu ở mọi độ đậm) nhúng sẵn trong ứng dụng nên chạy được khi không có mạng; tiêu đề đậm 800, chữ thân 400/500.
+* **Bố cục:** trang đầu gồm tiêu đề, ô tìm kiếm lớn, truy vấn gợi ý, và phần "Có gì trong bộ dữ liệu" (4 số liệu, biểu đồ cột theo trang con và loại tài liệu). Trang kết quả: cột lọc trái + danh sách phải; từ 900 px trở xuống cột lọc chuyển thành dải ngang cuộn được.
+* **Khả năng truy cập:** nhãn ẩn cho ô nhập, `aria-live` cho dòng "n kết quả", vòng focus vàng rõ, tôn trọng `prefers-reduced-motion`, nút cao tối thiểu 42 px.
+* **Đã kiểm tra:** màn hình rộng và 375 px (điện thoại) trong trình duyệt tích hợp. Lỗi tràn ngang trên điện thoại do tên URL dài (lưới `1fr` không co được) đã được phát hiện và sửa. Chưa kiểm tra trên Safari/Firefox.
+
+---
+
+## 14. Kiểm thử bước 2
+
+| Test | Kiểm tra |
+|---|---|
+| `foldsDiacriticsBothWays` | `tuyen sinh`, `TUYỂN SINH`, `hoc bong khuyen khich` cùng tìm đúng |
+| `titleMatchOutranksBodyMatch` | khớp tiêu đề xếp trên khớp nội dung |
+| `excludesPoorQualityDocuments` | tài liệu `legacy-font` không vào chỉ mục |
+| `filtersAndFacets` | lọc theo host/loại; facet bỏ qua bộ lọc của chính nó |
+| `relaxesWhenNoDocumentHasAllTerms` | tự chuyển `AND`→`OR` và đặt cờ `relaxed` |
+| `highlightsAndEscapesHtml` | có `<mark>`; truy vấn rỗng trả 0 |
+| `repairsUtf8MisreadAsWindows125x` | sửa chữ vỡ; `MÃ`, `ĐÃ` không bị coi là chữ vỡ |
+
+Toàn bộ `mvn package`: **14 test đạt** (6 `CoreTest`, 1 `UpdateMechanismTest`, 7 `SearchEngineTest`).
+
+**Lỗi của bước 1 phát hiện và sửa khi chạy lại bộ test.** `UpdateMechanismTest` thỉnh thoảng thất bại: trang `dup.html` bị loại vì trùng `a.html`, nhưng nếu `dup.html` được xét **trước** khi `a.html` được tải lại (và đổi nội dung) trong cùng một lượt `update` thì nó vẫn bị coi là trùng theo bản cũ và chỉ được sửa ở lượt `update` sau. Lần chạy test ở bước 1 "đạt" nhờ trùng hợp thứ tự giữa hai luồng. Đã sửa ở `Crawler.run()`: sau lượt tải chính, các URL bị loại `duplicate:<gốc>` mà `<gốc>` đã đổi nội dung hoặc không còn hợp lệ ngay trong lượt này được xét lại ngay. Sau khi sửa chạy 6 lần liên tiếp đều đạt (trước khi sửa: đạt chập chờn). `urls_valid.txt` hiện có không đổi vì lần crawl cuối chạy trước bản sửa; lần `update` kế tiếp sẽ hưởng bản sửa.
+
+---
+
+## 15. Hạn chế và hướng phát triển (bước 2)
+
+* **Font tiếng Việt cũ (TCVN3/VNI):** 43 tài liệu (chủ yếu bài giảng Vật lý đại cương của `sep`, một số PDF của `fami`) đang bị loại khỏi chỉ mục. Có thể chuyển mã bằng bảng TCVN3→Unicode; chưa làm vì phải kiểm chứng từng ký tự của bảng tra.
+* **Chữ vỡ còn sót:** sửa theo token, vài từ trong các trang `ctt` có thể sai dấu (ví dụ `HÀ` thành `Hà` do byte `0x80` đã mất hẳn).
+* **Nhiễu do CMS:** đã lọc URL và dấu thời gian ở bước làm sạch; nhưng thanh điều hướng/breadcrumb (`Trang chủ » Công tác sinh viên »…`) vẫn nằm ở đầu nhiều đoạn trích. Cách đúng là sửa bộ tách nội dung của crawler (theo từng CMS) rồi crawl lại, không xử lý ở bước làm sạch.
+* **Chưa tách từ ghép tiếng Việt** ("sinh viên", "đại học"): chỉ mục dựa trên âm tiết, cụm từ được bù bằng phép khớp cụm. Có thể dùng bộ tách từ như VnCoreNLP.
+* **Chưa có tập đánh giá có nhãn:** nhận xét ở 12.4 là chủ quan. Bước đánh giá (Ch.5) cần tập truy vấn + nhãn liên quan để đo Precision@k, MAP.
+* **Trùng tiêu đề:** một số trang (ví dụ `» Đào tạo Thạc sĩ tại Khoa Toán Tin`) xuất hiện hai lần trong top 3 do nội dung gần giống; chưa gộp nhóm kết quả.
+* **Gợi ý khi gõ, sửa lỗi chính tả, đoạn trích theo câu** chưa có.
+* **Chỉ mục dựng lại toàn bộ** mỗi khi bộ dữ liệu đổi (≈ 14 s ở quy mô này); chưa cập nhật tăng dần.
+* **Máy chủ chỉ lắng nghe `127.0.0.1`**: muốn cho máy khác truy cập cần đổi địa chỉ nghe và cân nhắc giới hạn tốc độ.
+* **Độ phủ dữ liệu** vẫn là hạn chế của bước 1: 11.159 URL còn ở trạng thái chờ (mục 8). Khi `update` xong, dựng `ver2` bằng đúng hai lệnh `dataset` và `index` (`--version ver2`).
+
+---
+
+## 16. Cấu trúc sản phẩm (cập nhật)
+
+```
+hust-information-retrieval/
+├── pom.xml, README.md
+├── scripts/crawl.bat                  chạy crawler  (crawl | update | export | stats | inspect)
+├── scripts/search.bat                 bước 2        (dataset | index | serve | query)
+├── src/main/java/vn/hust/ir/crawler/  crawler (13 lớp)
+├── src/main/java/vn/hust/ir/search/   bộ dữ liệu, chỉ mục, truy vấn, máy chủ web (8 lớp)
+├── src/main/resources/web/            giao diện: index.html, app.css, app.js, fonts/
+├── src/test/java/...                  CoreTest, UpdateMechanismTest, SearchEngineTest
+├── output/                            kết quả crawl (urls_valid.txt, ...)
+├── data/index/                        kho URL + văn bản của crawler        (không đưa vào git)
+├── dataset/ver1/                      documents.jsonl (không vào git), manifest.json
+├── index/ver1/                        chỉ mục tìm kiếm                     (không đưa vào git)
+└── report/BAO_CAO.md                  báo cáo này
 ```
