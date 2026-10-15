@@ -74,6 +74,7 @@ public final class SearchEngine implements Closeable {
     }
 
     private static final String[] FIELDS = {"title_t", "content", "url_t"};
+    // [DEMO:field-boosts] trọng số trường
     private static final Map<String, Float> BOOSTS = Map.of("title_t", 3.0f, "content", 1.0f, "url_t", 0.6f);
     private static final String[] EXACT_FIELDS = {"title_x", "content_x"};
     private static final Map<String, Float> EXACT_BOOSTS = Map.of("title_x", 3.0f, "content_x", 0.3f);
@@ -110,6 +111,7 @@ public final class SearchEngine implements Closeable {
         if (q.isEmpty()) {          // chỉ duyệt theo bộ lọc
             textQuery = new MatchAllDocsQuery();
         } else {
+            // [DEMO:and-to-or] AND, thiếu kết quả thì nới OR
             textQuery = buildQuery(q, QueryParser.Operator.AND);
             if (count(textQuery, host, type) == 0 && tokens(q).size() > 1) {
                 textQuery = buildQuery(q, QueryParser.Operator.OR);
@@ -164,6 +166,7 @@ public final class SearchEngine implements Closeable {
             }
         }
         List<String> toks = tokens(q);
+        // [DEMO:phrase-bonus] thưởng cụm từ / đúng dấu
         BooleanQuery.Builder b = new BooleanQuery.Builder();
         b.add(main, Occur.MUST);
         if (toks.size() >= 2) {

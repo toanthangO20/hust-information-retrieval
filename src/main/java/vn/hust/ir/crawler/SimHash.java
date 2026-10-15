@@ -15,6 +15,7 @@ public final class SimHash {
         return t.split("[^\\p{L}\\p{N}]+");
     }
 
+    // [DEMO:simhash] shingle 3 từ, 64 bit
     public static long compute(String[] tok) {
         int[] v = new int[64];
         int n = Math.max(1, tok.length - 2);
@@ -28,6 +29,7 @@ public final class SimHash {
         return r;
     }
 
+    // [DEMO:hamming] khoảng cách Hamming
     public static int hamming(long a, long b) {
         return Long.bitCount(a ^ b);
     }

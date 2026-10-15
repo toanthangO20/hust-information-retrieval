@@ -24,6 +24,11 @@ eval/
 | `pool --runs "a.run;b.run" --depth 15 --split dev --out eval/pool/dev` | Gộp top-k của các run thành pool để gán nhãn |
 | `qrels --pool eval/pool/dev.tsv --judgments eval/judgments/dev.tsv --out eval/qrels/dev.tsv` | Gộp nhãn thành qrels |
 | `eval --runs "…" --qrels eval/qrels/test.tsv --split test --baseline NAME --out eval/report/test.md` | Chấm điểm, kiểm định, báo cáo |
+| `bench --systems "a;b" --split test [--rounds 5]` | Đo độ trễ: 1 lượt khởi động + trung vị các lượt → `eval/report/latency.tsv` (giữ dòng của hệ thống không đo lại) |
+| `dashboard` (hoặc `scripts\report.bat`) | Sinh `docs/data/results.js` cho `docs/BAO_CAO_TRUC_QUAN.html`: tính lại độ đo, kiểm định, theo loại truy vấn, ma trận cặp, lưới tham số, độ nhạy trọng số hybrid |
+
+Kiểm định trong `dashboard` dùng cùng hạt giống với `eval` khi `--runs` liệt kê `bm25` trước rồi theo thứ tự W, M1, M3, D, M4, M5, M6
+(như `report/{dev,test}_final.md`), nên số trên slide và trong báo cáo markdown trùng khớp.
 
 Đặc tả hệ thống: `current` · `vsm` · `bm25[:k1=,b=]` · `prf[:k1=,b=,docs=,terms=,lambda=]` · `dense` · `hybrid[:k1=,b=,w=,rrf=]`.
 
@@ -37,6 +42,8 @@ eval/
 | M3 `prf` | M2 + giả lập phản hồi (RM3/Rocchio) | Ch06 |
 | M4 `hybrid` | M2 + dense (multilingual-e5-small) hợp nhất bằng RRF | ngoài slide |
 | `dense` | Chỉ vec-tơ dày (để phân tích đóng góp của từng thành phần) | ngoài slide |
+| M5 `drocchio` | Rocchio trên vec-tơ dày, dẫn đường bằng xếp hạng lai (chỉ chạy trên dev) | Ch06 mở rộng |
+| M6 `ce` | Cross-encoder bge-reranker-v2-m3 xếp lại top-30 của hybrid | ngoài slide |
 
 ## Quy ước đánh giá
 
@@ -50,18 +57,26 @@ eval/
 
 ## Cấu hình chốt và kết quả (tập test, 40 truy vấn)
 
-Chọn trên dev (q01–q20), chạy một lần trên test (q21–q60). Xem `report/test.md`.
+Chọn trên dev (q01–q20), chạy một lần trên test (q21–q60). Báo cáo chính: `report/test_final.md` (chỉ các cấu hình chốt,
+cùng họ so sánh Holm như slide); `report/test.md` là bản cũ gồm cả các biến thể tham số.
 
-| Mã | Cấu hình | nDCG@10 |
-|---|---|---:|
-| M1 | `vsm` | 0,492 (kém BM25 có ý nghĩa, Holm p=0,006) |
-| M2 | `bm25` (k1,b mặc định) | 0,675 |
-| M3 | `prf:docs=5,terms=20,lambda=0.5` | 0,674 (không cải thiện) |
-| M4 | `hybrid:w=2` | 0,685 (không khác biệt có ý nghĩa) |
-| ngoài | `hybrid:w=1` 0,701 · `dense` 0,631 · `current` 0,573 | |
+| Mã | Cấu hình (chốt trên dev) | nDCG@10 | R@100 | Δ so với BM25 [KTC 95%] · p (Holm) |
+|---|---|---:|---:|---|
+| W | `current` | 0,573 | 0,448 | −0,102 [−0,208; −0,007] · 0,279 |
+| M1 | `vsm` | **0,492** | 0,647 | −0,183 [−0,282; −0,086] · **0,0045** |
+| M2 | `bm25` (k1, b mặc định) | 0,675 | 0,688 | tham chiếu |
+| M3 | `prf:docs=5,terms=20,lambda=0.5` | 0,674 | 0,668 | −0,002 · 1,000 |
+| D | `dense` | 0,631 | 0,685 | −0,044 · 1,000 |
+| M4 | `hybrid:w=2` | 0,685 | 0,809 | +0,010 [−0,065; +0,086] · 1,000 |
+| M6 | `ce:depth=30,len=320` (Judged@10 0,84) | 0,702 | 0,876 | +0,026 · 1,000 |
 
-Kết luận: chỉ VSM kém hơn BM25 có ý nghĩa thống kê; hybrid cho xu hướng tốt hơn (R@100 cao hơn rõ) nhưng 40 truy vấn chưa đủ để khẳng định.
-Công cụ hiện tại (`current`) sụp đổ trên truy vấn dạng câu hỏi (nDCG@10 ~0,04) vì ngữ nghĩa AND/cụm từ.
+Phân tích sau (không dùng để kết luận, vì chọn bằng test): `hybrid:w=1` 0,701; `hybrid:w=4` 0,666. Trên dev thứ tự ngược lại
+(w=4 > w=2 > w=1), tức trọng số tối ưu không ổn định giữa hai tập — chênh lệch nằm trong nhiễu của 20–40 truy vấn.
+
+Kết luận: chỉ VSM kém hơn BM25 có ý nghĩa thống kê; hybrid tăng độ phủ rõ (R@100 0,69 → 0,81) nhưng 40 truy vấn chưa đủ để khẳng định nDCG@10.
+Công cụ hiện tại (`current`) sụp đổ trên truy vấn dạng câu hỏi (nDCG@10 ~0,04, trong khi BM25 0,71) vì ngữ nghĩa AND/cụm từ.
+
+Các run thử nghiệm (M5 `drocchio_*`, M6 `ce_*`, `hybrid_w-3/4`) đã được chép từ `eval/work/` vào `eval/runs/{dev,test}/` để tái lập được.
 
 ## Hạn chế cần nêu khi báo cáo
 

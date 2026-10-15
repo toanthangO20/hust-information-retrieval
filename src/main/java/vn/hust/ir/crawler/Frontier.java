@@ -31,6 +31,7 @@ public final class Frontier {
     private static final class HostQ {
         final String host;
         @SuppressWarnings("unchecked")
+        // [DEMO:frontier-priority] phía trước: 3 hàng đợi ưu tiên
         final Deque<Task>[] q = new Deque[3];
         long nextAt;
         boolean inFlight;
@@ -67,6 +68,7 @@ public final class Frontier {
     }
 
     /** Lấy URL kế tiếp; chặn cho tới khi có host đủ điều kiện. Trả về null khi hết việc hoặc đã đóng. */
+    // [DEMO:frontier-take] phía sau: hàng đợi theo host + heap thời điểm nextAt
     public synchronized Task take() throws InterruptedException {
         while (true) {
             if (closed) return null;
@@ -107,6 +109,7 @@ public final class Frontier {
         HostQ h = hosts.get(t.host);
         h.inFlight = false;
         inFlight--;
+        // [DEMO:frontier-politeness] giãn cách sau mỗi request
         h.nextAt = System.currentTimeMillis() + delayMs;
         if (h.size > 0 && !closed) {
             h.inHeap = true;

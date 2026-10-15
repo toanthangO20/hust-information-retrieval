@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>So sánh mô hình · Tìm Bách Khoa</title>
+  <meta name="description" content="So sánh trực tiếp các mô hình truy hồi (VSM, BM25, PRF, dense, hybrid) trên cùng một truy vấn, kèm nhãn phù hợp của bộ đánh giá.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="compare.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/" aria-label="Tìm Bách Khoa, về trang đầu">
+      <svg class="mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#D6213A"/>
+        <path d="M9 8h7.5a4.5 4.5 0 0 1 2.2 8.4A4.8 4.8 0 0 1 17 25H9z" fill="#FFFAF0"/>
+        <circle cx="25" cy="8" r="4" fill="#FFC933"/>
+      </svg>
+      <span>Tìm Bách Khoa</span>
+    </a>
+    <span class="crumb">So sánh mô hình truy hồi</span>
+    <a class="about" href="/">Về trang tìm kiếm</a>
+  </header>
+
+  <main class="cmp">
+    <form class="cmp-form" id="cmpForm" autocomplete="off">
+      <div class="row">
+        <label class="sr" for="cq">Truy vấn</label>
+        <div class="search">
+          <input id="cq" type="search" placeholder="Nhập truy vấn, hoặc chọn một truy vấn có nhãn bên dưới" spellcheck="false">
+          <button type="submit">So sánh</button>
+        </div>
+      </div>
+      <div class="row two">
+        <label class="field">
+          <span>Truy vấn có nhãn (bộ đánh giá)</span>
+          <select id="ctopic"><option value="">— tự nhập, không chấm điểm —</option></select>
+        </label>
+        <fieldset class="field" id="csys">
+          <legend>Mô hình</legend>
+        </fieldset>
+      </div>
+      <p class="need" id="cneed" hidden></p>
+    </form>
+
+    <div class="legend" id="clegend" hidden>
+      <span><i class="rel r2"></i>2 · rất phù hợp</span>
+      <span><i class="rel r1"></i>1 · phù hợp một phần</span>
+      <span><i class="rel r0"></i>0 · không phù hợp</span>
+      <span><i class="rel rn"></i>? · chưa gán nhãn</span>
+      <span class="hint">Rê chuột lên một kết quả để thấy nó ở các cột khác.</span>
+    </div>
+
+    <p class="status" id="cstatus" role="status" aria-live="polite">Đang nạp mô hình…</p>
+    <div class="cols" id="ccols"></div>
+  </main>
+
+  <footer class="foot">
+    <span>Cùng chỉ mục <code>index/ver1</code> và cùng cách chấm với <code>eval.bat eval</code>: nDCG@10, IDCG tính từ toàn bộ qrels.</span>
+    <span>Cross-encoder (M6) không có ở đây vì ≈ 12 giây/truy vấn trên CPU.</span>
+  </footer>
+
+  <script src="compare.js"></script>
+</body>
+</html>

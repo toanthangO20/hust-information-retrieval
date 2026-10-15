@@ -91,6 +91,7 @@ public final class VsmRetriever implements Retriever {
         Map<String, Integer> qtf = new HashMap<>();
         for (String t : corpus.tokens(query)) qtf.merge(t, 1, Integer::sum);
         Map<String, Double> qw = new HashMap<>();
+        // [DEMO:vsm-lnc-ltc] log tf, cosine; idf phía truy vấn
         double qnorm = 0;
         for (Map.Entry<String, Integer> e : qtf.entrySet()) {
             Postings p = index.get(e.getKey());

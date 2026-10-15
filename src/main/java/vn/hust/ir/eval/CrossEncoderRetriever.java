@@ -63,6 +63,7 @@ public final class CrossEncoderRetriever implements Retriever, AutoCloseable {
     }
 
     /** [BOS] q [EOS][EOS] d [EOS], tổng không quá maxTokens (truy vấn tối đa 64 mảnh). */
+    // [DEMO:ce-pair] ghép cặp truy vấn + tài liệu
     private int[] pair(int[] q, int[] d) {
         int ql = Math.min(q.length - 2, 64);
         int dl = Math.min(d.length - 2, maxTokens - ql - 4);
@@ -103,6 +104,7 @@ public final class CrossEncoderRetriever implements Retriever, AutoCloseable {
     }
 
     @Override
+    // [DEMO:ce-rerank] xếp lại top-depth
     public List<Scored> search(String query, int k) throws IOException {
         List<Scored> all = base.search(query, Math.max(k, depth));
         List<Scored> cand = new ArrayList<>(all.subList(0, Math.min(depth, all.size())));

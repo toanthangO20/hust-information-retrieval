@@ -16,6 +16,7 @@ public final class LogReg {
 
     private static final ObjectMapper JSON = new ObjectMapper();
 
+    // [DEMO:logreg-predict] dự đoán
     public double prob(double[] x) {
         double z = 0;
         for (int j = 0; j < w.length; j++) z += w[j] * ((x[j] - mean[j]) / std[j]);
@@ -23,6 +24,7 @@ public final class LogReg {
     }
 
     /** Huấn luyện; sw = trọng số mẫu (vd. căn bậc hai số từ của khối). */
+    // [DEMO:logreg-train] huấn luyện: z-score, L2, trọng số mẫu
     public static LogReg train(String[] names, List<double[]> xs, List<Integer> ys, List<Double> sw, double l2, int epochs, double lr) {
         int d = names.length, n = xs.size();
         LogReg m = new LogReg();

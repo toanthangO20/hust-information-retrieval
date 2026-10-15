@@ -13,6 +13,7 @@ import java.util.Map;
 public final class Metrics {
     private Metrics() {}
 
+    // [DEMO:ndcg] DCG theo slide, IDCG từ toàn bộ qrels
     /** DCG theo slide: r1 + sum_{i>=2} r_i / log2(i). */
     static double dcg(int[] gains, int k) {
         double s = 0;

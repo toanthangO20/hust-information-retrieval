@@ -36,6 +36,7 @@ public final class HybridRetriever implements Retriever {
         return out.size() > k ? new ArrayList<>(out.subList(0, k)) : out;
     }
 
+    // [DEMO:rrf] RRF: w / (k + hạng)
     private void add(Map<Integer, Double> fused, List<Scored> list, double w) {
         for (int r = 0; r < list.size(); r++) fused.merge(list.get(r).id, w / (rrfK + r + 1), Double::sum);
     }

@@ -24,6 +24,7 @@ import java.util.regex.Pattern;
  */
 public final class Crawler {
     private static final long DAY = 24L * 3600 * 1000;
+    // [DEMO:soft-404] mẫu trang "không tìm thấy"
     private static final Pattern SOFT_404 = Pattern.compile(
             "(?i)(\\b404\\b|không tìm thấy|khong tim thay|page not found|not found|trang không tồn tại)");
 
@@ -324,6 +325,7 @@ public final class Crawler {
         rec.contentType = r.contentType.split(";")[0];
 
         int s = r.status;
+        // [DEMO:backoff-429] AIMD theo host khi 429/503
         if (s == 429 || s == 503 || s == 421) {
             // lỗi tạm thời; thử lại tối đa 3 lần trong cùng lần chạy
             if (s != 421) {
@@ -385,6 +387,7 @@ public final class Crawler {
         rec.textLen = text.length();
 
         if (ex.noindex) { finish(rec, UrlRecord.INVALID, status, "noindex", null); return; }
+        // [DEMO:min-content] ngưỡng "có nội dung"
         if (text.length() < cfg.minChars || tok.length < cfg.minWords) {
             finish(rec, UrlRecord.INVALID, status, "no-content", null);
             return;
@@ -404,6 +407,7 @@ public final class Crawler {
             }
         }
 
+        // [DEMO:dup-sha1] trùng chính xác
         String hash = sha1(text.toLowerCase(Locale.ROOT).replaceAll("\\s+", " "));
         long sim = SimHash.compute(tok);
         String nearDup = "";
@@ -415,12 +419,14 @@ public final class Crawler {
                 finish(rec, UrlRecord.INVALID, status, "duplicate:" + owner, null);
                 return;
             }
+            // [DEMO:dup-simhash] trùng gần đúng, quét tuyến tính (hạn chế)
             for (Map.Entry<String, Long> e : simhashes.entrySet()) {
                 if (!e.getKey().equals(rec.url) && SimHash.hamming(sim, e.getValue()) <= 3) {
                     nearDup = e.getKey();
                     break;
                 }
             }
+            // [DEMO:drop-near-dup] chỉ loại khi bật --drop-near-dup
             if (!nearDup.isEmpty() && cfg.dropNearDup) {
                 rec.contentHash = hash;
                 finish(rec, UrlRecord.INVALID, status, "near-duplicate:" + nearDup, null);

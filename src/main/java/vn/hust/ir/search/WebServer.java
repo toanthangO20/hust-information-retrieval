@@ -20,7 +20,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpServer;
 
-/** Máy chủ HTTP nhỏ: giao diện tĩnh (trong jar hoặc thư mục --web-dir) và API JSON /api/search, /api/stats. */
+import vn.hust.ir.eval.LiveCompare;
+
+/**
+ * Máy chủ HTTP nhỏ: giao diện tĩnh (trong jar hoặc thư mục --web-dir) và API JSON /api/search, /api/stats, /api/export;
+ * thêm /api/compare-info, /api/compare (so sánh trực tiếp các mô hình truy hồi) khi có {@link LiveCompare}.
+ */
 public final class WebServer {
     private static final ObjectMapper JSON = new ObjectMapper();
     private static final Map<String, String> MIME = Map.of(
@@ -33,6 +38,7 @@ public final class WebServer {
     private final SearchEngine engine;
     private final Path manifest;
     private final Path webDir;      // null: đọc từ classpath
+    private LiveCompare compare;    // null: tắt trang so sánh
 
     public WebServer(SearchEngine engine, Path manifest, Path webDir) {
         this.engine = engine;
@@ -40,11 +46,18 @@ public final class WebServer {
         this.webDir = webDir;
     }
 
+    public WebServer withCompare(LiveCompare c) {
+        this.compare = c;
+        return this;
+    }
+
     public HttpServer start(int port) throws IOException {
         HttpServer s = HttpServer.create(new InetSocketAddress("127.0.0.1", port), 0);
         s.createContext("/api/search", this::search);
         s.createContext("/api/export", this::export);
         s.createContext("/api/stats", this::stats);
+        s.createContext("/api/compare-info", this::compareInfo);
+        s.createContext("/api/compare", this::compare);
         s.createContext("/", this::staticFile);
         s.setExecutor(Executors.newFixedThreadPool(8));
         s.start();
@@ -130,6 +143,34 @@ public final class WebServer {
                     new String(Character.toChars(Integer.parseInt(m.group(1), 16)))));
         m.appendTail(sb);
         return sb.toString().replace("&lt;", "<").replace("&gt;", ">").replace("&quot;", "\"").replace("&amp;", "&");
+    }
+
+    private void compareInfo(HttpExchange ex) throws IOException {
+        try {
+            if (compare == null) throw new IllegalStateException("Trang so sánh chưa bật (serve chạy với --no-compare)");
+            send(ex, 200, "application/json; charset=utf-8", JSON.writeValueAsBytes(compare.info()));
+        } catch (Exception e) {
+            send(ex, 500, "application/json; charset=utf-8",
+                    JSON.writeValueAsBytes(Map.of("error", String.valueOf(e.getMessage()))));
+        }
+    }
+
+    /** GET /api/compare?q=&qid=&systems=bm25;hybrid:w=2&k=10 — top-k của từng mô hình, kèm nhãn qrels khi có qid. */
+    private void compare(HttpExchange ex) throws IOException {
+        try {
+            if (compare == null) throw new IllegalStateException("Trang so sánh chưa bật (serve chạy với --no-compare)");
+            Map<String, String> p = params(ex.getRequestURI().getRawQuery());
+            String q = p.getOrDefault("q", "").strip();
+            if (q.isEmpty()) throw new IllegalArgumentException("Thiếu từ khóa");
+            List<String> systems = new ArrayList<>();
+            for (String id : p.getOrDefault("systems", "bm25").split(";")) if (!id.isBlank()) systems.add(id.strip());
+            int k = Math.min(20, Math.max(1, intOr(p.get("k"), 10)));
+            String qid = p.get("qid") == null || p.get("qid").isBlank() ? null : p.get("qid");
+            send(ex, 200, "application/json; charset=utf-8", JSON.writeValueAsBytes(compare.compare(q, qid, systems, k)));
+        } catch (Exception e) {
+            send(ex, 500, "application/json; charset=utf-8",
+                    JSON.writeValueAsBytes(Map.of("error", String.valueOf(e.getMessage()))));
+        }
     }
 
     private void stats(HttpExchange ex) throws IOException {

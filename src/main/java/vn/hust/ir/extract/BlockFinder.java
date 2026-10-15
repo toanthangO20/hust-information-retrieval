@@ -24,6 +24,7 @@ public interface BlockFinder {
     void apply(PageModel m);
 
     /** BTE (Body Text Extraction). linkAware=true: từ nằm trong thẻ &lt;a&gt; được tính như thẻ. */
+    // [DEMO:bte] BTE (slide Ch10)
     final class Bte implements BlockFinder {
         private final boolean linkAware;
 
@@ -48,6 +49,7 @@ public interface BlockFinder {
                 if (tag[k]) totalTags++;
             }
             // g(i) = Tc[i] − Wc[i];  h(j) = Wc[j+1] − Tc[j+1];  cực đại g(i) + h(j) với i ≤ j
+            // [DEMO:bte-linear] một vòng O(n)
             int tc = 0, wc = 0;            // Tc[i], Wc[i] (số thẻ/từ trước vị trí i)
             int bestG = Integer.MIN_VALUE, bestGi = 0;
             long best = Long.MIN_VALUE;
@@ -216,6 +218,7 @@ public interface BlockFinder {
     }
 
     /** Bộ phân loại học có giám sát (hồi quy logistic trên đặc trưng khối); cần thống kê host cho đặc trưng khuôn mẫu. */
+    // [DEMO:learned] phân loại khối học có giám sát
     final class Learned implements BlockFinder {
         private final LogReg model;
         private final Extractor.HostStats hs;
@@ -239,11 +242,13 @@ public interface BlockFinder {
             new Rules(false, 2, 0.5).apply(m);
             for (int i = 0; i < n; i++) rl[i] = m.blocks.get(i).content;
             double[][] f = BlockFeatures.compute(m, hs, bte, rl);
+            // [DEMO:learned-threshold] xác suất >= ngưỡng thì là nội dung
             for (int i = 0; i < n; i++) m.blocks.get(i).content = model.prob(f[i]) >= model.threshold;
         }
     }
 
     /** Loại khối có tần suất xuất hiện (số trang) cao trong cùng host = khuôn mẫu site. */
+    // [DEMO:template] lọc khuôn mẫu theo host
     final class Template implements BlockFinder {
         private final Map<Long, Integer> df;
         private final int threshold;

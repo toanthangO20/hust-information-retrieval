@@ -3,12 +3,26 @@
 Crawler viết bằng **Java 11**, dùng **Apache Tika** (trích văn bản HTML/PDF/Office), **Apache Lucene** (kho URL bền vững
 và chỉ mục nội dung) và **jsoup** (phân tích DOM, lấy liên kết). Kết quả chính: `output/urls_valid.txt`.
 
+## Bắt đầu nhanh — báo cáo trực quan
+
+| Lệnh | Việc |
+|---|---|
+| `scripts\report.bat` | Tính lại mọi số liệu (độ đo, kiểm định, đồ thị…) từ đầu ra của các bước → `docs\data\results.js`, mở **`docs\BAO_CAO_TRUC_QUAN.html`** (22 slide) |
+| `scripts\search.bat serve` | Web tại http://localhost:8080 và **so sánh trực tiếp các mô hình** tại http://localhost:8080/compare.html |
+| `scripts\demo-check.bat` | Kiểm tra trước buổi báo cáo: Java, jar, chỉ mục, mô hình, số liệu slide, MongoDB, web |
+| `scripts\pipeline.bat` | Chạy lại đường ống từ dữ liệu đã crawl đến số liệu slide (bỏ qua bước đã có đầu ra; `-Force`, `-From N`) |
+
+Kịch bản trình bày: `docs/KICH_BAN_BAO_CAO.md` (chỉ vị trí mã bằng nhãn `[DEMO:tên]`: `git grep -n "\[DEMO:"`).
+Báo cáo đầy đủ: `report/BAO_CAO.md` (Phần D: đánh giá mô hình truy hồi; Phần E: báo cáo trực quan và quy trình).
+
 ## Build (chung cho crawler và ứng dụng tìm kiếm)
 
 ```
 set JAVA_HOME=C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot
-tools\apache-maven-3.9.9\bin\mvn package          # chạy 14 test, sinh target\hust-crawler-1.0.jar + target\lib\
+tools\apache-maven-3.9.9\bin\mvn package          # chạy toàn bộ test, sinh target\hust-crawler-1.0.jar + target\lib\
 ```
+
+Các script trong `scripts\` dùng chung `scripts\_env.bat` (UTF-8, tự dò JAVA_HOME, báo lỗi rõ nếu chưa build).
 
 ## Chạy
 
@@ -77,6 +91,9 @@ Tuỳ chọn: `--version ver2` (đặt tên phiên bản), `--port N`, `--web-di
 Tìm được có dấu lẫn không dấu (`hoc bong`), hỗ trợ `"cụm từ"`, `+bắt buộc`, `-loại trừ`, `tiêu*`; lọc theo trang con và loại tài liệu.
 API: `GET /api/search?q=&host=&type=&page=&size=` và `GET /api/stats` (JSON).
 Xuất kết quả: nút **Xuất kết quả** trên trang kết quả, hoặc `GET /api/export?q=&host=&type=&n=100&format=csv|txt` (n tối đa 1000).
+So sánh mô hình: trang `/compare.html`, API `GET /api/compare-info` (mô hình + 60 truy vấn có nhãn) và
+`GET /api/compare?q=&qid=&systems=current;bm25;dense;hybrid:w=2&k=10` (top-k từng mô hình; có `qid` thì kèm nhãn qrels và nDCG@10).
+Mô hình nạp ở nền khi khởi động (`--no-compare 1` để tắt); dense/hybrid cần `models/multilingual-e5-small` và `index/ver1/dense_e5small_int8_256.bin`.
 
 | Thành phần | Vai trò |
 |---|---|
@@ -108,6 +125,7 @@ scripts\extract.bat eval-meta --gold eval\extract\gold_test.tsv --report ... :: 
 scripts\extract.bat train-blocks      :: huấn luyện bộ phân loại khối (hồi quy logistic) trên tập vàng dev
 scripts\extract.bat show --url URL    :: chẩn đoán một trang: khối, nhãn nội dung, metadata
 scripts\eval.bat run --index index\ver1x --systems "bm25x:ctx=main+anchor,aw=0.3;..." --split dev --out ...  :: so sánh truy hồi
+scripts\extract.bat strips            :: nhãn từng khối của tập vàng test -> eval\extract\strips_test.json (slide "dải khối")
 ```
 
 MongoDB: `scripts\mongo.bat` (MongoDB 7.0.14 bản zip trong `tools\mongodb`, dữ liệu `data\mongo`; hoặc `docker run -d -p 27017:27017 mongo:7`)
@@ -126,3 +144,24 @@ Không có MongoDB vẫn dùng được toàn bộ kết quả ở dạng JSONL 
 | `BlockEval`, `GoldSheet` | Đánh giá trên tập vàng; tạo phiếu gán nhãn |
 
 `data/raw` (~1,5 GB) và `data/extract` (~1,4 GB) không đưa vào git.
+
+---
+
+# Bước 4 — Đánh giá mô hình truy hồi và báo cáo trực quan
+
+Bộ kiểm thử kiểu TREC (60 truy vấn, 20 dev / 40 test, qrels 3 mức), 7 mô hình (W, VSM, BM25, PRF, dense, hybrid RRF, cross-encoder),
+kiểm định hoán vị + Holm + bootstrap. Hướng dẫn và kết quả: `eval/README.md`; phân tích: `report/BAO_CAO.md` Phần D.
+
+```
+scriptsval.bat run --systems "bm25;hybrid:w=2" --split test --out evaluns	est   :: chạy mô hình, xuất run TREC
+scriptsval.bat eval --runs evaluns	est --qrels eval\qrels	est.tsv --split test --baseline bm25 --out evaleport	est.md
+scriptsval.bat bench --systems "bm25;hybrid:w=2" --split test                     :: độ trễ -> evaleport\latency.tsv
+scriptseport.bat                                                                   :: số liệu slide -> docs\dataesults.js
+```
+
+| Lớp (`vn.hust.ir.eval`) | Vai trò |
+|---|---|
+| `EvalMain`, `EvalIo`, `Metrics`, `Significance` | Lệnh embed / run / pool / qrels / eval / bench / dashboard; độ đo; kiểm định |
+| `VsmRetriever`, `Bm25Retriever`, `PrfRetriever`, `DenseRetriever`, `HybridRetriever`, `DenseRocchioRetriever`, `CrossEncoderRetriever` | Các mô hình M1–M6 |
+| `Dashboard` | Sinh `docs/data/results.js` từ đầu ra của mọi bước (một nguồn số liệu cho slide) |
+| `LiveCompare` | So sánh trực tiếp các mô hình trên web (`/compare.html`) |

@@ -178,6 +178,7 @@ public final class Extractor {
         return head.startsWith("%PDF") ? "application/pdf" : "application/octet-stream";
     }
 
+    // [DEMO:template-df] thống kê khối lặp theo host
     private BlockFinder.Template template(HostStats hs) {
         return new BlockFinder.Template(hs.df, hs.pages, strategy.templateRatio, strategy.templateMinDf);
     }

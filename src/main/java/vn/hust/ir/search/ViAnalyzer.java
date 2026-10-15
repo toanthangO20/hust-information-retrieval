@@ -21,6 +21,7 @@ public final class ViAnalyzer extends Analyzer {
     private static final Analyzer EXACT = new Analyzer() {
         @Override
         protected TokenStreamComponents createComponents(String fieldName) {
+            // [DEMO:vi-analyzer] tách âm tiết + bỏ dấu
             StandardTokenizer src = new StandardTokenizer();
             return new TokenStreamComponents(src, new LowerCaseFilter(src));
         }

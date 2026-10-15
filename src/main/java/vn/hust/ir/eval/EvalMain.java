@@ -27,7 +27,7 @@ import vn.hust.ir.eval.EvalIo.Topic;
 import vn.hust.ir.search.SearchEngine;
 
 /**
- * Hạ tầng đánh giá: embed | run | pool | qrels | eval. Xem scripts\eval.bat và eval\README.md.
+ * Hạ tầng đánh giá: embed | run | pool | qrels | eval | bench (độ trễ) | dashboard (dữ liệu báo cáo trực quan). Xem scripts\eval.bat và eval\README.md.
  *
  * Đặc tả hệ thống (--systems, ngăn cách bằng ';'): current | vsm | bm25[:k1=,b=] | prf[:k1=,b=,docs=,terms=,lambda=]
  *   | dense | hybrid[:k1=,b=,w=,rrf=]
@@ -40,7 +40,7 @@ public final class EvalMain {
     public static void main(String[] args) throws Exception {
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out), true, "UTF-8"));
         if (args.length == 0) {
-            System.out.println("Sử dụng: eval <embed|run|pool|qrels|eval> [--tuỳ-chọn giá-trị]");
+            System.out.println("Sử dụng: eval <embed|run|pool|qrels|eval|bench|dashboard> [--tuỳ-chọn giá-trị]");
             return;
         }
         Map<String, String> o = new HashMap<>();
@@ -52,6 +52,8 @@ public final class EvalMain {
             case "pool": pool(o); break;
             case "qrels": qrels(o); break;
             case "eval": evaluate(o); break;
+            case "bench": bench(o); break;
+            case "dashboard": Dashboard.build(o); break;
             default: System.out.println("Lệnh không hợp lệ: " + args[0]);
         }
     }
@@ -91,7 +93,7 @@ public final class EvalMain {
         return p.containsKey(k) ? Integer.parseInt(p.get(k)) : d;
     }
 
-    private static final class Factory implements AutoCloseable {
+    static final class Factory implements AutoCloseable {
         final LuceneCorpus corpus;
         E5Encoder enc;
         DenseRetriever dense;
@@ -191,8 +193,48 @@ public final class EvalMain {
         }
     }
 
+    /**
+     * Đo độ trễ: mỗi hệ thống chạy 1 lượt khởi động (nạp mô hình, JIT) rồi --rounds lượt đo trên các truy vấn của --split;
+     * ghi ms/truy vấn (trung vị các lượt) vào --out (TSV "system  ms  note"). Dòng của hệ thống không đo lại được giữ nguyên.
+     */
+    private static void bench(Map<String, String> o) throws Exception {
+        List<Topic> topics = EvalIo.readTopics(Paths.get(o.getOrDefault("topics", "eval/topics.tsv")), o.getOrDefault("split", "test"));
+        int rounds = Integer.parseInt(o.getOrDefault("rounds", "5"));
+        Path out = Paths.get(o.getOrDefault("out", "eval/report/latency.tsv"));
+        Map<String, String> rows = new LinkedHashMap<>();
+        if (Files.exists(out))
+            for (String l : Files.readAllLines(out, StandardCharsets.UTF_8))
+                if (!l.isBlank() && !l.startsWith("system\t")) rows.put(l.split("\t")[0], l);
+        String note = String.format(Locale.ROOT, "%s, %d truy vấn, trung vị %d lượt sau 1 lượt khởi động, %d nhân CPU",
+                o.getOrDefault("split", "test"), topics.size(), rounds, Runtime.getRuntime().availableProcessors());
+        try (Factory fac = new Factory()) {
+            for (String spec : o.get("systems").split(";")) {
+                spec = spec.trim();
+                if (spec.isEmpty()) continue;
+                Retriever r = fac.create(spec);
+                for (Topic t : topics) r.search(t.text, 100);
+                double[] ms = new double[rounds];
+                for (int k = 0; k < rounds; k++) {
+                    long t0 = System.nanoTime();
+                    for (Topic t : topics) r.search(t.text, 100);
+                    ms[k] = (System.nanoTime() - t0) / 1e6 / topics.size();
+                }
+                java.util.Arrays.sort(ms);
+                String name = fileName(spec);
+                rows.put(name, String.format(Locale.ROOT, "%s\t%.1f\t%s", name, ms[rounds / 2], note));
+                System.out.printf(Locale.ROOT, "%-44s %.1f ms/truy vấn%n", spec, ms[rounds / 2]);
+            }
+        }
+        Files.createDirectories(out.toAbsolutePath().getParent());
+        List<String> lines = new ArrayList<>();
+        lines.add("system\tms_per_query\tnote");
+        lines.addAll(rows.values());
+        Files.write(out, lines, StandardCharsets.UTF_8);
+        System.out.println("-> " + out);
+    }
+
     /** --runs nhận các tệp .run ngăn cách bằng ';' hoặc một thư mục (lấy mọi *.run, sắp theo tên). */
-    private static List<Path> expandRuns(String spec) throws IOException {
+    static List<Path> expandRuns(String spec) throws IOException {
         List<Path> out = new ArrayList<>();
         for (String r : spec.split(";")) {
             if (r.isBlank()) continue;
@@ -311,16 +353,16 @@ public final class EvalMain {
 
     // ------------------------------------------------------------------ eval
 
-    private static final String[] METRICS = {"nDCG@10", "MAP", "MRR@10", "P@10", "R@100", "Judged@10"};
+    static final String[] METRICS = {"nDCG@10", "MAP", "MRR@10", "P@10", "R@100", "Judged@10"};
 
-    private static double[] score(List<Integer> ranked, Map<Integer, Integer> rels) {
+    static double[] score(List<Integer> ranked, Map<Integer, Integer> rels) {
         return new double[] {Metrics.ndcg(ranked, rels, 10), Metrics.averagePrecision(ranked, rels),
                 Metrics.reciprocalRank(ranked, rels, 10), Metrics.precisionAt(ranked, rels, 10),
                 Metrics.recallAt(ranked, rels, 100), Metrics.judgedAt(ranked, rels, 10)};
     }
 
     /** Trung bình từng độ đo của một hệ thống trên các truy vấn của `qids`; mảng [truy vấn][độ đo]. */
-    private static double[][] perQuery(Map<String, List<Integer>> run, Map<String, Map<Integer, Integer>> qrels, List<String> qids) {
+    static double[][] perQuery(Map<String, List<Integer>> run, Map<String, Map<Integer, Integer>> qrels, List<String> qids) {
         double[][] m = new double[qids.size()][];
         for (int i = 0; i < qids.size(); i++) {
             List<Integer> ranked = run.getOrDefault(qids.get(i), new ArrayList<>());

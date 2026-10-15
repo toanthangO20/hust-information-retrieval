@@ -31,6 +31,7 @@ public final class GraphBuilder {
     private static final ObjectMapper JSON = new ObjectMapper();
     private static final Set<String> IMG_EXT = Set.of("jpg", "jpeg", "png", "gif", "webp", "svg", "bmp", "ico", "tif", "tiff");
     private static final Set<String> DOC_EXT = Set.of("pdf", "doc", "docx", "xls", "xlsx", "ppt", "pptx", "odt", "ods", "txt", "rtf", "zip", "rar");
+    // [DEMO:junk-anchor] neo vô nghĩa bị bỏ
     private static final Set<String> JUNK_ANCHOR = Set.of("xem thêm", "đọc tiếp", "chi tiết", "xem chi tiết", "tải về",
             "tải xuống", "download", "click here", "here", "read more", "more", "»", "›", "«", "‹", "...", "…", "tại đây",
             "xem tiếp", "tìm hiểu thêm", "đọc thêm", "xem tất cả", "trang chủ", "home", "next", "previous", "trước", "sau",
@@ -287,6 +288,7 @@ public final class GraphBuilder {
         return out;
     }
 
+    // [DEMO:pagerank] d = 0,85, 40 vòng, xử lý nút treo
     static double[] pageRank(int n, List<int[]> edges) {
         double[] pr = new double[n];
         if (n == 0) return pr;
@@ -320,6 +322,7 @@ public final class GraphBuilder {
         return cur;
     }
 
+    // [DEMO:node-kind] phân loại nút ảnh / tài liệu / ngoài miền
     private String classify(String url, String edgeKind) {
         String p = url.toLowerCase(Locale.ROOT);
         int q = p.indexOf('?');
@@ -345,6 +348,7 @@ public final class GraphBuilder {
         return o == null ? "" : o.toString();
     }
 
+    // [DEMO:junk-anchor] kiểm tra neo vô nghĩa
     static boolean isJunk(String a) {
         if (a == null) return true;
         String t = a.trim().toLowerCase(Locale.ROOT);

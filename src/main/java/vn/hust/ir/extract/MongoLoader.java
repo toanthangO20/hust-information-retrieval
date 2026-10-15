@@ -29,6 +29,7 @@ import com.mongodb.client.model.ValidationOptions;
 public final class MongoLoader {
     private MongoLoader() {}
 
+    // [DEMO:mongo-schema] $jsonSchema của pages / links
     private static final String PAGES_SCHEMA = "{ $jsonSchema: { bsonType: 'object', required: ['_id','url','host','kind','inDataset'],"
             + " properties: {"
             + " _id: {bsonType:'string'}, url: {bsonType:'string'}, host: {bsonType:'string'},"
@@ -66,6 +67,7 @@ public final class MongoLoader {
             long np = insert(pages, dir.resolve("pages.final.jsonl"), true);
             long nl = insert(links, dir.resolve("links.final.jsonl"), false);
 
+            // [DEMO:mongo-indexes] chỉ mục
             pages.createIndex(Indexes.ascending("url"), new IndexOptions().unique(true));
             pages.createIndex(Indexes.ascending("host", "kind"));
             pages.createIndex(Indexes.descending("pagerankContent"));

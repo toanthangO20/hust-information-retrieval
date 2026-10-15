@@ -1,6 +1,6 @@
 target/
 tools/
-data/
+/data/
 logs/
 index/
 dataset/*/documents.jsonl

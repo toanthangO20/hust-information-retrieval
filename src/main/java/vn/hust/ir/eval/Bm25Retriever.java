@@ -31,6 +31,7 @@ public class Bm25Retriever implements Retriever {
     public Bm25Retriever(LuceneCorpus corpus, float k1, float b) {
         this.corpus = corpus;
         this.searcher = new IndexSearcher(corpus.reader);
+        // [DEMO:bm25] BM25Similarity(k1, b) từng trường
         this.searcher.setSimilarity(new BM25Similarity(k1, b));
     }
 

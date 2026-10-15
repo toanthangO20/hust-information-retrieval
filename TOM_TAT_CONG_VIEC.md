@@ -81,3 +81,18 @@ Cài đặt thuật toán tìm khối nội dung; bóc trang (tiêu đề, ngày
 
 ## Hạn chế chính
 - Chú thích ảnh theo heuristic đôi khi gán nhầm; nhãn vàng do một người gán; quy tắc metadata đã chỉnh sau khi xem lỗi cả dev và test; văn bản liên kết không cải thiện truy hồi trên bộ truy vấn hiện tại.
+
+---
+
+# Cập nhật — Báo cáo trực quan, so sánh mô hình, quy trình (2026-10-15)
+
+## Đã thực hiện
+1. **Sửa số liệu M4 (hybrid):** các bản tóm tắt ghi M4 = 0,701 (w=1) — cấu hình tốt nhất trên *test*. Cấu hình chốt trên dev là w=2: **nDCG@10 0,685, R@100 0,809**. Đã sửa ở mọi tài liệu; w=1 chỉ còn là phân tích sau.
+2. **Một nguồn số liệu:** `scriptseport.bat` (lớp `Dashboard`) tính lại mọi số liệu từ đầu ra các bước → `docs/data/results.js`; slide không còn số chép tay.
+3. **Bộ slide mới `docs/BAO_CAO_TRUC_QUAN.html`** (22 slide, thay `KET_QUA_TRUC_QUAN.html` và `TRINH_CHIEU_KET_QUA.html`): forest plot có KTC + Holm, từng truy vấn, theo loại truy vấn, ma trận mọi cặp, độ nhạy dev/test, chất lượng × chi phí, dải khối của trang thật, đồ thị liên kết giữa các trang con; ghi chú người nói, nền tối, xuất PDF.
+4. **So sánh trực tiếp trên web** `/compare.html`: nhiều mô hình cạnh nhau, tô theo nhãn qrels, nDCG@10 từng truy vấn.
+5. **Quy trình:** `pipeline.bat` (bỏ qua bước đã có), `demo-check.bat`, `eval.bat bench` (độ trễ có khởi động), `extract.bat strips`, `_env.bat` dùng chung; nhãn `[DEMO:tên]` trong mã thay số dòng trong kịch bản.
+6. **Tái lập:** chuyển run M5, M6, lưới hybrid từ `eval/work` sang `eval/runs`; thêm `eval/report/{dev,test}_final.md`; báo cáo thêm Phần D (đánh giá truy hồi) và Phần E.
+
+## Lệnh
+`scripts\demo-check.bat` → `scriptseport.bat` → `scripts\search.bat serve` → http://localhost:8080/compare.html

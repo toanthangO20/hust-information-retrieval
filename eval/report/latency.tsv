@@ -1,0 +1,9 @@
+system	ms_per_query	note
+current	115.2	test, 40 truy vấn, trung vị 5 lượt sau 1 lượt khởi động, 16 nhân CPU; gồm tạo đoạn trích tô sáng + facet cho 100 kết quả như trên web
+vsm	0.5	test, 40 truy vấn, trung vị 5 lượt sau 1 lượt khởi động, 16 nhân CPU
+bm25	0.9	test, 40 truy vấn, trung vị 5 lượt sau 1 lượt khởi động, 16 nhân CPU
+prf_docs-5_terms-20_lambda-0.5	6.0	test, 40 truy vấn, trung vị 5 lượt sau 1 lượt khởi động, 16 nhân CPU
+dense	7.3	test, 40 truy vấn, trung vị 5 lượt sau 1 lượt khởi động, 16 nhân CPU
+hybrid_w-2	8.4	test, 40 truy vấn, trung vị 5 lượt sau 1 lượt khởi động, 16 nhân CPU
+drocchio_m-5_alpha-0.5_wo-0.5	13.3	test, 40 truy vấn, trung vị 5 lượt sau 1 lượt khởi động, 16 nhân CPU
+ce_depth-30_len-320	12120	số đo khi chạy run M6 trên test (xếp lại top-30 của hybrid bằng bge-reranker-v2-m3 ONNX int8 trên CPU, chưa có bộ nhớ đệm); không đo lại vì cần ~10 phút

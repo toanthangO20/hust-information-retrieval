@@ -78,6 +78,13 @@ public final class ExtractMain {
                 }
                 break;
             }
+            case "strips": {   // nhãn từng khối của tập vàng (cho hình "dải khối" trong báo cáo trực quan)
+                try (RawStore store = new RawStore(raw)) {
+                    BlockEval.strips(store, Paths.get(o.getOrDefault("gold", "eval/extract/gold_test.tsv")),
+                            Paths.get(o.getOrDefault("out", "eval/extract/strips_test.json")), CssRules.load(null), new Extractor.Strategy());
+                }
+                break;
+            }
             case "index": {    // P7: chỉ mục thử nghiệm có nội dung chính + văn bản liên kết
                 ExtractIndexer.build(Paths.get(o.getOrDefault("dataset", "dataset/ver1")), Paths.get(o.getOrDefault("out", "data/extract/v1")),
                         Paths.get(o.getOrDefault("index", "index/ver1x")));

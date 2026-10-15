@@ -161,32 +161,7 @@ public final class BlockEval {
         List<Gold> gold = loadGold(goldFile);
         Map<String, RawStore.Entry> byUrl = new HashMap<>();
         for (RawStore.Entry e : store.all()) byUrl.put(e.url, e);
-
-        // df theo host (chỉ cho các host có trong tập vàng)
-        Set<String> hosts = new HashSet<>();
-        for (Gold g : gold) {
-            RawStore.Entry e = byUrl.get(g.url);
-            if (e != null) hosts.add(e.host);
-        }
-        Map<String, Map<Long, Integer>> dfByHost = new HashMap<>();
-        Map<String, Integer> pagesByHost = new HashMap<>();
-        Map<String, Extractor.HostStats> statsByHost = new HashMap<>();
-        Extractor ex = new Extractor(store, base, rules);
-        for (String h : hosts) {
-            List<RawStore.Entry> pages = new ArrayList<>();
-            for (RawStore.Entry e : store.all())
-                if (e.host.equals(h) && e.status == 200 && "HTML".equals(e.kind) && e.file != null) pages.add(e);
-            if (pages.size() >= 3) {
-                Extractor.HostStats hs = ex.hostStats(pages, 6);
-                statsByHost.put(h, hs);
-                dfByHost.put(h, hs.df);
-                pagesByHost.put(h, hs.pages);
-            }
-        }
-
-        String mp = System.getProperty("block.model");
-        LogReg model = mp != null ? LogReg.load(Paths.get(mp)) : LogReg.loadResource("/extract/block_model.json");
-        List<Config> cs = configs(store, rules, dfByHost, pagesByHost, base, statsByHost, model);
+        List<Config> cs = prepare(store, gold, byUrl, rules, base);
         Map<String, Counts> res = new LinkedHashMap<>();
         for (Config c : cs) res.put(c.name(), new Counts());
         int missing = 0, drift = 0;
@@ -237,6 +212,93 @@ public final class BlockEval {
             }
         }
         System.out.println(Files.readString(report, StandardCharsets.UTF_8));
+    }
+
+    /** Các cấu hình cần chấm cho tập vàng: thống kê khuôn mẫu theo host (chỉ các host có trong tập vàng) + bộ phân loại đã huấn luyện. */
+    private static List<Config> prepare(RawStore store, List<Gold> gold, Map<String, RawStore.Entry> byUrl, CssRules rules,
+                                        Extractor.Strategy base) throws Exception {
+        // df theo host (chỉ cho các host có trong tập vàng)
+        Set<String> hosts = new HashSet<>();
+        for (Gold g : gold) {
+            RawStore.Entry e = byUrl.get(g.url);
+            if (e != null) hosts.add(e.host);
+        }
+        Map<String, Map<Long, Integer>> dfByHost = new HashMap<>();
+        Map<String, Integer> pagesByHost = new HashMap<>();
+        Map<String, Extractor.HostStats> statsByHost = new HashMap<>();
+        Extractor ex = new Extractor(store, base, rules);
+        for (String h : hosts) {
+            List<RawStore.Entry> pages = new ArrayList<>();
+            for (RawStore.Entry e : store.all())
+                if (e.host.equals(h) && e.status == 200 && "HTML".equals(e.kind) && e.file != null) pages.add(e);
+            if (pages.size() >= 3) {
+                Extractor.HostStats hs = ex.hostStats(pages, 6);
+                statsByHost.put(h, hs);
+                dfByHost.put(h, hs.df);
+                pagesByHost.put(h, hs.pages);
+            }
+        }
+
+        String mp = System.getProperty("block.model");
+        LogReg model = mp != null ? LogReg.load(Paths.get(mp)) : LogReg.loadResource("/extract/block_model.json");
+        return configs(store, rules, dfByHost, pagesByHost, base, statsByHost, model);
+    }
+
+    /** Cấu hình đưa vào hình "dải khối" của báo cáo trực quan. */
+    private static final List<String> STRIP_CONFIGS = List.of("A:baseline(jsoup link-density)", "B1:bte",
+            "L:learned (logistic regression)", "D:L:learned+template");
+
+    /**
+     * Xuất nhãn từng khối của mọi trang trong tập vàng (nhãn vàng + nhãn của vài cấu hình) ra JSON cho báo cáo trực quan:
+     * {@code [{url, host, blocks:[{id, words, link, tag, text, gold, pred:{cấu hình: 0/1}}]}]}.
+     */
+    public static void strips(RawStore store, Path goldFile, Path out, CssRules rules, Extractor.Strategy base) throws Exception {
+        List<Gold> gold = loadGold(goldFile);
+        Map<String, RawStore.Entry> byUrl = new HashMap<>();
+        for (RawStore.Entry e : store.all()) byUrl.put(e.url, e);
+        List<Config> cs = new ArrayList<>();
+        for (Config c : prepare(store, gold, byUrl, rules, base)) if (STRIP_CONFIGS.contains(c.name())) cs.add(c);
+        List<Map<String, Object>> pages = new ArrayList<>();
+        for (Gold g : gold) {
+            RawStore.Entry e = byUrl.get(g.url);
+            if (e == null || e.file == null) continue;
+            byte[] body = store.read(e);
+            List<Map<String, Object>> blocks = null;
+            for (Config c : cs) {
+                PageModel m = Pages.model(store, e);
+                if (m.blocks.size() != g.nblocks) break;
+                c.apply(m, e.host, e, body);
+                if (blocks == null) {
+                    blocks = new ArrayList<>();
+                    for (Block b : m.blocks) {
+                        Map<String, Object> x = new LinkedHashMap<>();
+                        String t = b.text.replaceAll("\\s+", " ").strip();
+                        x.put("id", b.id);
+                        x.put("words", b.words);
+                        x.put("link", Math.round(b.linkDensity() * 100) / 100.0);
+                        x.put("tag", b.container == null ? "?" : b.container.normalName());
+                        x.put("text", t.length() > 90 ? t.substring(0, 90) + "…" : t);
+                        x.put("gold", g.content.contains(b.id) ? 1 : 0);
+                        x.put("pred", new LinkedHashMap<String, Integer>());
+                        blocks.add(x);
+                    }
+                }
+                for (int i = 0; i < m.blocks.size(); i++) {
+                    @SuppressWarnings("unchecked")
+                    Map<String, Integer> pred = (Map<String, Integer>) blocks.get(i).get("pred");
+                    pred.put(c.name(), m.blocks.get(i).content ? 1 : 0);
+                }
+            }
+            if (blocks == null) continue;
+            Map<String, Object> p = new LinkedHashMap<>();
+            p.put("url", g.url);
+            p.put("host", e.host);
+            p.put("blocks", blocks);
+            pages.add(p);
+        }
+        Files.createDirectories(out.toAbsolutePath().getParent());
+        new com.fasterxml.jackson.databind.ObjectMapper().writeValue(out.toFile(), pages);
+        System.out.println(pages.size() + " trang -> " + out);
     }
 
     /** Đánh giá metadata: so khớp với nhãn vàng. Dùng chiến lược mặc định. */

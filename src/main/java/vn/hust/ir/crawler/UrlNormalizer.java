@@ -14,6 +14,7 @@ import java.util.regex.Pattern;
 public final class UrlNormalizer {
     private UrlNormalizer() {}
 
+    // [DEMO:url-junk-params] tham số rác bị bỏ
     private static final Set<String> DROP_PARAMS = Set.of("fbclid", "gclid", "phpsessid", "sid", "sessionid",
             "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "zarsrc");
     private static final Set<String> SKIP_EXT = Set.of("jpg", "jpeg", "png", "gif", "svg", "webp", "ico", "bmp",
@@ -24,6 +25,7 @@ public final class UrlNormalizer {
     private static final String UNSAFE = "\"<>\\^`{|}";
 
     /** Trả về URL tuyệt đối đã chuẩn hóa, hoặc null nếu không phải liên kết http(s) hợp lệ. */
+    // [DEMO:url-normalize] chuẩn hoá URL, chống bẫy
     public static String normalize(String base, String href) {
         if (href == null) return null;
         href = href.trim();

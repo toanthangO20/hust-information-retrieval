@@ -5,6 +5,11 @@
 
 * **Bước 1 (mục 1–9, Phần A)** — crawl miền `hust.edu.vn`, lọc URL không có nội dung, xuất danh sách URL đạt yêu cầu, có cơ chế cập nhật.
 * **Bước 2 (mục 10–16, Phần B)** — dựng bộ dữ liệu **ver1** từ danh sách URL đã crawl, dựng **chỉ mục** truy vấn (Lucene BM25) và xây dựng **giao diện web** tìm kiếm.
+* **Bước 3 (mục 17–25, Phần C)** — bóc tách khối nội dung chính, metadata, đồ thị liên kết, MongoDB.
+* **Bước 4 (mục 26–31, Phần D)** — đánh giá và so sánh các mô hình truy hồi trên bộ kiểm thử kiểu TREC, có kiểm định thống kê.
+* **Phần E (mục 32–34)** — báo cáo trực quan tự sinh từ dữ liệu, so sánh mô hình trực tiếp trên web, quy trình chạy lại.
+
+**Bản trực quan:** `docs/BAO_CAO_TRUC_QUAN.html` (22 slide; mọi số liệu sinh bởi `scripts\report.bat` từ đầu ra của hệ thống).
 
 **Ngôn ngữ / công cụ:** Java 11, Apache Tika 2.9.2, Apache Lucene 9.10.0, jsoup 1.17.2, Jackson 2.17, Maven 3.9.9; giao diện HTML/CSS/JavaScript thuần (không dùng framework)
 **Thư mục dự án:** `E:\Projects\Information Retrieval\hust-information-retrieval`
@@ -700,3 +705,141 @@ khả năng nằm ở **ảnh và tài liệu không có văn bản** — loại
 ├── data/extract/v1/                         pages/links(.final).jsonl, graph_stats.json      (không đưa vào git)
 └── index/ver1x/                             chỉ mục thử nghiệm (main_t, anchor_t, anchor_c)  (không đưa vào git)
 ```
+
+---
+
+# PHẦN D — ĐÁNH GIÁ VÀ SO SÁNH CÁC MÔ HÌNH TRUY HỒI (BƯỚC 4)
+
+## 26. Bộ kiểm thử (Ch05)
+
+Bộ kiểm thử kiểu TREC tự xây trên chỉ mục `index/ver1` (22.135 tài liệu): **60 truy vấn** (`eval/topics.tsv`, mỗi truy vấn có mô tả
+nhu cầu thông tin) chia **20 dev** (q01–q20, chỉ để chọn tham số) và **40 test** (q21–q60, chỉ để báo cáo cuối); 4 loại truy vấn:
+từ khoá (27 trên test), diễn đạt lại (6), câu hỏi (5), tiếng Anh (2). Pool = hợp top-15 của các hệ thống tham gia; nhãn 3 mức
+0/1/2 (`eval/qrels`). Chi tiết hạ tầng: `eval/README.md`.
+
+Quy tắc chống "chọn trên test": tham số chỉ chỉnh trên dev; pool test dựng **sau khi** đã chốt cấu hình; test chạy một lần.
+Độ đo chính nDCG@10 (chiết khấu theo slide `r1 + Σ ri/log2 i`, IDCG từ toàn bộ qrels); bổ sung MAP, MRR@10, P@10, R@100,
+Judged@10. Kiểm định: hoán vị dấu ghép cặp theo truy vấn (20.000 vòng), hiệu chỉnh Holm, khoảng tin cậy bootstrap 95%.
+
+## 27. Các mô hình và cấu hình chốt trên dev
+
+| Mã | Mô hình | Cấu hình chốt (dev) | Slide |
+|---|---|---|---|
+| W | Công cụ web hiện tại (BM25 + thưởng cụm từ/đúng dấu + AND→OR) | — | Ch07 |
+| M1 | VSM tf-idf `lnc.ltc` | — | Ch04 |
+| M2 | BM25 đa trường (tiêu đề ×3, nội dung ×1, URL ×0,6) | k1 = 1,2, b = 0,75 (lưới k1 ∈ {0,9; 1,6} × b ∈ {0,5; 0,9} chênh < 0,01) | Ch07 |
+| M3 | M2 + phản hồi giả định RM3 | 5 tài liệu, 20 từ, λ = 0,5 | Ch06 |
+| D | Dense multilingual-e5-small (ONNX int8) | — | ngoài slide |
+| M4 | Hybrid M2 + D, hợp nhất RRF (k = 60) | **w = 2** (lưới {0,5; 1; 2}) | ngoài slide |
+| M5 | Rocchio trên vec-tơ dày, dẫn đường bằng xếp hạng lai (thử nghiệm, chỉ dev) | m = 5, α = 0,5, giữ dense(q) w = 0,5 | Ch06 mở rộng |
+| M6 | Cross-encoder bge-reranker-v2-m3 xếp lại top-30 của hybrid (thử nghiệm) | chỉ điểm CE (không trộn hạng) | ngoài slide |
+
+## 28. Kết quả trên tập test (40 truy vấn) — `eval/report/test_final.md`
+
+| Hệ thống | nDCG@10 | MAP | MRR@10 | R@100 | Judged@10 | Δ nDCG@10 so với M2 [KTC 95%] | p (Holm) | tốt hơn / kém hơn / bằng |
+|---|---:|---:|---:|---:|---:|---|---:|---|
+| W công cụ web | 0,573 | 0,346 | 0,787 | 0,448 | 1,000 | −0,102 [−0,208; −0,007] | 0,279 | 13 / 18 / 9 |
+| M1 VSM | **0,492** | 0,361 | 0,783 | 0,647 | 1,000 | **−0,183 [−0,282; −0,086]** | **0,0045** | 9 / 29 / 2 |
+| M2 BM25 | 0,675 | 0,488 | 0,883 | 0,688 | 1,000 | tham chiếu | | |
+| M3 BM25 + PRF | 0,674 | 0,489 | 0,894 | 0,668 | 1,000 | −0,002 [−0,023; +0,021] | 1,000 | 11 / 16 / 13 |
+| D dense | 0,631 | 0,448 | 0,864 | 0,685 | 1,000 | −0,044 [−0,146; +0,061] | 1,000 | 18 / 21 / 1 |
+| **M4 hybrid (w = 2)** | **0,685** | 0,536 | **0,960** | 0,809 | 1,000 | +0,010 [−0,065; +0,086] | 1,000 | 19 / 18 / 3 |
+| M6 cross-encoder | 0,702 | 0,600 | 0,921 | 0,876 | 0,843 | +0,026 [−0,061; +0,114] | 1,000 | 20 / 17 / 3 |
+
+Ma trận mọi cặp (Holm trên 21 cặp, slide 17): chỉ các cặp có M1 là khác biệt có ý nghĩa (M1 kém M2, M3, M4, M6).
+
+**nDCG@10 theo loại truy vấn (test):**
+
+| Loại (số truy vấn) | W | M1 | M2 | M3 | D | M4 | M6 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| từ khoá (27) | 0,731 | 0,532 | 0,707 | 0,714 | 0,679 | 0,712 | 0,723 |
+| diễn đạt lại (6) | 0,288 | 0,483 | 0,476 | 0,436 | 0,503 | 0,540 | 0,666 |
+| câu hỏi (5) | **0,043** | 0,414 | 0,709 | 0,722 | 0,594 | 0,741 | 0,675 |
+| tiếng Anh (2) | 0,615 | 0,171 | 0,754 | 0,715 | 0,457 | 0,619 | 0,591 |
+
+## 29. Tập dev và độ nhạy tham số — vì sao M4 là w = 2
+
+Trên dev (20 truy vấn, `eval/report/dev_final.md`): M2 0,538, D 0,668, M4 0,649, M5 0,613, M6 0,755 (M6 hơn M2 có ý nghĩa, Holm p = 0,011).
+
+Lưới trọng số hybrid ban đầu {0,5; 1; 2} cho w = 2 tốt nhất (0,546 / 0,608 / 0,649) nên M4 chốt **w = 2** trước khi chạy test.
+Sau khi chốt, thử thêm w = 3, 4 trên dev (0,656 / 0,661) và w = 1, 4 trên test (0,701 / 0,666). Thứ tự **đảo ngược** giữa hai tập:
+w tốt nhất trên dev (4) kém nhất trên test, w = 1 tốt nhất trên test. Vì vậy:
+
+* M4 được báo cáo với **w = 2** (0,685). Giá trị 0,701 của w = 1 chỉ là *phân tích sau* — chọn bằng test sẽ làm số liệu lạc quan giả tạo.
+  (Các bản tóm tắt trước đây ghi M4 = 0,701, tức cấu hình chọn theo test; đã sửa ở mọi tài liệu.)
+* Kết luận đúng: hybrid ổn định trong khoảng 0,67–0,70 nDCG@10 trên test; chênh lệch giữa các w nằm trong nhiễu của 20–40 truy vấn.
+* Tương tự, dense cao hơn mọi hybrid trên dev nhưng thấp hơn trên test; M6 tăng +0,217 trên dev nhưng chỉ +0,026 trên test.
+  Dev có 4/20 truy vấn diễn đạt lại (nơi mô hình ngữ nghĩa mạnh), test có 27/40 truy vấn từ khoá.
+
+## 30. Chi phí truy vấn (`eval.bat bench`, test, 1 lượt khởi động + trung vị 5 lượt, 16 nhân CPU)
+
+| Hệ thống | M1 | M2 | M3 | D | M4 | M5 | W | M6 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| ms/truy vấn | 0,5 | 0,9 | 6,0 | 7,3 | 8,4 | 13,3 | 115 | ≈ 12.120 |
+
+W gồm cả tạo đoạn trích tô sáng và facet cho 100 kết quả như trên web. M6 là số đo khi chạy run (không đo lại vì cần ~10 phút);
+chậm ~1.400 lần M4 để đổi lấy +0,016 nDCG@10 không có ý nghĩa thống kê → chưa đáng dùng cho web khi chỉ có CPU.
+(Con số 23–24 ms trong bản trước gồm cả thời gian nạp/JIT ở lượt đầu.)
+
+## 31. Kết luận và hạn chế của phần đánh giá
+
+1. **Có ý nghĩa thống kê:** BM25 đa trường hơn VSM tf-idf (Δ +0,183, Holm p = 0,0045).
+2. **Xu hướng:** hybrid tăng rõ độ phủ (R@100 0,688 → 0,809) và MRR (0,883 → 0,960), nhưng nDCG@10 chưa khác biệt có ý nghĩa.
+3. **Kết quả âm:** PRF không cải thiện BM25; văn bản neo và PageRank không giúp (mục 23); cross-encoder không lặp lại mức tăng của dev.
+4. **Phát hiện có ích ngay:** công cụ web đạt 0,043 ở truy vấn câu hỏi trong khi BM25 0,709 → lỗi nằm ở ngữ nghĩa AND/cụm từ của công cụ, không ở mô hình xếp hạng.
+5. **Hạn chế:** truy vấn và nhãn do mô hình ngôn ngữ soạn/gán, chưa có người duyệt (chấm lại mù 100 cặp: đồng thuận 77%, kappa 0,65 — nhất quán nội bộ);
+   40 truy vấn test chỉ phát hiện được chênh lệch cỡ 0,1; M6 có 16% top-10 chưa có nhãn (Judged@10 0,84).
+
+---
+
+# PHẦN E — BÁO CÁO TRỰC QUAN VÀ QUY TRÌNH
+
+## 32. Một nguồn số liệu cho mọi tài liệu
+
+Trước đây cùng một con số được chép tay vào nhiều tệp (README, tóm tắt, báo cáo, kịch bản, hai trang HTML), dẫn đến lệch số (mục 29).
+Nay `scripts\report.bat` (lớp `vn.hust.ir.eval.Dashboard`) đọc trực tiếp đầu ra của các bước — `output/` (crawl), `dataset/ver1/manifest.json`,
+`data/extract/v1` (đồ thị), `eval/extract` (bóc tách), `eval/runs` + `eval/qrels` (tính lại độ đo và kiểm định), `eval/report/latency.tsv` —
+và ghi `docs/data/results.js`. Nguồn nào vắng mặt (ví dụ `data/` không có trên máy khác) thì giữ số liệu của lần sinh trước.
+Kiểm định trong `Dashboard` dùng cùng hạt giống với `eval.bat eval` nên trùng khớp với `eval/report/{dev,test}_final.md`.
+
+## 33. Bộ slide `docs/BAO_CAO_TRUC_QUAN.html`
+
+22 slide, mỗi tiêu đề là **một câu kết luận** sinh từ số liệu (không phải tên chủ đề). Ngoài số liệu tổng hợp còn có các hình
+cho phép so sánh có ý nghĩa thay vì chỉ so trung bình:
+
+| Slide | Hình | Trả lời câu hỏi |
+|---|---|---|
+| 3 | Đường số URL qua các lượt `update` | Cơ chế cập nhật tăng dần có hoạt động không? |
+| 6 | Quả tạ: thuật toán gốc → + lọc khuôn mẫu, mốc baseline | Thành phần nào đóng góp vào F1? |
+| 7 | Phân tán F1 từng trang (baseline × học) + phân bố chênh lệch | Cải thiện đều hay nhờ vài trang? |
+| 8 | Dải khối của trang thật (đúng / nhầm / sót) | Vì sao BTE thất bại trên trang HUST? Có cả ví dụ thất bại của mô hình học |
+| 11, 14 | Forest plot: Δ so với tham chiếu + KTC 95% + Holm | Khác biệt nào là thật? |
+| 13 | Dải điểm lưới tham số trên dev, đánh dấu cấu hình chốt / thử sau | Chọn tham số có minh bạch không? |
+| 15 | Bảng nhiệt nhiều độ đo, cảnh báo Judged@10 | Mô hình mạnh ở độ đo nào? |
+| 16 | Cột phân kỳ từng truy vấn (chọn mô hình) | Trung bình có che giấu biến động không? |
+| 17 | Bảng nhiệt theo loại truy vấn + ma trận mọi cặp | Mô hình nào hỏng ở loại truy vấn nào? |
+| 18 | Độ nhạy trọng số hybrid dev/test + đồ thị dốc dev → test | Kết quả có ổn định giữa hai tập không? |
+| 19 | Chất lượng × chi phí (thang log) | Mô hình nào đáng dùng thật? |
+| 20 | Liên kết sang so sánh trực tiếp (truy vấn chọn tự động) | Demo |
+
+Phím: ←/→, `N` ghi chú người nói, `M` mục lục, `D` nền tối (hoặc `?theme=dark`), `Ctrl+P` xuất PDF mỗi slide một trang; trên điện thoại các slide xếp dọc.
+
+**So sánh trực tiếp** (`scripts\search.bat serve` → http://localhost:8080/compare.html, lớp `LiveCompare`): cùng một truy vấn,
+nhiều mô hình (W, M1, M2, M3, D, M4) cạnh nhau; với truy vấn có nhãn, mỗi kết quả tô theo nhãn qrels và mỗi cột có nDCG@10 của
+chính truy vấn đó (cùng cách chấm với `eval`); rê chuột lên một kết quả để thấy vị trí của nó ở các mô hình khác. Trạng thái nằm trên URL
+(`?qid=q28&s=bm25;hybrid:w=2`) nên slide 20 mở thẳng được một phép so sánh.
+
+## 34. Quy trình chạy lại và chuẩn bị báo cáo
+
+| Lệnh | Việc |
+|---|---|
+| `scripts\pipeline.bat [-Force] [-From N]` | dataset → index → embed → bóc tách → đồ thị → ver1x → dải khối → số liệu slide; bỏ qua bước đã có đầu ra, ghi thời gian vào `logs/pipeline.log` |
+| `scripts\report.bat` | sinh lại `docs/data/results.js` (~15 giây) và mở slide |
+| `scripts\demo-check.bat` | kiểm tra Java, jar có cũ hơn mã nguồn không, chỉ mục, mô hình, số liệu slide có cũ không, MongoDB, web + trang so sánh |
+| `scripts\eval.bat bench` | đo độ trễ có khởi động → `eval/report/latency.tsv` |
+| `scripts\extract.bat strips` | nhãn từng khối của tập vàng test → `eval/extract/strips_test.json` (slide 8) |
+
+Các script dùng chung `scripts\_env.bat` (UTF-8, JAVA_HOME, kiểm tra đã build). Kịch bản báo cáo (`docs/KICH_BAN_BAO_CAO.md`) chỉ vị trí mã
+bằng nhãn `[DEMO:tên]` đặt ngay trong mã (tìm bằng `Ctrl+Shift+F` hoặc `git grep -n "\[DEMO:"`) thay cho số dòng, nên sửa mã không làm lệch kịch bản.
+Các run thử nghiệm M5, M6 và lưới hybrid đã chuyển từ `eval/work` (không đưa vào git) sang `eval/runs` để tái lập được; chạy lại `bm25`, `vsm`,
+`hybrid:w=2` cho tệp run giống hệt bản đã lưu.

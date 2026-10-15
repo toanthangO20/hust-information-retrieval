@@ -8,13 +8,15 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
+import vn.hust.ir.eval.LiveCompare;
+
 /** Lệnh: dataset | index | serve | query. Xem scripts\search.bat. */
 public final class SearchMain {
     private static final String USAGE = String.join("\n",
             "Sử dụng: search <lệnh> [tuỳ chọn]",
             "  dataset            Dựng bộ dữ liệu từ output/urls_valid.txt + data/index  -> dataset/<version>/",
             "  index              Dựng chỉ mục tìm kiếm từ bộ dữ liệu                   -> index/<version>/",
-            "  serve              Chạy giao diện web (mặc định http://localhost:8080)",
+            "  serve              Chạy giao diện web (mặc định http://localhost:8080); so sánh mô hình tại /compare.html (--no-compare 1 để tắt)",
             "  query <từ khóa>    Truy vấn nhanh trên dòng lệnh",
             "Tuỳ chọn: --version v1 --port 8080 --web-dir DIR --urls FILE --crawl-index DIR --size N");
 
@@ -57,8 +59,22 @@ public final class SearchMain {
                 SearchEngine engine = new SearchEngine(indexDir);
                 int port = Integer.parseInt(o.getOrDefault("port", "8080"));
                 Path web = o.containsKey("web-dir") ? Paths.get(o.get("web-dir")) : null;
-                new WebServer(engine, datasetDir.resolve("manifest.json"), web).start(port);
+                LiveCompare cmp = o.containsKey("no-compare") ? null : new LiveCompare();
+                new WebServer(engine, datasetDir.resolve("manifest.json"), web).withCompare(cmp).start(port);
                 System.out.println("Đang chạy tại http://localhost:" + port + "  (Ctrl+C để dừng)");
+                if (cmp != null) {
+                    System.out.println("So sánh mô hình: http://localhost:" + port + "/compare.html  (đang nạp mô hình ở nền...)");
+                    Thread t = new Thread(() -> {
+                        try {
+                            cmp.warmUp();
+                            System.out.println("So sánh mô hình: sẵn sàng.");
+                        } catch (Exception e) {
+                            System.out.println("So sánh mô hình: lỗi khi nạp - " + e.getMessage());
+                        }
+                    }, "compare-warmup");
+                    t.setDaemon(true);
+                    t.start();
+                }
                 break;
             }
             default:

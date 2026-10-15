@@ -14,6 +14,7 @@ public final class Significance {
     }
 
     /** p-value hai phía của kiểm định hoán vị dấu trên hiệu số a[i] - b[i]. */
+    // [DEMO:permutation-test] hoán vị dấu ghép cặp
     public static double randomizationP(double[] a, double[] b, int rounds, long seed) {
         int n = a.length;
         double[] d = new double[n];
@@ -48,6 +49,7 @@ public final class Significance {
     }
 
     /** Hiệu chỉnh Holm-Bonferroni; trả p đã hiệu chỉnh theo thứ tự đầu vào. */
+    // [DEMO:holm] hiệu chỉnh Holm
     public static double[] holm(double[] p) {
         int m = p.length;
         Integer[] idx = new Integer[m];
