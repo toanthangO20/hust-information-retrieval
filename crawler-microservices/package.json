@@ -13,7 +13,8 @@
     "test": "node --test --test-concurrency=1 services/downloader/test/unit.test.js services/downloader/test/service.test.js test/e2e/pipeline.test.js",
     "test:downloader": "node --test --test-concurrency=1 services/downloader/test/unit.test.js services/downloader/test/service.test.js",
     "test:e2e": "node --test --test-concurrency=1 test/e2e/pipeline.test.js",
-    "smoke:hust": "node scripts/smoke-hust.js"
+    "smoke:hust": "node scripts/smoke-hust.js",
+    "demo:n5": "node scripts/demo-n5.js"
   },
   "engines": { "node": ">=18.17" },
   "dependencies": {

@@ -21,7 +21,9 @@ Các mô-đun gọi nhau bằng **HTTP + JSON** qua cổng mạng LAN. Nhóm mì
 | `test/e2e/` | Kiểm thử đầu-cuối 6 mô-đun | |
 | `scripts/start-all.js` | Chạy cả 6 mô-đun trên một máy | |
 | `scripts/smoke-hust.js` | Thử N5 trên trang thật hust.edu.vn | |
+| `scripts/demo-n5.js` | Trang web kiểm tra N5 qua LAN: `/ping`, `/load`, `/stats` và gói N5 gửi sang `/parse` | |
 | `docs/KIEM_THU.md` | 26 ca kiểm thử và kết quả | |
+| `docs/HUONG_DAN_DEMO_N5.md` | Hướng dẫn tái lập kiểm tra trực quan N5 qua LAN (một máy hoặc hai máy), lỗi thường gặp | |
 | `docs/DAC_TA_GIAO_TIEP.md` | Gói JSON giữa các mô-đun và **10 điểm cần chốt với các nhóm** | |
 
 ## Bắt đầu nhanh
@@ -66,8 +68,14 @@ Biến môi trường của các bản tham chiếu, khi cần giả lập nhóm
 
 1. `npm test`: 26/26 đạt.
 2. `npm run smoke:hust`: N5 tải được trang thật của trường (cần Internet).
-3. Chạy N5 trên máy mình, các mô-đun tham chiếu trên máy khác (hoặc cùng máy), đổi `PARSER_URL` và `DOWNLOADERS` theo IP.
-4. Khi ghép thật: thay từng mô-đun tham chiếu bằng mô-đun của nhóm tương ứng. Theo dõi `GET /stats` của N5 để xem việc đến và đi.
+3. `npm run demo:n5 -- --n5 http://<IP máy N5>:8800`, rồi mở `http://localhost:7000`: trang kiểm tra trực quan. Trang tự gọi
+   `/ping` mỗi giây (xanh "đang chờ", cam "đang bận", đỏ "không liên lạc được"), có nút gửi `/load` và hiện lịch sử `/stats`.
+   Trang cũng đóng vai Đọc nội dung giả trên cổng 6600: hiện từng gói N5 gửi sang `/parse`, đánh dấu đủ 5 trường đặc tả,
+   tiêu đề và trích đoạn với HTML, dung lượng, 8 byte đầu và SHA-256 với tài liệu. Muốn chứng minh qua LAN thì chạy trang trên
+   **máy khác** và đặt `PARSER_URL=http://<IP máy chạy trang>:6600/parse` cho N5. Khi đó gói nhận được ghi rõ IP máy N5.
+   Từng bước: [`docs/HUONG_DAN_DEMO_N5.md`](docs/HUONG_DAN_DEMO_N5.md).
+4. Chạy N5 trên máy mình, các mô-đun tham chiếu trên máy khác (hoặc cùng máy), đổi `PARSER_URL` và `DOWNLOADERS` theo IP.
+5. Khi ghép thật: thay từng mô-đun tham chiếu bằng mô-đun của nhóm tương ứng. Theo dõi `GET /stats` của N5 để xem việc đến và đi.
 
 ## Quan hệ với project chính
 

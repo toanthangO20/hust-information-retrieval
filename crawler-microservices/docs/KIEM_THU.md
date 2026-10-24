@@ -1,7 +1,13 @@
 # Kiểm thử mô-đun Tải về (N5) và toàn hệ thống
 
-**Kết quả: 26/26 ca đạt, 0 lỗi, 0 bỏ qua** (6 đơn vị + 17 dịch vụ + 3 đầu-cuối). Tổng thời gian khoảng 24 giây.
-Môi trường chạy: Node.js 22.22, Chromium 1243 (Puppeteer 25), Linux; ngày 24/10/2026.
+**Kết quả: 26/26 ca đạt, 0 lỗi, 0 bỏ qua** (6 đơn vị + 17 dịch vụ + 3 đầu-cuối), trên cả hai môi trường:
+
+| Môi trường | Node.js | Chrome | Thời gian `npm test` |
+|---|---|---|---|
+| Linux (cloud) | 22.22 | Chromium 1243 (Puppeteer 25) | ~24 s |
+| Windows 11 Home 10.0.26200 (máy local) | 24.16.0, npm 11.13.0 | Chrome for Testing 156.0.8078.47 (Puppeteer 25.16.0 tự tải) | 26–29 s, chạy 3 lần đều 26/26 |
+
+Trên Windows còn kiểm thêm trang thật hust.edu.vn, MongoDB thật và gọi N5 qua IP LAN (xem [Kết quả trên Windows](#kết-quả-trên-windows-máy-local-24102026)).
 
 ## Cách chạy lại
 
@@ -69,7 +75,7 @@ Mọi ca dịch vụ và đầu-cuối đều chạy **qua HTTP thật trên c�
 | E02 | Một bản Tải về chết (cổng 9) | Điều khiển đánh dấu `up=false`, vẫn thu thập đủ 3 html + 2 other bằng các bản còn lại | Đạt |
 | E03 | Văn bản liên kết | Là câu hoàn chỉnh chứa thẻ `<a>` ("Xem thông báo tuyển sinh mới nhất."), hoặc văn bản thẻ nếu khối không có câu | Đạt |
 
-## Kết quả chạy
+## Kết quả chạy (Linux, cloud)
 
 ```
 ✔ S01 GET /ping khi rảnh trả {"status":"đang chờ"} (355ms)
@@ -101,12 +107,52 @@ Ngoài ra đã kiểm tra thêm:
 - **Chạy nhiều tiến trình:** `node scripts/start-all.js` (6 tiến trình, đúng cổng 2200/6600/8800/8801/5200/3300) trên website giả lập
   → Lưu trữ `{"html":3,"other":2,"graph":8}`, Điều khiển chia việc cho 2 bản N5 (2 và 3 việc).
 
-## Chưa kiểm thử được trong môi trường này
+## Kết quả trên Windows (máy local, 24/10/2026)
 
-- **Trang thật hust.edu.vn:** mạng của môi trường kiểm thử chặn truy cập ra ngoài (proxy trả 403). Chạy trên máy có Internet:
-  `npm run smoke:hust`. Script dựng một Đọc nội dung giả, gọi N5 tải trang chủ, trang tin tức, ctt.hust.edu.vn và một trang 404,
-  in bảng kết quả và ghi gói nhận được vào `data/smoke-hust.json`.
-- **Backend MongoDB của mô-đun Lưu trữ (tham chiếu):** không có MongoDB trong môi trường. Các ca đầu-cuối dùng backend lưu tệp/bộ nhớ,
-  cùng cấu trúc `html/other/graph`. Mô-đun này là việc của nhóm N10. Bản tham chiếu chỉ dùng để chạy thử N5.
-- **Chạy qua LAN giữa nhiều máy:** các ca chạy trên `127.0.0.1` với cổng thật. Khi lên LAN chỉ thay địa chỉ trong biến môi trường
-  (`PARSER_URL`, `DOWNLOADERS`…), mã không đổi.
+Không phải sửa mã hay test nào. `npm install` tự tải Chrome cho Puppeteer (không cần `PUPPETEER_SKIP_DOWNLOAD`/`CHROME_PATH`).
+
+**`npm test`**: 26/26 đạt cả 3 lần chạy. Các ca có thể khác trên Windows:
+
+| Ca | Lo ngại | Thực tế trên Windows |
+|---|---|---|
+| S11, S15, E02 (cổng 9 giả lập máy chết) | Kết nối có thể bị timeout thay vì bị từ chối ngay | Trên `127.0.0.1` bị từ chối ngay: S11 ~90 ms, S15 ~5 ms, E02 ~4,5 s (như Linux) |
+| S10 (song song, ngưỡng < 1500 ms) | Đo thời gian | 615–636 ms |
+| S13 (timeout 700 ms, ngưỡng < 3000 ms) | Đo thời gian | 712–724 ms |
+
+**`npm run smoke:hust`** (trang thật, ~9 s):
+
+| URL | HTTP | format | render | ký tự | ms | Kết quả |
+|---|---|---|---|---|---|---|
+| https://hust.edu.vn/ | 200 | html | chrome | 211.682 | 3441 | đã gửi sang đọc nội dung |
+| https://hust.edu.vn/vi/news/tin-tuc-su-kien/ | 200 | html | chrome | 96.574 | 1588 | đã gửi sang đọc nội dung |
+| https://ctt.hust.edu.vn/ | 200 | html | chrome | 31.328 | 1448 | đã gửi sang đọc nội dung |
+| https://hust.edu.vn/khong-ton-tai-404 | 404 | html | chrome | 3.096 | 1215 | bỏ qua (HTTP 404) |
+
+`data/smoke-hust.json` có 3 gói, mỗi gói đủ `url, format, content_type, encoding, content` (cùng `final_url, http_status, fetched_at,
+render, downloader`). `content_type` là `text/html; charset=utf-8`, `encoding=text`, tiêu đề tiếng Việt đúng ("Đại học Bách khoa Hà Nội",
+"Tin tức - sự kiện", "CTT ĐHBKHN"), không có ký tự lỗi font. Thử thêm tài liệu thật:
+`nq.24.2025.pdf` (5.742.217 byte) → `format=pdf`, `encoding=base64`, 7.656.292 ký tự (đúng bằng độ dài base64 của tệp), `render=http`;
+một tệp `.xlsx` của library.hust.edu.vn → `format=xlsx`, base64.
+
+**`npm run start:all -- --max-urls 30`** (6 tiến trình, trang thật): xong 30/30 URL sau ~25 s. Điều khiển chia 13/17 việc cho
+N5-1/N5-2, không lỗi tải, không lỗi gửi. Lưu trữ (tệp): `html` 30, `other` 0 (30 URL đầu không có tài liệu nào), `graph` 3.693 cạnh,
+3.531 cạnh có văn bản liên kết ("Trang nhất", "Tuyển dụng"…). Tiêu đề và nội dung tiếng Việt đúng. 1 bản ghi `content` rỗng là
+`mail.hust.edu.vn` (trang đăng nhập Outlook), do bộ lọc miền của Tổng hợp chứ không phải lỗi N5.
+Dừng bằng Ctrl+C thật gửi vào console: cả 6 tiến trình con dừng, không còn tiến trình node hay Chrome của Puppeteer nào sót lại.
+
+**MongoDB** (`scripts\mongo.bat`, MongoDB 7.0.14, driver 7.7.0): `start:all -- --max-urls 30 --mongo mongodb://localhost:27017`
+→ database `hust_crawl`: `html` 30, `other` 0, `graph` 3.693 (3.531 có `intro`), index duy nhất `{url}` và `{src, dest}` đúng thiết kế,
+tiếng Việt đúng.
+
+**N5 chạy độc lập** (`services/downloader`: `npm install`, `npm test` 23/23 trong ~12 s, `npm start` với `HOST=0.0.0.0`):
+gọi bằng IP Wi-Fi `192.168.72.4:8800`: `/ping` → `{"status":"đang chờ",…}`; `/load?wait=1` trang chủ → 200, html, chrome, đã gửi
+sang Đọc nội dung giả; `/load` PDF → 202 rồi gửi gói `pdf`/base64. Gọi từ máy ảo WSL (mạng Hyper-V, đi qua tường lửa Windows)
+cũng nhận được `/ping`. Ctrl+C dừng sạch, đóng Chrome.
+
+## Chưa kiểm thử được
+
+- **Gọi từ một máy vật lý khác trong LAN:** mới gọi bằng IP LAN từ chính máy và từ WSL. Khi lên LAN chỉ thay địa chỉ trong biến môi
+  trường (`PARSER_URL`, `DOWNLOADERS`…), mã không đổi. Máy khác gọi vào cần mở cổng 8800 trên tường lửa (xem `services/downloader/README.md`).
+- **Máy chết thật trên LAN:** cổng 9 trên `127.0.0.1` bị từ chối ngay. Máy tắt hẳn trên LAN thường làm kết nối chờ đến hết
+  `FORWARD_TIMEOUT_MS` (15 s × 4 lần thử), nên một chỗ tải bị giữ khoảng 1 phút trước khi ghi lỗi.
+- **Ghép với mô-đun thật của nhóm khác:** Điều khiển, Đọc nội dung, Tổng hợp, Lưu trữ ở đây là bản tham chiếu.
