@@ -1,0 +1,17 @@
+{
+  "name": "hust-n5-downloader",
+  "version": "1.0.0",
+  "description": "Mô-đun Tải về (N5) — hệ thống thu thập kiến trúc dịch vụ nhỏ, HUST IR",
+  "main": "src/server.js",
+  "bin": { "n5-downloader": "src/index.js" },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test --test-concurrency=1 test/unit.test.js test/service.test.js"
+  },
+  "engines": { "node": ">=18.17" },
+  "dependencies": {
+    "puppeteer": "^25.16.0"
+  },
+  "license": "MIT",
+  "private": true
+}

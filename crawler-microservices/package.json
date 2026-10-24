@@ -1,0 +1,26 @@
+{
+  "name": "hust-crawler-microservices",
+  "version": "1.0.0",
+  "description": "Hệ thống thu thập theo kiến trúc dịch vụ nhỏ (6 mô-đun, HTTP + JSON) — HUST IR. Mô-đun của nhóm: Tải về (N5).",
+  "private": true,
+  "scripts": {
+    "start:all": "node scripts/start-all.js",
+    "start:downloader": "node services/downloader/src/index.js",
+    "start:controller": "node services/controller/index.js",
+    "start:parser": "node services/parser/index.js",
+    "start:aggregator": "node services/aggregator/index.js",
+    "start:storage": "node services/storage/index.js",
+    "test": "node --test --test-concurrency=1 services/downloader/test/unit.test.js services/downloader/test/service.test.js test/e2e/pipeline.test.js",
+    "test:downloader": "node --test --test-concurrency=1 services/downloader/test/unit.test.js services/downloader/test/service.test.js",
+    "test:e2e": "node --test --test-concurrency=1 test/e2e/pipeline.test.js",
+    "smoke:hust": "node scripts/smoke-hust.js",
+    "demo:n5": "node scripts/demo-n5.js"
+  },
+  "engines": { "node": ">=18.17" },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "mongodb": "^7.0.0",
+    "puppeteer": "^25.16.0"
+  },
+  "license": "MIT"
+}

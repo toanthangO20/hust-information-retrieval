@@ -1,5 +1,8 @@
 # HUST Crawler + Tìm Bách Khoa — thu thập URL hust.edu.vn, bộ dữ liệu ver1, chỉ mục và giao diện tìm kiếm
 
+> **Hệ thống thu thập kiến trúc dịch vụ nhỏ (thiết kế mới của thầy, nhóm phụ trách mô-đun Tải về N5):** xem
+> [`crawler-microservices/`](crawler-microservices/README.md) (Node.js + Puppeteer, 6 mô-đun HTTP/JSON, 26 ca kiểm thử).
+
 Crawler viết bằng **Java 11**, dùng **Apache Tika** (trích văn bản HTML/PDF/Office), **Apache Lucene** (kho URL bền vững
 và chỉ mục nội dung) và **jsoup** (phân tích DOM, lấy liên kết). Kết quả chính: `output/urls_valid.txt`.
 
@@ -153,10 +156,16 @@ Bộ kiểm thử kiểu TREC (60 truy vấn, 20 dev / 40 test, qrels 3 mức), 
 kiểm định hoán vị + Holm + bootstrap. Hướng dẫn và kết quả: `eval/README.md`; phân tích: `report/BAO_CAO.md` Phần D.
 
 ```
-scriptsval.bat run --systems "bm25;hybrid:w=2" --split test --out evaluns	est   :: chạy mô hình, xuất run TREC
-scriptsval.bat eval --runs evaluns	est --qrels eval\qrels	est.tsv --split test --baseline bm25 --out evaleport	est.md
-scriptsval.bat bench --systems "bm25;hybrid:w=2" --split test                     :: độ trễ -> evaleport\latency.tsv
-scriptseport.bat                                                                   :: số liệu slide -> docs\dataesults.js
+scriptsval.bat run --systems "bm25;hybrid:w=2" --split test --out eval
+uns	est   :: chạy mô hình, xuất run TREC
+scriptsval.bat eval --runs eval
+uns	est --qrels eval\qrels	est.tsv --split test --baseline bm25 --out eval
+eport	est.md
+scriptsval.bat bench --systems "bm25;hybrid:w=2" --split test                     :: độ trễ -> eval
+eport\latency.tsv
+scripts
+eport.bat                                                                   :: số liệu slide -> docs\data
+esults.js
 ```
 
 | Lớp (`vn.hust.ir.eval`) | Vai trò |
